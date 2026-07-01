@@ -3,6 +3,7 @@
  */
 
 import type { KnowledgeObject } from "../models/knowledge-object.model";
+import { ValidationError } from "../errors/validation.error";
 import { KnowledgeValidator } from "../validators/knowledge.validator";
 
 export class KnowledgeService {
@@ -10,7 +11,7 @@ export class KnowledgeService {
 
   create(object: KnowledgeObject): KnowledgeObject {
     if (!this.validator.validate(object)) {
-      throw new Error("Invalid Knowledge Object");
+      throw new ValidationError("Invalid Knowledge Object");
     }
 
     return object;
