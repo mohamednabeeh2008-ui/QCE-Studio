@@ -25,6 +25,9 @@ export * from "./validators/knowledge.validator";
 
 export * from "./engines/validation.engine";
 export * from "./engines/template.engine";
+export * from "./engines/identifier.engine";
+export * from "./engines/knowledge-graph.engine";
+export * from "./engines/review.engine";
 
 export const QCE_VERSION = "0.1.0";
 export const QCE_NAME = "QCE Studio";
