@@ -23,6 +23,8 @@ export * from "./services/knowledge.service";
 
 export * from "./validators/knowledge.validator";
 
+export * from "./engines/validation.engine";
+
 export const QCE_VERSION = "0.1.0";
 export const QCE_NAME = "QCE Studio";
 
