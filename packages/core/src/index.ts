@@ -35,6 +35,8 @@ export * from "./workflows/publishing.workflow";
 
 export * from "./pipelines/knowledge.pipeline";
 
+export * from "./events/domain-event";
+
 export const QCE_VERSION = "0.1.0";
 export const QCE_NAME = "QCE Studio";
 
