@@ -28,6 +28,12 @@ export * from "./engines/template.engine";
 export * from "./engines/identifier.engine";
 export * from "./engines/knowledge-graph.engine";
 export * from "./engines/review.engine";
+export * from "./engines/configuration.engine";
+
+export * from "./workflows/knowledge-review.workflow";
+export * from "./workflows/publishing.workflow";
+
+export * from "./pipelines/knowledge.pipeline";
 
 export const QCE_VERSION = "0.1.0";
 export const QCE_NAME = "QCE Studio";
