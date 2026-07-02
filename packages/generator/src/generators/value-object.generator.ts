@@ -2,8 +2,11 @@
  * Value Object Generator
  */
 
-import { valueObjectTemplate } from "../templates/value-object.template";
+import { GeneratorOptions } from "../types";
+import { valueObjectTemplate } from "../templates";
 
-export function generateValueObject(className: string): string {
-  return valueObjectTemplate(className);
+export function generateValueObject(
+  options: GeneratorOptions
+): string {
+  return valueObjectTemplate(options.name);
 }
