@@ -2,9 +2,32 @@
  * QCE Generator CLI
  */
 
-import { generateValueObject } from "./generators";
+import {
+  executeCommand,
+  parseCommand,
+} from "./commands";
 
 export function runCli(): void {
-  console.log("QCE Generator CLI");
-  console.log(generateValueObject);
+  const [, , type, name, outputPath = "src"] = process.argv;
+
+  if (!type || !name) {
+    console.log(
+      "Usage: qce <type> <name> [outputPath]"
+    );
+    return;
+  }
+
+  executeCommand(
+    {
+      rootDir: process.cwd(),
+      packageName: "@qce/generator",
+    },
+    parseCommand(
+      type,
+      name,
+      outputPath
+    )
+  );
 }
+
+runCli();
