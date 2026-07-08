@@ -1,0 +1,1 @@
+{"audit":"E09_INDEPENDENT_ACCEPTANCE","input_eligible":7,"tests":["BOUNDARY","IDENTITY","LINEAGE","QURANIC_WITNESS","NOT_COVERAGE_ONLY"],"accepted":["B004-LI-005","B004-LI-006","B004-LI-007","B004-LI-008","B004-LI-009","B004-LI-010","B004-LI-011"],"held":[],"rejected":[],"result":"7_ACCEPTED_0_FAILED","nar_ids_assigned":0,"status":"COMPLETE"}
