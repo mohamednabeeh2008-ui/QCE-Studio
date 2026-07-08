@@ -1,0 +1,5 @@
+{"CAL-ID":"CAL-000001","source_batches":["BATCH-001","BATCH-002"],"sample_type":"STABLE_BOUNDARY","examples":["NAR-000001","NAR-000003","NAR-000004","NAR-000010","NAR-000011"],"rule_candidate":"BF-R01","status":"CALIBRATED"}
+{"CAL-ID":"CAL-000002","source_batches":["BATCH-001","BATCH-002"],"sample_type":"CROSS_SURAH_BOUNDARY_CONFLICT","examples":["NAR-000002","NAR-000006"],"rule_candidate":"BF-R02","status":"CALIBRATED"}
+{"CAL-ID":"CAL-000003","source_batches":["BATCH-001","BATCH-002"],"sample_type":"COMPOUND_CLUSTER_CONFLICT","examples":["NAR-000005","NAR-000009"],"rule_candidate":"BF-R03","status":"CALIBRATED"}
+{"CAL-ID":"CAL-000004","source_batches":["BATCH-001","BATCH-002"],"sample_type":"ADJACENCY_PRESSURE","examples":["NAR-000008"],"rule_candidate":"BF-R04","status":"CALIBRATED"}
+{"CAL-ID":"CAL-000005","source_batches":["BATCH-001","BATCH-002"],"sample_type":"AXIS_CONVERGENCE_LIMIT","examples":["NAR-000002","NAR-000005","NAR-000006","NAR-000009"],"rule_candidate":"BF-R05","status":"LOCKED"}
