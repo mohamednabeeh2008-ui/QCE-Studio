@@ -1,0 +1,9 @@
+{"id":"E03-SPLIT-000001","child":"PC-NOAH-ARK-BUILD","axis_hit":true,"witness_partition":"INDEPENDENT","status":"VERIFIED"}
+{"id":"E03-SPLIT-000002","child":"PC-NOAH-ARK-MOCKERY","axis_hit":true,"witness_partition":"INDEPENDENT_ADJACENT","status":"VERIFIED"}
+{"id":"E03-SPLIT-000003","child":"PC-NOAH-FLOOD","axis_hit":true,"witness_partition":"INDEPENDENT","status":"VERIFIED"}
+{"id":"E03-SPLIT-000004","child":"PC-NOAH-DELIVERANCE","axis_hit":true,"witness_partition":"DISTRIBUTED_OUTCOME_FAMILY","status":"VERIFIED_WITH_REVIEW"}
+{"id":"E03-SPLIT-000005","child":"PC-ABRAHAM-IDOL-ACTION","axis_hit":true,"witness_partition":"INDEPENDENT_WITH_PARALLEL","status":"VERIFIED"}
+{"id":"E03-SPLIT-000006","child":"PC-ABRAHAM-IDOL-DIALOGUE","axis_hit":true,"witness_partition":"INDEPENDENT_WITH_PARALLEL","status":"VERIFIED"}
+{"id":"E03-SPLIT-000007","child":"PC-ABRAHAM-GUESTS","axis_hit":true,"witness_partition":"DISTRIBUTED_PARALLEL_FAMILY","status":"VERIFIED_WITH_REVIEW"}
+{"id":"E03-SPLIT-000008","child":"PC-ABRAHAM-ANNUNCIATION","axis_hit":true,"witness_partition":"DISTRIBUTED_PARALLEL_FAMILY","status":"VERIFIED_WITH_REVIEW"}
+{"id":"E03-SPLIT-000009","child":"PC-ABRAHAM-LOT-NEWS","axis_hit":true,"witness_partition":"DISTRIBUTED_PARALLEL_FAMILY","status":"VERIFIED_WITH_REVIEW"}
