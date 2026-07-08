@@ -1,0 +1,38 @@
+schema: qpfs/lexical-source-registry/v0.1
+status: open
+step: 24.5A
+promotion_lock: true
+
+sources: []
+
+candidate_sources:
+  - candidate_id: QLS-CAND-001
+    status: requires_evidence_review
+    source_role: token_level_quranic_morphology
+    required_capabilities:
+      - Quran_wide_coverage
+      - surah_and_ayah_reference
+      - token_position
+      - surface_form
+      - lemma
+      - root
+      - morphological_form
+      - reproducible_source_locator
+    admission_decision: pending
+    reason: >-
+      No source is admitted by name until its version, usage basis, field
+      coverage, and row-level provenance have been inspected and recorded.
+
+registry_rules:
+  - candidate_status_is_not_acceptance
+  - accepted_sources_require_complete_contract_fields
+  - source_identity_must_remain_stable_across_ledger_rows
+  - rejected_sources_remain_recorded_with_reason
+
+step_state:
+  source_contract: complete
+  accepted_source_count: 0
+  lexical_occurrence_rows: 0
+  gate: LEXICAL_SOURCE_READY
+  gate_status: blocked
+  next_action: inspect_and_register_first_evidence_backed_source
