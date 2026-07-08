@@ -1,0 +1,5 @@
+{"gate_id":"PLG-000001","source_child":"PC-NOAH-ARK-BUILD","parent_nar_id":"NAR-000008","assigned_nar_id":"NAR-000018","continuity_check":"PASS","parent_disposition":"RETAINED_AS_PROVENANCE_CONTAINER","promotion_status":"PROMOTED"}
+{"gate_id":"PLG-000002","source_child":"PC-NOAH-ARK-MOCKERY","parent_nar_id":"NAR-000008","assigned_nar_id":"NAR-000019","continuity_check":"PASS","parent_disposition":"RETAINED_AS_PROVENANCE_CONTAINER","promotion_status":"PROMOTED"}
+{"gate_id":"PLG-000003","source_child":"PC-NOAH-FLOOD","parent_nar_id":"NAR-000009","assigned_nar_id":"NAR-000020","continuity_check":"PASS","parent_disposition":"RETAINED_AS_PROVENANCE_CONTAINER","promotion_status":"PROMOTED"}
+{"gate_id":"PLG-000004","source_child":"PC-ABRAHAM-IDOL-ACTION","parent_nar_id":"NAR-000014","assigned_nar_id":"NAR-000021","continuity_check":"PASS","parent_disposition":"RETAINED_AS_PROVENANCE_CONTAINER","promotion_status":"PROMOTED"}
+{"gate_id":"PLG-000005","source_child":"PC-ABRAHAM-IDOL-DIALOGUE","parent_nar_id":"NAR-000014","assigned_nar_id":"NAR-000022","continuity_check":"PASS","parent_disposition":"RETAINED_AS_PROVENANCE_CONTAINER","promotion_status":"PROMOTED"}
