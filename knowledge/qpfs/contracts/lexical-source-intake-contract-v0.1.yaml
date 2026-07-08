@@ -1,0 +1,76 @@
+schema: qpfs/lexical-source-intake-contract/v0.1
+status: active
+step: 24.5A
+purpose: >-
+  Define the evidence boundary that a Quranic lexical source must cross before
+  any token-level occurrence may enter the executable QPFS lexical ledger.
+
+invariants:
+  - source_registration_precedes_row_materialization
+  - every_occurrence_is_traceable_to_a_registered_source
+  - aggregate_counts_do_not_create_occurrence_rows
+  - lexical_discovery_does_not_confirm_parable_identity
+  - no_qpu_promotion_during_step_24_5a
+
+required_source_fields:
+  - source_id
+  - title
+  - provider
+  - source_type
+  - access_reference
+  - license_or_usage_basis
+  - version_or_snapshot
+  - retrieval_date
+  - coverage
+  - token_identity_model
+  - morphology_fields
+  - provenance_notes
+
+required_occurrence_fields:
+  - occurrence_id
+  - source_id
+  - surah
+  - ayah
+  - token_position
+  - surface
+  - lemma
+  - root
+  - morphological_form
+  - source_locator
+  - verification_status
+
+admission_rules:
+  source:
+    - stable_identity_required
+    - Quran_wide_coverage_must_be_declared
+    - token_level_locator_required
+    - morphology_provenance_required
+    - usage_basis_must_be_recorded
+  occurrence:
+    - source_must_be_registered
+    - reference_must_be_structurally_valid
+    - token_position_must_be_present
+    - root_must_be_explicitly_attested_by_source
+    - source_locator_must_resolve_to_row_evidence
+
+forbidden_shortcuts:
+  - infer_169_occurrence_rows_from_aggregate_count
+  - fabricate_token_positions
+  - backfill_missing_morphology_from_memory
+  - convert_traditional_parable_lists_into_lexical_occurrences
+  - assign_qpc_or_qpu_identity_at_lexical_intake
+
+outputs:
+  accepted_source_registry: knowledge/qpfs/registries/lexical-source-registry-v0.1.yaml
+  occurrence_ledger: knowledge/qpfs/manifests/lexical-occurrence-ledger-v0.1.yaml
+
+exit_gate:
+  name: LEXICAL_SOURCE_READY
+  pass_when:
+    - at_least_one_source_is_accepted
+    - source_supports_all_required_occurrence_fields
+    - provenance_is_reproducible
+  fail_effect:
+    - keep_occurrence_ledger_unmaterialized
+    - block_24_5B
+    - preserve_qpu_promotion_lock
