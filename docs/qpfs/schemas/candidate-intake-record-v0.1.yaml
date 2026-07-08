@@ -1,0 +1,50 @@
+schema: qpfs/candidate-intake-record/v0.1
+status: executable
+
+required:
+  - intake_id
+  - source
+  - harvest_channel
+  - entry_basis
+  - trigger
+  - initial_scope
+  - boundary_status
+  - overlap_status
+  - provenance
+
+fields:
+  intake_id:
+    type: string
+    immutable: true
+  source:
+    required: [surah, ayah_start, ayah_end]
+  harvest_channel:
+    enum: [LEXICAL, STRUCTURAL, TRADITIONAL_SCHOLARLY]
+  entry_basis:
+    type: list
+    preserve_all_values: true
+  trigger:
+    type: object
+  initial_scope:
+    type: quran_reference_range
+  boundary_status:
+    enum: [UNREVIEWED, PROVISIONAL, RESOLVED, COMPETING_BOUNDARIES, UNRESOLVED]
+  overlap_status:
+    enum: [NONE, OVERLAPS_WITH, CONTAINS, CONTAINED_BY, POSSIBLY_SAME_UNIT, BOUNDARY_COMPETING]
+  provenance:
+    type: list
+    append_only: true
+
+forbidden_at_intake:
+  - parable_decision
+  - journey
+  - stations
+  - formation_subject
+  - canonical_network
+  - qpu_id
+
+validation:
+  source_required: true
+  ayah_order_required: true
+  provenance_required: true
+  duplicate_channel_rows_may_merge_only_after_reconciliation: true

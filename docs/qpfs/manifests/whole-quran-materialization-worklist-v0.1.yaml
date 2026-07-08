@@ -1,0 +1,66 @@
+schema: qpfs/whole-quran-materialization-worklist/v0.1
+id: QPCM-WORK-000001
+status: open
+campaign: STEP-28-PREP
+
+baseline_reconciliation:
+  source_manifest: QPCF-EXEC-000001
+  registered_candidates: 10
+  rule: preserve_existing_qpc_ids
+  status: ready
+
+channels:
+  lexical:
+    source_universe: QLH-000001
+    reported_root_occurrences: 169
+    materialization_status: pending_row_level_ledger
+    required_outputs:
+      - occurrence_ledger
+      - usage_classification
+      - candidate_eligibility
+    prohibition: "169 occurrences must never be represented as 169 parables."
+  structural:
+    protocol_status: frozen
+    materialization_status: pending_row_level_candidates
+    required_outputs:
+      - candidate_rows
+      - indicator_evidence
+      - false_positive_controls
+      - reviewer_state
+  traditional_scholarly:
+    protocol_status: frozen
+    materialization_status: pending_source_attestations
+    required_outputs:
+      - source_attestation_rows
+      - cited_work_identity
+      - attested_scope
+      - classification_as_reported
+
+reconciliation:
+  exact_duplicates: pending
+  multi_channel_hits: pending
+  overlaps: pending
+  nested_units: pending
+  competing_boundaries: pending
+  provenance_edges: pending
+
+id_assignment:
+  existing_range: QPC-000001..QPC-000010
+  next_id: QPC-000011
+  assignment_gate: after_reconciliation
+
+freeze_gate:
+  all_three_channels_materialized: false
+  provenance_reconciled: false
+  integrity_validation_passed: false
+  executable_quran_wide_manifest_frozen: false
+  canonical_qpu_corpus_locked: true
+
+known_gaps:
+  - "The repository does not yet contain a row-level ledger for all 169 lexical occurrences."
+  - "The repository does not yet contain row-level structural candidates across the whole Quran."
+  - "The repository does not yet contain normalized row-level traditional/scholarly attestations."
+
+next_action:
+  name: materialize_lexical_occurrence_ledger
+  reason: "It is the only frozen whole-Quran universe with an explicit reported occurrence count and must be materialized before cross-channel reconciliation."
