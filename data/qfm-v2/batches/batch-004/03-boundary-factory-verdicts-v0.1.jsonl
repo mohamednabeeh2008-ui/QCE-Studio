@@ -1,0 +1,6 @@
+{"candidate_id":"B004-CAND-001","bf_r01":"PARTIAL","bf_r02":"TRIGGERED","bf_r03":"TRIGGERED","bf_r04":"PASS","bf_r05":"COVERAGE_ONLY","bf_r06":"SPLIT_REQUIRED","verdict":"DISTRIBUTED_FAMILY_TO_PNIE"}
+{"candidate_id":"B004-CAND-002","bf_r01":"PASS_LOCAL_INSTANCES","bf_r02":"TRIGGERED","bf_r03":"PASS","bf_r04":"PASS","bf_r05":"COVERAGE_ONLY","bf_r06":"NOT_REQUIRED_YET","verdict":"DISTRIBUTED_FAMILY_TO_PNIE"}
+{"candidate_id":"B004-CAND-003","bf_r01":"PASS_LOCAL_INSTANCES","bf_r02":"TRIGGERED","bf_r03":"PASS","bf_r04":"PASS","bf_r05":"COVERAGE_ONLY","bf_r06":"NOT_REQUIRED_YET","verdict":"DISTRIBUTED_FAMILY_TO_PNIE"}
+{"candidate_id":"B004-CAND-004","bf_r01":"PARTIAL","bf_r02":"TRIGGERED","bf_r03":"TRIGGERED","bf_r04":"PASS","bf_r05":"COVERAGE_ONLY","bf_r06":"SPLIT_REVIEW","verdict":"DISTRIBUTED_FAMILY_TO_PNIE"}
+{"candidate_id":"B004-CAND-005","bf_r01":"PARTIAL","bf_r02":"TRIGGERED","bf_r03":"PASS","bf_r04":"PASS","bf_r05":"COVERAGE_ONLY","bf_r06":"NOT_REQUIRED_YET","verdict":"COVERAGE_FAMILY_TO_PNIE"}
+{"candidate_id":"B004-CAND-006","bf_r01":"PARTIAL","bf_r02":"TRIGGERED","bf_r03":"TRIGGERED","bf_r04":"PASS","bf_r05":"COVERAGE_ONLY","bf_r06":"SPLIT_REQUIRED","verdict":"DISTRIBUTED_FAMILY_TO_PNIE"}
