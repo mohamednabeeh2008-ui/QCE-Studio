@@ -1,0 +1,5 @@
+{"record_type":"source_inventory","source_id":"SRC-CONVERSATIONS","source_class":"CONVERSATION-HISTORY","priority":"P0","availability":"PARTIAL","ingestion_status":"ACTIVE","version":1}
+{"record_type":"source_inventory","source_id":"SRC-UPLOADS","source_class":"UPLOADED-FILES","priority":"P0","availability":"UNKNOWN","ingestion_status":"DISCOVERY-REQUIRED","version":1}
+{"record_type":"source_inventory","source_id":"SRC-GITHUB","source_class":"GITHUB-HISTORY","priority":"P0","availability":"AVAILABLE","ingestion_status":"ACTIVE","version":1}
+{"record_type":"source_inventory","source_id":"SRC-MEMORY","source_class":"PROJECT-MEMORY","priority":"P1","availability":"PARTIAL","ingestion_status":"ACTIVE","version":1}
+{"record_type":"source_inventory","source_id":"SRC-DECISIONS","source_class":"CURRENT-CANONICAL-DECISIONS","priority":"P0","availability":"AVAILABLE","ingestion_status":"ACTIVE","version":1}
