@@ -1,0 +1,82 @@
+schema: qpfs/freeze-manifest/v1
+id: QPFS-PHASE-15-24
+status: approved
+
+phase:
+  start_step: 15
+  end_step: 24
+
+artifacts:
+  composite_eligibility_contract:
+    id: CEC-000001
+    version: v0.1
+    status: closed
+    decision: derived_profile
+  pilot:
+    id: QPP-000001
+    status: frozen
+    canonical_promotion: false
+  comparative_matrix:
+    id: PCM-000001
+    status: closed
+  canonical_parable_record:
+    id: CPR
+    version: v0.3
+    status: approved
+  engine_contracts:
+    version: v1.0
+    status: frozen
+  candidate_harvest_protocol:
+    id: CHP
+    version: v1.0
+    status: frozen
+  lexical_harvest:
+    id: QLH-000001
+    status: universe_frozen
+    root: "م ث ل"
+    reported_occurrence_count: 169
+    note: "Occurrence count is a lexical universe, not a parable count."
+  boundary_corpus:
+    id: QBC
+    version: v0.1
+    status: open
+  candidate_harvest_freeze:
+    id: QPCF
+    version: v1.0
+    status: frozen
+    freeze_scope: harvest_state
+
+locks:
+  canonical_qpu_corpus: locked
+  local_groups: locked
+  cross_quran_networks: locked
+  higher_order_discovery: locked
+
+approved_discoveries:
+  - id: 66
+    statement: "Multiple images do not prove a composite parable."
+  - id: 67
+    statement: "Composite is a derived structural profile, not a primary class."
+  - id: 68
+    statement: "Motion decision is required; positive motion is not."
+  - id: 69
+    statement: "Reader operation is more disciplined than presuming reader transformation."
+  - id: 70
+    statement: "UNRESOLVED is a valid legal state."
+
+non_frozen_claims:
+  - final_number_of_parables
+  - final_unit_boundaries
+  - final_candidate_count_as_canonical_truth
+  - final_group_structure
+  - final_networks
+
+next_campaign:
+  - step: "24.5"
+    name: Materialize Candidate Freeze Manifest
+  - step: 25
+    name: Candidate Triage Campaign
+  - step: 26
+    name: Boundary Resolution Campaign
+  - step: 27
+    name: Parable Decision Campaign
