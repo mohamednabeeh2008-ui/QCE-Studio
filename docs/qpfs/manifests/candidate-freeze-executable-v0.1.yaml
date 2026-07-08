@@ -1,0 +1,85 @@
+schema: qpfs/candidate-freeze-executable/v0.1
+id: QPCF-EXEC-000001
+step: "24.5"
+status: executable_baseline_frozen
+scope:
+  kind: pilot_proven_candidate_baseline
+  whole_quran_complete: false
+  prohibition: "Do not represent this baseline as the complete Quran-wide candidate corpus."
+
+materialization_pipeline:
+  reconstruct_lexical_intake: complete_for_registered_baseline
+  materialize_structural_candidates: complete_for_registered_baseline
+  materialize_traditional_candidates: complete_for_registered_baseline
+  normalize_references: complete
+  deduplicate_multichannel_entries: complete
+  preserve_provenance_edges: complete
+  register_overlaps_and_nested_units: complete
+  assign_stable_qpc_ids: complete
+  validate_manifest_integrity: pass
+  freeze_executable_manifest: complete
+
+candidates:
+  - id: QPC-000001
+    source: {surah: 2, ayah_start: 261, ayah_end: 261}
+    channels: [lexical, traditional]
+    boundary_status: resolved
+    overlap_status: none
+  - id: QPC-000002
+    source: {surah: 2, ayah_start: 264, ayah_end: 264}
+    channels: [lexical, traditional]
+    boundary_status: resolved
+    overlap_status: none
+  - id: QPC-000003
+    source: {surah: 2, ayah_start: 265, ayah_end: 265}
+    channels: [lexical, traditional]
+    boundary_status: resolved
+    overlap_status: none
+  - id: QPC-000004
+    source: {surah: 2, ayah_start: 266, ayah_end: 266}
+    channels: [structural, traditional]
+    boundary_status: reviewed
+    overlap_status: local_field_relation
+  - id: QPC-000005
+    source: {surah: 29, ayah_start: 41, ayah_end: 41}
+    channels: [lexical, traditional]
+    boundary_status: resolved
+    overlap_status: none
+  - id: QPC-000006
+    source: {surah: 18, ayah_start: 32, ayah_end: 44}
+    channels: [lexical, traditional]
+    boundary_status: reviewed
+    overlap_status: story_parable_boundary
+  - id: QPC-000007
+    source: {surah: 2, ayah_start: 17, ayah_end: 20}
+    channels: [lexical, traditional]
+    boundary_status: competing_subunits_preserved
+    overlap_status: multi_carrier
+  - id: QPC-000008
+    source: {surah: 2, ayah_start: 171, ayah_end: 171}
+    channels: [lexical, traditional]
+    boundary_status: resolved
+    overlap_status: none
+  - id: QPC-000009
+    source: {surah: 22, ayah_start: 73, ayah_end: 73}
+    channels: [lexical, traditional]
+    boundary_status: resolved
+    overlap_status: argumentative_scenario
+  - id: QPC-000010
+    source: {surah: 24, ayah_start: 39, ayah_end: 40}
+    channels: [structural, traditional]
+    boundary_status: competing_subunits_preserved
+    overlap_status: adjacent_images
+
+integrity:
+  stable_ids_unique: true
+  source_required: true
+  multichannel_duplicates_created: false
+  provenance_preserved: true
+  unresolved_boundaries_forced: false
+  canonical_qpu_created: false
+
+next_gate:
+  step: 25
+  allowed: true
+  applies_to: registered_baseline_only
