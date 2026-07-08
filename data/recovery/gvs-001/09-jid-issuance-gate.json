@@ -1,0 +1,1 @@
+{"step":9,"subject":"Adam","j_id":null,"status":"NOT-ISSUED","reason":"resolution gate not passed","historical_harvest_status":"COMPLETE-NO-ACTUAL-JID-ROWS-RECOVERED","source_commit":"4bb7df52b8dab5a9b7f2db34281a5be1d191cb00","rule":"never issue J-ID from schema, aggregate, or narrative claim alone"}
