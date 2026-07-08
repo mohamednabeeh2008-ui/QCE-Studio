@@ -1,0 +1,6 @@
+{"audit_id":"PPE09-000001","nar_id":"NAR-000018","parent_nar_id":"NAR-000008","lineage":"PRESERVED","boundary":"VERIFIED","id_continuity":"PASS","verdict":"ACCEPT"}
+{"audit_id":"PPE09-000002","nar_id":"NAR-000019","parent_nar_id":"NAR-000008","lineage":"PRESERVED","boundary":"VERIFIED","id_continuity":"PASS","verdict":"ACCEPT"}
+{"audit_id":"PPE09-000003","nar_id":"NAR-000020","parent_nar_id":"NAR-000009","lineage":"PRESERVED","boundary":"VERIFIED","id_continuity":"PASS","verdict":"ACCEPT"}
+{"audit_id":"PPE09-000004","nar_id":"NAR-000021","parent_nar_id":"NAR-000014","lineage":"PRESERVED","boundary":"VERIFIED","id_continuity":"PASS","verdict":"ACCEPT"}
+{"audit_id":"PPE09-000005","nar_id":"NAR-000022","parent_nar_id":"NAR-000014","lineage":"PRESERVED","boundary":"VERIFIED","id_continuity":"PASS","verdict":"ACCEPT"}
+{"summary":{"promoted":5,"accepted":5,"failed":0,"distributed_families_held":4,"next_global_nar_id":"NAR-000023"}}
