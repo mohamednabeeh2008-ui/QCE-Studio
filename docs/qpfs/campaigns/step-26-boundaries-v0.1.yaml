@@ -1,0 +1,21 @@
+schema: qpfs/boundary-campaign/v0.1
+id: QPFS-STEP-26
+status: complete_for_registered_baseline
+results:
+  QPC-000001: {state: RESOLVED, unit: "2:261"}
+  QPC-000002: {state: RESOLVED, unit: "2:264"}
+  QPC-000003: {state: RESOLVED, unit: "2:265"}
+  QPC-000004: {state: RESOLVED, unit: "2:266"}
+  QPC-000005: {state: RESOLVED, unit: "29:41"}
+  QPC-000006: {state: RESOLVED, unit: "18:32-44"}
+  QPC-000007: {state: COMPETING_BOUNDARIES, unit: "2:17-20", alternatives: ["2:17-18", "2:19-20"]}
+  QPC-000008: {state: RESOLVED, unit: "2:171"}
+  QPC-000009: {state: RESOLVED, unit: "22:73"}
+  QPC-000010: {state: COMPETING_BOUNDARIES, unit: "24:39-40", alternatives: ["24:39", "24:40"]}
+validation:
+  context_auto_merged: false
+  competing_boundaries_forced: false
+  pass: true
+next_gate:
+  step: 27
+  allowed: true
