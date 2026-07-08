@@ -1,0 +1,34 @@
+schema: qpfs/triage-campaign/v0.1
+id: QPFS-STEP-25
+status: complete_for_registered_baseline
+rule: "Triage prioritizes review and never confirms parable identity."
+
+allowed_states:
+  - READY_FOR_BOUNDARY_REVIEW
+  - NEEDS_SOURCE_REVIEW
+  - NEEDS_OVERLAP_REVIEW
+  - NEEDS_IDENTITY_REVIEW
+  - LOW_SIGNAL
+  - OUT_OF_SCOPE_CANDIDATE
+
+results:
+  QPC-000001: READY_FOR_BOUNDARY_REVIEW
+  QPC-000002: READY_FOR_BOUNDARY_REVIEW
+  QPC-000003: READY_FOR_BOUNDARY_REVIEW
+  QPC-000004: NEEDS_IDENTITY_REVIEW
+  QPC-000005: READY_FOR_BOUNDARY_REVIEW
+  QPC-000006: NEEDS_IDENTITY_REVIEW
+  QPC-000007: NEEDS_OVERLAP_REVIEW
+  QPC-000008: READY_FOR_BOUNDARY_REVIEW
+  QPC-000009: NEEDS_IDENTITY_REVIEW
+  QPC-000010: NEEDS_OVERLAP_REVIEW
+
+validation:
+  parable_identity_decisions_emitted: 0
+  canonical_promotions_emitted: 0
+  all_registered_candidates_triaged: true
+  pass: true
+
+next_gate:
+  step: 26
+  allowed: true

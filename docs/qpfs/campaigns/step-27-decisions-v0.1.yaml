@@ -1,0 +1,26 @@
+schema: qpfs/decision-campaign/v0.1
+id: QPFS-STEP-27
+status: complete_for_registered_baseline
+results:
+  QPC-000001: CONFIRMED
+  QPC-000002: CONFIRMED
+  QPC-000003: CONFIRMED
+  QPC-000004: CONFIRMED
+  QPC-000005: CONFIRMED
+  QPC-000006: CONFIRMED
+  QPC-000007: CONFIRMED
+  QPC-000008: CONFIRMED
+  QPC-000009: CONFIRMED
+  QPC-000010: UNRESOLVED
+summary:
+  confirmed: 9
+  probable: 0
+  possible: 0
+  rejected: 0
+  unresolved: 1
+  out_of_scope: 0
+  qpu_promotions: 0
+validation:
+  unresolved_preserved: true
+  canonical_corpus_created: false
+  pass: true
