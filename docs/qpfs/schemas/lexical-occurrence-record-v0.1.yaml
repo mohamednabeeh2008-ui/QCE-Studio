@@ -1,0 +1,76 @@
+schema: qpfs/lexical-occurrence-record/v0.1
+status: executable
+campaign: STEP-24.5A
+
+purpose: >-
+  Materialize one Quranic occurrence from the frozen lexical universe without
+  converting root occurrence into parable identity.
+
+required:
+  - occurrence_id
+  - source
+  - surface_form
+  - lemma
+  - root
+  - morphology
+  - usage_classification
+  - candidate_eligibility
+  - provenance
+
+fields:
+  occurrence_id:
+    type: string
+    pattern: '^QLO-[0-9]{6}$'
+    immutable: true
+  source:
+    required: [surah, ayah, token_index]
+  surface_form:
+    type: string
+  lemma:
+    type: string
+  root:
+    const: 'م ث ل'
+  morphology:
+    type: object
+    required: [form]
+  usage_classification:
+    enum:
+      - PARABLE_SIGNALING
+      - LIKENESS_SIMILARITY
+      - EQUIVALENCE_SAME_KIND
+      - DESCRIPTION_CONDITION
+      - FORM_REPRESENTATION
+      - OTHER_DERIVED_USE
+      - UNRESOLVED
+  candidate_eligibility:
+    enum:
+      - CANDIDATE_SIGNAL
+      - NON_PARABLE_LEXICAL_USE
+      - AMBIGUOUS_LEXICAL_USE
+      - CROSS_REFERENCE_ONLY
+  provenance:
+    type: list
+    min_items: 1
+    append_only: true
+
+forbidden:
+  - parable_decision
+  - canonical
+  - qpu_id
+  - journey
+  - stations
+  - formation_subject
+  - network_membership
+
+validation:
+  root_occurrence_is_not_parable_identity: true
+  source_required: true
+  morphology_required: true
+  provenance_required: true
+  unresolved_is_legal: true
+
+completion_gate:
+  expected_reported_universe_size: 169
+  require_row_level_evidence_for_every_counted_occurrence: true
+  require_unique_source_token_identity: true
+  require_reconciliation_before_qpc_assignment: true
