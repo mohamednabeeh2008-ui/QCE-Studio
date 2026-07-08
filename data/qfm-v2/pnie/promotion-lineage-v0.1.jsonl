@@ -1,0 +1,4 @@
+{"lineage_id":"PNL-000001","family_id":"FAM-000001","source_child":"PC-NOAH-DELIVERANCE","decision":"KEEP_FAMILY_ID","assigned_nar_ids":[],"reason":"Coverage family only"}
+{"lineage_id":"PNL-000002","family_id":"FAM-000002","source_child":"PC-ABRAHAM-GUESTS","decision":"PROMOTE_LOCAL_INSTANCES","assigned_nar_ids":["NAR-000023","NAR-000024","NAR-000025"],"source_instances":["LI-000003","LI-000004","LI-000005"]}
+{"lineage_id":"PNL-000003","family_id":"FAM-000003","source_child":"PC-ABRAHAM-ANNUNCIATION","decision":"PROMOTE_LOCAL_INSTANCES","assigned_nar_ids":["NAR-000026","NAR-000027","NAR-000028"],"source_instances":["LI-000006","LI-000007","LI-000008"]}
+{"lineage_id":"PNL-000004","family_id":"FAM-000004","source_child":"PC-ABRAHAM-LOT-NEWS","decision":"PROMOTE_LOCAL_INSTANCES","assigned_nar_ids":["NAR-000029","NAR-000030","NAR-000031"],"source_instances":["LI-000009","LI-000010","LI-000011"]}
