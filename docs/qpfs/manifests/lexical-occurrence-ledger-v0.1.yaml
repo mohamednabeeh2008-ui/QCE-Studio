@@ -1,0 +1,69 @@
+schema: qpfs/lexical-occurrence-ledger/v0.1
+id: QLH-000001
+status: MATERIALIZATION_OPEN
+campaign: STEP-24.5A
+
+purpose: >-
+  Hold the row-level lexical universe for root م ث ل while preserving the
+  distinction between occurrence retrieval and parable candidacy.
+
+reported_universe:
+  root: 'م ث ل'
+  occurrence_count: 169
+  count_status: REPORTED_NOT_ROW_VERIFIED
+  forms_reported:
+    تَمَثَّلَ: 1
+    أَمْثَل: 1
+    تَمَاثِيل: 2
+    مَثَل: 88
+    مِثْل: 75
+    مَثُلَات: 1
+    مُثْلَى: 1
+  arithmetic_check: 169
+
+row_materialization:
+  schema: qpfs/lexical-occurrence-record/v0.1
+  materialized_rows: 0
+  verified_rows: 0
+  rejected_rows: 0
+  unresolved_rows: 0
+  next_occurrence_id: QLO-000001
+  state: BLOCKED_PENDING_ROW_LEVEL_SOURCE_DATA
+
+integrity_rules:
+  - "Every counted occurrence requires a unique surah/ayah/token identity."
+  - "No reported aggregate may be converted into synthetic rows."
+  - "One occurrence may produce zero candidate units."
+  - "Several occurrences may point to one candidate unit."
+  - "Candidate eligibility does not decide parable identity."
+  - "QPC assignment is prohibited until cross-channel reconciliation."
+
+classification_buckets:
+  PARABLE_SIGNALING: 0
+  LIKENESS_SIMILARITY: 0
+  EQUIVALENCE_SAME_KIND: 0
+  DESCRIPTION_CONDITION: 0
+  FORM_REPRESENTATION: 0
+  OTHER_DERIVED_USE: 0
+  UNRESOLVED: 0
+
+eligibility_buckets:
+  CANDIDATE_SIGNAL: 0
+  NON_PARABLE_LEXICAL_USE: 0
+  AMBIGUOUS_LEXICAL_USE: 0
+  CROSS_REFERENCE_ONLY: 0
+
+completion_gate:
+  row_count_equals_verified_universe: false
+  all_rows_have_source_token_identity: false
+  aggregate_distribution_reconciled: false
+  classification_complete: false
+  eligibility_complete: false
+  ready_for_24_5B: false
+
+next_action:
+  name: ingest_verified_occurrence_rows
+  rule: >-
+    Add rows only from a source that exposes the Quran reference and token-level
+    lexical/morphological evidence for each occurrence. Do not fabricate rows
+    from the aggregate count.
