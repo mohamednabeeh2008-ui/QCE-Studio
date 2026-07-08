@@ -1,0 +1,6 @@
+{"gap_id":"GAP-001","target":"actual-historical-j-id-rows","class":"BLOCKER","blocks":["historical-journey-population-count"],"recovery_cost":"HIGH","expected_value":"CRITICAL","status":"OPEN"}
+{"gap_id":"GAP-002","target":"adam-eight-stage-names-order-functions","class":"HIGH-VALUE","blocks":["historical-adam-chain"],"recovery_cost":"MEDIUM","expected_value":"HIGH","status":"OPEN"}
+{"gap_id":"GAP-003","target":"adam-canon-pack-original-content","class":"HIGH-VALUE","blocks":["historical-product-lineage"],"recovery_cost":"HIGH","expected_value":"HIGH","status":"OPEN"}
+{"gap_id":"GAP-004","target":"movement-to-candidate-edge","class":"BLOCKER","blocks":["complete-provenance-chain"],"recovery_cost":"HIGH","expected_value":"CRITICAL","status":"OPEN"}
+{"gap_id":"GAP-005","target":"candidate-to-hypothesis-historical-rows","class":"BLOCKER","blocks":["complete-provenance-chain"],"recovery_cost":"HIGH","expected_value":"CRITICAL","status":"OPEN"}
+{"gap_id":"GAP-006","target":"journey-to-station-crosswalk","class":"NON-BLOCKING","blocks":["historical-product-mapping"],"recovery_cost":"MEDIUM","expected_value":"MEDIUM","status":"OPEN"}
