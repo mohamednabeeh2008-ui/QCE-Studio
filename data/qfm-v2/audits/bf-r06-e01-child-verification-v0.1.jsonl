@@ -1,0 +1,9 @@
+{"id":"E01-SPLIT-000001","parent":"NAR-000008","child":"PC-NOAH-ARK-BUILD","refs":["11:36-37","23:27","54:13"],"status":"PASS_PROVISIONAL","permanent_nar_id":null}
+{"id":"E01-SPLIT-000002","parent":"NAR-000008","child":"PC-NOAH-ARK-MOCKERY","refs":["11:38"],"status":"PASS_PROVISIONAL","permanent_nar_id":null}
+{"id":"E01-SPLIT-000003","parent":"NAR-000009","child":"PC-NOAH-FLOOD","refs":["11:40-44","23:27","54:11-12"],"status":"PASS_PROVISIONAL","permanent_nar_id":null}
+{"id":"E01-SPLIT-000004","parent":"NAR-000009","child":"PC-NOAH-DELIVERANCE","refs":["7:64","10:73","23:28-29","26:119","29:15","54:13-15"],"status":"PASS_PROVISIONAL","permanent_nar_id":null}
+{"id":"E01-SPLIT-000005","parent":"NAR-000014","child":"PC-ABRAHAM-IDOL-ACTION","refs":["21:57-58","37:91-93"],"status":"PASS_PROVISIONAL","permanent_nar_id":null}
+{"id":"E01-SPLIT-000006","parent":"NAR-000014","child":"PC-ABRAHAM-IDOL-DIALOGUE","refs":["21:59-67","37:94-96"],"status":"PASS_PROVISIONAL","permanent_nar_id":null}
+{"id":"E01-SPLIT-000007","parent":"NAR-000016","child":"PC-ABRAHAM-GUESTS","refs":["11:69-70","15:51-52","51:24-28"],"status":"PASS_PROVISIONAL","permanent_nar_id":null}
+{"id":"E01-SPLIT-000008","parent":"NAR-000016","child":"PC-ABRAHAM-ANNUNCIATION","refs":["11:71-73","15:53-56","51:28-30"],"status":"PASS_PROVISIONAL","permanent_nar_id":null}
+{"id":"E01-SPLIT-000009","parent":"NAR-000016","child":"PC-ABRAHAM-LOT-NEWS","refs":["11:74-76","15:57-60","51:31-37"],"status":"PASS_PROVISIONAL","permanent_nar_id":null}
