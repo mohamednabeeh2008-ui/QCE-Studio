@@ -1,0 +1,4 @@
+{"record_type":"audit_control","status":"COMPLETE","rule":"attach-only-when-historical-edge-is-recovered"}
+{"witness_id":"QW-001-006","reference":"1:6","witness_status":"EXACT-RECOVERED","linked_j_ids":[],"edge_status":"NOT-YET-RECOVERED","finding":"Witness registry presence does not prove a journey attachment"}
+{"subject_id":"FSUB-ADAM","linked_j_ids":[],"linked_witnesses":[],"attachment_status":"NOT-YET-RECOVERED"}
+{"subject_id":"FSUB-MOSES","linked_j_ids":[],"linked_witnesses":[],"attachment_status":"NOT-YET-RECOVERED"}
