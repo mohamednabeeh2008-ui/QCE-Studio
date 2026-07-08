@@ -1,0 +1,4 @@
+{"record_type":"harvest_control","target":"historical-J-ID-rows","status":"COMPLETE-NO-ACTUAL-JID-ROWS-RECOVERED","rule":"schema-or-governance-is-not-a-row"}
+{"evidence_type":"registry_control","source_commit":"3432dede665f433fc478813a276b94f1b3ce37a1","finding":"resolved journey registry existed but contained only control metadata","actual_j_id":null,"recovery_status":"EXACT-RECOVERED"}
+{"evidence_type":"schema","source_commit":"afebf158c31a05cf3f4d121128b0d348a488b115","finding":"canonical J-ID record shape recovered","actual_j_id":null,"recovery_status":"EXACT-RECOVERED"}
+{"evidence_type":"identity-law","source_commit":"61e5c0fd306dd1c8fd16a46c666245a800de0203","finding":"J-ID counting follows independent transition identities","actual_j_id":null,"recovery_status":"EXACT-RECOVERED"}
