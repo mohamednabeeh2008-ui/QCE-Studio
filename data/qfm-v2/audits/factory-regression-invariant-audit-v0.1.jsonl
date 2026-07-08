@@ -1,0 +1,11 @@
+{"audit_id":"FRIA-000001","test":"GLOBAL_DUPLICATE_TEST","scope":"NAR-000001..NAR-000031 plus four families","result":"PASS_WITH_STRUCTURAL_DISTINCTIONS","finding":"No identifier collision detected; family records are not counted as narrative duplicates."}
+{"audit_id":"FRIA-000002","test":"ORPHAN_TEST","scope":"BF-R06 and PNIE promoted records","result":"PASS","finding":"All promoted child and local-instance records retain parent or family lineage."}
+{"audit_id":"FRIA-000003","test":"PARENT_CHILD_LINEAGE_TEST","scope":"NAR-000018..NAR-000022","result":"PASS","finding":"Five BF-R06 narratives preserve parent provenance containers."}
+{"audit_id":"FRIA-000004","test":"FAMILY_INSTANCE_TEST","scope":"FAM-000001..FAM-000004 and LI-000001..LI-000011","result":"PASS","finding":"Eleven local instances belong to exactly one family; nine promoted narratives map to one local instance each."}
+{"audit_id":"FRIA-000005","test":"ID_CONTINUITY_TEST","scope":"global NAR sequence","result":"PASS","finding":"Permanent narrative IDs continue through NAR-000031; next available ID is NAR-000032."}
+{"audit_id":"FRIA-000006","test":"BOUNDARY_INVARIANT_TEST","scope":"BF-R01..BF-R06 plus PNIE","result":"PASS","finding":"Local boundary verification remains separate from cross-surah coverage and identity verdicts."}
+{"audit_id":"FRIA-000007","test":"COVERAGE_LEAK_TEST","scope":"FAM-000001","result":"PASS","finding":"Noah deliverance remains family-only and received no permanent NAR-ID."}
+{"audit_id":"FRIA-000008","test":"FALSE_MERGE_TEST","scope":"three Abraham parallel families","result":"PASS","finding":"Parallel local instances were not collapsed into one cross-surah scene."}
+{"audit_id":"FRIA-000009","test":"FALSE_SPLIT_TEST","scope":"promoted local instances","result":"PASS_WITH_REVIEW_FLAG","finding":"No mechanical split was promoted without BF-R06 or PNIE lineage; future batches must preserve this invariant."}
+{"audit_id":"FRIA-000010","test":"REGRESSION_GATE","scope":"Adam, Noah, Abraham factory state","result":"PASS","finding":"No blocking invariant failure detected in the current registry state."}
+{"summary":{"tests":10,"pass":8,"pass_with_qualification":2,"fail":0,"blocking_defects":0,"calibration_gate":"CLOSED","factory_status":"READY_FOR_CONTROLLED_BATCH_004","next_global_nar_id":"NAR-000032"}}
