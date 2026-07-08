@@ -1,0 +1,5 @@
+{"record_type":"recovery_task","task_id":"REC-001","target":"formation-movement-row-set","priority":"P0","required_for":"full-journey-recovery","status":"OPEN","success_evidence":"original rows or independently corroborated row fragments","version":1}
+{"record_type":"recovery_task","task_id":"REC-002","target":"candidate-unit-632-row-set","priority":"P0","required_for":"full-journey-recovery","status":"OPEN","success_evidence":"row-level candidate records","version":1}
+{"record_type":"recovery_task","task_id":"REC-003","target":"movement-candidate-crosswalk","priority":"P0","required_for":"pipeline-provenance","status":"OPEN","success_evidence":"explicit crosswalk or identifier co-occurrence","version":1}
+{"record_type":"recovery_task","task_id":"REC-004","target":"candidate-hypothesis-historical-rows","priority":"P0","required_for":"journey-lineage","status":"OPEN","success_evidence":"historical JH rows linked to candidates","version":1}
+{"record_type":"recovery_task","task_id":"REC-005","target":"journey-station-crosswalk","priority":"P1","required_for":"product-lineage","status":"OPEN","success_evidence":"row-level mapping evidence","version":1}
