@@ -1,0 +1,1 @@
+{"schema_version":"qce-evidence-yield/v1","metrics":{"new_exact_rows":0,"new_recovered_edges":0,"new_closed_gaps":0,"new_complete_chains":0},"search_effort_units":0,"recovery_yield":null,"measurement_rule":"useful-new-evidence divided by search-effort; governance documents do not count as recovered rows","version":1}
