@@ -1,0 +1,38 @@
+{
+  "audit_id": "CBFA-0001",
+  "title": "Cross-Batch Factory Audit v0.1",
+  "scope": ["BATCH_001_ADAM", "BATCH_002_NOAH", "BATCH_003_ABRAHAM"],
+  "input_reconciliation_ids": {"from": "REC-000001", "to": "REC-000018"},
+  "population": {"all_reconciliation_rows": 18, "narrative_rows": 17, "subject_rows_excluded_from_boundary_accuracy": 1},
+  "overall_reconciliation": {"MATCHED": 9, "MATCHED_WITH_REVIEW": 4, "CONFLICT": 5},
+  "narrative_only_reconciliation": {"MATCHED": 8, "MATCHED_WITH_REVIEW": 4, "CONFLICT": 5},
+  "explicit_boundary_gates_batches_002_003": {"PASS": 5, "REVIEW": 4, "HOLD": 3},
+  "batch_profiles": {
+    "BATCH_001_ADAM": {"narratives": 5, "matched": 3, "review": 0, "conflict": 2, "factory_mode": "PRE_CALIBRATION_RETROSPECTIVE"},
+    "BATCH_002_NOAH": {"narratives": 6, "matched": 2, "review": 2, "conflict": 2, "factory_mode": "EARLY_PRECHECK"},
+    "BATCH_003_ABRAHAM": {"narratives": 6, "matched": 3, "review": 2, "conflict": 1, "factory_mode": "FULL_BF_R01_R05"}
+  },
+  "rule_findings": {
+    "BF-R01": {"verdict": "KEEP", "finding": "Bounded trigger-response-immediate-outcome repeatedly aligns with stable local PASS scenes."},
+    "BF-R02": {"verdict": "KEEP_HARD", "finding": "Cross-surah convergence must not establish one canonical scene; it correctly blocks false merges."},
+    "BF-R03": {"verdict": "KEEP_HARD", "finding": "Compound sequential acts are the dominant source of HOLD/REVIEW and require internal split testing."},
+    "BF-R04": {"verdict": "KEEP", "finding": "Adjacency pressure appears in Adam, Noah, and Abraham and must remain distinct from identity."},
+    "BF-R05": {"verdict": "KEEP_HARD", "finding": "ABC convergence proves coverage, not boundary identity; all 17 narrative rows converge across axes while 5 still conflict."}
+  },
+  "statistical_signals": {
+    "all_narratives_abc_converged": true,
+    "abc_convergence_conflict_count": 5,
+    "abc_convergence_conflict_rate": 0.2941,
+    "pre_full_calibration_conflict_rate_batches_001_002": 0.3636,
+    "full_calibration_conflict_rate_batch_003": 0.1667,
+    "interpretation": "The observed conflict rate fell after full calibration, but the sample is too small and heterogeneous to claim causal accuracy improvement. Treat as a promising operational signal only."
+  },
+  "decision": {
+    "factory_status": "APPROVED_WITH_HARDENING",
+    "rules_to_remove": [],
+    "rules_to_modify": [],
+    "new_required_gate": "BF-R06_INTERNAL_SPLIT_PROBE",
+    "reason": "The five rules are directionally consistent across all three batches; the unresolved weakness is not rule failure but lack of a mandatory internal split probe for HOLD/REVIEW compound candidates."
+  },
+  "next_gate": "Before Batch 004 production, define and lock BF-R06, then retro-run it on all nine non-clean narrative cases: five CONFLICT plus four MATCHED_WITH_REVIEW."
+}
