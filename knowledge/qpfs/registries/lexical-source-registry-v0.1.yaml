@@ -1,13 +1,64 @@
 schema: qpfs/lexical-source-registry/v0.1
-status: open
+status: active
 step: 24.5A
 promotion_lock: true
 
-sources: []
+sources:
+  - source_id: QLS-000001
+    status: accepted
+    title: Quranic Arabic Corpus — Morphological Data
+    provider: Quranic Arabic Corpus
+    source_type: token_level_quranic_morphology
+    access_reference: https://corpus.quran.com/download/
+    license_or_usage_basis: >-
+      Quranic Arabic Corpus Version 0.4 is distributed under the GNU General
+      Public License and its published terms of use; source attribution and a
+      link to corpus.quran.com are required for derived or substantial uses.
+    version_or_snapshot: "0.4"
+    retrieval_date: "2026-07-09"
+    coverage: Quran-wide morphological annotation
+    token_identity_model: >-
+      Stable location tuple (surah:ayah:word), exposed by word-level pages and
+      used as the reproducible token locator.
+    morphology_fields:
+      - surah
+      - ayah
+      - token_position
+      - surface
+      - lemma
+      - root
+      - morphological_form
+    provenance_notes: >-
+      Admission was verified against the official data-download page,
+      morphological-feature documentation, and a live row-level word page.
+      The official documentation explicitly defines ROOT and LEM features and
+      morphological form features; the word page exposes a stable token
+      location such as (2:261:1), its surface/transliteration, root, and
+      morphological analysis.
+    evidence:
+      download_and_version: https://corpus.quran.com/download/
+      morphology_documentation: https://corpus.quran.com/documentation/morphologicalfeatures.jsp
+      row_level_probe: https://corpus.quran.com/wordmorphology.jsp?location=(2:261:1)
+    capability_review:
+      Quran_wide_coverage: pass
+      surah_and_ayah_reference: pass
+      token_position: pass
+      surface_form: pass
+      lemma: pass
+      root: pass
+      morphological_form: pass
+      reproducible_source_locator: pass
+    admission_decision: accepted
+    admission_rationale: >-
+      All capabilities required by the Lexical Source Intake Contract v0.1 are
+      supported and provenance is reproducible. Acceptance registers the
+      source only; it does not materialize QLO-000001 and does not assign QPC
+      or QPU identity.
 
 candidate_sources:
   - candidate_id: QLS-CAND-001
-    status: requires_evidence_review
+    resolved_to: QLS-000001
+    status: accepted
     source_role: token_level_quranic_morphology
     required_capabilities:
       - Quran_wide_coverage
@@ -18,10 +69,11 @@ candidate_sources:
       - root
       - morphological_form
       - reproducible_source_locator
-    admission_decision: pending
+    admission_decision: accepted
     reason: >-
-      No source is admitted by name until its version, usage basis, field
-      coverage, and row-level provenance have been inspected and recorded.
+      Evidence review completed against official source documentation and a
+      reproducible row-level probe. The candidate has been promoted to the
+      accepted source registry as QLS-000001.
 
 registry_rules:
   - candidate_status_is_not_acceptance
@@ -31,8 +83,11 @@ registry_rules:
 
 step_state:
   source_contract: complete
-  accepted_source_count: 0
+  accepted_source_count: 1
   lexical_occurrence_rows: 0
   gate: LEXICAL_SOURCE_READY
-  gate_status: blocked
-  next_action: inspect_and_register_first_evidence_backed_source
+  gate_status: passed
+  qlo_000001_status: not_opened
+  step_24_5B_status: unblocked
+  promotion_lock: true
+  next_action: materialize_QLO_000001_from_registered_source_only
