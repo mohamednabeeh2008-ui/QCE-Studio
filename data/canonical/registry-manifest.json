@@ -1,0 +1,17 @@
+{
+  "schema_version": "qce-registry-manifest/v1",
+  "status": "active",
+  "registries": [
+    {"id":"quranic-witnesses","path":"data/canonical/quranic-witnesses.jsonl","id_prefix":"QW"},
+    {"id":"formation-subjects","path":"data/canonical/formation-subjects.jsonl","id_prefix":"FSUB"},
+    {"id":"event-families","path":"data/canonical/event-families.jsonl","id_prefix":"EF"},
+    {"id":"formation-movements","path":"data/canonical/formation-movements.jsonl","id_prefix":"FM"},
+    {"id":"candidate-units","path":"data/canonical/candidate-units.jsonl","id_prefix":"CU"},
+    {"id":"journey-hypotheses","path":"data/canonical/journey-hypotheses.jsonl","id_prefix":"JH"},
+    {"id":"resolved-journeys","path":"data/canonical/resolved-journeys.jsonl","id_prefix":"J"},
+    {"id":"formation-stations","path":"data/canonical/formation-stations.jsonl","id_prefix":"ST"},
+    {"id":"provenance-edges","path":"data/canonical/provenance-edges.jsonl","id_prefix":"PE"}
+  ],
+  "evidence_states":["EXACT-RECOVERED","CORROBORATED-RECOVERED","RECONSTRUCTED","NOT-YET-RECOVERED"],
+  "canonical_states":["CANDIDATE","REVIEW","CANONICAL","REJECTED","HOLD"]
+}
