@@ -1,0 +1,11 @@
+{"family_id":"FAM-000001","source_child":"PC-NOAH-DELIVERANCE","local_instance_id":"LI-000001","surah":11,"witness":"11:44","boundary":"LOCAL","status":"EXTRACTED"}
+{"family_id":"FAM-000001","source_child":"PC-NOAH-DELIVERANCE","local_instance_id":"LI-000002","surah":23,"witness":"23:28-29","boundary":"LOCAL","status":"EXTRACTED"}
+{"family_id":"FAM-000002","source_child":"PC-ABRAHAM-GUESTS","local_instance_id":"LI-000003","surah":11,"witness":"11:69-70","boundary":"LOCAL","status":"EXTRACTED"}
+{"family_id":"FAM-000002","source_child":"PC-ABRAHAM-GUESTS","local_instance_id":"LI-000004","surah":15,"witness":"15:51-53","boundary":"LOCAL","status":"EXTRACTED"}
+{"family_id":"FAM-000002","source_child":"PC-ABRAHAM-GUESTS","local_instance_id":"LI-000005","surah":51,"witness":"51:24-28","boundary":"LOCAL","status":"EXTRACTED"}
+{"family_id":"FAM-000003","source_child":"PC-ABRAHAM-ANNUNCIATION","local_instance_id":"LI-000006","surah":11,"witness":"11:71-73","boundary":"LOCAL","status":"EXTRACTED"}
+{"family_id":"FAM-000003","source_child":"PC-ABRAHAM-ANNUNCIATION","local_instance_id":"LI-000007","surah":15,"witness":"15:53-56","boundary":"LOCAL","status":"EXTRACTED"}
+{"family_id":"FAM-000003","source_child":"PC-ABRAHAM-ANNUNCIATION","local_instance_id":"LI-000008","surah":51,"witness":"51:28-30","boundary":"LOCAL","status":"EXTRACTED"}
+{"family_id":"FAM-000004","source_child":"PC-ABRAHAM-LOT-NEWS","local_instance_id":"LI-000009","surah":11,"witness":"11:74-76","boundary":"LOCAL","status":"EXTRACTED"}
+{"family_id":"FAM-000004","source_child":"PC-ABRAHAM-LOT-NEWS","local_instance_id":"LI-000010","surah":15,"witness":"15:57-60","boundary":"LOCAL","status":"EXTRACTED"}
+{"family_id":"FAM-000004","source_child":"PC-ABRAHAM-LOT-NEWS","local_instance_id":"LI-000011","surah":51,"witness":"51:31-37","boundary":"LOCAL","status":"EXTRACTED"}
