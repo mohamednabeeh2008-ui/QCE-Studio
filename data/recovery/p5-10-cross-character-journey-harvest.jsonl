@@ -1,0 +1,6 @@
+{"record_type":"harvest_control","status":"COMPLETE-FIRST-CROSS-CHARACTER-PASS","rule":"subject-presence-is-not-journey-recovery"}
+{"subject_id":"FSUB-ADAM","subject":"Adam","subject_recovery":"CORROBORATED-RECOVERED","actual_j_ids":[],"journey_recovery":"NOT-YET-RECOVERED"}
+{"subject_id":"FSUB-MOSES","subject":"Moses","subject_recovery":"CORROBORATED-RECOVERED","actual_j_ids":[],"journey_recovery":"NOT-YET-RECOVERED"}
+{"subject":"Noah","subject_recovery":"NOT-YET-RECOVERED-IN-CURRENT-MACHINE-REGISTRY","actual_j_ids":[],"journey_recovery":"NOT-YET-RECOVERED"}
+{"subject":"Abraham","subject_recovery":"NOT-YET-RECOVERED-IN-CURRENT-MACHINE-REGISTRY","actual_j_ids":[],"journey_recovery":"NOT-YET-RECOVERED"}
+{"subject":"Joseph","subject_recovery":"NOT-YET-RECOVERED-IN-CURRENT-MACHINE-REGISTRY","actual_j_ids":[],"journey_recovery":"NOT-YET-RECOVERED"}
