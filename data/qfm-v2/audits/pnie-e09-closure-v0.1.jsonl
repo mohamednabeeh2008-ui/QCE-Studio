@@ -1,0 +1,5 @@
+{"audit_id":"PNIE-E09-000001","family_id":"FAM-000001","verdict":"COVERAGE_FAMILY_ONLY","nar_ids":[],"lineage":"PASS","identity":"PASS","result":"ACCEPT_FAMILY_ONLY"}
+{"audit_id":"PNIE-E09-000002","family_id":"FAM-000002","verdict":"PARALLEL_RETELLING_FAMILY","nar_ids":["NAR-000023","NAR-000024","NAR-000025"],"lineage":"PASS","identity":"PASS","result":"ACCEPT"}
+{"audit_id":"PNIE-E09-000003","family_id":"FAM-000003","verdict":"PARALLEL_RETELLING_FAMILY","nar_ids":["NAR-000026","NAR-000027","NAR-000028"],"lineage":"PASS","identity":"PASS","result":"ACCEPT"}
+{"audit_id":"PNIE-E09-000004","family_id":"FAM-000004","verdict":"PARALLEL_RETELLING_FAMILY","nar_ids":["NAR-000029","NAR-000030","NAR-000031"],"lineage":"PASS","identity":"PASS","result":"ACCEPT"}
+{"summary":{"families_processed":4,"local_instances_extracted":11,"permanent_narratives_added":9,"coverage_families_retained":1,"failed":0,"next_global_nar_id":"NAR-000032","pnie_status":"CALIBRATED_ON_FIRST_FOUR_FAMILIES"}}
