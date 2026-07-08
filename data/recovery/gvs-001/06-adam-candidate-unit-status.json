@@ -1,0 +1,1 @@
+{"step":6,"subject":"Adam","candidate_unit_id":null,"status":"HISTORICAL-CANDIDATE-UNIT-NOT-RECOVERED","population_context":{"candidate_units_final":632,"status":"HISTORICAL-AGGREGATE-NOT-A-ROW"},"rule":"aggregate count cannot generate an Adam candidate row"}
