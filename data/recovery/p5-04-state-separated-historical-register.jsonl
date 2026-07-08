@@ -1,0 +1,9 @@
+{"state":"APPROVED","asset":"project-identity","value":"Quranic Formation Journeys","recovery_status":"EXACT-RECOVERED"}
+{"state":"APPROVED","asset":"adam-book-position","value":"BOOK-ONE","recovery_status":"EXACT-RECOVERED"}
+{"state":"APPROVED","asset":"adam-stage-count","value":8,"recovery_status":"EXACT-RECOVERED"}
+{"state":"WORKING","asset":"adam-stage-identities","value":null,"recovery_status":"NOT-YET-RECOVERED"}
+{"state":"WORKING","asset":"adam-canon-pack","value":null,"recovery_status":"NOT-YET-RECOVERED"}
+{"state":"HISTORICAL","asset":"CVT-v1","score":"94/100","canonical":false,"recovery_status":"EXACT-RECOVERED"}
+{"state":"HISTORICAL","asset":"CVT-v2","score":"97/100","canonical":false,"recovery_status":"EXACT-RECOVERED"}
+{"state":"HISTORICAL","asset":"CVT-v3","score":"98.4/100 engineering","canonical":false,"later_status":"support-tool","recovery_status":"EXACT-RECOVERED"}
+{"state":"HISTORICAL","asset":"VBT-v1","score":"99.6/100 theoretical","canonical":false,"later_status":"insufficient","recovery_status":"EXACT-RECOVERED"}
