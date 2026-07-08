@@ -1,0 +1,5 @@
+{"trace_id":"ADAM-8-COUNT","claim":"Adam journey has eight formation stages","status":"EXACT-RECOVERED","value":8,"source_commit":"f9a6defc21c0eefb7fbcc27daba95173cc14203b"}
+{"trace_id":"ADAM-8-NAMES","claim":"Historical names of the eight stages","status":"NOT-YET-RECOVERED","value":null,"anti_invention_lock":true}
+{"trace_id":"ADAM-8-ORDER","claim":"Historical order of the eight stages","status":"NOT-YET-RECOVERED","value":null,"anti_invention_lock":true}
+{"trace_id":"ADAM-8-FUNCTIONS","claim":"Historical formation function of each stage","status":"NOT-YET-RECOVERED","value":null,"anti_invention_lock":true}
+{"trace_id":"ADAM-8-HISTORICAL-WORK","claim":"Names, order, and functions were explicitly listed as recovery work","status":"EXACT-RECOVERED","source_commit":"5a83a20f698dc10aec51c25c919386cfb55dcfd7"}
