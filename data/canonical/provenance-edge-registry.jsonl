@@ -1,0 +1,3 @@
+{"record_type":"provenance_edge","edge_id":"EDGE-03","from_layer":"formation-movement","to_layer":"candidate-unit","relationship_status":"UNKNOWN","evidence_state":"NOT-YET-RECOVERED","canonical_status":"HOLD","version":1}
+{"record_type":"provenance_edge","edge_id":"EDGE-04","from_layer":"candidate-unit","to_layer":"journey-hypothesis","relationship_status":"GOVERNANCE-ONLY","evidence_state":"CORROBORATED-RECOVERED","canonical_status":"HOLD","version":1}
+{"record_type":"provenance_edge","edge_id":"EDGE-06","from_layer":"resolved-journey","to_layer":"formation-station","relationship_status":"UNKNOWN","evidence_state":"NOT-YET-RECOVERED","canonical_status":"HOLD","version":1}
