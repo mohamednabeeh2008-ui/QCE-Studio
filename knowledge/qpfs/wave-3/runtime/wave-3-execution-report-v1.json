@@ -1,0 +1,26 @@
+{
+  "schema": "qpfs/wave-3-execution-report/v1.0",
+  "wave": "WAVE_3_CONTEXTUAL_RECONSTRUCTION_CLASSIFICATION_AND_ROOT_BLIND_DISCOVERY",
+  "status": "OPEN_BLOCKED_ON_EXTERNAL_AUTHORITIES",
+  "entry_gate": "PASS",
+  "wave_2_authority": "QSIM-000003",
+  "root_aware_queue_count": 69,
+  "unique_candidate_ids": 69,
+  "context_hydration": {
+    "status": "BLOCKED",
+    "reason": "NO_REGISTERED_TRACEABLE_QURAN_CONTEXT_AUTHORITY_IN_WAVE_3_INPUTS"
+  },
+  "root_blind_discovery": {
+    "status": "BLOCKED",
+    "reason": "NO_REGISTERED_CORPUS_WIDE_DISCOVERY_AUTHORITY_IN_WAVE_3_INPUTS"
+  },
+  "completed_now": [
+    "WAVE_2_ENTRY_GATE",
+    "ROOT_AWARE_INVESTIGATION_QUEUE_MATERIALIZATION",
+    "IDENTITY_UNIQUENESS_GATE",
+    "PREMATURE_DECISION_QPU_GUARD"
+  ],
+  "canonical_parable_decisions_created": false,
+  "qpu_created": false,
+  "next_required_action": "REGISTER_TRACEABLE_QURAN_CONTEXT_AND_CORPUS_WIDE_DISCOVERY_AUTHORITIES"
+}
