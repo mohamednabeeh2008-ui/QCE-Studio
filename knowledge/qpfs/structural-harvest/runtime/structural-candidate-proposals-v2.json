@@ -1,0 +1,2135 @@
+{
+  "schema": "qpfs/structural-candidate-proposals/v2.0",
+  "status": "MATERIALIZED",
+  "source_count": 169,
+  "candidate_count": 69,
+  "candidates": [
+    {
+      "candidate_id": "QPC-000001",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000001",
+        "QLO-000002"
+      ],
+      "source_locators": [
+        "2:17:1",
+        "2:17:2"
+      ],
+      "initial_boundary": "2:17",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000001",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        },
+        {
+          "from": "QLO-000002",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000002",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000003",
+        "QLO-000004"
+      ],
+      "source_locators": [
+        "2:26:7",
+        "2:26:28"
+      ],
+      "initial_boundary": "2:26",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000003",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        },
+        {
+          "from": "QLO-000004",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000003",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000005",
+        "QLO-000006"
+      ],
+      "source_locators": [
+        "2:171:1",
+        "2:171:4"
+      ],
+      "initial_boundary": "2:171",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000005",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        },
+        {
+          "from": "QLO-000006",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000004",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000007"
+      ],
+      "source_locators": [
+        "2:214:8"
+      ],
+      "initial_boundary": "2:214",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000007",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000005",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000008",
+        "QLO-000009"
+      ],
+      "source_locators": [
+        "2:261:1",
+        "2:261:8"
+      ],
+      "initial_boundary": "2:261",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000008",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        },
+        {
+          "from": "QLO-000009",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000006",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000010",
+        "QLO-000011"
+      ],
+      "source_locators": [
+        "2:264:19",
+        "2:264:20"
+      ],
+      "initial_boundary": "2:264",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000010",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        },
+        {
+          "from": "QLO-000011",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000007",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000012",
+        "QLO-000013"
+      ],
+      "source_locators": [
+        "2:265:1",
+        "2:265:11"
+      ],
+      "initial_boundary": "2:265",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000012",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        },
+        {
+          "from": "QLO-000013",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000008",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000014",
+        "QLO-000015"
+      ],
+      "source_locators": [
+        "3:59:2",
+        "3:59:6"
+      ],
+      "initial_boundary": "3:59",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000014",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        },
+        {
+          "from": "QLO-000015",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000009",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000016",
+        "QLO-000017"
+      ],
+      "source_locators": [
+        "3:117:1",
+        "3:117:8"
+      ],
+      "initial_boundary": "3:117",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000016",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        },
+        {
+          "from": "QLO-000017",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000010",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000019"
+      ],
+      "source_locators": [
+        "6:122:13"
+      ],
+      "initial_boundary": "6:122",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000019",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000011",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000020"
+      ],
+      "source_locators": [
+        "6:160:6"
+      ],
+      "initial_boundary": "6:160",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000020",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000012",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000021",
+        "QLO-000022",
+        "QLO-000023"
+      ],
+      "source_locators": [
+        "7:176:11",
+        "7:176:12",
+        "7:176:22"
+      ],
+      "initial_boundary": "7:176",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000021",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        },
+        {
+          "from": "QLO-000022",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        },
+        {
+          "from": "QLO-000023",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000013",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000024"
+      ],
+      "source_locators": [
+        "7:177:2"
+      ],
+      "initial_boundary": "7:177",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000024",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000014",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000025"
+      ],
+      "source_locators": [
+        "7:194:8"
+      ],
+      "initial_boundary": "7:194",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000025",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000015",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000026"
+      ],
+      "source_locators": [
+        "10:24:2"
+      ],
+      "initial_boundary": "10:24",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000026",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000016",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000027",
+        "QLO-000028"
+      ],
+      "source_locators": [
+        "11:24:1",
+        "11:24:9"
+      ],
+      "initial_boundary": "11:24",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000027",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        },
+        {
+          "from": "QLO-000028",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000017",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000029"
+      ],
+      "source_locators": [
+        "13:17:42"
+      ],
+      "initial_boundary": "13:17",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000029",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000018",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000030"
+      ],
+      "source_locators": [
+        "13:35:1"
+      ],
+      "initial_boundary": "13:35",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000030",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000019",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000031"
+      ],
+      "source_locators": [
+        "14:18:1"
+      ],
+      "initial_boundary": "14:18",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000031",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000020",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000032"
+      ],
+      "source_locators": [
+        "14:24:6"
+      ],
+      "initial_boundary": "14:24",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000032",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000021",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000033"
+      ],
+      "source_locators": [
+        "14:25:9"
+      ],
+      "initial_boundary": "14:25",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000033",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000022",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000034"
+      ],
+      "source_locators": [
+        "14:26:1"
+      ],
+      "initial_boundary": "14:26",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000034",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000023",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000035"
+      ],
+      "source_locators": [
+        "14:45:14"
+      ],
+      "initial_boundary": "14:45",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000035",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000024",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000036",
+        "QLO-000037"
+      ],
+      "source_locators": [
+        "16:60:5",
+        "16:60:8"
+      ],
+      "initial_boundary": "16:60",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000036",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        },
+        {
+          "from": "QLO-000037",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000025",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000038"
+      ],
+      "source_locators": [
+        "16:74:4"
+      ],
+      "initial_boundary": "16:74",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000038",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000026",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000039"
+      ],
+      "source_locators": [
+        "16:75:3"
+      ],
+      "initial_boundary": "16:75",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000039",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000027",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000040"
+      ],
+      "source_locators": [
+        "16:76:3"
+      ],
+      "initial_boundary": "16:76",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000040",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000028",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000041"
+      ],
+      "source_locators": [
+        "16:112:3"
+      ],
+      "initial_boundary": "16:112",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000041",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000029",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000042"
+      ],
+      "source_locators": [
+        "17:48:5"
+      ],
+      "initial_boundary": "17:48",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000042",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000030",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000043"
+      ],
+      "source_locators": [
+        "17:89:9"
+      ],
+      "initial_boundary": "17:89",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000043",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000031",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000044"
+      ],
+      "source_locators": [
+        "18:32:3"
+      ],
+      "initial_boundary": "18:32",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000044",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000032",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000045"
+      ],
+      "source_locators": [
+        "18:45:3"
+      ],
+      "initial_boundary": "18:45",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000045",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000033",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000046"
+      ],
+      "source_locators": [
+        "18:54:9"
+      ],
+      "initial_boundary": "18:54",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000046",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000034",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000047"
+      ],
+      "source_locators": [
+        "22:73:4"
+      ],
+      "initial_boundary": "22:73",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000047",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000035",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000048"
+      ],
+      "source_locators": [
+        "24:34:6"
+      ],
+      "initial_boundary": "24:34",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000048",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000036",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000049",
+        "QLO-000050"
+      ],
+      "source_locators": [
+        "24:35:5",
+        "24:35:43"
+      ],
+      "initial_boundary": "24:35",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000049",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        },
+        {
+          "from": "QLO-000050",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000037",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000051"
+      ],
+      "source_locators": [
+        "25:9:5"
+      ],
+      "initial_boundary": "25:9",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000051",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000038",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000052"
+      ],
+      "source_locators": [
+        "25:33:3"
+      ],
+      "initial_boundary": "25:33",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000052",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000039",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000053"
+      ],
+      "source_locators": [
+        "25:39:4"
+      ],
+      "initial_boundary": "25:39",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000053",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000040",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000054",
+        "QLO-000055"
+      ],
+      "source_locators": [
+        "29:41:1",
+        "29:41:8"
+      ],
+      "initial_boundary": "29:41",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000054",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        },
+        {
+          "from": "QLO-000055",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000041",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000056"
+      ],
+      "source_locators": [
+        "29:43:2"
+      ],
+      "initial_boundary": "29:43",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000056",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000042",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000057"
+      ],
+      "source_locators": [
+        "30:27:11"
+      ],
+      "initial_boundary": "30:27",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000057",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000043",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000058"
+      ],
+      "source_locators": [
+        "30:28:3"
+      ],
+      "initial_boundary": "30:28",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000058",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000044",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000059"
+      ],
+      "source_locators": [
+        "30:58:9"
+      ],
+      "initial_boundary": "30:58",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000059",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000045",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000060"
+      ],
+      "source_locators": [
+        "36:13:3"
+      ],
+      "initial_boundary": "36:13",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000060",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000046",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000061"
+      ],
+      "source_locators": [
+        "36:78:3"
+      ],
+      "initial_boundary": "36:78",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000061",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000047",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000062"
+      ],
+      "source_locators": [
+        "39:27:9"
+      ],
+      "initial_boundary": "39:27",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000062",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000048",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000063",
+        "QLO-000064"
+      ],
+      "source_locators": [
+        "39:29:3",
+        "39:29:13"
+      ],
+      "initial_boundary": "39:29",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000063",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        },
+        {
+          "from": "QLO-000064",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000049",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000065"
+      ],
+      "source_locators": [
+        "43:8:6"
+      ],
+      "initial_boundary": "43:8",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000065",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000050",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000066"
+      ],
+      "source_locators": [
+        "43:17:7"
+      ],
+      "initial_boundary": "43:17",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000066",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000051",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000067"
+      ],
+      "source_locators": [
+        "43:56:3"
+      ],
+      "initial_boundary": "43:56",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000067",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000052",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000068"
+      ],
+      "source_locators": [
+        "43:57:5"
+      ],
+      "initial_boundary": "43:57",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000068",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000053",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000069"
+      ],
+      "source_locators": [
+        "43:59:8"
+      ],
+      "initial_boundary": "43:59",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000069",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000054",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000070"
+      ],
+      "source_locators": [
+        "47:3:18"
+      ],
+      "initial_boundary": "47:3",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000070",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000055",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000071"
+      ],
+      "source_locators": [
+        "47:10:16"
+      ],
+      "initial_boundary": "47:10",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000071",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000056",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000072"
+      ],
+      "source_locators": [
+        "47:15:1"
+      ],
+      "initial_boundary": "47:15",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000072",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000057",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000073"
+      ],
+      "source_locators": [
+        "47:38:29"
+      ],
+      "initial_boundary": "47:38",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000073",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000058",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000074",
+        "QLO-000075"
+      ],
+      "source_locators": [
+        "48:29:26",
+        "48:29:29"
+      ],
+      "initial_boundary": "48:29",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000074",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        },
+        {
+          "from": "QLO-000075",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000059",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000076"
+      ],
+      "source_locators": [
+        "56:23:1"
+      ],
+      "initial_boundary": "56:23",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000076",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000060",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000077"
+      ],
+      "source_locators": [
+        "56:61:4"
+      ],
+      "initial_boundary": "56:61",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000077",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000061",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000078"
+      ],
+      "source_locators": [
+        "57:20:14"
+      ],
+      "initial_boundary": "57:20",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000078",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000062",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000079"
+      ],
+      "source_locators": [
+        "59:15:1"
+      ],
+      "initial_boundary": "59:15",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000079",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000063",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000080"
+      ],
+      "source_locators": [
+        "59:16:1"
+      ],
+      "initial_boundary": "59:16",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000080",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000064",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000081"
+      ],
+      "source_locators": [
+        "59:21:14"
+      ],
+      "initial_boundary": "59:21",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000081",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000065",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000082",
+        "QLO-000083",
+        "QLO-000084"
+      ],
+      "source_locators": [
+        "62:5:1",
+        "62:5:8",
+        "62:5:13"
+      ],
+      "initial_boundary": "62:5",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000082",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        },
+        {
+          "from": "QLO-000083",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        },
+        {
+          "from": "QLO-000084",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000066",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000085"
+      ],
+      "source_locators": [
+        "66:10:3"
+      ],
+      "initial_boundary": "66:10",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000085",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000067",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000086"
+      ],
+      "source_locators": [
+        "66:11:3"
+      ],
+      "initial_boundary": "66:11",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000086",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000068",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000087"
+      ],
+      "source_locators": [
+        "74:31:38"
+      ],
+      "initial_boundary": "74:31",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000087",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    },
+    {
+      "candidate_id": "QPC-000069",
+      "discovery_channels": [
+        "ROOT_AWARE"
+      ],
+      "anchor_ids": [
+        "QLO-000088"
+      ],
+      "source_locators": [
+        "76:28:8"
+      ],
+      "initial_boundary": "76:28",
+      "boundary_basis": "CONTAINING_AYAH_INITIAL_WINDOW",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "competing_exclusion_codes": [],
+      "provenance_edges": [
+        {
+          "from": "QLO-000088",
+          "to": "QSIM-000003",
+          "relation": "DERIVED_UNDER_IDENTITY_AUTHORITY"
+        }
+      ],
+      "validation_status": "UNRESOLVED",
+      "validation_reason": "TEXT_CONTEXT_AND_BOUNDARY_RECONSTRUCTION_REQUIRED",
+      "parable_decision": null,
+      "qpu_id": null
+    }
+  ]
+}

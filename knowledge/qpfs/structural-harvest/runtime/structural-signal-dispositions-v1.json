@@ -1,0 +1,1701 @@
+{
+  "schema": "qpfs/structural-signal-dispositions/v1.0",
+  "count": 169,
+  "records": [
+    {
+      "occurrence_id": "QLO-000001",
+      "source_locator": "2:17:1",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000002",
+      "source_locator": "2:17:2",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000003",
+      "source_locator": "2:26:7",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000004",
+      "source_locator": "2:26:28",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000005",
+      "source_locator": "2:171:1",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000006",
+      "source_locator": "2:171:4",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000007",
+      "source_locator": "2:214:8",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000008",
+      "source_locator": "2:261:1",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000009",
+      "source_locator": "2:261:8",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000010",
+      "source_locator": "2:264:19",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000011",
+      "source_locator": "2:264:20",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000012",
+      "source_locator": "2:265:1",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000013",
+      "source_locator": "2:265:11",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000014",
+      "source_locator": "3:59:2",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000015",
+      "source_locator": "3:59:6",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000016",
+      "source_locator": "3:117:1",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000017",
+      "source_locator": "3:117:8",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000018",
+      "source_locator": "6:38:12",
+      "family": "nominal_mathal_adjective",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000019",
+      "source_locator": "6:122:13",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000020",
+      "source_locator": "6:160:6",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000021",
+      "source_locator": "7:176:11",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000022",
+      "source_locator": "7:176:12",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000023",
+      "source_locator": "7:176:22",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000024",
+      "source_locator": "7:177:2",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000025",
+      "source_locator": "7:194:8",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000026",
+      "source_locator": "10:24:2",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000027",
+      "source_locator": "11:24:1",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000028",
+      "source_locator": "11:24:9",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000029",
+      "source_locator": "13:17:42",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000030",
+      "source_locator": "13:35:1",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000031",
+      "source_locator": "14:18:1",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000032",
+      "source_locator": "14:24:6",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000033",
+      "source_locator": "14:25:9",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000034",
+      "source_locator": "14:26:1",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000035",
+      "source_locator": "14:45:14",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000036",
+      "source_locator": "16:60:5",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000037",
+      "source_locator": "16:60:8",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000038",
+      "source_locator": "16:74:4",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000039",
+      "source_locator": "16:75:3",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000040",
+      "source_locator": "16:76:3",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000041",
+      "source_locator": "16:112:3",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000042",
+      "source_locator": "17:48:5",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000043",
+      "source_locator": "17:89:9",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000044",
+      "source_locator": "18:32:3",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000045",
+      "source_locator": "18:45:3",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000046",
+      "source_locator": "18:54:9",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000047",
+      "source_locator": "22:73:4",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000048",
+      "source_locator": "24:34:6",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000049",
+      "source_locator": "24:35:5",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000050",
+      "source_locator": "24:35:43",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000051",
+      "source_locator": "25:9:5",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000052",
+      "source_locator": "25:33:3",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000053",
+      "source_locator": "25:39:4",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000054",
+      "source_locator": "29:41:1",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000055",
+      "source_locator": "29:41:8",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000056",
+      "source_locator": "29:43:2",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000057",
+      "source_locator": "30:27:11",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000058",
+      "source_locator": "30:28:3",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000059",
+      "source_locator": "30:58:9",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000060",
+      "source_locator": "36:13:3",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000061",
+      "source_locator": "36:78:3",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000062",
+      "source_locator": "39:27:9",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000063",
+      "source_locator": "39:29:3",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000064",
+      "source_locator": "39:29:13",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000065",
+      "source_locator": "43:8:6",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000066",
+      "source_locator": "43:17:7",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000067",
+      "source_locator": "43:56:3",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000068",
+      "source_locator": "43:57:5",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000069",
+      "source_locator": "43:59:8",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000070",
+      "source_locator": "47:3:18",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000071",
+      "source_locator": "47:10:16",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000072",
+      "source_locator": "47:15:1",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000073",
+      "source_locator": "47:38:29",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000074",
+      "source_locator": "48:29:26",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000075",
+      "source_locator": "48:29:29",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000076",
+      "source_locator": "56:23:1",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000077",
+      "source_locator": "56:61:4",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000078",
+      "source_locator": "57:20:14",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000079",
+      "source_locator": "59:15:1",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000080",
+      "source_locator": "59:16:1",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000081",
+      "source_locator": "59:21:14",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000082",
+      "source_locator": "62:5:1",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000083",
+      "source_locator": "62:5:8",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000084",
+      "source_locator": "62:5:13",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000085",
+      "source_locator": "66:10:3",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000086",
+      "source_locator": "66:11:3",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000087",
+      "source_locator": "74:31:38",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000088",
+      "source_locator": "76:28:8",
+      "family": "nominal_mathal",
+      "disposition": "SIGNAL_PRESENT",
+      "signal_codes": [
+        "EXPLICIT_MATHAL_FORMULA"
+      ],
+      "exclusion_code": null,
+      "basis": "ROOT_AWARE_LEXICAL_ANCHOR_REQUIRES_CONTEXT_VALIDATION"
+    },
+    {
+      "occurrence_id": "QLO-000089",
+      "source_locator": "19:17:8",
+      "family": "verb_form_v_tamathala",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000090",
+      "source_locator": "20:104:7",
+      "family": "noun_amthal",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000091",
+      "source_locator": "21:52:7",
+      "family": "noun_tamathil",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000092",
+      "source_locator": "34:13:7",
+      "family": "noun_tamathil",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000093",
+      "source_locator": "2:23:12",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000094",
+      "source_locator": "2:106:11",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000095",
+      "source_locator": "2:113:21",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000096",
+      "source_locator": "2:118:16",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000097",
+      "source_locator": "2:137:3",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000098",
+      "source_locator": "2:194:12",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000099",
+      "source_locator": "2:228:31",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000100",
+      "source_locator": "2:233:32",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000101",
+      "source_locator": "2:275:19",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000102",
+      "source_locator": "3:13:16",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000103",
+      "source_locator": "3:73:15",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000104",
+      "source_locator": "3:140:8",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000105",
+      "source_locator": "3:165:6",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000106",
+      "source_locator": "4:11:6",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000107",
+      "source_locator": "4:140:25",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000108",
+      "source_locator": "4:176:39",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000109",
+      "source_locator": "5:31:17",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000110",
+      "source_locator": "5:36:11",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000111",
+      "source_locator": "5:95:14",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000112",
+      "source_locator": "6:93:19",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000113",
+      "source_locator": "6:124:9",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000114",
+      "source_locator": "6:160:13",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000115",
+      "source_locator": "7:169:17",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000116",
+      "source_locator": "8:31:11",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000117",
+      "source_locator": "10:27:6",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000118",
+      "source_locator": "10:38:7",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000119",
+      "source_locator": "10:102:4",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000120",
+      "source_locator": "11:13:8",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000121",
+      "source_locator": "11:27:11",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000122",
+      "source_locator": "11:89:7",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000123",
+      "source_locator": "13:17:22",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000124",
+      "source_locator": "13:18:16",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000125",
+      "source_locator": "14:10:23",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000126",
+      "source_locator": "14:11:8",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000127",
+      "source_locator": "16:126:4",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000128",
+      "source_locator": "17:88:9",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000129",
+      "source_locator": "17:88:14",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000130",
+      "source_locator": "17:99:13",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000131",
+      "source_locator": "18:109:17",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000132",
+      "source_locator": "18:110:5",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000133",
+      "source_locator": "20:58:3",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000134",
+      "source_locator": "21:3:11",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000135",
+      "source_locator": "21:84:10",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000136",
+      "source_locator": "22:60:4",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000137",
+      "source_locator": "23:24:11",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000138",
+      "source_locator": "23:33:18",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000139",
+      "source_locator": "23:34:4",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000140",
+      "source_locator": "23:47:4",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000141",
+      "source_locator": "23:81:3",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000142",
+      "source_locator": "24:17:5",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000143",
+      "source_locator": "26:154:5",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000144",
+      "source_locator": "26:186:5",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000145",
+      "source_locator": "28:48:9",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000146",
+      "source_locator": "28:79:13",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000147",
+      "source_locator": "35:14:17",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000148",
+      "source_locator": "36:15:6",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000149",
+      "source_locator": "36:42:4",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000150",
+      "source_locator": "36:81:10",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000151",
+      "source_locator": "37:61:1",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000152",
+      "source_locator": "38:43:4",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000153",
+      "source_locator": "39:47:9",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000154",
+      "source_locator": "40:30:8",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000155",
+      "source_locator": "40:31:1",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000156",
+      "source_locator": "40:40:7",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000157",
+      "source_locator": "41:6:5",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000158",
+      "source_locator": "41:13:6",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000159",
+      "source_locator": "42:11:15",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000160",
+      "source_locator": "42:40:4",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000161",
+      "source_locator": "46:10:16",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000162",
+      "source_locator": "51:23:6",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000163",
+      "source_locator": "51:59:5",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000164",
+      "source_locator": "52:34:3",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000165",
+      "source_locator": "60:11:13",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000166",
+      "source_locator": "65:12:8",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000167",
+      "source_locator": "89:8:4",
+      "family": "noun_mithl",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000168",
+      "source_locator": "13:6:9",
+      "family": "noun_mathulat",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    },
+    {
+      "occurrence_id": "QLO-000169",
+      "source_locator": "20:63:13",
+      "family": "adjective_muthla",
+      "disposition": "AMBIGUOUS_SIGNAL",
+      "signal_codes": [],
+      "exclusion_code": null,
+      "basis": "CROSS_FORM_REQUIRES_CONTEXTUAL_RECONSTRUCTION"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "qpfs/wave-execution-report/v2.0",
+  "wave": "WAVE_2_STRUCTURAL_CANDIDATE_GENERATION",
+  "status": "CLOSED_WITH_UNRESOLVED_ROUTED_FORWARD",
+  "authority": "QSIM-000003",
+  "lexical_rows": 169,
+  "unique_ids": 169,
+  "unique_row_keys": 169,
+  "legacy_duplicate_nominal_identities_removed": 4,
+  "family_counts": {
+    "adjective_muthla": 1,
+    "nominal_mathal": 87,
+    "nominal_mathal_adjective": 1,
+    "noun_amthal": 1,
+    "noun_mathulat": 1,
+    "noun_mithl": 75,
+    "noun_tamathil": 2,
+    "verb_form_v_tamathala": 1
+  },
+  "dispositions": {
+    "total": 169,
+    "signal_present": 87,
+    "ambiguous_signal": 82,
+    "no_sufficient_signal": 0
+  },
+  "proposal_count": 69,
+  "validation": {
+    "pass_to_investigation": 0,
+    "reject": 0,
+    "unresolved": 69
+  },
+  "root_blind": {
+    "status": "ROUTED_TO_CORPUS_WIDE_DISCOVERY",
+    "reason": "LEXICAL_169_ROW_INTAKE_CANNOT_PROVE_ROOT_BLIND_COMPLETENESS"
+  },
+  "canonical_parable_decisions_created": false,
+  "qpu_created": false,
+  "next_wave": "WAVE_3_CONTEXTUAL_RECONSTRUCTION_CLASSIFICATION_AND_ROOT_BLIND_DISCOVERY"
+}
