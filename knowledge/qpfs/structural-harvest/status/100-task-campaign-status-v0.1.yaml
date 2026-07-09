@@ -1,47 +1,42 @@
-schema: qpfs/100-task-campaign-status/v0.1
-id: QSH-STATUS-000001
-plan: QSH-PLAN-000001
-status: ACTIVE_READY_FOR_CONTEXT_HYDRATION
+schema: qpfs/100-task-campaign-status/v0.2
+id: QSH-STATUS-000002
+plan: QSH-PLAN-000002
+status: ACTIVE_BLOCKED_ON_ROW_LEVEL_MATERIALIZATION
 verified_completed_tasks:
-  - QSH-001
-  - QSH-002
-  - QSH-003
-  - QSH-004
-  - QSH-005
-  - QSH-006
-  - QSH-007
-  - QSH-008
-  - QSH-009
-  - QSH-010
-  - QSH-011
-  - QSH-012
-  - QSH-013
-  - QSH-014
-  - QSH-015
-  - QSH-016
-  - QSH-017
-  - QSH-018
-  - QSH-019
-  - QSH-020
-  - QSH-021
-  - QSH-022
-completed_count: 22
-pending_count: 78
+  - QSH2-001
+  - QSH2-002
+  - QSH2-003
+completed_count: 3
+pending_count: 97
+historical_campaign:
+  previous_status_id: QSH-STATUS-000001
+  previous_completed_count: 22
+  preservation_rule: historical_work_is_preserved_but_not_reused_as_proof_for_new_plan
 critical_problems_resolved:
-  - stale_21_row_ledger_vs_169_row_closure_authority
-  - hidden_four_row_cross_segment_duplication
-  - four_missing_nominal_source_rows_recovered
-  - invalid_QSIM_000001_replaced_by_QSIM_000002
-  - corrected_169_row_intake_independently_reconciled
-critical_problem_open: null
+  - false_assumption_that_count_reconciliation_equals_row_level_materialization
+critical_problem_open:
+  id: QSH2-BLOCKER-000001
+  description: >-
+    QSIM-000002 contains a mapping and count reconciliation but not 169 explicit row
+    objects. Context hydration and per-row signal evaluation are forbidden until the
+    batch authorities are located and QSIM-000003 is materialized row by row.
+  required_tasks:
+    - QSH2-004
+    - QSH2-005
+    - QSH2-006
+    - QSH2-007
+    - QSH2-008
+    - QSH2-009
+    - QSH2-010
+    - QSH2-011
 current_authority:
-  structural_intake: QSIM-000002
-  validation: QSIM-V-000001
-  invalidated_input: QSIM-000001
+  reconciliation_mapping: QSIM-000002
+  row_level_execution_input: null
+  row_level_audit: QSH2-AUDIT-000001
 integrity_policy:
   false_completion_claims_forbidden: true
   later_tasks_must_not_be_marked_complete_without_artifacts: true
   canonical_parable_decisions_remain_uncreated: true
   qpu_creation_remains_forbidden: true
-next_task: QSH-023
-next_action: attach_canonical_row_keys_and_begin_context_hydration
+next_task: QSH2-004
+next_action: locate_all_lexical_batch_authorities
