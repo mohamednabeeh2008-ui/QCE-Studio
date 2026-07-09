@@ -182,27 +182,202 @@ occurrences:
     parable_identity_decision: not_performed
     qpc_identity: null
     qpu_identity: null
+  - occurrence_id: QLO-000012
+    source_id: QLS-000001
+    surah: 2
+    ayah: 265
+    token_position: 1
+    surface: "وَمَثَلُ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "CONJ wa + N; masculine; nominative"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(2:265:1)"
+    verification_status: verified
+    batch_validation: {validation_id: QLBV-000002, status: PASS}
+    admission_decision: accepted
+    parable_identity_decision: not_performed
+    qpc_identity: null
+    qpu_identity: null
+  - occurrence_id: QLO-000013
+    source_id: QLS-000001
+    surah: 2
+    ayah: 265
+    token_position: 11
+    surface: "كَمَثَلِ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "PREF ka + N; masculine; genitive"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(2:265:11)"
+    verification_status: verified
+    batch_validation: {validation_id: QLBV-000002, status: PASS}
+    admission_decision: accepted
+    parable_identity_decision: not_performed
+    qpc_identity: null
+    qpu_identity: null
+  - occurrence_id: QLO-000014
+    source_id: QLS-000001
+    surah: 3
+    ayah: 59
+    token_position: 2
+    surface: "مَثَلَ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "N; masculine; accusative"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(3:59:2)"
+    verification_status: verified
+    batch_validation: {validation_id: QLBV-000002, status: PASS}
+    admission_decision: accepted
+    parable_identity_decision: not_performed
+    qpc_identity: null
+    qpu_identity: null
+  - occurrence_id: QLO-000015
+    source_id: QLS-000001
+    surah: 3
+    ayah: 59
+    token_position: 6
+    surface: "كَمَثَلِ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "PREF ka + N; masculine; genitive"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(3:59:6)"
+    verification_status: verified
+    batch_validation: {validation_id: QLBV-000002, status: PASS}
+    admission_decision: accepted
+    parable_identity_decision: not_performed
+    qpc_identity: null
+    qpu_identity: null
+  - occurrence_id: QLO-000016
+    source_id: QLS-000001
+    surah: 3
+    ayah: 117
+    token_position: 1
+    surface: "مَثَلُ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "N; masculine; nominative"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(3:117:1)"
+    verification_status: verified
+    batch_validation: {validation_id: QLBV-000002, status: PASS}
+    admission_decision: accepted
+    parable_identity_decision: not_performed
+    qpc_identity: null
+    qpu_identity: null
+  - occurrence_id: QLO-000017
+    source_id: QLS-000001
+    surah: 3
+    ayah: 117
+    token_position: 8
+    surface: "كَمَثَلِ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "PREF ka + N; masculine; genitive"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(3:117:8)"
+    verification_status: verified
+    batch_validation: {validation_id: QLBV-000002, status: PASS}
+    admission_decision: accepted
+    parable_identity_decision: not_performed
+    qpc_identity: null
+    qpu_identity: null
+  - occurrence_id: QLO-000018
+    source_id: QLS-000001
+    surah: 6
+    ayah: 122
+    token_position: 13
+    surface: "مَثَلُهُ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "N; masculine; nominative; attached 3rd-person masculine singular possessive pronoun"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(6:122:13)"
+    verification_status: verified
+    batch_validation: {validation_id: QLBV-000002, status: PASS}
+    admission_decision: accepted
+    parable_identity_decision: not_performed
+    qpc_identity: null
+    qpu_identity: null
+  - occurrence_id: QLO-000019
+    source_id: QLS-000001
+    surah: 6
+    ayah: 160
+    token_position: 6
+    surface: "أَمْثَالِهَا"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "N; masculine plural; genitive; attached 3rd-person feminine singular possessive pronoun"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(6:160:6)"
+    verification_status: verified
+    batch_validation: {validation_id: QLBV-000002, status: PASS}
+    admission_decision: accepted
+    parable_identity_decision: not_performed
+    qpc_identity: null
+    qpu_identity: null
+  - occurrence_id: QLO-000020
+    source_id: QLS-000001
+    surah: 7
+    ayah: 176
+    token_position: 11
+    surface: "فَمَثَلُهُ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "CONJ fa + N; masculine; nominative; attached 3rd-person masculine singular possessive pronoun"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(7:176:11)"
+    verification_status: verified
+    batch_validation: {validation_id: QLBV-000002, status: PASS}
+    admission_decision: accepted
+    parable_identity_decision: not_performed
+    qpc_identity: null
+    qpu_identity: null
+  - occurrence_id: QLO-000021
+    source_id: QLS-000001
+    surah: 7
+    ayah: 176
+    token_position: 12
+    surface: "كَمَثَلِ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "PREF ka + N; masculine; genitive"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(7:176:12)"
+    verification_status: verified
+    batch_validation: {validation_id: QLBV-000002, status: PASS}
+    admission_decision: accepted
+    parable_identity_decision: not_performed
+    qpc_identity: null
+    qpu_identity: null
 
 ledger_state:
-  accepted_occurrence_count: 11
+  accepted_occurrence_count: 21
   rejected_occurrence_count: 0
   first_occurrence: QLO-000001
   first_row_validation: PASS
-  last_committed_batch: QLB-000001
-  next_occurrence_id: QLO-000012
-  expansion_status: open
+  last_committed_batch: QLB-000002
+  next_occurrence_id: QLO-000022
+  expansion_status: blocked_pending_post_commit_reconciliation
   expansion_scope: lexical_occurrence_materialization_only
   qpu_promotion_lock: true
 
+commit_state:
+  atomic_commit_id: QLAC-000002
+  batch_id: QLB-000002
+  validation_closure: QLBC-000002
+  committed_scope: QLO-000012_to_QLO-000021
+  committed_row_count: 10
+  rejected_row_count: 0
+  unresolved_row_count: 0
+  previous_accepted_count: 11
+  transactional_accepted_count: 21
+  rollback_boundary: commit_before_QLAC_000002
+  status: COMMITTED_PENDING_RECONCILIATION
+
 reconciliation:
   reported_root_occurrence_target: 169
-  materialized_unique_tokens: 11
-  remaining_to_target: 158
-  duplicate_canonical_row_keys: 0
-  status: PARTIAL_PASS
+  materialized_unique_tokens: PENDING_STEP_04_RECOUNT
+  remaining_to_target: PENDING_STEP_04_RECOUNT
+  duplicate_canonical_row_keys: PENDING_STEP_04_AUDIT
+  status: PENDING_POST_COMMIT_RECONCILIATION
 
 invariants:
   - every_occurrence_references_an_accepted_source
   - every_occurrence_has_a_reproducible_row_locator
+  - only_independently_validated_PASS_rows_enter_the_ledger
   - lexical_occurrence_does_not_confirm_parable_identity
   - no_qpc_or_qpu_identity_is_assigned_at_lexical_intake
+  - expansion_remains_blocked_until_post_commit_reconciliation
