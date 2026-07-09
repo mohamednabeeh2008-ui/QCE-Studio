@@ -1,0 +1,34 @@
+{
+  "schema": "qfm-v2/nar-authority-recovery-decision/v0.1",
+  "mission": "MISSION 005-PRE",
+  "scope": {
+    "first": "NAR-000001",
+    "last": "NAR-000038",
+    "count": 38
+  },
+  "source_manifest": "data/qfm-v2/audits/generated/nar-evidence-reconciliation-v0.1.json",
+  "source_commit": "b289e7f7b6c95e416930f0699acef3a4e45c256b",
+  "verified_result": {
+    "AUTHORITY_PROVEN": 7,
+    "PRODUCTION_PROVEN": 18,
+    "PROMOTION_PROVEN": 13,
+    "unresolved_authority": 31
+  },
+  "decision": {
+    "status": "RECOVERY_REQUIRED_NO_FABRICATION",
+    "authority_proven_range": ["NAR-000032", "NAR-000038"],
+    "historical_existence_proven_range": ["NAR-000001", "NAR-000031"],
+    "historical_existence_basis": "18 IDs have production evidence and 13 IDs have promotion evidence in the verified reconciliation manifest.",
+    "legal_effect": "Historical existence evidence preserves identity and continuity but does not retroactively become original allocation authority.",
+    "recovery_action": "Create a separate recovered-authority layer for NAR-000001..NAR-000031, preserving evidence class and provenance. Do not rewrite original history and do not insert fabricated original allocation events."
+  },
+  "gates": {
+    "no_nar_promotion_without_evidence_chain": true,
+    "reference_is_not_allocation": true,
+    "recovery_is_not_original_allocation": true,
+    "nar_000039_may_be_allocated": false,
+    "batch_005_subject_may_be_locked": false,
+    "mission_005_pre_complete": false
+  },
+  "next_step": "Generate the recovered NAR authority ledger from the verified reconciliation manifest, then validate one-to-one coverage for all 38 IDs."
+}
