@@ -1,0 +1,40 @@
+schema: qpfs/100-task-campaign-status/v0.1
+id: QSH-STATUS-000001
+plan: QSH-PLAN-000001
+status: ACTIVE_BLOCKED_ON_MANIFEST_REPLACEMENT
+verified_completed_tasks:
+  - QSH-001
+  - QSH-002
+  - QSH-003
+  - QSH-004
+  - QSH-005
+  - QSH-006
+  - QSH-007
+  - QSH-008
+  - QSH-011
+  - QSH-012
+  - QSH-013
+  - QSH-014
+  - QSH-015
+  - QSH-017
+  - QSH-018
+completed_count: 15
+pending_count: 85
+critical_problems_resolved:
+  - stale_21_row_ledger_vs_169_row_closure_authority
+  - hidden_four_row_cross_segment_duplication
+  - four_missing_nominal_source_rows_identified
+critical_problem_open:
+  id: QSH-BLOCKER-000001
+  description: >-
+    unified-structural-intake-manifest-v0.1 is invalid because it inherited four
+    duplicated locators from QLB-000003. A corrected v0.2 must be materialized
+    from the canonical source sequence before structural signal evaluation.
+  forbidden_shortcut: mark_v0_1_pass_without_remap
+integrity_policy:
+  false_completion_claims_forbidden: true
+  later_tasks_must_not_be_marked_complete_without_artifacts: true
+  canonical_parable_decisions_remain_uncreated: true
+  qpu_creation_remains_forbidden: true
+next_task: QSH-009
+next_action: materialize_corrected_unified_structural_intake_manifest_v0_2
