@@ -1,25 +1,27 @@
 schema: qpfs/structural-harvest-step/v0.1
 id: QSH-24.5B-01
 step: 24.5B-01
-status: BLOCKED
+status: CLOSED_PASS
 input:
   closure_record: QLRC-000001
   occurrence_range: [QLO-000001, QLO-000169]
-contradictory_evidence:
-  record: QLB-000003
-  path: knowledge/qpfs/ledger/batches/QLB-000003.yaml
-  observed_status: MATERIALIZED_PENDING_INDEPENDENT_VALIDATION
-  closure_claim: final_batch_closed
-  conflict: true
+reconciliation:
+  prior_conflict: QLB-000003_STATUS_STALE
+  authoritative_closure: QLBC-000003
+  repair_commit: bc45229037f7784b8e8a0857adb647cb97ff07ad
+  resolved: true
 checks:
-  closure_internal_consistency: FAIL
-  ledger_ready_for_structural_inference: false
+  lexical_stage_closed_pass: true
+  source_total_equals_ledger_total: true
+  occurrence_id_range_complete: true
+  materialized_count: 169
+  accepted_count: 169
+  rejected_count: 0
+  unresolved_count: 0
+  batch_closure_consistency: PASS
+  provenance_source_registered: true
+  parable_identity_inference_absent: true
 result:
-  decision: BLOCKED
-  authorized_next_step: null
-  required_remediation:
-    - reconcile QLB-000003 against QLRC-000001
-    - inspect all batch records referenced by QLRC-000001
-    - correct closure or close pending batches with evidence
-    - rerun STEP 24.5B-01 independently
-  prohibition: "Do not begin anchor detection or candidate materialization while lexical closure evidence is contradictory."
+  decision: PASS
+  authorized_next_step: 24.5B-02
+  prohibition: "No lexical occurrence may be treated as a parable merely because it exists in the ledger."
