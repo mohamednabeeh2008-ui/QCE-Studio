@@ -1,0 +1,8 @@
+schema: qpfs/ambiguity-isolation-gate/v0.1
+id: QAIG-000001
+step: 24.5B-09C
+status: CLOSED_PASS
+legal_state: UNRESOLVED_STRUCTURAL
+forced_binary_classification: forbidden
+unresolved_preserves: [evidence_for, evidence_against, decision_burden, provenance]
+next_step: 24.5B-10
