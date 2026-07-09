@@ -1,0 +1,26 @@
+schema: qpfs/verse-window-expansion-rules/v0.1
+id: VWER-000001
+step: 24.5B-07
+status: FROZEN
+minimum_window: anchor_token_context
+expansion_order:
+  - containing_clause
+  - containing_ayah
+  - adjacent_ayah_if_syntactically_dependent
+  - multi_ayah_unit_if_representational_mechanism_remains_open
+stop_conditions:
+  - syntactic_closure
+  - representational_mechanism_closure
+  - discourse_shift
+  - independent_new_unit
+boundary_states:
+  - PROVISIONAL
+  - STABLE_FOR_CANDIDACY
+  - UNRESOLVED
+rules:
+  no_fame_based_expansion: true
+  no_tafsir_based_boundary_override_at_discovery_stage: true
+  preserve_alternative_boundaries: true
+result:
+  decision: PASS
+  authorized_next_step: 24.5B-08
