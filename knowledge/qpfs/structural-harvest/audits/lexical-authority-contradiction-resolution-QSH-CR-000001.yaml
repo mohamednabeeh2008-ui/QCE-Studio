@@ -1,0 +1,47 @@
+schema: qpfs/lexical-authority-contradiction-resolution/v0.1
+id: QSH-CR-000001
+stage: 24.5B
+status: RESOLVED_WITH_DERIVED_INDEX_REQUIRED
+problem:
+  stale_artifact: knowledge/qpfs/manifests/lexical-occurrence-ledger-v0.1.yaml
+  stale_artifact_materialized_rows: 21
+  stale_artifact_state: blocked_pending_post_commit_reconciliation
+  later_authorities:
+    - QLBC-000003
+    - QLB-000004
+    - QLBC-000005
+    - QLRC-000001
+  later_authority_accepted_total: 169
+  contradiction: >-
+    The detailed lexical occurrence ledger stopped at QLO-000021 while later
+    committed batch and closure artifacts legally extended the accepted lexical
+    corpus through QLO-000169. Treating either artifact alone as the complete
+    structural input would lose accepted rows or ignore later legal closure.
+resolution:
+  preserve_stale_artifact_immutably: true
+  rewrite_historical_ledger: false
+  canonical_lexical_acceptance_authority: QLRC-000001
+  row_materialization_authorities:
+    QLO-000001_to_QLO-000021: knowledge/qpfs/manifests/lexical-occurrence-ledger-v0.1.yaml
+    QLO-000022_to_QLO-000046: QLB-000003
+    QLO-000047_to_QLO-000088: QLB-000004
+    QLO-000089_to_QLO-000169: QLB-000005
+  required_bridge_artifact: unified-structural-intake-manifest-v0.1.yaml
+  structural_execution_rule: >-
+    No structural pass may read the stale 21-row ledger as if it were the full
+    corpus. Structural execution must consume the reconciled 169-row derived
+    intake manifest and preserve provenance back to the row authority above.
+arithmetic:
+  segment_1: 21
+  segment_2: 25
+  segment_3: 42
+  segment_4: 81
+  total: 169
+  expected: 169
+  result: PASS
+locks:
+  canonical_parable_decisions_created: false
+  candidate_identity_inference_created: false
+  qpu_creation_allowed: false
+completed_tasks: [QSH-001, QSH-002, QSH-003, QSH-004, QSH-005, QSH-013, QSH-014, QSH-015, QSH-017, QSH-018]
+next_required_task: QSH-006
