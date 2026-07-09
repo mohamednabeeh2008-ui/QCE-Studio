@@ -1,0 +1,49 @@
+schema: qpfs/structural-candidate-record-contract/v1.0
+id: SCRC-000001
+status: FROZEN
+entity_separation:
+  occurrence: "A token-level lexical fact."
+  anchor: "An occurrence or structural signal that can open candidate reconstruction."
+  candidate: "A bounded textual structure admitted for investigation."
+  parable: "A later legal decision; forbidden in this stage."
+  qpu: "A later canonical unit; forbidden in this stage."
+required_candidate_fields:
+  - candidate_id
+  - discovery_channels
+  - anchor_ids
+  - source_locators
+  - initial_boundary
+  - boundary_basis
+  - signal_codes
+  - competing_exclusion_codes
+  - provenance_edges
+  - validation_status
+candidate_id_pattern: "^QPC-[0-9]{6}$"
+discovery_channels:
+  - ROOT_AWARE
+  - CROSS_FORM
+  - ROOT_BLIND
+signal_codes:
+  EXPLICIT_MATHAL_FORMULA: "Explicit mathal signaling formula."
+  KAMATHAL_ARCHITECTURE: "Comparative architecture opened by ka-mathal."
+  REPRESENTATIONAL_SCENE: "Constructed scene mapped beyond itself."
+  DOMAIN_TRANSFER: "Transfer between image domain and target domain."
+  IMAGE_MEANING_CORRESPONDENCE: "Non-trivial image-to-meaning relation."
+  EVALUATIVE_DISCLOSURE: "Scene discloses or evaluates a target state."
+exclusion_codes:
+  ABSTRACT_LIKENESS: "Mere similarity or equivalence."
+  DESCRIPTION_ONLY: "Description without representational transfer."
+  LEXICAL_NON_PARABLE_USE: "Root occurrence with another lexical function."
+  STORY_ONLY: "Narrative identity without sufficient representational candidacy."
+  RHETORICAL_IMAGE_ONLY: "Image without candidate-level architecture."
+  DUPLICATE_ANCHOR: "Another anchor for the same candidate."
+validation_statuses:
+  - PASS_TO_INVESTIGATION
+  - REJECT
+  - UNRESOLVED
+hard_rules:
+  - "Several anchors may resolve to one candidate."
+  - "One verse may contain more than one candidate only with explicit boundary evidence."
+  - "Adjacent candidates are linked before any merge decision."
+  - "Root-blind proposals remain distinguishable by provenance even after collision reconciliation."
+  - "No field may store journey, formation, reader psychology, or canonical network conclusions."
