@@ -1,0 +1,10 @@
+schema: qpfs/anchor-signal-evaluation/v0.1
+id: QASE-000001
+step: 24.5B-08D
+status: CLOSED_PASS
+input_count: 169
+taxonomy_ref: taxonomies/structural-signal-taxonomy-v0.1.yaml
+one_evaluation_per_occurrence: true
+allowed_outputs: [POSITIVE_SIGNAL, INSUFFICIENT_SIGNAL, EXCLUSION_TRIGGER, UNRESOLVED]
+canonical_decision_forbidden: true
+next_step: 24.5B-08E
