@@ -28,6 +28,10 @@ occurrences:
       morphological_form: pass
       source_locator: pass
       provenance_reproducible: pass
+    independent_validation:
+      validation_id: QLV-000001
+      status: PASS
+      record: knowledge/qpfs/validation/first-row-validation-QLO-000001-v0.1.yaml
     evidence_notes: >-
       The registered source identifies the row as Verse 2:261, Word 1 with the
       stable location tuple (2:261:1). The word page gives transliteration
@@ -44,8 +48,10 @@ ledger_state:
   accepted_occurrence_count: 1
   rejected_occurrence_count: 0
   first_occurrence: QLO-000001
+  first_row_validation: PASS
   next_occurrence_id: QLO-000002
-  expansion_status: blocked_pending_first_row_validation
+  expansion_status: open
+  expansion_scope: lexical_occurrence_materialization_only
   qpu_promotion_lock: true
 
 invariants:
