@@ -1,0 +1,66 @@
+schema: qpfs/lexical-batch/v0.1
+id: QLB-000004
+step: 24.5A
+status: COMMITTED
+source_id: QLS-000001
+source_section: "Nominal — mathal"
+first_occurrence_id: QLO-000047
+last_occurrence_id: QLO-000088
+row_count: 42
+rows:
+  - [QLO-000047, "18:32:3", mathalan]
+  - [QLO-000048, "18:45:3", mathala]
+  - [QLO-000049, "18:54:9", mathalin]
+  - [QLO-000050, "22:73:4", mathalun]
+  - [QLO-000051, "24:34:6", wamathalan]
+  - [QLO-000052, "24:35:5", mathalu]
+  - [QLO-000053, "24:35:43", l-amthāla]
+  - [QLO-000054, "25:9:5", l-amthāla]
+  - [QLO-000055, "25:33:3", bimathalin]
+  - [QLO-000056, "25:39:4", l-amthāla]
+  - [QLO-000057, "29:41:1", mathalu]
+  - [QLO-000058, "29:41:8", kamathali]
+  - [QLO-000059, "29:43:2", l-amthālu]
+  - [QLO-000060, "30:27:11", l-mathalu]
+  - [QLO-000061, "30:28:3", mathalan]
+  - [QLO-000062, "30:58:9", mathalin]
+  - [QLO-000063, "36:13:3", mathalan]
+  - [QLO-000064, "36:78:3", mathalan]
+  - [QLO-000065, "39:27:9", mathalin]
+  - [QLO-000066, "39:29:3", mathalan]
+  - [QLO-000067, "39:29:13", mathalan]
+  - [QLO-000068, "43:8:6", mathalu]
+  - [QLO-000069, "43:17:7", mathalan]
+  - [QLO-000070, "43:56:3", wamathalan]
+  - [QLO-000071, "43:57:5", mathalan]
+  - [QLO-000072, "43:59:8", mathalan]
+  - [QLO-000073, "47:3:18", amthālahum]
+  - [QLO-000074, "47:10:16", amthāluhā]
+  - [QLO-000075, "47:15:1", mathalu]
+  - [QLO-000076, "47:38:29", amthālakum]
+  - [QLO-000077, "48:29:26", mathaluhum]
+  - [QLO-000078, "48:29:29", wamathaluhum]
+  - [QLO-000079, "56:23:1", ka-amthāli]
+  - [QLO-000080, "56:61:4", amthālakum]
+  - [QLO-000081, "57:20:14", kamathali]
+  - [QLO-000082, "59:15:1", kamathali]
+  - [QLO-000083, "59:16:1", kamathali]
+  - [QLO-000084, "59:21:14", l-amthālu]
+  - [QLO-000085, "62:5:1", mathalu]
+  - [QLO-000086, "62:5:8", kamathali]
+  - [QLO-000087, "62:5:13", mathalu]
+  - [QLO-000088, "66:10:3", mathalan]
+validation:
+  pass: 42
+  reject: 0
+  unresolved: 0
+  source_locator_checked: true
+  source_attestation_checked: true
+commit:
+  atomic: true
+  accepted_total_after_commit: 88
+  next_occurrence_id: QLO-000089
+integrity:
+  nominal_mathal_reported_count: 88
+  nominal_mathal_materialized_count: 88
+  reconciliation: PASS

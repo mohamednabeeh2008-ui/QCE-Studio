@@ -1,0 +1,51 @@
+schema: qpfs/lexical-batch/v0.1
+id: QLB-000003
+step: 24.5A
+campaign_steps: [STEP-09, STEP-10]
+status: MATERIALIZED_PENDING_INDEPENDENT_VALIDATION
+source_id: QLS-000001
+root: "م ث ل"
+source_reference: "https://corpus.quran.com/qurandictionary.jsp?q=mvl"
+source_section: "Nominal — mathal"
+first_occurrence_id: QLO-000022
+last_occurrence_id: QLO-000046
+row_count: 25
+
+rows:
+  - {occurrence_id: QLO-000022, source_locator: "6:122:13", source_attestation: "mathaluhu"}
+  - {occurrence_id: QLO-000023, source_locator: "6:160:6", source_attestation: "amthālihā"}
+  - {occurrence_id: QLO-000024, source_locator: "7:176:11", source_attestation: "famathaluhu"}
+  - {occurrence_id: QLO-000025, source_locator: "7:176:12", source_attestation: "kamathali"}
+  - {occurrence_id: QLO-000026, source_locator: "7:176:22", source_attestation: "mathalu"}
+  - {occurrence_id: QLO-000027, source_locator: "7:177:2", source_attestation: "mathalan"}
+  - {occurrence_id: QLO-000028, source_locator: "7:194:8", source_attestation: "amthālukum"}
+  - {occurrence_id: QLO-000029, source_locator: "10:24:2", source_attestation: "mathalu"}
+  - {occurrence_id: QLO-000030, source_locator: "11:24:1", source_attestation: "mathalu"}
+  - {occurrence_id: QLO-000031, source_locator: "11:24:9", source_attestation: "mathalan"}
+  - {occurrence_id: QLO-000032, source_locator: "13:17:42", source_attestation: "l-amthāla"}
+  - {occurrence_id: QLO-000033, source_locator: "13:35:1", source_attestation: "mathalu"}
+  - {occurrence_id: QLO-000034, source_locator: "14:18:1", source_attestation: "mathalu"}
+  - {occurrence_id: QLO-000035, source_locator: "14:24:6", source_attestation: "mathalan"}
+  - {occurrence_id: QLO-000036, source_locator: "14:25:9", source_attestation: "l-amthāla"}
+  - {occurrence_id: QLO-000037, source_locator: "14:26:1", source_attestation: "wamathalu"}
+  - {occurrence_id: QLO-000038, source_locator: "14:45:14", source_attestation: "l-amthāla"}
+  - {occurrence_id: QLO-000039, source_locator: "16:60:5", source_attestation: "mathalu"}
+  - {occurrence_id: QLO-000040, source_locator: "16:60:8", source_attestation: "l-mathalu"}
+  - {occurrence_id: QLO-000041, source_locator: "16:74:4", source_attestation: "l-amthāla"}
+  - {occurrence_id: QLO-000042, source_locator: "16:75:3", source_attestation: "mathalan"}
+  - {occurrence_id: QLO-000043, source_locator: "16:76:3", source_attestation: "mathalan"}
+  - {occurrence_id: QLO-000044, source_locator: "16:112:3", source_attestation: "mathalan"}
+  - {occurrence_id: QLO-000045, source_locator: "17:48:5", source_attestation: "l-amthāla"}
+  - {occurrence_id: QLO-000046, source_locator: "17:89:9", source_attestation: "mathalin"}
+
+materialization_checks:
+  source_order_preserved: true
+  occurrence_ids_contiguous: true
+  source_locators_unique_within_batch: true
+  normalization_applied: true
+  duplicate_check_against_first_21: PASS
+  ledger_commit_executed: false
+
+next_gate:
+  action: INDEPENDENT_ROW_VALIDATION
+  automatic_continuation_authorized: true

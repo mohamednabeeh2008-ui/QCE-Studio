@@ -1,0 +1,60 @@
+schema: qpfs/lexical-checkpoint/v0.1
+id: QLCP-000021
+step: 24.5A
+scope: QLO-000001..QLO-000021
+status: PASS
+
+completed_steps:
+  - STEP-04_POST_COMMIT_RECONCILIATION
+  - STEP-05_CROSS_BATCH_DUPLICATE_AUDIT
+  - STEP-06_BATCH_2_CLOSURE_AND_FREEZE
+  - STEP-07_FIRST_21_ROW_INTEGRITY_AUDIT
+  - STEP-08_BATCH_SCALING_DECISION_GATE
+
+reconciliation:
+  accepted_before_qlb_000002: 11
+  accepted_from_qlb_000002: 10
+  accepted_after_commit: 21
+  next_occurrence_id: QLO-000022
+  arithmetic_consistent: true
+
+cross_batch_duplicate_audit:
+  batches: [QLB-000001, QLB-000002]
+  occurrence_id_duplicates: 0
+  canonical_row_key_duplicates: 0
+  source_locator_duplicates: 0
+  result: PASS
+
+batch_2_freeze:
+  batch_id: QLB-000002
+  final_state: COMMITTED
+  accepted: 10
+  rejected: 0
+  unresolved: 0
+  silent_mutation_forbidden: true
+  correction_requires_provenance: true
+
+integrity_audit:
+  checkpoint_row_count: 21
+  reconstructable_from_registered_source: true
+  source_id: QLS-000001
+  root: "م ث ل"
+  memory_dependent_rows: 0
+  result: PASS
+
+scaling_decision:
+  decision: INCREASE
+  previous_batch_size: 10
+  next_batch_size: 25
+  basis:
+    validation_error_rate: 0
+    unresolved_rate: 0
+    duplicate_rate: 0
+    source_locator_stability: PASS
+  invariant: row_level_validation_remains_mandatory
+
+next_gate:
+  step: STEP-09
+  action: OPEN_QLB_000003
+  first_occurrence_id: QLO-000022
+  allowed: true
