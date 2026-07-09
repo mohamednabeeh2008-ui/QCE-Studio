@@ -1,0 +1,117 @@
+{
+  "mission": "MISSION-005-PRE",
+  "version": "0.1",
+  "status": "COMPLETE",
+  "executed_at": "2026-07-09",
+  "factory_state": "REPEATABLE_PRODUCTION",
+  "identity_state": {
+    "last_permanent_nar_id": "NAR-000038",
+    "next_available_nar_id": "NAR-000039",
+    "nar_000039_allocated": false
+  },
+  "recovery": {
+    "produced_records": {
+      "range": "NAR-000001..NAR-000038",
+      "count": 38,
+      "batch_004_range": "NAR-000032..NAR-000038",
+      "batch_004_count": 7,
+      "status": "RECOVERED_FROM_REPOSITORY_HISTORY_AND_REGISTRIES"
+    },
+    "completed_batches": [
+      {"batch":"BATCH-001","subject":"ADAM","coverage_status":"EXISTING_NAR"},
+      {"batch":"BATCH-002","subject":"NOAH","coverage_status":"EXISTING_NAR"},
+      {"batch":"BATCH-003","subject":"ABRAHAM","coverage_status":"EXISTING_NAR"},
+      {"batch":"BATCH-004","subject":"LOT","coverage_status":"EXISTING_NAR","closure":"COMPLETE_WITH_HOLDS"}
+    ],
+    "holds": {
+      "batch_004_count": 17,
+      "batch_004_interface_hold": "B004-LI-012",
+      "prior_recovered_hold_evidence": [
+        {"batch":"BATCH-003","entity_id":"NAR-000013","gate":"HOLD","conflict_type":"CROSS_SURAH_COMPOUND"}
+      ],
+      "policy": "HOLD items remain non-permanent and may not be silently promoted or merged."
+    },
+    "related_inventories_and_queues": [
+      {"path":"data/qfm-v2/universe/01-canonical-production-queue-v0.1.json","status":"RECOVERED","selection":"MOSES","policy":"FIRST_QURANIC_APPEARANCE_OF_SUBJECT_NARRATIVE"},
+      {"path":"data/qfm-v2/governance/01-canonical-subject-coverage-queue-v0.1.json","status":"RECOVERED_CONFLICTING","selection":"ISHMAEL","policy":"LINEAGE_SEQUENCE"},
+      {"path":"data/qfm-v2/batches/batch-005/03-scope-lock-v0.1.json","status":"RECOVERED_BLOCKER","selection":null}
+    ]
+  },
+  "legal_separation": {
+    "rule": "EVENT != JOURNEY != WITNESS",
+    "definitions": {
+      "EVENT": "A bounded narrative occurrence eligible for independent identity testing.",
+      "JOURNEY": "A longitudinal sequence of events; never collapsed into one event by default.",
+      "WITNESS": "A Quranic attestation or retelling locus; never counted as a new event merely because it is a separate witness."
+    },
+    "early_merge": "FORBIDDEN"
+  },
+  "canonical_narrative_universe_master_inventory": {
+    "inventory_level": "SUBJECT_COVERAGE_CONTROL_WITH_TYPED_UNIT_LANES",
+    "unit_lanes": ["EVENT","JOURNEY","WITNESS"],
+    "items": [
+      {"universe_item":"ADAM","existing_nar":"NAR-000001..batch-001-terminal","hold":false,"missing":false,"status":"COVERED"},
+      {"universe_item":"NOAH","existing_nar":"batch-002-range","hold":false,"missing":false,"status":"COVERED"},
+      {"universe_item":"ABRAHAM","existing_nar":"batch-003-range","hold":"PRESERVED_PRIOR_HOLDS","missing":false,"status":"COVERED_WITH_HOLDS"},
+      {"universe_item":"LOT","existing_nar":"NAR-000032..NAR-000038","hold":"17 INCLUDING B004-LI-012","missing":false,"status":"COVERED_WITH_HOLDS"},
+      {"universe_item":"MOSES","existing_nar":null,"hold":null,"missing":true,"status":"MISSING"},
+      {"universe_item":"ISHMAEL","existing_nar":null,"hold":null,"missing":true,"status":"MISSING"},
+      {"universe_item":"ISAAC","existing_nar":null,"hold":null,"missing":true,"status":"MISSING"},
+      {"universe_item":"JACOB","existing_nar":null,"hold":null,"missing":true,"status":"MISSING"},
+      {"universe_item":"JOSEPH","existing_nar":null,"hold":null,"missing":true,"status":"MISSING"}
+    ],
+    "coverage_mapping_contract": "Universe Item <-> Existing NAR <-> HOLD <-> Missing",
+    "scope_note": "Inventory is a production-control master inventory reconstructed from repository-produced batches and recovered queue assets; typed EVENT/JOURNEY/WITNESS decomposition remains mandatory inside each subject harvest."
+  },
+  "gap_classification": {
+    "without_early_merge": true,
+    "classes": [
+      {"class":"MISSING_SUBJECT_COVERAGE","items":["MOSES","ISHMAEL","ISAAC","JACOB","JOSEPH"]},
+      {"class":"PRESERVED_HOLD","items":["BATCH-003 unresolved hold evidence","BATCH-004 17 holds"]},
+      {"class":"INTERFACE_HOLD","items":["B004-LI-012"]},
+      {"class":"QUEUE_POLICY_CONFLICT","items":["MOSES vs ISHMAEL"]}
+    ]
+  },
+  "canonical_narrative_universe_coverage_queue_v0_1": {
+    "status": "ACTIVE",
+    "priority_rule": {
+      "primary": "FIRST_QURANIC_APPEARANCE_OF_SUBJECT_NARRATIVE",
+      "secondary": "MUSHAF_SURAH_ORDER",
+      "tertiary": "FIRST_RELEVANT_AYAH_ORDER",
+      "exclusions": "Exclude subjects already completed as independent batches.",
+      "interface_rule": "Prior interface presence does not equal independent subject completion.",
+      "conflict_resolution": "This deterministic repository-recovered policy supersedes the incompatible lineage-only reconstructed queue for Batch 005 selection."
+    },
+    "queue": [
+      {"position":1,"subject":"MOSES","status":"SELECTED_FIRST_LEGAL_MISSING"},
+      {"position":2,"subject":"ISHMAEL","status":"MISSING_QUEUED"},
+      {"position":3,"subject":"ISAAC","status":"MISSING_QUEUED"},
+      {"position":4,"subject":"JACOB","status":"MISSING_QUEUED"},
+      {"position":5,"subject":"JOSEPH","status":"MISSING_QUEUED"}
+    ]
+  },
+  "batch_005_scope_lock": {
+    "gate": "BATCH_005_SUBJECT_LOCK",
+    "subject": "MOSES",
+    "arabic": "موسى",
+    "status": "LOCKED",
+    "selection_source": "CANONICAL_NARRATIVE_UNIVERSE_COVERAGE_QUEUE_V0.1",
+    "production_started": false,
+    "nar_000039_started": false
+  },
+  "safety_and_validation_tests": {
+    "tests": [
+      {"test":"NAR_CONTINUITY","expected":"LAST=NAR-000038 NEXT=NAR-000039","result":"PASS"},
+      {"test":"NO_PREMATURE_NAR_ALLOCATION","expected":0,"result":"PASS"},
+      {"test":"BATCH_004_CLOSURE_RECOVERY","expected":"COMPLETE_WITH_HOLDS; 7 permanent; 17 holds","result":"PASS"},
+      {"test":"HOLD_PRESERVATION","expected":"NO_SILENT_PROMOTION_OR_MERGE","result":"PASS"},
+      {"test":"EVENT_JOURNEY_WITNESS_SEPARATION","expected":"THREE_DISTINCT_LANES","result":"PASS"},
+      {"test":"COVERAGE_MAPPING_COMPLETENESS","expected":"EVERY_INVENTORY_ITEM_HAS_EXISTING_NAR/HOLD/MISSING STATE","result":"PASS"},
+      {"test":"QUEUE_POLICY_DETERMINISM","expected":"EXPLICIT_PRIMARY_SECONDARY_TERTIARY_RULES","result":"PASS"},
+      {"test":"SELECTION_NOT_FROM_MEMORY","expected":"REPOSITORY_RECOVERED_POLICY_AND_ASSETS","result":"PASS"},
+      {"test":"BATCH_005_LOCK_AFTER_QUEUE","expected":true,"result":"PASS"}
+    ],
+    "overall": "PASS"
+  },
+  "final_verdict": "MISSION_005_PRE_COMPLETE_BATCH_005_SUBJECT_LOCKED_NO_NAR_000039_PRODUCTION"
+}
