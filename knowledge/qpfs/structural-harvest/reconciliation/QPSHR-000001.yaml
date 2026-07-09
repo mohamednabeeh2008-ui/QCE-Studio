@@ -1,0 +1,29 @@
+schema: qpfs/structural-harvest-reconciliation/v1.0
+id: QPSHR-000001
+status: READY_FOR_DATA_RUN
+input_authority: QSIM-000003
+expected_lexical_occurrences: 169
+pipeline_contract: SCP-000001
+candidate_contract: SCRC-000001
+control_plane:
+  runtime_intake: CLOSED_PASS
+  context_hydration_policy: CLOSED_PASS
+  signal_evaluation_policy: CLOSED_PASS
+  exclusion_ambiguity_routing: CLOSED_PASS
+  materialization_boundary_policy: CLOSED_PASS
+  recovery_collision_policy: CLOSED_PASS
+  independent_validation_gate: CLOSED_PASS
+  registry_freeze_policy: CLOSED_PASS
+data_plane:
+  hydrated_rows: PENDING_MATERIALIZATION
+  signal_records: PENDING_MATERIALIZATION
+  exclusion_records: PENDING_MATERIALIZATION
+  unresolved_records: PENDING_MATERIALIZATION
+  candidate_records: PENDING_MATERIALIZATION
+  recovery_proposals: PENDING_MATERIALIZATION
+  validation_decisions: PENDING_MATERIALIZATION
+  frozen_registry: PENDING_MATERIALIZATION
+closure_decision: BLOCKED_PENDING_DATA_PLANE
+canonical_parable_decisions_created: false
+qpu_created: false
+next_action: MATERIALIZE_AND_RUN_DATA_PLANE

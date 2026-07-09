@@ -1,0 +1,15 @@
+schema: qpfs/structural-runtime-intake/v1.0
+id: SRI-000001
+status: CLOSED_PASS
+input_authority: QSIM-000003
+expected_occurrences: 169
+canonical_range: QLO-000001..QLO-000169
+identity_policy:
+  precedence: reconciled_global_identity
+  legacy_ids_are_non_authoritative: true
+checks:
+  count_169: PASS
+  unique_canonical_ids: PASS
+  contiguous_range: PASS
+output: STRUCTURAL_RUNTIME_ROWS_169
+next_gate: CONTEXT_HYDRATION
