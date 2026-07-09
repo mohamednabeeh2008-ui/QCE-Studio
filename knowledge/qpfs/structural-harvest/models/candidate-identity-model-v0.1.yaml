@@ -1,0 +1,27 @@
+schema: qpfs/candidate-identity-model/v0.1
+id: CIM-000001
+step: 24.5B-06
+status: FROZEN
+identity:
+  prefix: QPC
+  stable_after_assignment: true
+canonical_row_key:
+  components:
+    - normalized_start_reference
+    - normalized_end_reference
+    - primary_anchor_reference
+merge_rules:
+  same_token: merge
+  same_textual_unit_multiple_anchors: merge_with_multiple_provenance_edges
+  adjacent_but_independent_units: do_not_merge
+  overlapping_boundaries: register_overlap_and_defer
+split_rules:
+  independent_representational_mechanisms: may_split
+  mere_internal_details: do_not_split
+prohibitions:
+  - one_token_one_candidate_assumption
+  - proximity_only_merge
+  - canonical_status_inference
+result:
+  decision: PASS
+  authorized_next_step: 24.5B-07
