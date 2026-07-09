@@ -1,0 +1,39 @@
+schema: qpfs/lexical-batch-authority-registry/v0.1
+id: QSH2-AUTH-000001
+status: LOCATED_WITH_RESIDUAL_CONFLICT
+source_id: QLS-000001
+root: "م ث ل"
+authorities:
+  first_segment:
+    range: QLO-000001..QLO-000011
+    state: HISTORICAL_AUTHORITY_NOT_YET_LOCATED_AS_STANDALONE_FILE
+    recovery_source: QLS-000001
+  second_segment:
+    range: QLO-000012..QLO-000021
+    authority: knowledge/qpfs/ledger/commits/QLC-000002.yaml
+    state: LOCATED
+  third_segment:
+    range: QLO-000022..QLO-000046
+    authority: knowledge/qpfs/ledger/batches/QLB-000003.yaml
+    state: LOCATED
+  fourth_segment:
+    range: QLO-000047..QLO-000088
+    authority: knowledge/qpfs/ledger/batches/QLB-000004.yaml
+    state: LOCATED
+  fifth_segment:
+    range: QLO-000089..QLO-000169
+    authority: knowledge/qpfs/ledger/batches/QLB-000005.yaml
+    state: LOCATED
+confirmed_rows_directly_available: 158
+rows_requiring_recovery: 11
+new_findings:
+  - >-
+    QLB-000003 and QLB-000004 currently expose contiguous explicit rows 22..88,
+    while QSIM-000002 describes a different repair recipe involving compaction and four
+    recovered terminal nominal rows. The two authorities must not be silently mixed.
+  - >-
+    QLB-000005 explicitly materializes rows 89..169 and is suitable as a direct row source.
+resolution:
+  immediate: preserve_all_located_authorities_without_rewriting
+  next: reconstruct_rows_1_to_11_from_registered_source_then_run_global_identity_reconciliation
+  forbidden: declare_QSIM_000003_complete_before_global_duplicate_and_sequence_audit
