@@ -1,0 +1,118 @@
+schema: qpfs/structural-harvest-100-task-plan/v0.1
+id: QSH-PLAN-000001
+stage: 24.5B
+status: ACTIVE
+execution_policy: sequential_problem_first_no_silent_assumptions
+hard_locks:
+  canonical_parable_decisions: forbidden_until_investigation
+  qpu_creation: forbidden
+  unresolved_coercion: forbidden
+priorities:
+  P0: integrity_and_contradiction_resolution
+  P1: reproducible_structural_intake
+  P2: anchor_and_exclusion_execution
+  P3: candidate_materialization
+  P4: boundary_and_deduplication
+  P5: root_blind_recovery
+  P6: provenance_validation_and_closure
+tasks:
+  - {n: 1, id: QSH-001, priority: P0, action: audit_current_main_state}
+  - {n: 2, id: QSH-002, priority: P0, action: inventory_lexical_authorities}
+  - {n: 3, id: QSH-003, priority: P0, action: detect_ledger_closure_contradiction}
+  - {n: 4, id: QSH-004, priority: P0, action: classify_contradiction_severity}
+  - {n: 5, id: QSH-005, priority: P0, action: preserve_original_21_row_ledger}
+  - {n: 6, id: QSH-006, priority: P0, action: recover_rows_22_46_from_QLB_000003}
+  - {n: 7, id: QSH-007, priority: P0, action: recover_rows_47_88_from_QLB_000004}
+  - {n: 8, id: QSH-008, priority: P0, action: recover_rows_89_169_from_QLB_000005}
+  - {n: 9, id: QSH-009, priority: P0, action: normalize_compact_row_shape}
+  - {n: 10, id: QSH-010, priority: P0, action: build_169_row_consolidated_index}
+  - {n: 11, id: QSH-011, priority: P0, action: verify_id_contiguity}
+  - {n: 12, id: QSH-012, priority: P0, action: verify_locator_uniqueness}
+  - {n: 13, id: QSH-013, priority: P0, action: verify_batch_arithmetic}
+  - {n: 14, id: QSH-014, priority: P0, action: reconcile_21_plus_25_plus_42_plus_81}
+  - {n: 15, id: QSH-015, priority: P0, action: issue_contradiction_resolution_record}
+  - {n: 16, id: QSH-016, priority: P0, action: freeze_structural_input_authority}
+  - {n: 17, id: QSH-017, priority: P0, action: prohibit_direct_use_of_stale_ledger_count}
+  - {n: 18, id: QSH-018, priority: P0, action: record_provenance_chain}
+  - {n: 19, id: QSH-019, priority: P0, action: run_readiness_recheck}
+  - {n: 20, id: QSH-020, priority: P0, action: close_problem_one}
+  - {n: 21, id: QSH-021, priority: P1, action: materialize_unified_structural_intake_manifest}
+  - {n: 22, id: QSH-022, priority: P1, action: reconcile_manifest_exactly_169}
+  - {n: 23, id: QSH-023, priority: P1, action: attach_canonical_row_keys}
+  - {n: 24, id: QSH-024, priority: P1, action: attach_source_locator_provenance}
+  - {n: 25, id: QSH-025, priority: P1, action: attach_morphological_family}
+  - {n: 26, id: QSH-026, priority: P1, action: attach_batch_origin}
+  - {n: 27, id: QSH-027, priority: P1, action: verify_no_source_row_loss}
+  - {n: 28, id: QSH-028, priority: P1, action: verify_no_cross_batch_duplicates}
+  - {n: 29, id: QSH-029, priority: P1, action: freeze_manifest_version}
+  - {n: 30, id: QSH-030, priority: P1, action: open_context_hydration_campaign}
+  - {n: 31, id: QSH-031, priority: P1, action: define_context_record_schema}
+  - {n: 32, id: QSH-032, priority: P1, action: hydrate_carrier_verse_references}
+  - {n: 33, id: QSH-033, priority: P1, action: apply_verse_window_rules}
+  - {n: 34, id: QSH-034, priority: P1, action: preserve_context_source_locators}
+  - {n: 35, id: QSH-035, priority: P1, action: audit_context_reproducibility}
+  - {n: 36, id: QSH-036, priority: P2, action: compile_signal_evaluation_matrix}
+  - {n: 37, id: QSH-037, priority: P2, action: evaluate_explicit_mathal_signals}
+  - {n: 38, id: QSH-038, priority: P2, action: evaluate_kamathal_signals}
+  - {n: 39, id: QSH-039, priority: P2, action: evaluate_daraba_mathal_signals}
+  - {n: 40, id: QSH-040, priority: P2, action: evaluate_structural_simile_signals}
+  - {n: 41, id: QSH-041, priority: P2, action: evaluate_representational_scene_signals}
+  - {n: 42, id: QSH-042, priority: P2, action: mark_insufficient_signals}
+  - {n: 43, id: QSH-043, priority: P2, action: materialize_anchor_records}
+  - {n: 44, id: QSH-044, priority: P2, action: verify_anchor_to_occurrence_links}
+  - {n: 45, id: QSH-045, priority: P2, action: freeze_anchor_pass}
+  - {n: 46, id: QSH-046, priority: P2, action: apply_abstract_similarity_exclusion}
+  - {n: 47, id: QSH-047, priority: P2, action: apply_attribute_sense_exclusion}
+  - {n: 48, id: QSH-048, priority: P2, action: apply_statue_lexeme_exclusion}
+  - {n: 49, id: QSH-049, priority: P2, action: apply_mathulat_exclusion}
+  - {n: 50, id: QSH-050, priority: P2, action: apply_muthla_exclusion}
+  - {n: 51, id: QSH-051, priority: P2, action: apply_nonrepresentational_usage_exclusion}
+  - {n: 52, id: QSH-052, priority: P2, action: create_exclusion_reason_ledger}
+  - {n: 53, id: QSH-053, priority: P2, action: isolate_ambiguous_cases}
+  - {n: 54, id: QSH-054, priority: P2, action: prohibit_majority_vote_batch_acceptance}
+  - {n: 55, id: QSH-055, priority: P2, action: reconcile_anchor_exclusion_unresolved_counts}
+  - {n: 56, id: QSH-056, priority: P3, action: define_candidate_record_schema}
+  - {n: 57, id: QSH-057, priority: P3, action: assign_stable_candidate_ids}
+  - {n: 58, id: QSH-058, priority: P3, action: materialize_first_candidate_set}
+  - {n: 59, id: QSH-059, priority: P3, action: attach_anchor_sets}
+  - {n: 60, id: QSH-060, priority: P3, action: attach_initial_windows}
+  - {n: 61, id: QSH-061, priority: P3, action: separate_candidate_from_parable_identity}
+  - {n: 62, id: QSH-062, priority: P3, action: cluster_multi_occurrence_candidates}
+  - {n: 63, id: QSH-063, priority: P3, action: preserve_cluster_provenance}
+  - {n: 64, id: QSH-064, priority: P3, action: audit_overmerge_risk}
+  - {n: 65, id: QSH-065, priority: P3, action: audit_undersplit_risk}
+  - {n: 66, id: QSH-066, priority: P4, action: reconstruct_candidate_boundaries}
+  - {n: 67, id: QSH-067, priority: P4, action: classify_boundary_granularity}
+  - {n: 68, id: QSH-068, priority: P4, action: test_boundary_sufficiency}
+  - {n: 69, id: QSH-069, priority: P4, action: detect_cut_essential_elements}
+  - {n: 70, id: QSH-070, priority: P4, action: detect_excess_context}
+  - {n: 71, id: QSH-071, priority: P4, action: resolve_boundary_ambiguity}
+  - {n: 72, id: QSH-072, priority: P4, action: run_duplicate_candidate_audit}
+  - {n: 73, id: QSH-073, priority: P4, action: merge_true_duplicates_only}
+  - {n: 74, id: QSH-074, priority: P4, action: preserve_nested_units}
+  - {n: 75, id: QSH-075, priority: P4, action: audit_cross_form_recovery}
+  - {n: 76, id: QSH-076, priority: P4, action: control_cross_form_false_positives}
+  - {n: 77, id: QSH-077, priority: P4, action: reconcile_root_aware_candidate_set}
+  - {n: 78, id: QSH-078, priority: P5, action: define_root_blind_discovery_protocol}
+  - {n: 79, id: QSH-079, priority: P5, action: define_root_blind_evidence_requirements}
+  - {n: 80, id: QSH-080, priority: P5, action: prohibit_memory_based_candidate_injection}
+  - {n: 81, id: QSH-081, priority: P5, action: execute_root_blind_structural_scan}
+  - {n: 82, id: QSH-082, priority: P5, action: materialize_root_blind_proposals}
+  - {n: 83, id: QSH-083, priority: P5, action: validate_root_blind_provenance}
+  - {n: 84, id: QSH-084, priority: P5, action: audit_root_aware_root_blind_collisions}
+  - {n: 85, id: QSH-085, priority: P5, action: deduplicate_collisions_without_losing_provenance}
+  - {n: 86, id: QSH-086, priority: P5, action: reconcile_total_candidate_universe}
+  - {n: 87, id: QSH-087, priority: P6, action: build_candidate_provenance_packs}
+  - {n: 88, id: QSH-088, priority: P6, action: verify_every_candidate_reconstructable}
+  - {n: 89, id: QSH-089, priority: P6, action: run_independent_candidate_validation}
+  - {n: 90, id: QSH-090, priority: P6, action: assign_pass_reject_unresolved_only}
+  - {n: 91, id: QSH-091, priority: P6, action: audit_disposition_completeness}
+  - {n: 92, id: QSH-092, priority: P6, action: commit_pass_candidates_atomically}
+  - {n: 93, id: QSH-093, priority: P6, action: preserve_rejects_outside_accepted_count}
+  - {n: 94, id: QSH-094, priority: P6, action: preserve_unresolved_outside_accepted_count}
+  - {n: 95, id: QSH-095, priority: P6, action: run_structural_harvest_reconciliation}
+  - {n: 96, id: QSH-096, priority: P6, action: verify_all_accounting_equations}
+  - {n: 97, id: QSH-097, priority: P6, action: freeze_candidate_registry}
+  - {n: 98, id: QSH-098, priority: P6, action: run_investigation_readiness_gate}
+  - {n: 99, id: QSH-099, priority: P6, action: issue_24_5B_closure_or_blocker}
+  - {n: 100, id: QSH-100, priority: P6, action: authorize_next_legal_stage_only_if_pass}
