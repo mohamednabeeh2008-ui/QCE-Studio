@@ -1,0 +1,63 @@
+schema: qpfs/lexical-batch-validation-closure/v0.1
+closure_id: QLBC-000002
+batch_id: QLB-000002
+step: 24.5A
+stage: STEP_02_BATCH_VALIDATION_CLOSURE
+status: READY_TO_COMMIT
+
+inputs:
+  materialization_manifest: knowledge/qpfs/manifests/lexical-batch-QLB-000002-v0.1.yaml
+  independent_validation: knowledge/qpfs/validation/QLB-000002-row-validation-v0.1.yaml
+  validation_id: QLBV-000002
+  validation_commit: 157ebbe741aab4d83ca25174ef05ee6095b1e23b
+
+closure_checks:
+  validation_record_exists: PASS
+  validation_is_independent: PASS
+  validation_scope_matches_batch: PASS
+  expected_row_count: 10
+  validated_row_count: 10
+  every_row_has_disposition: PASS
+  majority_vote_used: false
+  rows_without_disposition: 0
+  pass_rows: 10
+  reject_rows: 0
+  duplicate_rows: 0
+  unresolved_rows: 0
+
+row_dispositions:
+  QLO-000012: PASS
+  QLO-000013: PASS
+  QLO-000014: PASS
+  QLO-000015: PASS
+  QLO-000016: PASS
+  QLO-000017: PASS
+  QLO-000018: PASS
+  QLO-000019: PASS
+  QLO-000020: PASS
+  QLO-000021: PASS
+
+closure_decision:
+  validation_gate: CLOSED_PASS
+  from_status: MATERIALIZED_PENDING_VALIDATION
+  to_status: READY_TO_COMMIT
+  atomic_ledger_commit_authorized: true
+  authorized_scope: QLO-000012_to_QLO-000021
+
+non_actions:
+  ledger_modified: false
+  accepted_ledger_count_incremented: false
+  reconciliation_performed: false
+  duplicate_audit_performed: false
+  batch_frozen: false
+
+legal_guards:
+  parable_identity_decision: NOT_PERFORMED
+  qpc_assignment: LOCKED
+  qpu_assignment: LOCKED
+  lexical_presence_confirms_parable: false
+
+next_gate:
+  step: STEP_03_ATOMIC_LEDGER_COMMIT
+  authorized: true
+  rule: write_only_PASS_rows_and_reconcile_after_commit
