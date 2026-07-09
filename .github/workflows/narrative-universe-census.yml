@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   census:
@@ -29,6 +29,19 @@ jobs:
           test -s data/qfm-v2/audits/generated/nar-evidence-reconciliation-v0.1.json
           node -e "const x=require('./data/qfm-v2/audits/generated/narrative-universe-source-census-v0.1.json'); if(!x.safety.pass) process.exit(1); if(x.safety.nar_000039_allocated) process.exit(1); console.log(x.recovered_counts); console.log(x.nar_reconciliation_summary)"
           node -e "const r=require('./data/qfm-v2/audits/generated/nar-evidence-reconciliation-v0.1.json'); if(r.records.length!==38) process.exit(1); if(r.records.some(x=>!x.nar_id||!x.status||!Array.isArray(x.sources))) process.exit(1); console.log(r.counts)"
+      - name: Persist verified recovery evidence
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "qce-recovery-bot"
+          git config user.email "qce-recovery-bot@users.noreply.github.com"
+          git add -f data/qfm-v2/audits/generated/narrative-universe-source-census-v0.1.json
+          git add -f data/qfm-v2/audits/generated/nar-evidence-reconciliation-v0.1.json
+          if git diff --cached --quiet; then
+            echo "No recovery evidence changes to persist"
+          else
+            git commit -m "chore(recovery): persist verified census evidence [skip ci]"
+            git push
+          fi
       - uses: actions/upload-artifact@v4
         with:
           name: narrative-universe-recovery-v0.1
