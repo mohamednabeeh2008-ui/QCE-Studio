@@ -1,0 +1,82 @@
+schema: qpfs/batch-validation-closure/v0.1
+id: QLBVC-000002
+step: 24.5A
+campaign_step: STEP-02
+batch_id: QLB-000002
+status: VALIDATION_CLOSED
+
+input:
+  validation_record: knowledge/qpfs/audits/step-24-5a-independent-row-validation-QLB-000002-v0.1.yaml
+  validation_record_id: QLIV-000002
+  merged_by_pr: 8
+  merged_commit: ba5c2bf5674f975cbbc2819716783d31ae7b72a1
+
+scope:
+  first_occurrence_id: QLO-000012
+  last_occurrence_id: QLO-000021
+  expected_row_count: 10
+  observed_row_count: 10
+
+row_dispositions:
+  QLO-000012: PASS
+  QLO-000013: PASS
+  QLO-000014: PASS
+  QLO-000015: PASS
+  QLO-000016: PASS
+  QLO-000017: PASS
+  QLO-000018: PASS
+  QLO-000019: PASS
+  QLO-000020: PASS
+  QLO-000021: PASS
+
+closure_checks:
+  every_expected_row_present: true
+  every_row_has_disposition: true
+  undecided_rows: 0
+  duplicate_occurrence_ids_within_batch: 0
+  pass_count: 10
+  reject_count: 0
+  unresolved_count: 0
+  majority_rule_used: false
+  batch_success_inferred_from_majority: false
+  closure_gate: PASS
+
+accepted_for_next_step:
+  count: 10
+  occurrence_ids:
+    - QLO-000012
+    - QLO-000013
+    - QLO-000014
+    - QLO-000015
+    - QLO-000016
+    - QLO-000017
+    - QLO-000018
+    - QLO-000019
+    - QLO-000020
+    - QLO-000021
+
+excluded_from_accepted_counter:
+  rejected: []
+  unresolved: []
+
+immutability_boundary:
+  validation_decisions_closed: true
+  silent_disposition_change_forbidden: true
+  correction_requires_explicit_provenance: true
+
+prohibitions:
+  ledger_commit_executed: false
+  accepted_counter_mutated: false
+  next_occurrence_id_mutated: false
+  cross_batch_duplicate_audit_executed: false
+  batch_frozen_as_committed: false
+  qpu_promotion_executed: false
+
+result:
+  step_02: COMPLETE
+  batch_validation_state: CLOSED_PASS
+  ledger_state: UNCHANGED
+  next_gate:
+    step: STEP-03
+    name: Atomic Ledger Commit
+    allowed: true
