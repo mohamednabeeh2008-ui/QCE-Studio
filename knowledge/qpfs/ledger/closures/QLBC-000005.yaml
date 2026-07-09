@@ -1,0 +1,39 @@
+schema: qpfs/lexical-batch-closure/v0.1
+id: QLBC-000005
+batch_id: QLB-000005
+status: COMMITTED
+source_id: QLS-000001
+scope:
+  first_occurrence_id: QLO-000089
+  last_occurrence_id: QLO-000169
+  rows_checked: 81
+validation:
+  pass: 81
+  reject: 0
+  unresolved: 0
+  every_row_has_disposition: true
+  row_level_source_locator_checked: true
+  source_attestation_checked: true
+commit:
+  atomic: true
+  accepted_count: 81
+  accepted_total_after_commit: 169
+  next_occurrence_id: null
+integrity:
+  occurrence_id_duplicates: 0
+  source_locator_duplicates_within_batch: 0
+  prior_rows_rewritten: false
+  family_counts:
+    verb_form_v_tamathala: 1
+    noun_amthal: 1
+    noun_tamathil: 2
+    nominal_mathal_prior_batches: 88
+    noun_mithl: 75
+    noun_mathulat: 1
+    adjective_muthla: 1
+  arithmetic_total: 169
+  source_reported_total: 169
+  reconciliation: PASS
+result:
+  batch_state: FROZEN
+  root_ledger_ready_for_final_closure: true

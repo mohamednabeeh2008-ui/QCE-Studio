@@ -1,0 +1,48 @@
+schema: qpfs/lexical-root-closure/v0.1
+id: QLRC-000001
+step: 24.5A
+status: CLOSED_PASS
+root: "م ث ل"
+source_id: QLS-000001
+source_reference: "https://corpus.quran.com/qurandictionary.jsp?q=mvl"
+source_report:
+  total_occurrences: 169
+  derived_forms: 7
+  counts:
+    verb_form_v_tamathala: 1
+    noun_amthal: 1
+    noun_tamathil: 2
+    nominal_mathal: 88
+    noun_mithl: 75
+    noun_mathulat: 1
+    adjective_muthla: 1
+ledger:
+  first_occurrence_id: QLO-000001
+  last_occurrence_id: QLO-000169
+  materialized_count: 169
+  accepted_count: 169
+  rejected_count: 0
+  unresolved_count: 0
+  next_occurrence_id: null
+batches:
+  - QLB-000001
+  - QLB-000002
+  - QLB-000003
+  - QLB-000004
+  - QLB-000005
+closure_checks:
+  source_total_equals_ledger_total: true
+  family_sum_equals_169: true
+  occurrence_id_range_complete: true
+  final_batch_closed: true
+  nominal_family_reconciled_88_of_88: true
+  remaining_families_reconciled_81_of_81: true
+  provenance_source_registered: true
+  canonical_parable_decisions_created: false
+  candidate_identity_inference_created: false
+result:
+  lexical_root_ledger: COMPLETE
+  completion_percent: 100
+  harvest_stage_24_5A: CLOSED
+  next_legal_stage: STEP_24_5B_STRUCTURAL_CANDIDATE_MATERIALIZATION
+  note: "Lexical occurrence closure does not mean that all 169 occurrences are parables. Classification remains a later legal stage."
