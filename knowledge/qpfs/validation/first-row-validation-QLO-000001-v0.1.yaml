@@ -1,0 +1,76 @@
+schema: qpfs/first-row-validation/v0.1
+validation_id: QLV-000001
+step: 24.5A
+target: QLO-000001
+validator_mode: independent_post_materialization
+status: PASS
+validated_at: "2026-07-09"
+
+input_identity:
+  ledger: knowledge/qpfs/manifests/lexical-occurrence-ledger-v0.1.yaml
+  occurrence_id: QLO-000001
+  source_id: QLS-000001
+
+structural_validation:
+  status: PASS
+  checks:
+    occurrence_id_present: PASS
+    occurrence_id_pattern: PASS
+    source_id_present: PASS
+    surah_present: PASS
+    ayah_present: PASS
+    token_position_present: PASS
+    surface_present: PASS
+    lemma_present: PASS
+    root_present: PASS
+    morphological_form_present: PASS
+    source_locator_present: PASS
+    verification_status_present: PASS
+
+source_validation:
+  status: PASS
+  checks:
+    source_is_registered: PASS
+    source_status_is_accepted: PASS
+    source_gate_is_passed: PASS
+    token_location_matches_record: PASS
+    root_is_attested: PASS
+    morphology_is_attested: PASS
+    lexical_source_is_not_used_as_parable_decision: PASS
+
+traceability_validation:
+  status: PASS
+  checks:
+    stable_locator_present: PASS
+    locator_encodes_surah: PASS
+    locator_encodes_ayah: PASS
+    locator_encodes_token_position: PASS
+    provenance_chain_qlo_to_qls: PASS
+    row_can_be_rechecked_independently: PASS
+
+logical_validation:
+  status: PASS
+  checks:
+    qpc_identity_is_null: PASS
+    qpu_identity_is_null: PASS
+    parable_identity_decision_not_performed: PASS
+    promotion_lock_preserved: PASS
+
+findings: []
+warnings: []
+
+final_decision:
+  result: PASS
+  expansion_authorization: OPEN
+  authorized_next_occurrence: QLO-000002
+  scope: lexical_occurrence_materialization_only
+  does_not_authorize:
+    - qpc_assignment
+    - qpu_assignment
+    - parable_confirmation
+    - step_24_5B_completion
+
+rationale: >-
+  QLO-000001 independently passes structural, source, traceability, and logical
+  validation. Expansion may proceed to QLO-000002 and later lexical rows under
+  the same contract. The result validates the row pipeline, not parable identity.
