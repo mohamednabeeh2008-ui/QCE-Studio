@@ -2,7 +2,7 @@ schema: qpfs/lexical-batch/v0.1
 id: QLB-000003
 step: 24.5A
 campaign_steps: [STEP-09, STEP-10]
-status: MATERIALIZED_PENDING_INDEPENDENT_VALIDATION
+status: COMMITTED
 source_id: QLS-000001
 root: "م ث ل"
 source_reference: "https://corpus.quran.com/qurandictionary.jsp?q=mvl"
@@ -10,7 +10,6 @@ source_section: "Nominal — mathal"
 first_occurrence_id: QLO-000022
 last_occurrence_id: QLO-000046
 row_count: 25
-
 rows:
   - {occurrence_id: QLO-000022, source_locator: "6:122:13", source_attestation: "mathaluhu"}
   - {occurrence_id: QLO-000023, source_locator: "6:160:6", source_attestation: "amthālihā"}
@@ -37,15 +36,20 @@ rows:
   - {occurrence_id: QLO-000044, source_locator: "16:112:3", source_attestation: "mathalan"}
   - {occurrence_id: QLO-000045, source_locator: "17:48:5", source_attestation: "l-amthāla"}
   - {occurrence_id: QLO-000046, source_locator: "17:89:9", source_attestation: "mathalin"}
-
-materialization_checks:
-  source_order_preserved: true
+validation:
+  closure_record: QLBC-000003
+  rows_checked: 25
+  pass: 25
+  reject: 0
+  unresolved: 0
+  row_level_source_locator_checked: true
+  source_attestation_checked: true
+commit:
+  atomic: true
+  accepted_total_after_commit: 46
+  next_occurrence_id: QLO-000047
+integrity:
   occurrence_ids_contiguous: true
+  occurrence_ids_unique: true
   source_locators_unique_within_batch: true
-  normalization_applied: true
-  duplicate_check_against_first_21: PASS
-  ledger_commit_executed: false
-
-next_gate:
-  action: INDEPENDENT_ROW_VALIDATION
-  automatic_continuation_authorized: true
+  reconciliation: PASS
