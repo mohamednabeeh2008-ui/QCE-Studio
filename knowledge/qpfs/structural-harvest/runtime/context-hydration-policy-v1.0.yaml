@@ -1,0 +1,10 @@
+schema: qpfs/context-hydration-policy/v1.0
+id: CHP-000001
+status: CLOSED_PASS
+scope: STRUCTURAL_RUNTIME_ROWS_169
+window_policy:
+  default: containing_ayah
+  expand_left_when: antecedent_required_for_structure
+  expand_right_when: comparison_or_scene_incomplete
+  multi_ayah_when: representational_architecture_crosses_ayah_boundary
+hard_rule: context_expansion_does_not_create_candidate_status

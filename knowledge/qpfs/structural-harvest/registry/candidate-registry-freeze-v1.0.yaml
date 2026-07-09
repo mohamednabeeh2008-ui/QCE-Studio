@@ -1,0 +1,11 @@
+schema: qpfs/candidate-registry-freeze/v1.0
+id: CRF-000001
+status: CLOSED_PASS
+registry_outputs:
+  accepted: QPCR-000001
+  rejected: QPCX-000001
+  unresolved: QPCRQ-000001
+freeze_rules:
+  accepted_only_in_accepted_counter: true
+  silent_mutation_forbidden: true
+  correction_requires_provenance_event: true

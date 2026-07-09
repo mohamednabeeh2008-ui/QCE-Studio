@@ -1,0 +1,8 @@
+schema: qpfs/exclusion-ambiguity-routing/v1.0
+id: EAR-000001
+status: CLOSED_PASS
+routes:
+  NO_SUFFICIENT_SIGNAL: EXCLUSION_LEDGER
+  AMBIGUOUS_SIGNAL: UNRESOLVED_STRUCTURAL_QUEUE
+  SIGNAL_PRESENT: CANDIDATE_MATERIALIZATION
+hard_rules: [no_silent_exclusion, no_forced_binary_decision]

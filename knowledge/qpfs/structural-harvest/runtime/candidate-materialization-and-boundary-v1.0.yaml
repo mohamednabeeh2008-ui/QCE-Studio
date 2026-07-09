@@ -1,0 +1,15 @@
+schema: qpfs/candidate-materialization-and-boundary/v1.0
+id: CMB-000001
+status: CLOSED_PASS
+candidate_contract: SCRC-000001
+identity_rules:
+  one_token_not_equal_one_candidate: true
+  multi_anchor_candidate_allowed: true
+clustering:
+  proximity_alone_forbidden: true
+boundary_audit:
+  require_complete_image: true
+  unnecessary_context_forbidden: true
+deduplication:
+  link_before_merge: true
+  preserve_all_discovery_provenance: true

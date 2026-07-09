@@ -1,0 +1,9 @@
+schema: qpfs/recovery-collision-protocol/v1.0
+id: RCP-000001
+status: CLOSED_PASS
+passes: [CROSS_FORM_RECOVERY, ROOT_BLIND_DISCOVERY, ROOT_AWARE_ROOT_BLIND_COLLISION_AUDIT]
+cross_form_rule: evaluate_all_seven_morphological_families_without_mathal_bias
+root_blind_forbidden: [researcher_memory_only, famous_list_only]
+collision_policy:
+  double_count_forbidden: true
+  preserve_discovery_channels: true

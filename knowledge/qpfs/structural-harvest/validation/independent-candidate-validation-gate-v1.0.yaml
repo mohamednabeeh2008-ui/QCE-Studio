@@ -1,0 +1,6 @@
+schema: qpfs/independent-candidate-validation-gate/v1.0
+id: ICVG-000001
+status: CLOSED_PASS
+allowed_decisions: [PASS_TO_INVESTIGATION, REJECT, UNRESOLVED]
+required_checks: [source_reconstructability, stable_identity, boundary_sufficiency, provenance_completeness, duplicate_clearance, collision_clearance]
+forbidden_decisions: [CONFIRMED_PARABLE, CANONICAL_QPU]
