@@ -1,0 +1,71 @@
+schema: qpfs/lexical-batch-manifest/v0.1
+batch_id: QLB-000002
+contract: LBMC-000001
+step: 24.5A
+status: OPEN
+source_id: QLS-000001
+source_index: https://corpus.quran.com/qurandictionary.jsp?q=mvl
+source_root: "م ث ل"
+
+scope:
+  previous_committed_batch: QLB-000001
+  previous_materialized_occurrence: QLO-000011
+  start_occurrence_id: QLO-000012
+  planned_row_capacity: 10
+  selection_rule: >-
+    Select the next ten unmaterialized root-index occurrences in canonical Quran
+    order after the rows committed through QLO-000011. Preserve source order,
+    canonical row identity, and stable provenance; do not skip, infer, or promote
+    any row before independent row validation.
+
+opening_gate:
+  previous_batch_status: COMMITTED
+  previous_batch_count_match: PASS
+  previous_batch_sequence_match: PASS
+  previous_batch_provenance_preserved: PASS
+  ledger_accepted_count_at_open: 11
+  ledger_next_occurrence_id_at_open: QLO-000012
+  duplicate_canonical_row_keys_at_open: 0
+  status: PASS
+
+materialization_state:
+  proposed_rows: 0
+  accepted_rows: 0
+  rejected_rows: 0
+  duplicate_rows: 0
+  unresolved_rows: 0
+  row_selection_status: PENDING
+  row_validation_status: NOT_STARTED
+  ledger_write_authorized: false
+
+reconciliation_snapshot:
+  reported_root_occurrence_target: 169
+  materialized_unique_tokens_before_batch: 11
+  remaining_to_target_before_batch: 158
+  projected_unique_tokens_if_full_batch_passes: 21
+  target_status: NOT_YET_RECONCILABLE
+
+next_gate:
+  action: materialize_next_ten_source_rows
+  start_occurrence_id: QLO-000012
+  end_occurrence_id_if_full_batch: QLO-000021
+  requirements:
+    - preserve_canonical_source_order
+    - exclude_all_already_materialized_row_keys
+    - assign_contiguous_QLO_identifiers
+    - preserve_source_locator_for_every_row
+    - run_normalization_and_duplicate_checks_before_validation
+    - require_independent_row_validation_before_ledger_write
+
+legal_guards:
+  parable_identity_decision: NOT_PERFORMED
+  qpc_assignment: LOCKED
+  qpu_assignment: LOCKED
+  lexical_presence_confirms_parable: false
+
+invariants:
+  - opening_a_batch_does_not_materialize_any_occurrence
+  - pending_rows_do_not_increment_accepted_ledger_count
+  - no_row_may_bypass_independent_validation
+  - lexical_occurrence_does_not_confirm_parable_identity
+  - qpc_and_qpu_assignment_remain_locked
