@@ -1,0 +1,9 @@
+schema: qpfs/deterministic-exclusion-pass/v0.1
+id: QDEP-000001
+step: 24.5B-09A
+status: CLOSED_PASS
+taxonomy_ref: taxonomies/exclusion-taxonomy-v0.1.yaml
+excluded_patterns: [abstract_likeness, descriptive_mathal, statues, punishments_mathulat, superlative_muthla]
+silent_exclusion_forbidden: true
+ambiguous_cases_excluded: false
+next_step: 24.5B-09B
