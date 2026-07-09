@@ -1,0 +1,57 @@
+name: QPFS Wave Three Pipeline
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/qpfs-wave-three-pipeline.yml'
+      - 'scripts/qpfs/freeze-quran-context-authority.mjs'
+      - 'scripts/qpfs/materialize-wave-three-runtime.mjs'
+      - 'scripts/qpfs/hydrate-wave-three-context.mjs'
+      - 'knowledge/qpfs/structural-harvest/runtime/**'
+
+concurrency:
+  group: qpfs-wave-three-pipeline
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  execute:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Freeze Quran context authority
+        run: node scripts/qpfs/freeze-quran-context-authority.mjs
+      - name: Materialize and reconcile 69 candidate queue
+        run: node scripts/qpfs/materialize-wave-three-runtime.mjs
+      - name: Hydrate candidate context
+        run: node scripts/qpfs/hydrate-wave-three-context.mjs
+      - name: Verify pipeline invariants
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const base='knowledge/qpfs/wave-3/runtime';
+          const entry=JSON.parse(fs.readFileSync(`${base}/wave-3-entry-reconciliation-v1.json`,'utf8'));
+          const hydration=JSON.parse(fs.readFileSync(`${base}/context-hydration-report-v1.json`,'utf8'));
+          if(entry.status!=='CLOSED_PASS'||entry.queue_records!==69||entry.unique_candidate_ids!==69||entry.lost_candidates!==0) throw new Error('Wave 3 entry reconciliation failed');
+          if(hydration.queue_count!==69) throw new Error('Hydration cardinality failed');
+          if(hydration.hydrated_count+hydration.unresolved_locator_count!==69) throw new Error('Hydration accounting failed');
+          console.log('PASS: Wave 3 pipeline accounting verified');
+          NODE
+      - name: Commit evidence atomically
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add knowledge/qpfs/wave-3/authorities/qta-000001/ knowledge/qpfs/wave-3/runtime/
+          if git diff --cached --quiet; then
+            echo 'No evidence changes to commit'
+          else
+            git commit -m 'feat(qpfs): execute wave three authority queue and hydration'
+            git push
+          fi
