@@ -1,0 +1,47 @@
+name: QPFS Wave Three
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/qpfs/execute-wave-three.mjs'
+      - 'knowledge/qpfs/structural-harvest/runtime/wave-2-execution-report-v2.json'
+      - 'knowledge/qpfs/structural-harvest/runtime/structural-candidate-proposals-v2.json'
+      - 'knowledge/qpfs/wave-3/**'
+
+permissions:
+  contents: write
+
+jobs:
+  execute-wave-three:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Execute guarded Wave 3 entry
+        run: node scripts/qpfs/execute-wave-three.mjs
+      - name: Verify Wave 3 runtime guards
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const p='knowledge/qpfs/wave-3/runtime/wave-3-execution-report-v1.json';
+          const r=JSON.parse(fs.readFileSync(p,'utf8'));
+          if(r.entry_gate!=='PASS') throw new Error('Entry gate not PASS');
+          if(r.root_aware_queue_count!==69 || r.unique_candidate_ids!==69) throw new Error('Queue reconciliation failed');
+          if(r.canonical_parable_decisions_created!==false || r.qpu_created!==false) throw new Error('Premature canonical output detected');
+          console.log('PASS: Wave 3 guarded runtime verified');
+          NODE
+      - name: Commit Wave 3 runtime evidence
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add knowledge/qpfs/wave-3/runtime/
+          if git diff --cached --quiet; then
+            echo 'No runtime changes to commit'
+          else
+            git commit -m 'feat(qpfs): materialize guarded wave three runtime'
+            git push
+          fi
