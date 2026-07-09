@@ -1,0 +1,177 @@
+schema: qpfs/lexical-ledger-commit/v0.1
+id: QLC-000002
+step: 24.5A
+campaign_step: STEP-03
+batch_id: QLB-000002
+transaction_type: ATOMIC_APPEND
+status: COMMIT_PREPARED
+
+prerequisites:
+  independent_validation:
+    id: QLIV-000002
+    state: PASS
+    merged_by_pr: 8
+    merge_commit: ba5c2bf5674f975cbbc2819716783d31ae7b72a1
+  batch_validation_closure:
+    id: QLBVC-000002
+    state: CLOSED_PASS
+    merged_by_pr: 9
+    merge_commit: be90f454c90a5037cd55fa6b7f00abc8da30965b
+
+atomicity:
+  all_or_nothing: true
+  accepted_rows_only: true
+  rejected_rows_enter_accepted_ledger: false
+  unresolved_rows_enter_accepted_ledger: false
+  partial_append_forbidden: true
+  silent_row_mutation_forbidden: true
+
+append_set:
+  expected_count: 10
+  rows:
+    - occurrence_id: QLO-000012
+      canonical_row_key: "QLS-000001|2:261:1"
+      source_id: QLS-000001
+      source_locator: "2:261:1"
+      surah: 2
+      ayah: 261
+      token_position: 1
+      surface: "مَثَلُ"
+      lemma: "مَثَل"
+      root: "م ث ل"
+      morphological_form: "nominal: noun (mathal)"
+      source_attestation: "mathalu"
+    - occurrence_id: QLO-000013
+      canonical_row_key: "QLS-000001|2:261:8"
+      source_id: QLS-000001
+      source_locator: "2:261:8"
+      surah: 2
+      ayah: 261
+      token_position: 8
+      surface: "كَمَثَلِ"
+      lemma: "مَثَل"
+      root: "م ث ل"
+      morphological_form: "nominal: noun (mathal)"
+      source_attestation: "kamathali"
+    - occurrence_id: QLO-000014
+      canonical_row_key: "QLS-000001|2:264:19"
+      source_id: QLS-000001
+      source_locator: "2:264:19"
+      surah: 2
+      ayah: 264
+      token_position: 19
+      surface: "فَمَثَلُهُ"
+      lemma: "مَثَل"
+      root: "م ث ل"
+      morphological_form: "nominal: noun (mathal)"
+      source_attestation: "famathaluhu"
+    - occurrence_id: QLO-000015
+      canonical_row_key: "QLS-000001|2:264:20"
+      source_id: QLS-000001
+      source_locator: "2:264:20"
+      surah: 2
+      ayah: 264
+      token_position: 20
+      surface: "كَمَثَلِ"
+      lemma: "مَثَل"
+      root: "م ث ل"
+      morphological_form: "nominal: noun (mathal)"
+      source_attestation: "kamathali"
+    - occurrence_id: QLO-000016
+      canonical_row_key: "QLS-000001|2:265:1"
+      source_id: QLS-000001
+      source_locator: "2:265:1"
+      surah: 2
+      ayah: 265
+      token_position: 1
+      surface: "وَمَثَلُ"
+      lemma: "مَثَل"
+      root: "م ث ل"
+      morphological_form: "nominal: noun (mathal)"
+      source_attestation: "wamathalu"
+    - occurrence_id: QLO-000017
+      canonical_row_key: "QLS-000001|2:265:11"
+      source_id: QLS-000001
+      source_locator: "2:265:11"
+      surah: 2
+      ayah: 265
+      token_position: 11
+      surface: "كَمَثَلِ"
+      lemma: "مَثَل"
+      root: "م ث ل"
+      morphological_form: "nominal: noun (mathal)"
+      source_attestation: "kamathali"
+    - occurrence_id: QLO-000018
+      canonical_row_key: "QLS-000001|3:59:2"
+      source_id: QLS-000001
+      source_locator: "3:59:2"
+      surah: 3
+      ayah: 59
+      token_position: 2
+      surface: "مَثَلَ"
+      lemma: "مَثَل"
+      root: "م ث ل"
+      morphological_form: "nominal: noun (mathal)"
+      source_attestation: "mathala"
+    - occurrence_id: QLO-000019
+      canonical_row_key: "QLS-000001|3:59:6"
+      source_id: QLS-000001
+      source_locator: "3:59:6"
+      surah: 3
+      ayah: 59
+      token_position: 6
+      surface: "كَمَثَلِ"
+      lemma: "مَثَل"
+      root: "م ث ل"
+      morphological_form: "nominal: noun (mathal)"
+      source_attestation: "kamathali"
+    - occurrence_id: QLO-000020
+      canonical_row_key: "QLS-000001|3:117:1"
+      source_id: QLS-000001
+      source_locator: "3:117:1"
+      surah: 3
+      ayah: 117
+      token_position: 1
+      surface: "مَثَلُ"
+      lemma: "مَثَل"
+      root: "م ث ل"
+      morphological_form: "nominal: noun (mathal)"
+      source_attestation: "mathalu"
+    - occurrence_id: QLO-000021
+      canonical_row_key: "QLS-000001|3:117:8"
+      source_id: QLS-000001
+      source_locator: "3:117:8"
+      surah: 3
+      ayah: 117
+      token_position: 8
+      surface: "كَمَثَلِ"
+      lemma: "مَثَل"
+      root: "م ث ل"
+      morphological_form: "nominal: noun (mathal)"
+      source_attestation: "kamathali"
+
+transaction_checks:
+  append_set_count_matches_expected: true
+  every_row_passed_independent_validation: true
+  every_row_in_closed_batch: true
+  occurrence_ids_unique_within_append_set: true
+  canonical_row_keys_unique_within_append_set: true
+  source_locators_unique_within_append_set: true
+  quranic_order_preserved: true
+
+commit_boundary:
+  this_artifact_is_accepted_ledger_delta: true
+  prior_ledger_rows_rewritten: false
+  rejected_rows: []
+  unresolved_rows: []
+  post_commit_reconciliation_executed: false
+  cross_batch_duplicate_audit_executed: false
+  batch_freeze_executed: false
+
+result:
+  step_03: COMPLETE_ON_MERGE
+  accepted_append_count: 10
+  next_gate:
+    step: STEP-04
+    name: Post-Commit Reconciliation
+    allowed_after_merge: true
