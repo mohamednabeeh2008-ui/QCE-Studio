@@ -2,7 +2,7 @@ schema: qpfs/lexical-batch-manifest/v0.1
 batch_id: QLB-000002
 contract: LBMC-000001
 step: 24.5A
-status: OPEN
+status: MATERIALIZED_PENDING_VALIDATION
 source_id: QLS-000001
 source_index: https://corpus.quran.com/qurandictionary.jsp?q=mvl
 source_root: "م ث ل"
@@ -11,51 +11,171 @@ scope:
   previous_committed_batch: QLB-000001
   previous_materialized_occurrence: QLO-000011
   start_occurrence_id: QLO-000012
+  end_occurrence_id: QLO-000021
   planned_row_capacity: 10
+  selected_row_count: 10
   selection_rule: >-
-    Select the next ten unmaterialized root-index occurrences in canonical Quran
-    order after the rows committed through QLO-000011. Preserve source order,
-    canonical row identity, and stable provenance; do not skip, infer, or promote
-    any row before independent row validation.
+    Select the next ten unmaterialized nominal mathal root-index occurrences in
+    canonical Quran order after all canonical row keys already materialized in
+    the ledger. Preserve source order and stable provenance. Selection does not
+    imply validation, acceptance, parable identity, QPC identity, or QPU identity.
 
-opening_gate:
-  previous_batch_status: COMMITTED
-  previous_batch_count_match: PASS
-  previous_batch_sequence_match: PASS
-  previous_batch_provenance_preserved: PASS
-  ledger_accepted_count_at_open: 11
-  ledger_next_occurrence_id_at_open: QLO-000012
-  duplicate_canonical_row_keys_at_open: 0
+source_order_evidence:
+  index_section: "Nominal > (1) Noun"
+  first_selected_source_row: "(2:265:1)"
+  last_selected_source_row: "(7:176:12)"
+  source_sequence_verified: true
+
+proposed_rows:
+  - occurrence_id: QLO-000012
+    canonical_row_key: "2:265:1"
+    reference: {surah: 2, ayah: 265, token_position: 1}
+    surface: "وَمَثَلُ"
+    transliteration: wamathalu
+    lemma: "مَثَل"
+    root: "م ث ل"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(2:265:1)"
+    source_index_order: 12
+    disposition: PENDING_INDEPENDENT_VALIDATION
+  - occurrence_id: QLO-000013
+    canonical_row_key: "2:265:11"
+    reference: {surah: 2, ayah: 265, token_position: 11}
+    surface: "كَمَثَلِ"
+    transliteration: kamathali
+    lemma: "مَثَل"
+    root: "م ث ل"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(2:265:11)"
+    source_index_order: 13
+    disposition: PENDING_INDEPENDENT_VALIDATION
+  - occurrence_id: QLO-000014
+    canonical_row_key: "3:59:2"
+    reference: {surah: 3, ayah: 59, token_position: 2}
+    surface: "مَثَلَ"
+    transliteration: mathala
+    lemma: "مَثَل"
+    root: "م ث ل"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(3:59:2)"
+    source_index_order: 14
+    disposition: PENDING_INDEPENDENT_VALIDATION
+  - occurrence_id: QLO-000015
+    canonical_row_key: "3:59:6"
+    reference: {surah: 3, ayah: 59, token_position: 6}
+    surface: "كَمَثَلِ"
+    transliteration: kamathali
+    lemma: "مَثَل"
+    root: "م ث ل"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(3:59:6)"
+    source_index_order: 15
+    disposition: PENDING_INDEPENDENT_VALIDATION
+  - occurrence_id: QLO-000016
+    canonical_row_key: "3:117:1"
+    reference: {surah: 3, ayah: 117, token_position: 1}
+    surface: "مَثَلُ"
+    transliteration: mathalu
+    lemma: "مَثَل"
+    root: "م ث ل"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(3:117:1)"
+    source_index_order: 16
+    disposition: PENDING_INDEPENDENT_VALIDATION
+  - occurrence_id: QLO-000017
+    canonical_row_key: "3:117:8"
+    reference: {surah: 3, ayah: 117, token_position: 8}
+    surface: "كَمَثَلِ"
+    transliteration: kamathali
+    lemma: "مَثَل"
+    root: "م ث ل"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(3:117:8)"
+    source_index_order: 17
+    disposition: PENDING_INDEPENDENT_VALIDATION
+  - occurrence_id: QLO-000018
+    canonical_row_key: "6:122:13"
+    reference: {surah: 6, ayah: 122, token_position: 13}
+    surface: "مَثَلُهُ"
+    transliteration: mathaluhu
+    lemma: "مَثَل"
+    root: "م ث ل"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(6:122:13)"
+    source_index_order: 18
+    disposition: PENDING_INDEPENDENT_VALIDATION
+  - occurrence_id: QLO-000019
+    canonical_row_key: "6:160:6"
+    reference: {surah: 6, ayah: 160, token_position: 6}
+    surface: "أَمْثَالِهَا"
+    transliteration: amthaliha
+    lemma: "مَثَل"
+    root: "م ث ل"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(6:160:6)"
+    source_index_order: 19
+    disposition: PENDING_INDEPENDENT_VALIDATION
+  - occurrence_id: QLO-000020
+    canonical_row_key: "7:176:11"
+    reference: {surah: 7, ayah: 176, token_position: 11}
+    surface: "فَمَثَلُهُ"
+    transliteration: famathaluhu
+    lemma: "مَثَل"
+    root: "م ث ل"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(7:176:11)"
+    source_index_order: 20
+    disposition: PENDING_INDEPENDENT_VALIDATION
+  - occurrence_id: QLO-000021
+    canonical_row_key: "7:176:12"
+    reference: {surah: 7, ayah: 176, token_position: 12}
+    surface: "كَمَثَلِ"
+    transliteration: kamathali
+    lemma: "مَثَل"
+    root: "م ث ل"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(7:176:12)"
+    source_index_order: 21
+    disposition: PENDING_INDEPENDENT_VALIDATION
+
+normalization_review:
+  canonical_reference_format: PASS
+  qlo_identifier_format: PASS
+  qlo_sequence_continuity: PASS
+  source_order_monotonic: PASS
+  root_normalization: PASS
+  lemma_normalization: PASS
+  source_locator_presence: PASS
+  selected_row_count_matches_capacity: PASS
+  status: PASS
+
+duplicate_review:
+  canonical_key_definition: "surah:ayah:token_position"
+  duplicate_occurrence_ids_within_batch: 0
+  duplicate_canonical_row_keys_within_batch: 0
+  collisions_with_materialized_ledger_keys: 0
+  QLO_000001_special_prior_materialization_preserved: true
   status: PASS
 
 materialization_state:
-  proposed_rows: 0
+  proposed_rows: 10
   accepted_rows: 0
   rejected_rows: 0
   duplicate_rows: 0
   unresolved_rows: 0
-  row_selection_status: PENDING
+  row_selection_status: COMPLETE
+  normalization_status: PASS
+  duplicate_check_status: PASS
   row_validation_status: NOT_STARTED
   ledger_write_authorized: false
 
 reconciliation_snapshot:
   reported_root_occurrence_target: 169
   materialized_unique_tokens_before_batch: 11
+  proposed_uncommitted_tokens_in_batch: 10
+  accepted_unique_tokens_after_batch: NOT_APPLICABLE_BEFORE_VALIDATION
   remaining_to_target_before_batch: 158
-  projected_unique_tokens_if_full_batch_passes: 21
   target_status: NOT_YET_RECONCILABLE
 
 next_gate:
-  action: materialize_next_ten_source_rows
-  start_occurrence_id: QLO-000012
-  end_occurrence_id_if_full_batch: QLO-000021
+  action: run_independent_row_validation_for_QLB_000002
+  validation_scope: QLO-000012_to_QLO-000021
   requirements:
-    - preserve_canonical_source_order
-    - exclude_all_already_materialized_row_keys
-    - assign_contiguous_QLO_identifiers
-    - preserve_source_locator_for_every_row
-    - run_normalization_and_duplicate_checks_before_validation
-    - require_independent_row_validation_before_ledger_write
+    - verify_each_token_against_its_source_locator
+    - verify_surface_lemma_root_and_morphology
+    - assign_a_disposition_to_every_row
+    - reject_or_unresolve_any_row_that_fails_traceability
+    - do_not_write_any_row_to_ledger_before_validation_pass
 
 legal_guards:
   parable_identity_decision: NOT_PERFORMED
@@ -64,8 +184,8 @@ legal_guards:
   lexical_presence_confirms_parable: false
 
 invariants:
-  - opening_a_batch_does_not_materialize_any_occurrence
-  - pending_rows_do_not_increment_accepted_ledger_count
+  - materialization_is_not_acceptance
+  - proposed_rows_do_not_increment_accepted_ledger_count
   - no_row_may_bypass_independent_validation
   - lexical_occurrence_does_not_confirm_parable_identity
   - qpc_and_qpu_assignment_remain_locked
