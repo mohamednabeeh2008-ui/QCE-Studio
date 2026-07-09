@@ -1,0 +1,9 @@
+schema: qpfs/root-blind-discovery-protocol/v0.1
+id: QRBDP-000001
+step: 24.5B-15A
+status: CLOSED_PASS
+signals: [domain_transfer, image_meaning_relation, comparative_architecture, constructed_scenario, evaluative_disclosure]
+root_presence_required: false
+memory_or_fame_as_evidence: forbidden
+system_detection_is_confirmation: false
+next_step: 24.5B-15B
