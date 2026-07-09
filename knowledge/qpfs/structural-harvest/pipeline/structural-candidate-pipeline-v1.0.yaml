@@ -1,0 +1,78 @@
+schema: qpfs/structural-candidate-pipeline/v1.0
+id: SCP-000001
+status: FROZEN_FOR_EXECUTION
+stage: STEP_24_5B
+purpose: "Transform the reconciled 169-occurrence lexical authority into reviewable structural candidates without creating parable decisions or QPUs."
+input_authority:
+  primary: knowledge/qpfs/structural-harvest/reconciliation/QSIM-000003.yaml
+  expected_occurrences: 169
+  required_status: CLOSED_PASS
+invariants:
+  - occurrence_is_not_candidate
+  - candidate_is_not_parable
+  - parable_is_not_qpu
+  - no_silent_exclusion
+  - no_silent_merge
+  - no_qpu_creation
+  - no_canonical_parable_decision
+pipeline:
+  - order: 1
+    id: INTAKE
+    action: read_reconciled_occurrences
+    gate: exactly_169_unique_canonical_ids
+  - order: 2
+    id: HYDRATE
+    action: attach_source_locator_and_context_window
+    gate: every_row_reconstructable
+  - order: 3
+    id: SIGNAL
+    action: evaluate_structural_signals
+    gate: every_row_has_signal_record
+  - order: 4
+    id: EXCLUDE
+    action: apply_deterministic_exclusion_taxonomy
+    gate: every_exclusion_has_code_and_evidence
+  - order: 5
+    id: ISOLATE
+    action: route_ambiguity_to_unresolved_structural
+    gate: no_forced_binary_decision
+  - order: 6
+    id: MATERIALIZE
+    action: create_qpc_proposals
+    gate: stable_candidate_identity
+  - order: 7
+    id: CLUSTER
+    action: group_multiple_occurrences_for_same_structure
+    gate: provenance_preserved
+  - order: 8
+    id: BOUNDARY
+    action: reconstruct_candidate_boundaries
+    gate: boundary_sufficiency_pass
+  - order: 9
+    id: DEDUPLICATE
+    action: remove_candidate_duplicates
+    gate: link_before_merge
+  - order: 10
+    id: RECOVER
+    action: cross_form_then_root_blind_recovery
+    gate: collision_audit_complete
+  - order: 11
+    id: VALIDATE
+    action: independent_candidate_validation
+    allowed_outputs: [PASS_TO_INVESTIGATION, REJECT, UNRESOLVED]
+  - order: 12
+    id: FREEZE
+    action: freeze_candidate_registry
+    gate: reconciliation_complete
+outputs:
+  accepted_registry: QPCR-000001
+  rejected_ledger: QPCX-000001
+  unresolved_queue: QPCRQ-000001
+  reconciliation: QPSHR-000001
+prohibited_outputs:
+  - CONFIRMED_PARABLE
+  - CANONICAL_QPU
+  - JOURNEY
+  - FORMATION
+  - NETWORK
+next_wave_gate: "Open classification and exclusion wave only after QPSHR-000001 is CLOSED_PASS."
