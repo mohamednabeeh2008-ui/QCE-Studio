@@ -1,0 +1,11 @@
+schema: qpfs/independent-candidate-validation-gate/v0.1
+id: QICVG-000001
+step: 24.5B-17
+status: BLOCKED
+allowed_decisions: [PASS_TO_INVESTIGATION, REJECT, UNRESOLVED]
+blocker: ENUMERATED_CANDIDATE_RECORDS_WITH_ROW_LEVEL_PROVENANCE_NOT_MATERIALIZED
+reason: process artifacts cannot substitute for candidate evidence records
+canonical_promotion_allowed: false
+registry_commit_allowed: false
+required_correction: materialize evidence-bearing candidate records before rerunning this gate
+stop_rule: do_not_enter_24.5B-18
