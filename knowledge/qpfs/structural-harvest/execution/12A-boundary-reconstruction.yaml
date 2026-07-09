@@ -1,0 +1,7 @@
+schema: qpfs/boundary-reconstruction/v0.1
+id: QCBR-000001
+step: 24.5B-12A
+status: CLOSED_PASS
+minimum_sufficient_boundary: required
+competing_boundaries_preserved: true
+next_step: 24.5B-12B
