@@ -1,0 +1,24 @@
+schema: qpfs/lexical-batch-closure/v0.1
+id: QLBC-000003
+batch_id: QLB-000003
+status: COMMITTED
+validation:
+  rows_checked: 25
+  pass: 25
+  reject: 0
+  unresolved: 0
+  evidence: QLS-000001_ROOT_DICTIONARY_ROW_ATTESTATION
+  row_level_source_locator_checked: true
+  source_attestation_checked: true
+commit:
+  atomic: true
+  first_occurrence_id: QLO-000022
+  last_occurrence_id: QLO-000046
+  accepted_count: 25
+  accepted_total_after_commit: 46
+  next_occurrence_id: QLO-000047
+integrity:
+  occurrence_id_duplicates: 0
+  source_locator_duplicates: 0
+  canonical_row_key_duplicates: 0
+  result: PASS
