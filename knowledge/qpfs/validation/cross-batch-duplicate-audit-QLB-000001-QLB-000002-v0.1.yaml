@@ -1,0 +1,116 @@
+schema: qpfs/cross-batch-duplicate-audit/v0.1
+audit_id: QLCDA-000001
+step: 24.5A
+execution_step: STEP_05_CROSS_BATCH_DUPLICATE_AUDIT
+status: COMPLETE
+
+scope:
+  batches:
+    - QLB-000001
+    - QLB-000002
+  occurrence_range: QLO-000001_to_QLO-000021
+  record_count: 21
+  source_ids:
+    - QLS-000001
+  ledger: knowledge/qpfs/manifests/lexical-occurrence-ledger-v0.1.yaml
+  reconciliation_prerequisite: QLPR-000002
+
+identity_models:
+  occurrence_identity:
+    key: occurrence_id
+    purpose: detect_identifier_reuse
+  canonical_source_row_identity:
+    key_fields: [source_id, surah, ayah, token_position]
+    purpose: detect_same_source_token_reentered_under_another_occurrence_id
+  locator_identity:
+    key: source_locator
+    purpose: detect_same_reproducible_source_row_reentered
+  cross_channel_token_identity:
+    key_fields: [surah, ayah, token_position]
+    purpose: detect_same_quranic_token_reentered_from_another_source_or_harvest_channel
+    note: a_cross_channel_match_must_be_linked_as_provenance_not_materialized_as_a_second_occurrence
+
+batch_partition:
+  QLB-000001:
+    occurrence_range: QLO-000002_to_QLO-000011
+    row_count: 10
+  QLB-000002:
+    occurrence_range: QLO-000012_to_QLO-000021
+    row_count: 10
+  pre_batch_seed:
+    occurrence_range: QLO-000001
+    row_count: 1
+    included_in_full_ledger_audit: true
+
+checks:
+  occurrence_id_uniqueness:
+    examined: 21
+    unique: 21
+    duplicates: []
+    status: PASS
+  canonical_source_row_key_uniqueness:
+    examined: 21
+    unique: 21
+    duplicates: []
+    status: PASS
+  source_locator_uniqueness:
+    examined: 21
+    unique: 21
+    duplicates: []
+    status: PASS
+  cross_channel_token_reentry:
+    examined: 21
+    unique_quranic_token_positions: 21
+    duplicate_token_positions: []
+    status: PASS
+  cross_batch_boundary_collision:
+    left_batch_last_occurrence: QLO-000011
+    right_batch_first_occurrence: QLO-000012
+    occurrence_id_collision: false
+    canonical_source_row_collision: false
+    source_locator_collision: false
+    quranic_token_position_collision: false
+    status: PASS
+
+findings:
+  exact_duplicate_records: 0
+  identifier_reuse_cases: 0
+  same_source_token_reentries: 0
+  same_locator_reentries: 0
+  cross_channel_same_token_reentries: 0
+  silent_merge_cases: 0
+  provenance_conflicts: 0
+
+assertions:
+  no_duplicate_occurrence_id_across_batches: PASS
+  no_duplicate_canonical_row_key_across_batches: PASS
+  no_duplicate_source_locator_across_batches: PASS
+  no_same_quranic_token_materialized_twice: PASS
+  batch_boundary_is_collision_free: PASS
+  full_ledger_seed_plus_two_batches_is_duplicate_free: PASS
+
+audit_decision:
+  status: PASS
+  duplicate_free_record_count: 21
+  unique_occurrence_ids: 21
+  unique_canonical_source_rows: 21
+  unique_source_locators: 21
+  unique_quranic_token_positions: 21
+  remediation_required: false
+  rollback_required: false
+
+legal_guards:
+  duplicate_audit_does_not_confirm_parable_identity: true
+  lexical_occurrence_does_not_create_qpc: true
+  lexical_occurrence_does_not_create_qpu: true
+  future_multi_channel_match_policy: LINK_PROVENANCE_DO_NOT_DUPLICATE_OCCURRENCE
+  silent_record_replacement: PROHIBITED
+
+next_gate:
+  step: STEP_06_BATCH_2_CLOSURE_AND_FREEZE
+  authorized: true
+  expansion_authorized: false
+  required_decision:
+    - COMMITTED
+    - COMMITTED_WITH_EXCEPTIONS
+  expected_from_current_evidence: COMMITTED
