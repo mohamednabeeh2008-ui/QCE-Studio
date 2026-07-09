@@ -1,0 +1,67 @@
+schema: qpfs/post-commit-reconciliation/v0.1
+reconciliation_id: QLPR-000002
+step: 24.5A
+execution_step: STEP_04_POST_COMMIT_RECONCILIATION
+status: COMPLETE
+batch_id: QLB-000002
+atomic_commit_id: QLAC-000002
+ledger: knowledge/qpfs/manifests/lexical-occurrence-ledger-v0.1.yaml
+source_id: QLS-000001
+
+scope:
+  previous_committed_range: QLO-000001_to_QLO-000011
+  newly_committed_range: QLO-000012_to_QLO-000021
+  full_reconciled_range: QLO-000001_to_QLO-000021
+  reported_root_occurrence_target: 169
+
+results:
+  materialized_record_count: 21
+  accepted_occurrence_count_declared: 21
+  accepted_occurrence_count_recounted: 21
+  occurrence_id_count: 21
+  unique_occurrence_id_count: 21
+  duplicate_occurrence_ids: 0
+  contiguous_occurrence_ids: true
+  missing_occurrence_ids: []
+  canonical_row_key_fields: [source_id, surah, ayah, token_position]
+  canonical_row_key_count: 21
+  unique_canonical_row_key_count: 21
+  duplicate_canonical_row_keys: 0
+  source_locator_count: 21
+  unique_source_locator_count: 21
+  duplicate_source_locators: 0
+  derived_next_occurrence_id: QLO-000022
+  ledger_next_occurrence_id: QLO-000022
+  next_occurrence_id_match: true
+  remaining_to_reported_target: 148
+
+assertions:
+  count_transition_11_plus_10_equals_21: PASS
+  accepted_count_matches_materialized_records: PASS
+  occurrence_ids_are_unique: PASS
+  occurrence_ids_are_contiguous: PASS
+  canonical_row_keys_are_unique: PASS
+  source_locators_are_unique: PASS
+  next_occurrence_id_is_correct: PASS
+  target_arithmetic_169_minus_21_equals_148: PASS
+
+reconciliation_decision:
+  status: PASS
+  ledger_count: 21
+  next_occurrence_id: QLO-000022
+  unique_canonical_row_keys: 21
+  remaining_to_target: 148
+  ledger_corruption_detected: false
+  rollback_required: false
+
+legal_guards:
+  parable_identity_decision: NOT_PERFORMED
+  qpc_assignment: LOCKED
+  qpu_assignment: LOCKED
+  lexical_presence_confirms_parable: false
+  cross_batch_duplicate_audit: NOT_PERFORMED_IN_THIS_STEP
+
+next_gate:
+  step: STEP_05_CROSS_BATCH_DUPLICATE_AUDIT
+  authorized: true
+  expansion_authorized: false
