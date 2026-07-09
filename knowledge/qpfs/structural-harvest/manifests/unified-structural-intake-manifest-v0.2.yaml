@@ -1,0 +1,51 @@
+schema: qpfs/unified-structural-intake-manifest/v0.2
+id: QSIM-000002
+stage: 24.5B-08B
+status: CLOSED_PASS
+supersedes: QSIM-000001
+root: "م ث ل"
+source_id: QLS-000001
+canonical_row_count: 169
+identity_model: source_locator_is_canonical_row_key
+construction:
+  nominal_mathal:
+    expected: 88
+    mapping:
+      - {target_range: QLO-000001..QLO-000021, authority: lexical-occurrence-ledger-v0.1.yaml, action: preserve}
+      - {target_range: QLO-000022..QLO-000084, authority: QLB-000003_and_QLB-000004, action: compact_after_removing_four_duplicate_locators}
+      - {target_id: QLO-000085, locator: "66:11:3", action: recover_from_QLS_000001}
+      - {target_id: QLO-000086, locator: "74:31:38", action: recover_from_QLS_000001}
+      - {target_id: QLO-000087, locator: "76:28:8", action: recover_from_QLS_000001}
+      - {target_id: QLO-000088, locator: "6:38:12", action: recover_from_QLS_000001}
+    removed_duplicate_locators:
+      - "6:122:13"
+      - "6:160:6"
+      - "7:176:11"
+      - "7:176:12"
+    count_after_repair: 88
+  derived_forms:
+    target_range: QLO-000089..QLO-000169
+    authority: QLB-000005
+    action: preserve
+    count: 81
+reconciliation:
+  nominal_mathal: 88
+  derived_forms: 81
+  total: 169
+  source_reported_total: 169
+  duplicate_source_locators: 0
+  missing_source_locators: 0
+  occurrence_ids_contiguous: true
+  result: PASS
+provenance:
+  contradiction_resolution: QSH-CR-000001
+  duplicate_resolution: QSH-CR-000002
+  lexical_closure: QLRC-000001
+locks:
+  canonical_parable_decisions_created: false
+  candidate_identity_inference_created: false
+  qpu_creation_allowed: false
+execution_rule: >-
+  All 24.5B structural passes must consume QSIM-000002. QSIM-000001 is retained
+  only as invalidated historical evidence and is forbidden as an execution input.
+next_gate: STRUCTURAL_CONTEXT_HYDRATION
