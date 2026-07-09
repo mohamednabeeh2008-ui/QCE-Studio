@@ -1,0 +1,90 @@
+{
+  "audit": "MISSION-005-PRE-UNIVERSE-COVERAGE",
+  "version": "0.1",
+  "status": "COMPLETE_WITH_FINDINGS",
+  "scope": {
+    "purpose": "Validate whether the nine-item master inventory is a full universe coverage or a subset, using repository sources only.",
+    "constraints_observed": [
+      "NAR-000039 not started",
+      "LAST_NAR_ID unchanged",
+      "previous commit preserved"
+    ]
+  },
+  "source_basis": {
+    "repository_history": [
+      {
+        "commit": "69db3eeb191463aa719100918f996c540195d89b",
+        "file": "data/qfm-v2/batches/batch-004/12-permanent-narrative-registry-v0.1.jsonl",
+        "evidence": "Batch 004 permanent narrative records establish NAR-000032..NAR-000038 and show Batch 004 only, not full universe coverage."
+      },
+      {
+        "commit": "744593370e2071311147d1dc564e1749c4f65bae",
+        "file": "data/qfm-v2/batches/batch-004/15-closure-v0.1.json",
+        "evidence": "Batch 004 closure states COMPLETE_WITH_HOLDS with 17 holds and next available NAR-000039."
+      },
+      {
+        "commit": "dd5552d19e5b9327f0fcabbe8b28bbff7009292b",
+        "file": "data/qfm-v2/governance/01-canonical-subject-coverage-queue-v0.1.json",
+        "evidence": "Recovered queue explicitly contains a reconstructed sequence and a conflicting alternative, proving it is a control asset rather than an exhaustive universe census."
+      },
+      {
+        "commit": "704e699c83bba3584135d26b11dc990f2bc97917",
+        "file": "data/qfm-v2/universe/01-canonical-production-queue-v0.1.json",
+        "evidence": "Production queue gives a deterministic selection policy for Batch 005 only; it is not a universe inventory."
+      },
+      {
+        "commit": "a022c88464db69bcaad0fae1d9d2a4dec02adf34",
+        "file": "data/qfm-v2/runs/run-001/batches/batch-003/e09-reconciliation.jsonl",
+        "evidence": "Batch 003 reconciliation shows hold/review states and indicates the project is tracking entity-by-entity narratives, not a closed 9-item universe."
+      },
+      {
+        "commit": "f3b4028a612dd18808543781a60bb8754d911a83",
+        "file": "scripts/qpfs/freeze-quran-context-authority.mjs",
+        "evidence": "The project also contains a corpus-wide Quran text authority source, confirming there are far more recoverable narrative loci than the nine selected subject entries."
+      }
+    ]
+  },
+  "findings": {
+    "master_inventory_is_full_universe": false,
+    "master_inventory_is_subset": true,
+    "reasoning": [
+      "The nine listed items are only subject-level control rows recovered from batch and queue assets.",
+      "Repository sources show additional narrative loci in holds, reviews, and corpus-wide authority material that are not represented as one of the nine rows.",
+      "Therefore the artifact is a subset inventory, not a complete universe census."
+    ]
+  },
+  "reconstructed_full_universe_model": {
+    "categories": ["SUBJECTS", "NATIONS_OR_PEOPLES", "EVENTS", "JOURNEYS", "WITNESSES", "HOLDS", "REVIEWED_LANES"],
+    "representative_scope_note": "This audit only proves the current inventory is incomplete; it does not attempt to claim a closed final list beyond the repository evidence recovered here.",
+    "tracked_contrast": [
+      {"type": "SUBJECTS", "examples": ["ADAM", "NOAH", "ABRAHAM", "LOT", "MOSES", "ISHMAEL", "ISAAC", "JACOB", "JOSEPH"], "status": "PARTIAL_SUBSET"},
+      {"type": "EVENTS_AND_WITNESSES", "examples": ["B004-LI-012 interface hold", "B003 hold/review loci", "QTA-wide verse authority"], "status": "OUTSIDE_9_ITEM_LIST"}
+    ]
+  },
+  "coverage_matrix": [
+    {"item":"ADAM","existing_nar":"YES","hold":"NO","missing":"NO","source":"batch 001/previous project history"},
+    {"item":"NOAH","existing_nar":"YES","hold":"NO","missing":"NO","source":"batch 002/previous project history"},
+    {"item":"ABRAHAM","existing_nar":"YES","hold":"PRESENT_IN_PRIOR_HOLD_EVIDENCE","missing":"NO","source":"batch 003 records and holds"},
+    {"item":"LOT","existing_nar":"YES","hold":"YES","missing":"NO","source":"batch 004 closure and registry"},
+    {"item":"MOSES","existing_nar":"NO","hold":"NO","missing":"YES","source":"queue-based selection policy only"},
+    {"item":"ISHMAEL","existing_nar":"NO","hold":"NO","missing":"YES","source":"queue-based selection policy only"},
+    {"item":"ISAAC","existing_nar":"NO","hold":"NO","missing":"YES","source":"queue-based selection policy only"},
+    {"item":"JACOB","existing_nar":"NO","hold":"NO","missing":"YES","source":"queue-based selection policy only"},
+    {"item":"JOSEPH","existing_nar":"NO","hold":"NO","missing":"YES","source":"queue-based selection policy only"}
+  ],
+  "audit_conclusion": {
+    "result": "FAIL_FOR_FULL_COVERAGE",
+    "sub_result": "SUBSET_ONLY",
+    "action_required": "Expand the universe model before any claim of exhaustive coverage or permanent lock based solely on the nine-item list."
+  },
+  "retest_moses_priority": {
+    "allowed": true,
+    "current_status": "MOSES_STILL_FIRST_AMONG_THE_RECONSTRUCTED_MISSING_QUEUE_ONLY",
+    "traceability": "This is only a missing-subject priority result, not proof of full universe closure."
+  },
+  "production_guard": {
+    "nar_000039_started": false,
+    "last_nar_id_unchanged": true,
+    "batch_005_lock": "HELD_PENDING_FULL_UNIVERSE_MODEL"
+  }
+}
