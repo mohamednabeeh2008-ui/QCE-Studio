@@ -1,0 +1,22 @@
+schema: qpfs/exclusion-taxonomy/v0.1
+id: EXT-000001
+step: 24.5B-05
+status: FROZEN
+classes:
+  EX-01: abstract_likeness_or_equivalence
+  EX-02: description_or_condition_only
+  EX-03: form_or_representation_without_parable_structure
+  EX-04: tamathil_statues
+  EX-05: mathulat_punishments
+  EX-06: muthla_superlative_or_feminine_form
+  EX-07: narrative_without_representational_transfer
+  EX-08: rhetorical_scene_without_parable_candidacy
+  EX-09: argument_without_representational_architecture
+  EX-10: duplicate_anchor_of_existing_candidate
+rules:
+  exclusion_requires_reason_code: true
+  exclusion_does_not_delete_provenance: true
+  uncertain_cases: UNRESOLVED
+result:
+  decision: PASS
+  authorized_next_step: 24.5B-06
