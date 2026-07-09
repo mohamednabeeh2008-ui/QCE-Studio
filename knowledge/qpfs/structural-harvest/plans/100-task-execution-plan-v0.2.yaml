@@ -1,0 +1,110 @@
+schema: qpfs/100-task-execution-plan/v0.2
+id: QSH-PLAN-000002
+status: ACTIVE
+principle: evidence_before_completion
+priority_order:
+  - {id: QSH2-001, task: audit_current_authorities}
+  - {id: QSH2-002, task: audit_QSIM_000002_row_level_materialization}
+  - {id: QSH2-003, task: correct_false_closed_pass_if_needed}
+  - {id: QSH2-004, task: locate_all_lexical_batch_authorities}
+  - {id: QSH2-005, task: reconstruct_169_explicit_rows}
+  - {id: QSH2-006, task: validate_occurrence_id_contiguity}
+  - {id: QSH2-007, task: validate_source_locator_uniqueness}
+  - {id: QSH2-008, task: validate_canonical_row_key_uniqueness}
+  - {id: QSH2-009, task: validate_family_counts_88_plus_81}
+  - {id: QSH2-010, task: freeze_true_row_level_intake_manifest}
+  - {id: QSH2-011, task: independently_reconcile_169_rows}
+  - {id: QSH2-012, task: attach_provenance_to_every_row}
+  - {id: QSH2-013, task: reject_untraceable_rows}
+  - {id: QSH2-014, task: isolate_unresolved_rows}
+  - {id: QSH2-015, task: close_intake_readiness_gate}
+  - {id: QSH2-016, task: define_context_hydration_schema}
+  - {id: QSH2-017, task: define_verse_text_source_contract}
+  - {id: QSH2-018, task: register_approved_quran_text_source}
+  - {id: QSH2-019, task: hydrate_anchor_verse_for_169_rows}
+  - {id: QSH2-020, task: validate_hydrated_verse_references}
+  - {id: QSH2-021, task: apply_window_expansion_rules}
+  - {id: QSH2-022, task: preserve_pre_and_post_context_provenance}
+  - {id: QSH2-023, task: audit_context_completeness}
+  - {id: QSH2-024, task: freeze_context_hydration_manifest}
+  - {id: QSH2-025, task: compile_structural_signal_taxonomy}
+  - {id: QSH2-026, task: compile_exclusion_taxonomy}
+  - {id: QSH2-027, task: define_signal_evaluation_record}
+  - {id: QSH2-028, task: evaluate_explicit_mathal_signals}
+  - {id: QSH2-029, task: evaluate_ka_mathal_signals}
+  - {id: QSH2-030, task: evaluate_mithl_signals}
+  - {id: QSH2-031, task: evaluate_daraba_mathalan_signals}
+  - {id: QSH2-032, task: evaluate_comparative_architecture_signals}
+  - {id: QSH2-033, task: evaluate_constructed_scenario_signals}
+  - {id: QSH2-034, task: evaluate_evaluative_disclosure_signals}
+  - {id: QSH2-035, task: evaluate_analogy_like_function_signals}
+  - {id: QSH2-036, task: validate_all_169_signal_records}
+  - {id: QSH2-037, task: materialize_structural_anchor_records}
+  - {id: QSH2-038, task: count_anchor_records}
+  - {id: QSH2-039, task: audit_anchor_false_positives}
+  - {id: QSH2-040, task: freeze_anchor_pass}
+  - {id: QSH2-041, task: exclude_abstract_likeness}
+  - {id: QSH2-042, task: exclude_equivalence_uses}
+  - {id: QSH2-043, task: exclude_description_condition_uses}
+  - {id: QSH2-044, task: exclude_form_representation_uses}
+  - {id: QSH2-045, task: exclude_tamathil_uses}
+  - {id: QSH2-046, task: exclude_mathulat_uses}
+  - {id: QSH2-047, task: exclude_muthla_uses}
+  - {id: QSH2-048, task: create_exclusion_reason_ledger}
+  - {id: QSH2-049, task: isolate_structural_ambiguity}
+  - {id: QSH2-050, task: validate_no_silent_exclusion}
+  - {id: QSH2-051, task: define_candidate_identity_key}
+  - {id: QSH2-052, task: materialize_first_candidate_set}
+  - {id: QSH2-053, task: cluster_multi_occurrence_candidates}
+  - {id: QSH2-054, task: preserve_multi_channel_provenance}
+  - {id: QSH2-055, task: reconstruct_candidate_boundaries}
+  - {id: QSH2-056, task: test_boundary_sufficiency}
+  - {id: QSH2-057, task: isolate_boundary_ambiguity}
+  - {id: QSH2-058, task: audit_duplicate_candidates}
+  - {id: QSH2-059, task: resolve_nested_candidate_relations}
+  - {id: QSH2-060, task: freeze_root_aware_candidate_set}
+  - {id: QSH2-061, task: audit_cross_form_recovery}
+  - {id: QSH2-062, task: recover_mithl_anchored_candidates}
+  - {id: QSH2-063, task: recover_other_form_candidates}
+  - {id: QSH2-064, task: control_cross_form_false_positives}
+  - {id: QSH2-065, task: reconcile_root_aware_coverage}
+  - {id: QSH2-066, task: define_root_blind_discovery_contract}
+  - {id: QSH2-067, task: define_root_blind_evidence_boundary}
+  - {id: QSH2-068, task: define_root_blind_retrieval_indicators}
+  - {id: QSH2-069, task: define_root_blind_false_positive_controls}
+  - {id: QSH2-070, task: run_root_blind_recovery_pass}
+  - {id: QSH2-071, task: materialize_root_blind_proposals}
+  - {id: QSH2-072, task: audit_root_aware_root_blind_collisions}
+  - {id: QSH2-073, task: deduplicate_cross_channel_candidates}
+  - {id: QSH2-074, task: preserve_collision_provenance}
+  - {id: QSH2-075, task: freeze_unified_candidate_proposals}
+  - {id: QSH2-076, task: build_candidate_provenance_packs}
+  - {id: QSH2-077, task: validate_source_reconstructibility}
+  - {id: QSH2-078, task: validate_signal_reconstructibility}
+  - {id: QSH2-079, task: validate_boundary_reconstructibility}
+  - {id: QSH2-080, task: validate_exclusion_competitors}
+  - {id: QSH2-081, task: define_independent_validation_protocol}
+  - {id: QSH2-082, task: validate_each_candidate_independently}
+  - {id: QSH2-083, task: assign_pass_to_investigation}
+  - {id: QSH2-084, task: assign_reject}
+  - {id: QSH2-085, task: assign_unresolved}
+  - {id: QSH2-086, task: audit_no_candidate_without_disposition}
+  - {id: QSH2-087, task: atomic_commit_accepted_candidate_registry}
+  - {id: QSH2-088, task: preserve_rejected_registry_outside_accepted_count}
+  - {id: QSH2-089, task: preserve_unresolved_registry_outside_accepted_count}
+  - {id: QSH2-090, task: reconcile_candidate_counts}
+  - {id: QSH2-091, task: audit_registry_id_uniqueness}
+  - {id: QSH2-092, task: audit_registry_provenance_completeness}
+  - {id: QSH2-093, task: audit_registry_boundary_completeness}
+  - {id: QSH2-094, task: audit_registry_rebuildability}
+  - {id: QSH2-095, task: freeze_structural_candidate_registry}
+  - {id: QSH2-096, task: issue_structural_harvest_reconciliation}
+  - {id: QSH2-097, task: issue_independent_campaign_audit}
+  - {id: QSH2-098, task: close_24_5B_if_and_only_if_all_gates_pass}
+  - {id: QSH2-099, task: prepare_investigation_readiness_manifest}
+  - {id: QSH2-100, task: authorize_next_phase_without_creating_QPU}
+locks:
+  no_false_completion: true
+  no_qpu_creation: true
+  no_canonical_parable_decision: true
+  unresolved_is_legal: true
