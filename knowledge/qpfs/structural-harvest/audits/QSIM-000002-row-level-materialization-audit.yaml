@@ -1,0 +1,25 @@
+schema: qpfs/row-level-materialization-audit/v0.1
+id: QSH2-AUDIT-000001
+subject: QSIM-000002
+status: FAIL_BLOCKING
+finding: >-
+  QSIM-000002 proves a 169-count reconciliation and mapping recipe, but it does not
+  contain 169 explicit row objects. Therefore it cannot yet serve as the direct
+  executable input required by context hydration and per-row structural signal evaluation.
+evidence:
+  declared_canonical_row_count: 169
+  explicit_row_objects_present: 0
+  mapping_ranges_present: true
+  recovered_single_locators_present: 4
+  direct_per_row_hydration_possible: false
+contradiction:
+  previous_status: CLOSED_PASS
+  corrected_status: RECONCILED_MAPPING_NOT_ROW_LEVEL_MATERIALIZED
+resolution_rule: >-
+  Preserve QSIM-000002 as a reconciliation authority, but revoke its role as direct
+  execution input until QSIM-000003 contains all 169 explicit unique rows.
+forbidden:
+  - context_hydration_from_range_notation
+  - signal_evaluation_without_explicit_rows
+  - marking_QSH2_005_through_QSH2_100_complete_without_artifacts
+next_required_action: locate_batch_authorities_and_materialize_QSIM_000003
