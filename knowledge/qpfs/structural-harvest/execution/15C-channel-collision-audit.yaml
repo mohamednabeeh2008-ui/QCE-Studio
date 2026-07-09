@@ -1,0 +1,9 @@
+schema: qpfs/channel-collision-audit/v0.1
+id: QCCA-000001
+step: 24.5B-15C
+status: CLOSED_PASS
+channels: [ROOT_AWARE, ROOT_BLIND]
+double_counting_forbidden: true
+one_candidate_multiple_provenance_edges: true
+merge_requires_identity_evidence: true
+next_step: 24.5B-16
