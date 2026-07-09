@@ -1,0 +1,26 @@
+schema: qpfs/candidate-ontology-contract/v0.1
+id: COC-000001
+step: 24.5B-02
+status: FROZEN
+entities:
+  occurrence:
+    definition: "A source-attested token occurrence in the lexical ledger."
+    may_imply_parable: false
+  structural_candidate:
+    definition: "A reviewable textual unit retrieved by one or more admissible representational signals."
+    canonical: false
+  parable:
+    definition: "A candidate that later survives the formal parable decision campaign."
+    creatable_in_24_5B: false
+  qpu:
+    definition: "A canonical Quranic Parable Unit created only after boundary and parable decisions."
+    creatable_in_24_5B: false
+invariants:
+  - "Occurrence != Candidate"
+  - "Candidate != Parable"
+  - "Parable != QPU until canonical promotion"
+  - "Multiple occurrences may support one candidate"
+  - "One occurrence may participate in boundary review without creating a candidate"
+result:
+  decision: PASS
+  authorized_next_step: 24.5B-03
