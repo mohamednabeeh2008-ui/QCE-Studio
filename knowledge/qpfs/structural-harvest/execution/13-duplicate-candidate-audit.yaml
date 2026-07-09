@@ -1,0 +1,8 @@
+schema: qpfs/duplicate-candidate-audit/v0.1
+id: QDCA-000001
+step: 24.5B-13
+status: CLOSED_PASS
+duplicate_keys: [same_boundary, same_anchor_cluster, same_structure]
+link_before_merge: true
+provenance_preserved: true
+next_step: 24.5B-14A
