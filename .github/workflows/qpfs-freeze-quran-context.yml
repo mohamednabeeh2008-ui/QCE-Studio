@@ -1,0 +1,51 @@
+name: QPFS Freeze Quran Context Authority
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/qpfs-freeze-quran-context.yml'
+      - 'scripts/qpfs/freeze-quran-context-authority.mjs'
+
+concurrency:
+  group: qpfs-qta-000001-freeze
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  freeze-authority:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Acquire and freeze QTA-000001
+        run: node scripts/qpfs/freeze-quran-context-authority.mjs
+      - name: Verify frozen authority
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const crypto=require('crypto');
+          const dir='knowledge/qpfs/wave-3/authorities/qta-000001';
+          const m=JSON.parse(fs.readFileSync(`${dir}/snapshot-manifest-v1.json`,'utf8'));
+          const b=fs.readFileSync(`${dir}/quran-uthmani.txt`);
+          const h=crypto.createHash('sha256').update(b).digest('hex');
+          if(m.status!=='FROZEN_PASS'||m.ayah_count!==6236||m.surah_count!==114||m.unique_locators!==6236) throw new Error('Authority structural gate failed');
+          if(h!==m.sha256) throw new Error('Authority checksum gate failed');
+          console.log('PASS: frozen Quran context authority independently verified');
+          NODE
+      - name: Commit frozen authority
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add knowledge/qpfs/wave-3/authorities/qta-000001/
+          if git diff --cached --quiet; then
+            echo 'No authority changes to commit'
+          else
+            git commit -m 'data(qpfs): freeze QTA-000001 Quran context snapshot'
+            git push
+          fi
