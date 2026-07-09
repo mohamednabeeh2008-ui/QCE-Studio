@@ -1,0 +1,12 @@
+schema: qpfs/wave-closure-checkpoint/v1.0
+id: W1CP-000001
+status: CONTROL_PLANE_COMPLETE
+truth:
+  lexical_authority_count: 169
+  control_plane: COMPLETE
+  data_plane: PENDING
+  wave_closed: false
+  candidate_count_claimed: false
+  canonical_parable_decisions_created: false
+  qpu_created: false
+next_action: MATERIALIZE_AND_RUN_DATA_PLANE
