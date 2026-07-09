@@ -1,0 +1,20 @@
+schema: qpfs/structural-intake-independent-reconciliation/v0.1
+id: QSIM-V-000001
+subject: QSIM-000002
+status: PASS
+checks:
+  historical_21_row_ledger_preserved: PASS
+  four_cross_segment_duplicates_removed: PASS
+  four_missing_nominal_rows_recovered: PASS
+  nominal_family_count_88: PASS
+  derived_form_count_81: PASS
+  final_total_169: PASS
+  source_locator_uniqueness: PASS
+  id_contiguity_1_through_169: PASS
+  stale_QSIM_000001_blocked: PASS
+  qpu_lock_preserved: PASS
+accounting_equation: 88 + 81 = 169
+decision:
+  structural_intake: CLOSED_PASS
+  authorized_next_step: QSH-021
+  canonical_parable_investigation: not_yet_authorized
