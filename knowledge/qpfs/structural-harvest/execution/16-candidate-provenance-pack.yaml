@@ -1,0 +1,7 @@
+schema: qpfs/candidate-provenance-pack/v0.1
+id: QCPP-000001
+step: 24.5B-16
+status: CLOSED_PASS
+required: [candidate_id, discovery_channel, source_ref, anchors, linked_occurrences, boundary, signals, competing_exclusions, transformation_log]
+missing_provenance_action: BLOCK_VALIDATION
+next_step: 24.5B-17
