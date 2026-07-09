@@ -1,0 +1,9 @@
+schema: qpfs/multi-occurrence-clustering/v0.1
+id: QMOC-000001
+step: 24.5B-11
+status: CLOSED_PASS
+merge_basis: shared_representational_structure
+proximity_only_merge: forbidden
+multiple_tokens_one_candidate: allowed
+one_token_multiple_boundary_models: allowed_as_unresolved
+next_step: 24.5B-12A
