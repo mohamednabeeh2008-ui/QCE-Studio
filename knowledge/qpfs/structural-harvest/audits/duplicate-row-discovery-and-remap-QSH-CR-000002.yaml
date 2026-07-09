@@ -1,0 +1,53 @@
+schema: qpfs/duplicate-row-discovery-and-remap/v0.1
+id: QSH-CR-000002
+stage: 24.5B-08B
+status: RESOLVED_BY_CANONICAL_SOURCE_REMAP
+severity: CRITICAL
+supersedes_assumption: QLB-000003_HAS_25_NEW_UNIQUE_ROWS
+finding:
+  duplicated_locators:
+    - {ledger_id: QLO-000018, duplicated_batch_id: QLO-000022, locator: "6:122:13"}
+    - {ledger_id: QLO-000019, duplicated_batch_id: QLO-000023, locator: "6:160:6"}
+    - {ledger_id: QLO-000020, duplicated_batch_id: QLO-000024, locator: "7:176:11"}
+    - {ledger_id: QLO-000021, duplicated_batch_id: QLO-000025, locator: "7:176:12"}
+  hidden_effect: >-
+    The former batch arithmetic counted four already-accepted source tokens as
+    new rows. This made the 169 total arithmetically true but source-row false.
+canonical_source_recovery:
+  source: QLS-000001
+  source_reported_nominal_mathal: 88
+  missing_locators_recovered:
+    - "66:11:3"
+    - "74:31:38"
+    - "76:28:8"
+    - "6:38:12"
+  source_attestation: PASS
+remap_rule:
+  preserve_historical_batch_files: true
+  mutate_historical_ids: false
+  structural_intake_uses_source_canonical_sequence: true
+  QLO-000001: "2:261:1"
+  QLO-000002_to_QLO-000021: preserve_existing_unique_ledger_rows
+  QLO-000022_to_QLO-000084: >-
+    Continue through the remaining source-canonical nominal sequence from
+    7:176:22 through 66:10:3, skipping the four duplicate batch rows.
+  QLO-000085: "66:11:3"
+  QLO-000086: "74:31:38"
+  QLO-000087: "76:28:8"
+  QLO-000088: "6:38:12"
+  QLO-000089_to_QLO-000169: preserve_QLB_000005
+accounting:
+  nominal_unique_before_recovery: 84
+  duplicated_rows_removed: 4
+  missing_source_rows_added: 4
+  nominal_unique_after_recovery: 88
+  other_derived_forms: 81
+  final_unique_source_tokens: 169
+  result: PASS
+invalidated_artifact:
+  path: knowledge/qpfs/structural-harvest/manifests/unified-structural-intake-manifest-v0.1.yaml
+  reason: contains_four_cross_segment_duplicate_locators
+  use_for_execution: forbidden
+required_replacement: unified-structural-intake-manifest-v0.2.yaml
+completed_tasks: [QSH-006, QSH-007, QSH-008, QSH-011, QSH-012]
+next_required_task: QSH-009
