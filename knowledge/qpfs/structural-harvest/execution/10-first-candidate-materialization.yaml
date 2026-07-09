@@ -1,0 +1,8 @@
+schema: qpfs/candidate-materialization/v0.1
+id: QPCM-000001
+step: 24.5B-10
+status: CLOSED_PASS
+candidate_prefix: QPC
+parable_confirmed: false
+qpu_created: false
+next_step: 24.5B-11
