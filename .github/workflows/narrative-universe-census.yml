@@ -1,0 +1,33 @@
+name: Narrative Universe Census
+
+on:
+  push:
+    paths:
+      - 'scripts/qfm-v2/audit-narrative-universe-coverage.mjs'
+      - 'data/qfm-v2/**'
+      - 'knowledge/**'
+      - '.github/workflows/narrative-universe-census.yml'
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  census:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Execute full source census
+        run: node scripts/qfm-v2/audit-narrative-universe-coverage.mjs
+      - name: Verify generated artifact
+        run: |
+          test -s data/qfm-v2/audits/generated/narrative-universe-source-census-v0.1.json
+          node -e "const x=require('./data/qfm-v2/audits/generated/narrative-universe-source-census-v0.1.json'); if(!x.safety.pass) process.exit(1); if(x.safety.nar_000039_present) process.exit(1); console.log(x.recovered_counts)"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: narrative-universe-source-census-v0.1
+          path: data/qfm-v2/audits/generated/narrative-universe-source-census-v0.1.json
