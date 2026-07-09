@@ -1,0 +1,20 @@
+schema: qpfs/structural-harvest-foundation-closure/v0.1
+id: QSH-FC-000001
+stage: 24.5B
+status: CLOSED_PASS
+steps:
+  24.5B-02: {artifact: contracts/candidate-ontology-contract-v0.1.yaml, decision: PASS}
+  24.5B-03: {artifact: contracts/evidence-boundary-contract-v0.1.yaml, decision: PASS}
+  24.5B-04: {artifact: taxonomies/structural-signal-taxonomy-v0.1.yaml, decision: PASS}
+  24.5B-05: {artifact: taxonomies/exclusion-taxonomy-v0.1.yaml, decision: PASS}
+  24.5B-06: {artifact: models/candidate-identity-model-v0.1.yaml, decision: PASS}
+  24.5B-07: {artifact: contracts/verse-window-expansion-rules-v0.1.yaml, decision: PASS}
+checks:
+  occurrence_candidate_parable_qpu_separation: PASS
+  evidence_boundary_frozen: PASS
+  signal_taxonomy_frozen: PASS
+  exclusion_taxonomy_frozen: PASS
+  candidate_identity_model_frozen: PASS
+  verse_window_rules_frozen: PASS
+result:
+  authorized_next_step: 24.5B-08
