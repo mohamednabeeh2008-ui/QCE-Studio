@@ -1,0 +1,23 @@
+{
+  "schema": "qpfs/wave-3-authority-registry/v1.0",
+  "status": "ACTIVE",
+  "authorities": [
+    {
+      "authority_id": "QCA-000001",
+      "role": "LEXICAL_MORPHOLOGICAL_TRACE",
+      "name": "Quranic Arabic Corpus",
+      "canonical_url": "https://corpus.quran.com/",
+      "use": ["source_locator_verification", "morphology", "root_aware_trace"],
+      "prohibited_use": ["sole_proof_of_root_blind_completeness"]
+    },
+    {
+      "authority_id": "QTA-000001",
+      "role": "QURAN_TEXT_CONTEXT_AUTHORITY",
+      "name": "Tanzil Quran Text",
+      "canonical_url": "https://tanzil.net/",
+      "use": ["ayah_context", "boundary_reconstruction", "corpus_wide_text_scan"],
+      "requirements": ["preserve_source_version", "preserve_text_type", "preserve_checksum_before_execution"]
+    }
+  ],
+  "governing_rule": "No downloaded text becomes runtime authority until version, text type, acquisition path, and checksum are recorded."
+}
