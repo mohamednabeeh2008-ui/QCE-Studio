@@ -1,0 +1,10 @@
+schema: qpfs/anchor-detection-pass/v0.1
+id: QADP-000001
+step: 24.5B-08E
+status: CLOSED_PASS
+input: QASE-000001
+output_type: STRUCTURAL_ANCHOR_RECORD
+parable_status_created: false
+qpu_created: false
+rule: positive_signal_is_retrieval_evidence_not_parable_proof
+next_step: 24.5B-09A
