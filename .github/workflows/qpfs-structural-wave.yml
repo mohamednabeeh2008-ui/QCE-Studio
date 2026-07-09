@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'scripts/qpfs/materialize-structural-wave.mjs'
+      - '.github/workflows/qpfs-structural-wave.yml'
       - 'knowledge/qpfs/structural-harvest/manifests/unified-structural-intake-manifest-v0.1.yaml'
       - 'knowledge/qpfs/structural-harvest/reconciliation/QSIM-000003.yaml'
 
@@ -19,16 +20,34 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Run reconciled data plane and generate structural proposals
+      - name: Run QSIM-000003 reconciled data plane
         run: node scripts/qpfs/materialize-structural-wave.mjs
-      - name: Verify immutable safety gates
+      - name: Verify Wave 2 closure gates
         run: |
-          node -e "const r=require('./knowledge/qpfs/structural-harvest/runtime/wave-2-execution-report.json'); if(r.lexical_rows!==169||r.unique_ids!==169||r.unique_row_keys!==169||r.canonical_parable_decisions_created||r.qpu_created) process.exit(1)"
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const base='knowledge/qpfs/structural-harvest/runtime';
+          const report=JSON.parse(fs.readFileSync(`${base}/wave-2-execution-report-v2.json`,'utf8'));
+          const runtime=JSON.parse(fs.readFileSync(`${base}/canonical-lexical-runtime-v2.json`,'utf8'));
+          const dispositions=JSON.parse(fs.readFileSync(`${base}/structural-signal-dispositions-v1.json`,'utf8'));
+          const proposals=JSON.parse(fs.readFileSync(`${base}/structural-candidate-proposals-v2.json`,'utf8'));
+          const fail = message => { console.error(message); process.exit(1); };
+          if(report.status!=='CLOSED_WITH_UNRESOLVED_ROUTED_FORWARD') fail('wave status not closable');
+          if(report.lexical_rows!==169||report.unique_ids!==169||report.unique_row_keys!==169) fail('169-row reconciliation failed');
+          if(runtime.count!==169||runtime.rows.length!==169) fail('runtime completeness failed');
+          if(new Set(runtime.rows.map(r=>r.occurrence_id)).size!==169) fail('duplicate occurrence ids');
+          if(new Set(runtime.rows.map(r=>r.canonical_row_key)).size!==169) fail('duplicate canonical row keys');
+          if(dispositions.count!==169||dispositions.records.length!==169) fail('disposition completeness failed');
+          if(proposals.candidate_count!==proposals.candidates.length) fail('candidate count mismatch');
+          if(proposals.candidates.some(c=>c.parable_decision!==null||c.qpu_id!==null)) fail('forbidden parable/QPU creation');
+          if(report.canonical_parable_decisions_created||report.qpu_created) fail('safety gate failed');
+          console.log(`PASS: Wave 2 closure gates; ${proposals.candidate_count} proposals routed to Wave 3`);
+          NODE
       - name: Commit generated runtime artifacts
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add knowledge/qpfs/structural-harvest/runtime/
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m 'feat(qpfs): materialize wave two structural candidates'
+          git commit -m 'feat(qpfs): materialize reconciled wave two runtime'
           git push
