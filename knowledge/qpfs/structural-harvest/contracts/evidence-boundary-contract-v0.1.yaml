@@ -1,0 +1,28 @@
+schema: qpfs/evidence-boundary-contract/v0.1
+id: EBC-000001
+step: 24.5B-03
+status: FROZEN
+admissible:
+  - source_attested_token
+  - normalized_quran_reference
+  - explicit_lexical_signal
+  - observable_comparative_syntax
+  - observable_image_meaning_relation
+  - observable_constructed_scenario
+  - documented_traditional_or_scholarly_attestation
+inadmissible_as_sufficient_proof:
+  - memory
+  - fame
+  - intuition
+  - visual_imagery_alone
+  - narrative_alone
+  - comparison_alone
+  - lexical_root_presence_alone
+rules:
+  discovery_may_retrieve: true
+  discovery_may_canonize: false
+  evidence_must_be_traceable: true
+  unresolved_is_legal: true
+result:
+  decision: PASS
+  authorized_next_step: 24.5B-04
