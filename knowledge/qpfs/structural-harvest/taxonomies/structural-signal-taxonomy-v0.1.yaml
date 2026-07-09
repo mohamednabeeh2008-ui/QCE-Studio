@@ -1,0 +1,21 @@
+schema: qpfs/structural-signal-taxonomy/v0.1
+id: SST-000001
+step: 24.5B-04
+status: FROZEN
+signals:
+  SS-01: {name: explicit_mathal, strength: strong}
+  SS-02: {name: ka_mathal, strength: strong}
+  SS-03: {name: mathaluhu_or_mathaluhum, strength: contextual}
+  SS-04: {name: darb_mathal, strength: strong}
+  SS-05: {name: comparative_architecture, strength: contextual}
+  SS-06: {name: image_meaning_relation, strength: contextual}
+  SS-07: {name: constructed_representational_scenario, strength: contextual}
+  SS-08: {name: evaluative_disclosure, strength: weak_alone}
+  SS-09: {name: analogy_like_function, strength: weak_alone}
+rules:
+  signal_count_is_not_decision: true
+  strong_signal_is_not_canonical_proof: true
+  weak_signal_requires_corrobation: true
+result:
+  decision: PASS
+  authorized_next_step: 24.5B-05
