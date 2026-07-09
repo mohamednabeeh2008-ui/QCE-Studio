@@ -1,0 +1,8 @@
+schema: qpfs/exclusion-reason-ledger/v0.1
+id: QERL-000001
+step: 24.5B-09B
+status: CLOSED_PASS
+required_fields: [occurrence_id, exclusion_code, reason, evidence_ref, rule_ref]
+mutation_policy: append_correction_with_provenance
+silent_exclusion_forbidden: true
+next_step: 24.5B-09C
