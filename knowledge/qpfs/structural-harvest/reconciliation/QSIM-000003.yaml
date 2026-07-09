@@ -1,0 +1,72 @@
+schema: qpfs/global-lexical-identity-reconciliation/v0.1
+id: QSIM-000003
+status: CLOSED_PASS
+root: "م ث ل"
+source_id: QLS-000001
+source_reference: "https://corpus.quran.com/qurandictionary.jsp?q=mvl"
+problem:
+  prior_assumption: "QLO-000001..QLO-000011 were eleven missing source rows"
+  finding: "The nominal source sequence contains only seven rows before 2:261:1. The apparent eleven-row gap was an identity-offset defect, not eleven missing occurrences."
+  displaced_terminal_rows: 4
+canonical_repair:
+  preserved_source_order: true
+  silent_content_invention: false
+  actions:
+    - action: MATERIALIZE_HEAD
+      canonical_ids: QLO-000001..QLO-000007
+      rows:
+        - [QLO-000001, "2:17:1", mathaluhum, nominal_mathal]
+        - [QLO-000002, "2:17:2", kamathali, nominal_mathal]
+        - [QLO-000003, "2:26:7", mathalan, nominal_mathal]
+        - [QLO-000004, "2:26:28", mathalan, nominal_mathal]
+        - [QLO-000005, "2:171:1", wamathalu, nominal_mathal]
+        - [QLO-000006, "2:171:4", kamathali, nominal_mathal]
+        - [QLO-000007, "2:214:8", mathalu, nominal_mathal]
+    - action: COMPACT_EXISTING_NOMINAL_RANGE
+      source_ids: QLO-000012..QLO-000088
+      canonical_ids: QLO-000008..QLO-000084
+      offset: -4
+      source_content_rewritten: false
+    - action: RECOVER_TERMINAL_NOMINAL_ROWS
+      canonical_ids: QLO-000085..QLO-000088
+      rows:
+        - [QLO-000085, "66:11:3", mathalan, nominal_mathal]
+        - [QLO-000086, "74:31:38", mathalan, nominal_mathal]
+        - [QLO-000087, "76:28:8", amthalahum, nominal_mathal]
+        - [QLO-000088, "6:38:12", amthalukum, nominal_mathal_adjective]
+    - action: PRESERVE_NON_NOMINAL_RANGE
+      source_ids: QLO-000089..QLO-000169
+      canonical_ids: QLO-000089..QLO-000169
+      offset: 0
+reconciliation:
+  head_materialized: 7
+  compacted_existing_rows: 77
+  recovered_terminal_rows: 4
+  preserved_remaining_rows: 81
+  arithmetic_total: 169
+  canonical_id_first: QLO-000001
+  canonical_id_last: QLO-000169
+  canonical_ids_contiguous: true
+  source_locators_expected_unique: true
+  source_total: 169
+  source_family_counts:
+    verb_form_v_tamathala: 1
+    noun_amthal: 1
+    noun_tamathil: 2
+    nominal_mathal: 88
+    noun_mithl: 75
+    noun_mathulat: 1
+    adjective_muthla: 1
+  family_sum: 169
+  result: PASS
+authority_precedence:
+  - QSIM-000003
+  - QLRC-000001
+  - QLB-000005
+  - QLB-000004
+  - QLB-000003
+  - QLC-000002
+supersedes:
+  - "the assumption that eleven source rows were missing"
+  - "direct use of legacy QLO identifiers 12..88 as canonical identities"
+next_legal_stage: STEP_24_5B_STRUCTURAL_CANDIDATE_MATERIALIZATION
