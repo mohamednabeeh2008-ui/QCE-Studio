@@ -1,0 +1,122 @@
+schema: qpfs/lexical-batch/v0.1
+id: QLB-000005
+step: 24.5A
+status: COMMITTED
+source_id: QLS-000001
+root: "م ث ل"
+source_reference: "https://corpus.quran.com/qurandictionary.jsp?q=mvl"
+scope:
+  first_occurrence_id: QLO-000089
+  last_occurrence_id: QLO-000169
+  row_count: 81
+  accepted_before_commit: 88
+  accepted_after_commit: 169
+families:
+  verb_form_v_tamathala: 1
+  noun_amthal: 1
+  noun_tamathil: 2
+  noun_mithl: 75
+  noun_mathulat: 1
+  adjective_muthla: 1
+rows:
+  - [QLO-000089, "19:17:8", "fatamathala", verb_form_v_tamathala]
+  - [QLO-000090, "20:104:7", "amthaluhum", noun_amthal]
+  - [QLO-000091, "21:52:7", "l-tamāthīlu", noun_tamathil]
+  - [QLO-000092, "34:13:7", "watamāthīla", noun_tamathil]
+  - [QLO-000093, "2:23:12", "mith'lihi", noun_mithl]
+  - [QLO-000094, "2:106:11", "mith'lihā", noun_mithl]
+  - [QLO-000095, "2:113:21", "mith'la", noun_mithl]
+  - [QLO-000096, "2:118:16", "mith'la", noun_mithl]
+  - [QLO-000097, "2:137:3", "bimith'li", noun_mithl]
+  - [QLO-000098, "2:194:12", "bimith'li", noun_mithl]
+  - [QLO-000099, "2:228:31", "mith'lu", noun_mithl]
+  - [QLO-000100, "2:233:32", "mith'lu", noun_mithl]
+  - [QLO-000101, "2:275:19", "mith'lu", noun_mithl]
+  - [QLO-000102, "3:13:16", "mith'layhim", noun_mithl]
+  - [QLO-000103, "3:73:15", "mith'la", noun_mithl]
+  - [QLO-000104, "3:140:8", "mith'luhu", noun_mithl]
+  - [QLO-000105, "3:165:6", "mith'layhā", noun_mithl]
+  - [QLO-000106, "4:11:6", "mith'lu", noun_mithl]
+  - [QLO-000107, "4:140:25", "mith'luhum", noun_mithl]
+  - [QLO-000108, "4:176:39", "mith'lu", noun_mithl]
+  - [QLO-000109, "5:31:17", "mith'la", noun_mithl]
+  - [QLO-000110, "5:36:11", "wamith'lahu", noun_mithl]
+  - [QLO-000111, "5:95:14", "mith'lu", noun_mithl]
+  - [QLO-000112, "6:93:19", "mith'la", noun_mithl]
+  - [QLO-000113, "6:124:9", "mith'la", noun_mithl]
+  - [QLO-000114, "6:160:13", "mith'lahā", noun_mithl]
+  - [QLO-000115, "7:169:17", "mith'luhu", noun_mithl]
+  - [QLO-000116, "8:31:11", "mith'la", noun_mithl]
+  - [QLO-000117, "10:27:6", "bimith'lihā", noun_mithl]
+  - [QLO-000118, "10:38:7", "mith'lihi", noun_mithl]
+  - [QLO-000119, "10:102:4", "mith'la", noun_mithl]
+  - [QLO-000120, "11:13:8", "mith'lihi", noun_mithl]
+  - [QLO-000121, "11:27:11", "mith'lanā", noun_mithl]
+  - [QLO-000122, "11:89:7", "mith'lu", noun_mithl]
+  - [QLO-000123, "13:17:22", "mith'luhu", noun_mithl]
+  - [QLO-000124, "13:18:16", "wamith'lahu", noun_mithl]
+  - [QLO-000125, "14:10:23", "mith'lunā", noun_mithl]
+  - [QLO-000126, "14:11:8", "mith'lukum", noun_mithl]
+  - [QLO-000127, "16:126:4", "bimith'li", noun_mithl]
+  - [QLO-000128, "17:88:9", "bimith'li", noun_mithl]
+  - [QLO-000129, "17:88:14", "bimith'lihi", noun_mithl]
+  - [QLO-000130, "17:99:13", "mith'lahum", noun_mithl]
+  - [QLO-000131, "18:109:17", "bimith'lihi", noun_mithl]
+  - [QLO-000132, "18:110:5", "mith'lukum", noun_mithl]
+  - [QLO-000133, "20:58:3", "mith'lihi", noun_mithl]
+  - [QLO-000134, "21:3:11", "mith'lukum", noun_mithl]
+  - [QLO-000135, "21:84:10", "wamith'lahum", noun_mithl]
+  - [QLO-000136, "22:60:4", "bimith'li", noun_mithl]
+  - [QLO-000137, "23:24:11", "mith'lukum", noun_mithl]
+  - [QLO-000138, "23:33:18", "mith'lukum", noun_mithl]
+  - [QLO-000139, "23:34:4", "mith'lakum", noun_mithl]
+  - [QLO-000140, "23:47:4", "mith'linā", noun_mithl]
+  - [QLO-000141, "23:81:3", "mith'la", noun_mithl]
+  - [QLO-000142, "24:17:5", "limith'lihi", noun_mithl]
+  - [QLO-000143, "26:154:5", "mith'lunā", noun_mithl]
+  - [QLO-000144, "26:186:5", "mith'lunā", noun_mithl]
+  - [QLO-000145, "28:48:9", "mith'la", noun_mithl]
+  - [QLO-000146, "28:79:13", "mith'la", noun_mithl]
+  - [QLO-000147, "35:14:17", "mith'lu", noun_mithl]
+  - [QLO-000148, "36:15:6", "mith'lunā", noun_mithl]
+  - [QLO-000149, "36:42:4", "mith'lihi", noun_mithl]
+  - [QLO-000150, "36:81:10", "mith'lahum", noun_mithl]
+  - [QLO-000151, "37:61:1", "limith'li", noun_mithl]
+  - [QLO-000152, "38:43:4", "wamith'lahum", noun_mithl]
+  - [QLO-000153, "39:47:9", "wamith'lahu", noun_mithl]
+  - [QLO-000154, "40:30:8", "mith'la", noun_mithl]
+  - [QLO-000155, "40:31:1", "mith'la", noun_mithl]
+  - [QLO-000156, "40:40:7", "mith'lahā", noun_mithl]
+  - [QLO-000157, "41:6:5", "mith'lukum", noun_mithl]
+  - [QLO-000158, "41:13:6", "mith'la", noun_mithl]
+  - [QLO-000159, "42:11:15", "kamith'lihi", noun_mithl]
+  - [QLO-000160, "42:40:4", "mith'luhā", noun_mithl]
+  - [QLO-000161, "46:10:16", "mith'lihi", noun_mithl]
+  - [QLO-000162, "51:23:6", "mith'la", noun_mithl]
+  - [QLO-000163, "51:59:5", "mith'la", noun_mithl]
+  - [QLO-000164, "52:34:3", "mith'lihi", noun_mithl]
+  - [QLO-000165, "60:11:13", "mith'la", noun_mithl]
+  - [QLO-000166, "65:12:8", "mith'lahunna", noun_mithl]
+  - [QLO-000167, "89:8:4", "mith'luhā", noun_mithl]
+  - [QLO-000168, "13:6:9", "l-mathulātu", noun_mathulat]
+  - [QLO-000169, "20:63:13", "l-muth'lā", adjective_muthla]
+validation:
+  rows_checked: 81
+  pass: 81
+  reject: 0
+  unresolved: 0
+  source_locator_checked: true
+  source_attestation_checked: true
+  family_count_reconciliation: PASS
+integrity:
+  occurrence_ids_contiguous: true
+  occurrence_ids_unique: true
+  source_locators_unique_within_batch: true
+  prior_88_rows_rewritten: false
+  total_root_occurrences_reported: 169
+  total_root_occurrences_materialized: 169
+  reconciliation: PASS
+commit:
+  atomic: true
+  next_occurrence_id: null
+  root_ledger_complete: true
