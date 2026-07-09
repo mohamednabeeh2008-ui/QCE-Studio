@@ -1,0 +1,165 @@
+schema: qpfs/lexical-batch-materialization-contract/v0.1
+contract_id: LBMC-000001
+status: active
+step: 24.5A
+purpose: >-
+  Govern controlled expansion of the lexical occurrence ledger from QLO-000002
+  onward while preserving row-level validation, duplicate prevention,
+  provenance, and reconciliation with the reported 169 root occurrences.
+
+entry_gate:
+  requires:
+    - first_row_validation_is_pass
+    - ledger_expansion_status_is_open
+    - source_is_registered_and_accepted
+    - qpu_promotion_lock_is_true
+  current_state: PASS
+  authorized_start: QLO-000002
+
+batch_identity:
+  batch_id_pattern: "^QLB-[0-9]{6}$"
+  occurrence_id_pattern: "^QLO-[0-9]{6}$"
+  source_id_pattern: "^QLS-[0-9]{6}$"
+  numbering_rule: contiguous_global_qlo_sequence
+  id_reuse: prohibited
+
+batch_limits:
+  default_batch_size: 25
+  maximum_batch_size: 50
+  first_expansion_batch_size: 10
+  rationale: >-
+    The first expansion batch is intentionally smaller to test multi-row
+    materialization before larger batches are allowed.
+
+required_row_fields:
+  - occurrence_id
+  - source_id
+  - surah
+  - ayah
+  - token_position
+  - surface
+  - lemma
+  - root
+  - morphological_form
+  - source_locator
+  - verification_status
+  - admission_decision
+  - parable_identity_decision
+  - qpc_identity
+  - qpu_identity
+
+row_validation:
+  mode: every_row
+  required_checks:
+    structural:
+      - required_fields_present
+      - identifier_patterns_valid
+      - qlo_sequence_valid
+    source:
+      - source_registered
+      - source_accepted
+      - token_location_matches
+      - lexical_data_attested
+    traceability:
+      - stable_locator_present
+      - locator_recheckable
+      - qlo_to_qls_provenance_preserved
+    logical:
+      - parable_identity_decision_is_not_performed
+      - qpc_identity_is_null
+      - qpu_identity_is_null
+      - promotion_lock_preserved
+  allowed_results:
+    - PASS
+    - REJECT
+  partial_pass: prohibited
+
+atomicity:
+  ledger_write_rule: accepted_rows_only
+  failed_rows_rule: preserve_in_batch_rejection_log
+  batch_failure_rule: >-
+    A failed row does not invalidate already valid rows, but the batch cannot be
+    marked reconciled until every proposed row has PASS or REJECT disposition.
+
+duplicate_prevention:
+  canonical_row_key:
+    - source_id
+    - surah
+    - ayah
+    - token_position
+  secondary_collision_checks:
+    - source_locator
+    - occurrence_id
+  duplicate_action: reject_and_link_existing_qlo
+  multi_source_same_token_rule: >-
+    Do not create a second QLO solely because another accepted source attests the
+    same Quranic token; preserve the additional source as provenance evidence.
+
+ordering:
+  canonical_order:
+    - surah_ascending
+    - ayah_ascending
+    - token_position_ascending
+  qlo_assignment_rule: assign_after_normalization_before_commit
+
+reconciliation:
+  reported_root_occurrence_target: 169
+  target_status: external_reported_total_not_yet_ledger_truth
+  dimensions:
+    - proposed_row_count
+    - accepted_row_count
+    - rejected_row_count
+    - duplicate_row_count
+    - unresolved_row_count
+    - materialized_unique_token_count
+  completion_equation: >-
+    proposed = accepted + rejected + duplicate + unresolved
+  target_comparison_rule: >-
+    The ledger may be compared with 169 only after all source rows have final
+    disposition and unique-token deduplication is complete.
+  mismatch_action: BLOCK_AND_AUDIT
+  forbidden_inference: occurrence_total_equals_parable_total
+
+batch_states:
+  - DRAFT
+  - VALIDATING
+  - BLOCKED
+  - READY_TO_COMMIT
+  - COMMITTED
+  - RECONCILED
+
+batch_promotion_gate:
+  to_ready_to_commit:
+    requires:
+      - every_proposed_row_has_disposition
+      - no_duplicate_qlo_ids
+      - no_duplicate_canonical_row_keys
+      - accepted_rows_pass_every_row_validation
+      - rejection_log_complete
+  to_reconciled:
+    requires:
+      - ledger_counts_match_batch_manifest
+      - provenance_edges_resolve
+      - sequence_continuity_holds
+
+prohibited_actions:
+  - bulk_insert_without_row_validation
+  - assign_qpc_identity_during_lexical_materialization
+  - assign_qpu_identity_during_lexical_materialization
+  - confirm_parable_identity_from_lexical_presence
+  - force_ledger_count_to_169
+  - discard_rejected_or_duplicate_provenance
+
+first_batch_authorization:
+  batch_id: QLB-000001
+  start_occurrence_id: QLO-000002
+  planned_row_capacity: 10
+  status: AUTHORIZED_NOT_MATERIALIZED
+  next_required_action: build_batch_manifest_before_ledger_write
+
+invariants:
+  - every_materialized_row_is_individually_validated
+  - one_quranic_token_has_one_canonical_qlo
+  - every_rejection_remains_auditable
+  - batch_efficiency_never_bypasses_row_evidence
+  - lexical_occurrence_never_confirms_parable_identity
