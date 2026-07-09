@@ -1,0 +1,12 @@
+schema: qpfs/manifest-reconciliation/v0.1
+id: QSIM-RC-000001
+step: 24.5B-08B
+status: CLOSED_PASS
+expected_count: 169
+observed_count: 169
+expected_range: QLO-000001..QLO-000169
+missing_ids: 0
+duplicate_ids: 0
+out_of_range_ids: 0
+source_closure_match: PASS
+next_step: 24.5B-08C
