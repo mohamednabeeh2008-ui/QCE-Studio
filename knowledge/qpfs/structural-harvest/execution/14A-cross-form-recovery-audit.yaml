@@ -1,0 +1,8 @@
+schema: qpfs/cross-form-recovery-audit/v0.1
+id: QCFRA-000001
+step: 24.5B-14A
+status: CLOSED_PASS
+families_checked: 7
+mathal_only_bias_allowed: false
+all_families_retained_for_signal_review: true
+next_step: 24.5B-14B
