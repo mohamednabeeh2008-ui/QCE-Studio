@@ -1,0 +1,8 @@
+schema: qpfs/cross-form-false-positive-control/v0.1
+id: QCFFP-000001
+step: 24.5B-14B
+status: CLOSED_PASS
+likeness_alone_is_candidate_proof: false
+morphology_alone_is_candidate_proof: false
+ordinary_comparison_requires_structural_evidence: true
+next_step: 24.5B-15A
