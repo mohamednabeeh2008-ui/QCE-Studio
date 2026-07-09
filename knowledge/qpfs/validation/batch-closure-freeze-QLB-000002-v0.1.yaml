@@ -1,0 +1,119 @@
+schema: qpfs/batch-closure-freeze/v0.1
+closure_id: QLBCF-000002
+step: 24.5A
+execution_step: STEP_06_BATCH_2_CLOSURE_AND_FREEZE
+status: COMPLETE
+
+batch:
+  batch_id: QLB-000002
+  occurrence_range: QLO-000012_to_QLO-000021
+  proposed_row_count: 10
+  dispositioned_row_count: 10
+  accepted_row_count: 10
+  rejected_row_count: 0
+  unresolved_row_count: 0
+  final_state: COMMITTED
+
+closure_evidence_chain:
+  independent_row_validation:
+    required: true
+    status: PASS
+    scope: QLO-000012_to_QLO-000021
+    all_rows_have_disposition: true
+  batch_validation_closure:
+    required: true
+    status: PASS
+    batch_id: QLB-000002
+    majority_success_rule_prohibited: true
+  atomic_ledger_commit:
+    required: true
+    status: PASS
+    atomic_commit_id: QLAC-000002
+    committed_occurrence_range: QLO-000012_to_QLO-000021
+  post_commit_reconciliation:
+    required: true
+    status: PASS
+    reconciliation_id: QLPR-000002
+    ledger_count_after_commit: 21
+    next_occurrence_id: QLO-000022
+    rollback_required: false
+  cross_batch_duplicate_audit:
+    required: true
+    status: PASS
+    audit_id: QLCDA-000001
+    audited_range: QLO-000001_to_QLO-000021
+    exact_duplicate_records: 0
+    cross_channel_same_token_reentries: 0
+    remediation_required: false
+
+closure_gate:
+  every_row_has_final_disposition: PASS
+  accepted_rows_committed_atomically: PASS
+  rejected_or_unresolved_rows_excluded_from_accepted_count: PASS
+  post_commit_counts_reconciled: PASS
+  occurrence_ids_unique: PASS
+  canonical_source_rows_unique: PASS
+  source_locators_unique: PASS
+  quranic_token_positions_unique: PASS
+  rollback_not_required: PASS
+  exception_count: 0
+
+freeze_policy:
+  frozen: true
+  frozen_scope:
+    - batch_identity
+    - accepted_row_membership
+    - occurrence_id_assignment
+    - canonical_source_row_identity
+    - source_locator_identity
+    - validation_dispositions
+    - commit_membership
+  silent_mutation: PROHIBITED
+  silent_deletion: PROHIBITED
+  silent_occurrence_id_reassignment: PROHIBITED
+  silent_source_replacement: PROHIBITED
+  correction_requirements:
+    - explicit_correction_record
+    - affected_occurrence_ids
+    - previous_value_preservation
+    - new_value
+    - correction_reason
+    - provenance
+    - reviewer_disposition
+    - reconciliation_rerun
+    - duplicate_audit_rerun_if_identity_fields_change
+  permitted_future_actions:
+    - append_provenance_edge_without_duplicate_occurrence
+    - issue_explicit_correction_record
+    - supersede_with_auditable_history
+
+immutability_assertions:
+  accepted_rows_are_historical_records: PASS
+  future_channel_match_must_link_provenance_not_duplicate: PASS
+  frozen_batch_cannot_be_reopened_silently: PASS
+  correction_must_preserve_prior_state: PASS
+
+legal_guards:
+  lexical_presence_confirms_parable: false
+  parable_identity_decision: NOT_PERFORMED
+  qpc_assignment: LOCKED
+  qpu_assignment: LOCKED
+  boundary_resolution: NOT_PERFORMED
+  formation_analysis: NOT_PERFORMED
+  expansion_authorized_by_this_closure_alone: false
+
+closure_decision:
+  decision: COMMITTED
+  committed_with_exceptions: false
+  exception_count: 0
+  batch_closed: true
+  batch_frozen: true
+  rollback_required: false
+  reopening_requires_formal_correction_process: true
+
+next_gate:
+  step: STEP_07_FIRST_21_ROW_INTEGRITY_AUDIT
+  authorized: true
+  expansion_authorized: false
+  checkpoint_scope: QLO-000001_to_QLO-000021
+  governing_question: can_every_record_be_reconstructed_from_source_without_memory_or_manual_analysis
