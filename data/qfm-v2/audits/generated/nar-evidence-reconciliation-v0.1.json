@@ -65,7 +65,7 @@
         "PRODUCTION_EVIDENCE",
         "REFERENCE_ONLY"
       ],
-      "source_count": 8,
+      "source_count": 9,
       "sources": [
         {
           "source": "data/qfm-v2/batches/batch-004/09-prior-registry-collision-audit-v0.1.json",
@@ -113,6 +113,12 @@
         {
           "source": "data/qfm-v2/audits/factory-regression-invariant-audit-v0.1.jsonl",
           "sha256": "809635ff6afea6d3ea97a56e204dd7abddb97a5e7b2df1b8af73c331be3a6b91",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/recovery/nar-authority-recovery-decision-v0.1.json",
+          "sha256": "bee78fbad5a8a94d501108bca972442a141a678783e6c659716b5cc5b5baf887",
           "evidence_class": "REFERENCE_ONLY",
           "lanes": []
         },
@@ -1606,7 +1612,7 @@
         "PROMOTION_EVIDENCE",
         "REFERENCE_ONLY"
       ],
-      "source_count": 5,
+      "source_count": 6,
       "sources": [
         {
           "source": "data/qfm-v2/batches/batch-004/09-prior-registry-collision-audit-v0.1.json",
@@ -1641,6 +1647,12 @@
           "sha256": "b8647dbdb2f11c613a7b240805f8249d758fea6fc5ceb16d3ea03bd871ee24e5",
           "evidence_class": "REFERENCE_ONLY",
           "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/recovery/nar-authority-recovery-decision-v0.1.json",
+          "sha256": "bee78fbad5a8a94d501108bca972442a141a678783e6c659716b5cc5b5baf887",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
         }
       ]
     },
@@ -1654,7 +1666,7 @@
         "PROMOTION_EVIDENCE",
         "REFERENCE_ONLY"
       ],
-      "source_count": 13,
+      "source_count": 14,
       "sources": [
         {
           "source": "data/qfm-v2/batches/batch-004/12-permanent-narrative-registry-v0.1.jsonl",
@@ -1735,6 +1747,12 @@
         {
           "source": "data/qfm-v2/audits/pnie-e09-closure-v0.1.jsonl",
           "sha256": "b8647dbdb2f11c613a7b240805f8249d758fea6fc5ceb16d3ea03bd871ee24e5",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/recovery/nar-authority-recovery-decision-v0.1.json",
+          "sha256": "bee78fbad5a8a94d501108bca972442a141a678783e6c659716b5cc5b5baf887",
           "evidence_class": "REFERENCE_ONLY",
           "lanes": []
         },
@@ -1917,7 +1935,7 @@
         "PROMOTION_EVIDENCE",
         "REFERENCE_ONLY"
       ],
-      "source_count": 13,
+      "source_count": 14,
       "sources": [
         {
           "source": "data/qfm-v2/batches/batch-004/12-permanent-narrative-registry-v0.1.jsonl",
@@ -2006,6 +2024,12 @@
             "REVIEW",
             "SUBJECT"
           ]
+        },
+        {
+          "source": "data/qfm-v2/recovery/nar-authority-recovery-decision-v0.1.json",
+          "sha256": "bee78fbad5a8a94d501108bca972442a141a678783e6c659716b5cc5b5baf887",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
         },
         {
           "source": "data/qfm-v2/universe/mission-005-pre-canonical-narrative-universe-coverage-v0.1.json",

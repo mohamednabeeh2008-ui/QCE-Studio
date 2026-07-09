@@ -5,8 +5,8 @@
     "data/qfm-v2",
     "knowledge"
   ],
-  "source_file_count": 132,
-  "evidence_file_count": 66,
+  "source_file_count": 133,
+  "evidence_file_count": 67,
   "recovered_counts": {
     "nar_references": 39,
     "allocated_nar_ids": 7,
@@ -727,6 +727,17 @@
         "NAR-000029",
         "NAR-000030",
         "NAR-000031"
+      ],
+      "lanes": []
+    },
+    {
+      "source": "data/qfm-v2/recovery/nar-authority-recovery-decision-v0.1.json",
+      "sha256": "bee78fbad5a8a94d501108bca972442a141a678783e6c659716b5cc5b5baf887",
+      "ids": [
+        "NAR-000001",
+        "NAR-000031",
+        "NAR-000032",
+        "NAR-000038"
       ],
       "lanes": []
     },
