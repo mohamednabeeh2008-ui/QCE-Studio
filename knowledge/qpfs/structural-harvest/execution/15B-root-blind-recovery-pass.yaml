@@ -1,0 +1,10 @@
+schema: qpfs/root-blind-recovery-pass/v0.1
+id: QRBR-000001
+step: 24.5B-15B
+status: CLOSED_PASS
+protocol_ref: QRBDP-000001
+output_type: ROOT_BLIND_CANDIDATE_PROPOSAL
+canonical_confirmation: false
+known_pilot_seed_is_not_auto_accepted: true
+all_proposals_require_independent_validation: true
+next_step: 24.5B-15C
