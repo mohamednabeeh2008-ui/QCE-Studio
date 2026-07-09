@@ -1,0 +1,43 @@
+{
+  "mission":"MISSION-005-PRE",
+  "phase":"FULL_UNIVERSE_CENSUS",
+  "status":"IN_PROGRESS_NOT_COMPLETE",
+  "authoritative_state":{
+    "mission_005_pre":"NOT_COMPLETE_FOR_FULL_UNIVERSE_COVERAGE",
+    "nine_item_master_inventory":"SUBSET_ONLY",
+    "batch_005_moses_lock":"HELD_NOT_FINAL",
+    "last_nar_id":"NAR-000038",
+    "next_nar_id":"NAR-000039",
+    "nar_000039_started":false,
+    "production":"BLOCKED"
+  },
+  "census_scope":[
+    "all prior project source files under data/qfm-v2",
+    "all prior project knowledge files under knowledge",
+    "subjects",
+    "characters",
+    "peoples and nations",
+    "groups",
+    "events",
+    "journeys",
+    "witnesses",
+    "holds",
+    "review lanes"
+  ],
+  "legal_separation":"EVENT != JOURNEY != WITNESS",
+  "early_merge":"FORBIDDEN",
+  "reproducible_verifier":"scripts/qfm-v2/audit-narrative-universe-coverage.mjs",
+  "generated_output":"data/qfm-v2/audits/generated/narrative-universe-source-census-v0.1.json",
+  "completion_gates":[
+    "verifier executed against repository HEAD",
+    "all recovered source files represented by path and sha256",
+    "all recovered IDs mapped to typed universe items",
+    "all universe items mapped to Existing NAR / HOLD / Missing",
+    "all unresolved source conflicts classified without merge",
+    "MOSES priority retested only after census closure",
+    "no NAR-000039 allocation before all gates pass"
+  ],
+  "current_finding":"The previous nine-item list cannot serve as a complete universe inventory and is excluded as proof of completeness.",
+  "moses_priority":"NOT_RETESTED_PENDING_CENSUS_CLOSURE",
+  "completion_claim_allowed":false
+}
