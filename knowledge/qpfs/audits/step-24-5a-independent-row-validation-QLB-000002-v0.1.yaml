@@ -1,0 +1,179 @@
+schema: qpfs/independent-row-validation/v0.1
+id: QLIV-000002
+step: 24.5A
+campaign_step: STEP-01
+batch_id: QLB-000002
+status: complete
+scope:
+  first_occurrence_id: QLO-000012
+  last_occurrence_id: QLO-000021
+  row_count: 10
+
+source:
+  source_id: QLS-000001
+  title: Quranic Arabic Corpus — Quran Dictionary
+  provider: Quranic Arabic Corpus
+  root: "م ث ل"
+  access_reference: "https://corpus.quran.com/qurandictionary.jsp?q=mvl"
+  source_locator_model: "surah:ayah:token_position"
+  evidence_basis:
+    root_occurrence_count: 169
+    derived_forms: 7
+    relevant_form: "nominal mathal (مَثَل)"
+    relevant_form_reported_count: 88
+
+validation_contract:
+  required_fields:
+    - surah
+    - ayah
+    - token_position
+    - surface
+    - lemma
+    - root
+    - morphological_form
+    - source_locator
+  dispositions:
+    - PASS
+    - REJECT
+    - UNRESOLVED
+  rules:
+    - each_row_decided_independently
+    - no_majority_batch_pass
+    - no_ledger_commit_in_this_step
+    - no_qpu_promotion
+
+rows:
+  - occurrence_id: QLO-000012
+    source_locator: "2:261:1"
+    surah: 2
+    ayah: 261
+    token_position: 1
+    surface: "مَثَلُ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "nominal: noun (mathal)"
+    source_attestation: "mathalu"
+    disposition: PASS
+  - occurrence_id: QLO-000013
+    source_locator: "2:261:8"
+    surah: 2
+    ayah: 261
+    token_position: 8
+    surface: "كَمَثَلِ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "nominal: noun (mathal)"
+    source_attestation: "kamathali"
+    disposition: PASS
+  - occurrence_id: QLO-000014
+    source_locator: "2:264:19"
+    surah: 2
+    ayah: 264
+    token_position: 19
+    surface: "فَمَثَلُهُ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "nominal: noun (mathal)"
+    source_attestation: "famathaluhu"
+    disposition: PASS
+  - occurrence_id: QLO-000015
+    source_locator: "2:264:20"
+    surah: 2
+    ayah: 264
+    token_position: 20
+    surface: "كَمَثَلِ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "nominal: noun (mathal)"
+    source_attestation: "kamathali"
+    disposition: PASS
+  - occurrence_id: QLO-000016
+    source_locator: "2:265:1"
+    surah: 2
+    ayah: 265
+    token_position: 1
+    surface: "وَمَثَلُ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "nominal: noun (mathal)"
+    source_attestation: "wamathalu"
+    disposition: PASS
+  - occurrence_id: QLO-000017
+    source_locator: "2:265:11"
+    surah: 2
+    ayah: 265
+    token_position: 11
+    surface: "كَمَثَلِ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "nominal: noun (mathal)"
+    source_attestation: "kamathali"
+    disposition: PASS
+  - occurrence_id: QLO-000018
+    source_locator: "3:59:2"
+    surah: 3
+    ayah: 59
+    token_position: 2
+    surface: "مَثَلَ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "nominal: noun (mathal)"
+    source_attestation: "mathala"
+    disposition: PASS
+  - occurrence_id: QLO-000019
+    source_locator: "3:59:6"
+    surah: 3
+    ayah: 59
+    token_position: 6
+    surface: "كَمَثَلِ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "nominal: noun (mathal)"
+    source_attestation: "kamathali"
+    disposition: PASS
+  - occurrence_id: QLO-000020
+    source_locator: "3:117:1"
+    surah: 3
+    ayah: 117
+    token_position: 1
+    surface: "مَثَلُ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "nominal: noun (mathal)"
+    source_attestation: "mathalu"
+    disposition: PASS
+  - occurrence_id: QLO-000021
+    source_locator: "3:117:8"
+    surah: 3
+    ayah: 117
+    token_position: 8
+    surface: "كَمَثَلِ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "nominal: noun (mathal)"
+    source_attestation: "kamathali"
+    disposition: PASS
+
+summary:
+  pass: 10
+  reject: 0
+  unresolved: 0
+  undecided: 0
+  all_rows_have_disposition: true
+  independent_row_gate: PASS
+
+integrity:
+  occurrence_ids_unique: true
+  source_locators_unique: true
+  references_in_quranic_order: true
+  root_explicitly_attested_by_source: true
+  morphological_family_explicitly_attested_by_source: true
+  aggregate_count_used_as_row_evidence: false
+  ledger_mutated: false
+  canonical_qpu_created: false
+
+next_gate:
+  step: STEP-02
+  name: Batch Validation Closure
+  allowed: true
+  precondition: "Every row QLO-000012..QLO-000021 has an explicit disposition."
