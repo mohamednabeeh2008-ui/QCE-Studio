@@ -5,10 +5,15 @@ on:
   push:
     branches: [main]
     paths:
+      - '.github/workflows/qpfs-wave-three.yml'
       - 'scripts/qpfs/execute-wave-three.mjs'
       - 'knowledge/qpfs/structural-harvest/runtime/wave-2-execution-report-v2.json'
       - 'knowledge/qpfs/structural-harvest/runtime/structural-candidate-proposals-v2.json'
       - 'knowledge/qpfs/wave-3/**'
+
+concurrency:
+  group: qpfs-wave-three-main
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -28,9 +33,13 @@ jobs:
           node - <<'NODE'
           const fs=require('fs');
           const p='knowledge/qpfs/wave-3/runtime/wave-3-execution-report-v1.json';
+          const q='knowledge/qpfs/wave-3/runtime/root-aware-investigation-queue-v1.json';
           const r=JSON.parse(fs.readFileSync(p,'utf8'));
+          const queue=JSON.parse(fs.readFileSync(q,'utf8'));
           if(r.entry_gate!=='PASS') throw new Error('Entry gate not PASS');
           if(r.root_aware_queue_count!==69 || r.unique_candidate_ids!==69) throw new Error('Queue reconciliation failed');
+          if(queue.count!==69 || queue.records.length!==69) throw new Error('Queue materialization failed');
+          if(new Set(queue.records.map(x=>x.candidate_id)).size!==69) throw new Error('Queue identity uniqueness failed');
           if(r.canonical_parable_decisions_created!==false || r.qpu_created!==false) throw new Error('Premature canonical output detected');
           console.log('PASS: Wave 3 guarded runtime verified');
           NODE
