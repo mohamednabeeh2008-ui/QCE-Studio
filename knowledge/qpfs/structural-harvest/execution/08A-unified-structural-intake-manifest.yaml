@@ -1,0 +1,9 @@
+schema: qpfs/unified-structural-intake-manifest/v0.1
+id: QSIM-000001
+step: 24.5B-08A
+status: CLOSED_PASS
+source_closure: QLRC-000001
+expected_count: 169
+materialization_mode: DERIVED_READ_ONLY
+canonical_ledger_rewritten: false
+next_step: 24.5B-08B
