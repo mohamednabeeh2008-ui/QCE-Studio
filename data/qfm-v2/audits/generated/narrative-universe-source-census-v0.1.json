@@ -1,0 +1,1115 @@
+{
+  "schema": "qfm-v2/narrative-universe-source-census/v0.3",
+  "generated_by": "scripts/qfm-v2/audit-narrative-universe-coverage.mjs",
+  "source_roots": [
+    "data/qfm-v2",
+    "knowledge"
+  ],
+  "source_file_count": 132,
+  "evidence_file_count": 66,
+  "recovered_counts": {
+    "nar_references": 39,
+    "allocated_nar_ids": 7,
+    "cid_ids": 0,
+    "local_instance_ids": 24
+  },
+  "provenance": {
+    "observed_nar_universe": {
+      "status": "CONTIGUOUS_REFERENCE_COVERAGE",
+      "scope": "Repository-observed NAR references only; references do not by themselves prove permanent allocation.",
+      "expected_range": [
+        "NAR-000001",
+        "NAR-000038"
+      ],
+      "observed_ids": [
+        "NAR-000001",
+        "NAR-000002",
+        "NAR-000003",
+        "NAR-000004",
+        "NAR-000005",
+        "NAR-000006",
+        "NAR-000007",
+        "NAR-000008",
+        "NAR-000009",
+        "NAR-000010",
+        "NAR-000011",
+        "NAR-000012",
+        "NAR-000013",
+        "NAR-000014",
+        "NAR-000015",
+        "NAR-000016",
+        "NAR-000017",
+        "NAR-000018",
+        "NAR-000019",
+        "NAR-000020",
+        "NAR-000021",
+        "NAR-000022",
+        "NAR-000023",
+        "NAR-000024",
+        "NAR-000025",
+        "NAR-000026",
+        "NAR-000027",
+        "NAR-000028",
+        "NAR-000029",
+        "NAR-000030",
+        "NAR-000031",
+        "NAR-000032",
+        "NAR-000033",
+        "NAR-000034",
+        "NAR-000035",
+        "NAR-000036",
+        "NAR-000037",
+        "NAR-000038"
+      ],
+      "missing_ids": []
+    },
+    "authoritative_nar_allocations": {
+      "status": "RECONCILIATION_REQUIRED",
+      "authority_rule": "Only permanent-narrative-registry*.jsonl files prove permanent NAR allocation.",
+      "allocated_ids": [
+        "NAR-000032",
+        "NAR-000033",
+        "NAR-000034",
+        "NAR-000035",
+        "NAR-000036",
+        "NAR-000037",
+        "NAR-000038"
+      ],
+      "observed_but_not_authority_allocated_ids": [
+        "NAR-000001",
+        "NAR-000002",
+        "NAR-000003",
+        "NAR-000004",
+        "NAR-000005",
+        "NAR-000006",
+        "NAR-000007",
+        "NAR-000008",
+        "NAR-000009",
+        "NAR-000010",
+        "NAR-000011",
+        "NAR-000012",
+        "NAR-000013",
+        "NAR-000014",
+        "NAR-000015",
+        "NAR-000016",
+        "NAR-000017",
+        "NAR-000018",
+        "NAR-000019",
+        "NAR-000020",
+        "NAR-000021",
+        "NAR-000022",
+        "NAR-000023",
+        "NAR-000024",
+        "NAR-000025",
+        "NAR-000026",
+        "NAR-000027",
+        "NAR-000028",
+        "NAR-000029",
+        "NAR-000030",
+        "NAR-000031"
+      ]
+    },
+    "cid_corpus": {
+      "status": "NOT_MATERIALIZED_IN_SCANNED_SOURCE_ROOTS",
+      "scope": "No historical CID count is inferred or fabricated. Recovery requires repository evidence or an explicit canonical manifest.",
+      "observed_ids": [],
+      "scanned_source_roots": [
+        "data/qfm-v2",
+        "knowledge"
+      ]
+    }
+  },
+  "nar_reconciliation_summary": {
+    "counts": {
+      "AUTHORITY_PROVEN": 7,
+      "PRODUCTION_PROVEN": 18,
+      "PROMOTION_PROVEN": 13
+    },
+    "unresolved_authority_count": 31
+  },
+  "mission_gate": {
+    "mission": "MISSION 005-PRE",
+    "complete": false,
+    "blockers": [
+      "NAR_ALLOCATION_RECONCILIATION_REQUIRED",
+      "CID_CORPUS_NOT_MATERIALIZED"
+    ]
+  },
+  "invariants": {
+    "last_nar_id_expected": "NAR-000038",
+    "next_nar_id_expected": "NAR-000039",
+    "nar_000039_must_not_be_allocated": true
+  },
+  "safety": {
+    "nar_000039_referenced": true,
+    "nar_000039_reference_rows": [
+      "data/qfm-v2/audits/16-cross-batch-production-audit-v0.1.json",
+      "data/qfm-v2/audits/mission-005-pre-full-universe-census-control-v0.1.json",
+      "data/qfm-v2/audits/mission-005-pre-universe-coverage-audit-v0.1.json",
+      "data/qfm-v2/batches/batch-004/11-permanent-identity-allocation-gate-v0.1.json",
+      "data/qfm-v2/batches/batch-004/13-post-promotion-e09-rerun-v0.1.json",
+      "data/qfm-v2/batches/batch-004/14-batch-004-invariant-audit-v0.1.json",
+      "data/qfm-v2/batches/batch-004/15-closure-v0.1.json",
+      "data/qfm-v2/batches/batch-005/01-subject-selection-recovery-v0.1.json",
+      "data/qfm-v2/batches/batch-005/02-selection-integrity-gate-v0.1.json",
+      "data/qfm-v2/batches/batch-005/03-scope-lock-v0.1.json",
+      "data/qfm-v2/governance/01-canonical-subject-coverage-queue-v0.1.json",
+      "data/qfm-v2/universe/01-canonical-production-queue-v0.1.json",
+      "data/qfm-v2/universe/mission-005-pre-canonical-narrative-universe-coverage-v0.1.json"
+    ],
+    "nar_000039_allocated": false,
+    "nar_000039_allocation_rows": [],
+    "allocation_authority_rule": "Only permanent-narrative-registry*.jsonl files prove permanent NAR allocation.",
+    "pass": true
+  },
+  "evidence": [
+    {
+      "source": "data/qfm-v2/audits/16-cross-batch-production-audit-v0.1.json",
+      "sha256": "c41988939c9faef2fa131bbcb9afb3ec367916d24f1c9a87367d068c53baa0fe",
+      "ids": [
+        "NAR-000038",
+        "NAR-000039"
+      ],
+      "lanes": []
+    },
+    {
+      "source": "data/qfm-v2/audits/bf-r06-distributed-family-resolution-v0.1.jsonl",
+      "sha256": "676ff9a183bb0c90a027aa86dfcf2772038b39c781ccfef59e0da0e631997b8f",
+      "ids": [
+        "NAR-000009",
+        "NAR-000016"
+      ],
+      "lanes": []
+    },
+    {
+      "source": "data/qfm-v2/audits/bf-r06-e01-child-verification-v0.1.jsonl",
+      "sha256": "e93768ead15e13be32ca3bef32ec0e961df06d7ca0ae90a0294705630954e278",
+      "ids": [
+        "NAR-000008",
+        "NAR-000009",
+        "NAR-000014",
+        "NAR-000016"
+      ],
+      "lanes": []
+    },
+    {
+      "source": "data/qfm-v2/audits/bf-r06-hardening-summary-v0.1.md",
+      "sha256": "9cf3139481eb9fb468511e7bd0009285e73cc9247b43f078291bc6dc59c70a33",
+      "ids": [],
+      "lanes": [
+        "WITNESS"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/audits/bf-r06-nine-case-retrospective-v0.1.jsonl",
+      "sha256": "68d62fd9d76e79906e30ace14d9b23ba57a38f87794c75d0a7497d47727c1d91",
+      "ids": [
+        "NAR-000002",
+        "NAR-000005",
+        "NAR-000006",
+        "NAR-000007",
+        "NAR-000008",
+        "NAR-000009",
+        "NAR-000013",
+        "NAR-000014",
+        "NAR-000016",
+        "REC-000002",
+        "REC-000005",
+        "REC-000006",
+        "REC-000007",
+        "REC-000008",
+        "REC-000009",
+        "REC-000014",
+        "REC-000015",
+        "REC-000017"
+      ],
+      "lanes": [
+        "WITNESS"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/audits/bf-r06-post-promotion-e09-v0.1.jsonl",
+      "sha256": "2736497f42a54100f666c17e1c23645b9578eaa62826cb4eee081d1ee3951615",
+      "ids": [
+        "NAR-000008",
+        "NAR-000009",
+        "NAR-000014",
+        "NAR-000018",
+        "NAR-000019",
+        "NAR-000020",
+        "NAR-000021",
+        "NAR-000022",
+        "NAR-000023"
+      ],
+      "lanes": []
+    },
+    {
+      "source": "data/qfm-v2/audits/bf-r06-promotion-lineage-gate-v0.1.jsonl",
+      "sha256": "455af8620a88cab3215214b58317b63b565aa44d2f6693464dfc95f283857e85",
+      "ids": [
+        "NAR-000008",
+        "NAR-000009",
+        "NAR-000014",
+        "NAR-000018",
+        "NAR-000019",
+        "NAR-000020",
+        "NAR-000021",
+        "NAR-000022"
+      ],
+      "lanes": []
+    },
+    {
+      "source": "data/qfm-v2/audits/cross-batch-factory-audit-v0.1.json",
+      "sha256": "9e0490d453ae7ad1528d69b1e0ba61cda93b00673df294f6543cab5d0256b62e",
+      "ids": [
+        "REC-000001",
+        "REC-000018"
+      ],
+      "lanes": [
+        "HOLD",
+        "REVIEW"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/audits/cross-batch-factory-audit-v0.1.md",
+      "sha256": "138d94e0cd27faa11dfc3e1d2127d31b360e4c6fb603df89bbcaacc9387b5dda",
+      "ids": [
+        "REC-000001",
+        "REC-000006",
+        "REC-000018"
+      ],
+      "lanes": [
+        "HOLD",
+        "REVIEW",
+        "SUBJECT"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/audits/factory-invariants-lock-v0.1.json",
+      "sha256": "f45f1e3849e691d7547216f70bc4bd680a8500e8497e4cf87014283a49935f9b",
+      "ids": [
+        "NAR-000032"
+      ],
+      "lanes": []
+    },
+    {
+      "source": "data/qfm-v2/audits/factory-regression-invariant-audit-v0.1.jsonl",
+      "sha256": "809635ff6afea6d3ea97a56e204dd7abddb97a5e7b2df1b8af73c331be3a6b91",
+      "ids": [
+        "NAR-000001",
+        "NAR-000018",
+        "NAR-000022",
+        "NAR-000031",
+        "NAR-000032"
+      ],
+      "lanes": []
+    },
+    {
+      "source": "data/qfm-v2/audits/mission-005-pre-full-universe-census-control-v0.1.json",
+      "sha256": "8c53886a72967e83b83e0df2944a55b45449db891e3067c6cb958b0855efa049",
+      "ids": [
+        "NAR-000038",
+        "NAR-000039"
+      ],
+      "lanes": [
+        "EVENT",
+        "HOLD",
+        "JOURNEY",
+        "REVIEW",
+        "WITNESS"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/audits/mission-005-pre-universe-coverage-audit-v0.1.json",
+      "sha256": "f63a4b7e4b0b7852f77ac83061dae5f6e32e6f6ec66206b259f5e6fe3a54c27d",
+      "ids": [
+        "B004-LI-012",
+        "NAR-000032",
+        "NAR-000038",
+        "NAR-000039"
+      ],
+      "lanes": [
+        "HOLD",
+        "REVIEW",
+        "SUBJECT"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/audits/pnie-e09-closure-v0.1.jsonl",
+      "sha256": "b8647dbdb2f11c613a7b240805f8249d758fea6fc5ceb16d3ea03bd871ee24e5",
+      "ids": [
+        "NAR-000023",
+        "NAR-000024",
+        "NAR-000025",
+        "NAR-000026",
+        "NAR-000027",
+        "NAR-000028",
+        "NAR-000029",
+        "NAR-000030",
+        "NAR-000031",
+        "NAR-000032"
+      ],
+      "lanes": []
+    },
+    {
+      "source": "data/qfm-v2/batches/batch-004/01-subject-selection-v0.1.json",
+      "sha256": "3a1c214734d68715603bdda980826fe8502925e2bcce44604fd8e07758147991",
+      "ids": [
+        "NAR-000032"
+      ],
+      "lanes": []
+    },
+    {
+      "source": "data/qfm-v2/batches/batch-004/02-e01-candidate-scenes-v0.1.jsonl",
+      "sha256": "ab32820d2442b606743f5482bdd6a3bad6ae1596b2b1595c1ace2362099b81ee",
+      "ids": [
+        "B004-CAND-001",
+        "B004-CAND-002",
+        "B004-CAND-003",
+        "B004-CAND-004",
+        "B004-CAND-005",
+        "B004-CAND-006"
+      ],
+      "lanes": [
+        "PEOPLE",
+        "SUBJECT"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/batches/batch-004/03-boundary-factory-verdicts-v0.1.jsonl",
+      "sha256": "0ddafd55c24f5c2a7642f1efbf278f5b5f769074f1decbbf46c2543f56c07675",
+      "ids": [
+        "B004-CAND-001",
+        "B004-CAND-002",
+        "B004-CAND-003",
+        "B004-CAND-004",
+        "B004-CAND-005",
+        "B004-CAND-006"
+      ],
+      "lanes": []
+    },
+    {
+      "source": "data/qfm-v2/batches/batch-004/04-e02-e03-e09-intake-v0.1.jsonl",
+      "sha256": "9d67ecd3abbd1764bc2ecc2e46c912f38292cbfc7eedf619338e3154838cf0d8",
+      "ids": [
+        "B004-CAND-001",
+        "B004-CAND-002",
+        "B004-CAND-003",
+        "B004-CAND-004",
+        "B004-CAND-005",
+        "B004-CAND-006",
+        "NAR-000032"
+      ],
+      "lanes": [
+        "PEOPLE",
+        "SUBJECT"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/batches/batch-004/05-pnie-local-instances-v0.1.jsonl",
+      "sha256": "e37cb74b1d0dccf063c71f0ad86d5e94749a2a909e1be2cb9eabe86da35e0ebf",
+      "ids": [
+        "B004-CAND-001",
+        "B004-CAND-002",
+        "B004-CAND-003",
+        "B004-CAND-004",
+        "B004-CAND-005",
+        "B004-CAND-006",
+        "B004-LI-001",
+        "B004-LI-002",
+        "B004-LI-003",
+        "B004-LI-004",
+        "B004-LI-005",
+        "B004-LI-006",
+        "B004-LI-007",
+        "B004-LI-008",
+        "B004-LI-009",
+        "B004-LI-010",
+        "B004-LI-011",
+        "B004-LI-012",
+        "B004-LI-013",
+        "B004-LI-014",
+        "B004-LI-015",
+        "B004-LI-016",
+        "B004-LI-017",
+        "B004-LI-018",
+        "B004-LI-019",
+        "B004-LI-020",
+        "B004-LI-021",
+        "B004-LI-022",
+        "B004-LI-023",
+        "B004-LI-024"
+      ],
+      "lanes": [
+        "PEOPLE",
+        "WITNESS"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/batches/batch-004/06-pnie-five-dimension-verdicts-v0.1.jsonl",
+      "sha256": "102ca82d34e41db42650e073bd504fca8c7876245fd2b31bc0b67984cf0bd7f4",
+      "ids": [
+        "B004-CAND-001",
+        "B004-CAND-002",
+        "B004-CAND-003",
+        "B004-CAND-004",
+        "B004-CAND-005",
+        "B004-CAND-006"
+      ],
+      "lanes": [
+        "WITNESS"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/batches/batch-004/07-promotion-eligibility-ledger-v0.1.json",
+      "sha256": "2156753bce06617e961619003d4a1f82fe474bae3894e3309c79c21d54b098e9",
+      "ids": [
+        "B004-LI-001",
+        "B004-LI-002",
+        "B004-LI-003",
+        "B004-LI-004",
+        "B004-LI-005",
+        "B004-LI-006",
+        "B004-LI-007",
+        "B004-LI-008",
+        "B004-LI-009",
+        "B004-LI-010",
+        "B004-LI-011",
+        "B004-LI-012",
+        "B004-LI-013",
+        "B004-LI-014",
+        "B004-LI-015",
+        "B004-LI-016",
+        "B004-LI-017",
+        "B004-LI-018",
+        "B004-LI-019",
+        "B004-LI-020",
+        "B004-LI-021",
+        "B004-LI-022",
+        "B004-LI-023",
+        "B004-LI-024"
+      ],
+      "lanes": [
+        "HOLD"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/batches/batch-004/08-e09-independent-acceptance-audit-v0.1.json",
+      "sha256": "7ffc130c783db12b62524c74b9e2d8b136f2e587de0f9fd91f18e50ae88f70ec",
+      "ids": [
+        "B004-LI-005",
+        "B004-LI-006",
+        "B004-LI-007",
+        "B004-LI-008",
+        "B004-LI-009",
+        "B004-LI-010",
+        "B004-LI-011"
+      ],
+      "lanes": []
+    },
+    {
+      "source": "data/qfm-v2/batches/batch-004/09-prior-registry-collision-audit-v0.1.json",
+      "sha256": "0326c21981a0ddd49d0b9ba50901b0bb1ef99b9bcb330bfd0b98ac1ab39cd166",
+      "ids": [
+        "B004-LI-005",
+        "B004-LI-006",
+        "B004-LI-007",
+        "B004-LI-008",
+        "B004-LI-009",
+        "B004-LI-010",
+        "B004-LI-011",
+        "B004-LI-012",
+        "NAR-000001",
+        "NAR-000031"
+      ],
+      "lanes": [
+        "WITNESS"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/batches/batch-004/10-abraham-lot-interface-resolution-v0.1.json",
+      "sha256": "d6334b38cf84d2b60b4bc1d292be6c2528b9bf1d20f9a9ea8c8570ef02c65443",
+      "ids": [
+        "B004-LI-012",
+        "NAR-000032"
+      ],
+      "lanes": [
+        "HOLD",
+        "WITNESS"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/batches/batch-004/11-permanent-identity-allocation-gate-v0.1.json",
+      "sha256": "49f1241c2b7e47633967123ca1bfecd63b2a0b8d6ba98b1eabacd22824749b9e",
+      "ids": [
+        "B004-CAND-002",
+        "B004-CAND-003",
+        "B004-CAND-004",
+        "B004-LI-005",
+        "B004-LI-006",
+        "B004-LI-007",
+        "B004-LI-008",
+        "B004-LI-009",
+        "B004-LI-010",
+        "B004-LI-011",
+        "B004-LI-012",
+        "NAR-000032",
+        "NAR-000033",
+        "NAR-000034",
+        "NAR-000035",
+        "NAR-000036",
+        "NAR-000037",
+        "NAR-000038",
+        "NAR-000039"
+      ],
+      "lanes": []
+    },
+    {
+      "source": "data/qfm-v2/batches/batch-004/12-permanent-narrative-registry-v0.1.jsonl",
+      "sha256": "b9ed14a8fa019acf24e135c4f22390fcefe9da742a88fc5af70f2fd826efd056",
+      "ids": [
+        "B004-CAND-002",
+        "B004-CAND-003",
+        "B004-CAND-004",
+        "B004-LI-005",
+        "B004-LI-006",
+        "B004-LI-007",
+        "B004-LI-008",
+        "B004-LI-009",
+        "B004-LI-010",
+        "B004-LI-011",
+        "NAR-000032",
+        "NAR-000033",
+        "NAR-000034",
+        "NAR-000035",
+        "NAR-000036",
+        "NAR-000037",
+        "NAR-000038"
+      ],
+      "lanes": []
+    },
+    {
+      "source": "data/qfm-v2/batches/batch-004/13-post-promotion-e09-rerun-v0.1.json",
+      "sha256": "63b2b28d232234bd13d3dece8291f272c1fbdd37f32bc248baf84ae8c5f32844",
+      "ids": [
+        "B004-LI-005",
+        "B004-LI-006",
+        "B004-LI-007",
+        "B004-LI-008",
+        "B004-LI-009",
+        "B004-LI-010",
+        "B004-LI-011",
+        "B004-LI-012",
+        "NAR-000032",
+        "NAR-000033",
+        "NAR-000034",
+        "NAR-000035",
+        "NAR-000036",
+        "NAR-000037",
+        "NAR-000038",
+        "NAR-000039"
+      ],
+      "lanes": []
+    },
+    {
+      "source": "data/qfm-v2/batches/batch-004/14-batch-004-invariant-audit-v0.1.json",
+      "sha256": "2bbb495e95be3e3995ca3ea6e2a4b46f5be6daa16f7e197c0fcb6b7a412e1b52",
+      "ids": [
+        "B004-LI-012",
+        "NAR-000032",
+        "NAR-000038",
+        "NAR-000039"
+      ],
+      "lanes": []
+    },
+    {
+      "source": "data/qfm-v2/batches/batch-004/15-closure-v0.1.json",
+      "sha256": "11991da5b9542b39bd9bac6d105ac37020955f858bff19bb97e71ba28ae03170",
+      "ids": [
+        "B004-LI-012",
+        "NAR-000032",
+        "NAR-000038",
+        "NAR-000039"
+      ],
+      "lanes": []
+    },
+    {
+      "source": "data/qfm-v2/batches/batch-005/01-subject-selection-recovery-v0.1.json",
+      "sha256": "583b2f0f948b08c4d8637518484bafec748e4ef2f3772605a31104299cecff0b",
+      "ids": [
+        "NAR-000012",
+        "NAR-000038",
+        "NAR-000039"
+      ],
+      "lanes": [
+        "SUBJECT"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/batches/batch-005/02-selection-integrity-gate-v0.1.json",
+      "sha256": "fb12e6b80d5d0a69ca428fccfe2d6f546b7bddb3659750fc1084fc4f1149ee0e",
+      "ids": [
+        "NAR-000038",
+        "NAR-000039"
+      ],
+      "lanes": []
+    },
+    {
+      "source": "data/qfm-v2/batches/batch-005/03-scope-lock-v0.1.json",
+      "sha256": "94c9abdbb23385c1e1f6a5064a9b1b5d505eb34162295fa98c6a890cffef86f7",
+      "ids": [
+        "NAR-000038",
+        "NAR-000039"
+      ],
+      "lanes": [
+        "SUBJECT"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/engine-registry.json",
+      "sha256": "fed7ff05cb5eae1c8e8444615319349eb4f30ffbe478819da5e40013b7656e09",
+      "ids": [],
+      "lanes": [
+        "CHARACTER",
+        "EVENT",
+        "SUBJECT",
+        "WITNESS"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/factory/bf-r06-internal-split-probe-v0.1.md",
+      "sha256": "224bf3af00804fd2a65141c7666ded5db88a3d914d80270a3251067fc8c32257",
+      "ids": [],
+      "lanes": [
+        "EVENT",
+        "HOLD",
+        "REVIEW",
+        "WITNESS"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/governance/01-canonical-subject-coverage-queue-v0.1.json",
+      "sha256": "d89657a42cea129633b938e1808f18aa815748f8f6ce1267bdf10146188838ec",
+      "ids": [
+        "NAR-000039"
+      ],
+      "lanes": [
+        "SUBJECT"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/pnie/local-instance-extraction-v0.1.jsonl",
+      "sha256": "be852c88f6c4c4a08d1d669e492465f131793d131b3b5bda25fb6c8dc41ad18a",
+      "ids": [],
+      "lanes": [
+        "WITNESS"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/pnie/pnie-v0.1-contract.json",
+      "sha256": "e9123ae8dc9f1acd066891e05997fa904d26564d22cf9fa534b0a5c4a0a20eb0",
+      "ids": [],
+      "lanes": [
+        "SUBJECT",
+        "WITNESS"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/pnie/promotion-lineage-v0.1.jsonl",
+      "sha256": "0374691dd1b4c47b54871cfed664df10fc685714a23ae690345b5a82e36442fb",
+      "ids": [
+        "NAR-000023",
+        "NAR-000024",
+        "NAR-000025",
+        "NAR-000026",
+        "NAR-000027",
+        "NAR-000028",
+        "NAR-000029",
+        "NAR-000030",
+        "NAR-000031"
+      ],
+      "lanes": []
+    },
+    {
+      "source": "data/qfm-v2/registry/promoted-narratives-bf-r06-v0.1.jsonl",
+      "sha256": "44c75793c331c9ed3fa6ca30429017647558fe473d8d8e6615c0abbaaffcebac",
+      "ids": [
+        "NAR-000008",
+        "NAR-000009",
+        "NAR-000014",
+        "NAR-000018",
+        "NAR-000019",
+        "NAR-000020",
+        "NAR-000021",
+        "NAR-000022"
+      ],
+      "lanes": []
+    },
+    {
+      "source": "data/qfm-v2/registry/promoted-narratives-pnie-v0.1.jsonl",
+      "sha256": "231200a5fe16baa6a1070fe487ab938788dfb3c28d62abfc6bb31c504ca70424",
+      "ids": [
+        "NAR-000023",
+        "NAR-000024",
+        "NAR-000025",
+        "NAR-000026",
+        "NAR-000027",
+        "NAR-000028",
+        "NAR-000029",
+        "NAR-000030",
+        "NAR-000031"
+      ],
+      "lanes": [
+        "WITNESS"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/runs/run-001/batches/batch-001/e01-narratives.jsonl",
+      "sha256": "566d8c6610a5c374f6f95cf8cd7e1b2117c7343ddafa36e324844237a4b7bcae",
+      "ids": [
+        "NAR-000001",
+        "NAR-000002",
+        "NAR-000003",
+        "NAR-000004",
+        "NAR-000005"
+      ],
+      "lanes": [
+        "EVENT",
+        "REVIEW",
+        "SUBJECT"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/runs/run-001/batches/batch-001/e02-subjects.jsonl",
+      "sha256": "ec507f8000eeb8d3425263f6c0a7322c1e2a47923d628de40d04f89501cb3a9f",
+      "ids": [
+        "NAR-000001",
+        "NAR-000002",
+        "NAR-000003",
+        "NAR-000004",
+        "NAR-000005"
+      ],
+      "lanes": [
+        "GROUP",
+        "JOURNEY",
+        "SUBJECT"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/runs/run-001/batches/batch-001/e03-surah-hits.jsonl",
+      "sha256": "61a87809140e1ab22a8dd117f28f59d81b137e9e8bb16e4f227b8463ad6e2636",
+      "ids": [
+        "NAR-000001",
+        "NAR-000002",
+        "NAR-000003",
+        "NAR-000004",
+        "NAR-000005"
+      ],
+      "lanes": []
+    },
+    {
+      "source": "data/qfm-v2/runs/run-001/batches/batch-001/e09-reconciliation.jsonl",
+      "sha256": "d1e3d3a593bfa74b57a0dd45aa856cc89b1529361750cc067f10eb2a4c9fe27a",
+      "ids": [
+        "NAR-000001",
+        "NAR-000002",
+        "NAR-000003",
+        "NAR-000004",
+        "NAR-000005",
+        "REC-000001",
+        "REC-000002",
+        "REC-000003",
+        "REC-000004",
+        "REC-000005",
+        "REC-000006"
+      ],
+      "lanes": [
+        "REVIEW",
+        "SUBJECT"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/runs/run-001/batches/batch-002/e01-narratives.jsonl",
+      "sha256": "72922fd528ba2b29dab614e6270b5144b8f131c785ccf7ed8d9fd0bb46a4a90b",
+      "ids": [
+        "NAR-000006",
+        "NAR-000007",
+        "NAR-000008",
+        "NAR-000009",
+        "NAR-000010",
+        "NAR-000011"
+      ],
+      "lanes": [
+        "EVENT",
+        "PEOPLE",
+        "REVIEW"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/runs/run-001/batches/batch-002/e02-subjects.jsonl",
+      "sha256": "a9e6d9454295eafaa1b20bb5531ec6c5acdd7d86272b3cce0b3086eb9bdefb86",
+      "ids": [
+        "NAR-000006",
+        "NAR-000007",
+        "NAR-000008",
+        "NAR-000009",
+        "NAR-000010",
+        "NAR-000011"
+      ],
+      "lanes": [
+        "GROUP",
+        "PEOPLE"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/runs/run-001/batches/batch-002/e03-surah-hits.jsonl",
+      "sha256": "ae0ca0b1f1cbb19a84587a2dbc4d082e2482ed4013f0d5d3acbe1908d6ffa59c",
+      "ids": [
+        "NAR-000006",
+        "NAR-000007",
+        "NAR-000008",
+        "NAR-000009",
+        "NAR-000010",
+        "NAR-000011"
+      ],
+      "lanes": []
+    },
+    {
+      "source": "data/qfm-v2/runs/run-001/batches/batch-002/e08-boundary-precheck.jsonl",
+      "sha256": "f70d7191018c9c047f0b2c15b24acc02e5e8909dc5a02f5f89a9c9a04a09a3a2",
+      "ids": [
+        "NAR-000002",
+        "NAR-000005"
+      ],
+      "lanes": [
+        "EVENT"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/runs/run-001/batches/batch-002/e09-reconciliation.jsonl",
+      "sha256": "e714507c3c9a8b79b23f4364f6eef7dd9bb9ee87b210ca5eb72b3d9702027467",
+      "ids": [
+        "NAR-000006",
+        "NAR-000007",
+        "NAR-000008",
+        "NAR-000009",
+        "NAR-000010",
+        "NAR-000011",
+        "REC-000007",
+        "REC-000008",
+        "REC-000009",
+        "REC-000010",
+        "REC-000011",
+        "REC-000012"
+      ],
+      "lanes": [
+        "HOLD",
+        "REVIEW"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/runs/run-001/batches/batch-003/boundary-precheck.jsonl",
+      "sha256": "376b6daf54ed60ff939705d9c6a6637a8273154d40fb03206a3e2598288c7b1b",
+      "ids": [
+        "NAR-000012",
+        "NAR-000013",
+        "NAR-000014",
+        "NAR-000015",
+        "NAR-000016",
+        "NAR-000017"
+      ],
+      "lanes": [
+        "HOLD",
+        "REVIEW"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/runs/run-001/batches/batch-003/e01-narratives.jsonl",
+      "sha256": "0840337677edc49254a90d6bb9088f6ad0fac77c10b489e4c98eafc7b52b069b",
+      "ids": [
+        "NAR-000012",
+        "NAR-000013",
+        "NAR-000014",
+        "NAR-000015",
+        "NAR-000016",
+        "NAR-000017"
+      ],
+      "lanes": [
+        "PEOPLE",
+        "REVIEW"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/runs/run-001/batches/batch-003/e02-subjects.jsonl",
+      "sha256": "6ae677877297eaa09fa49d39efd2d1a22ceed0f5252717a1507fa686bb9f2d9b",
+      "ids": [
+        "NAR-000012",
+        "NAR-000013",
+        "NAR-000014",
+        "NAR-000015",
+        "NAR-000016",
+        "NAR-000017"
+      ],
+      "lanes": [
+        "GROUP",
+        "PEOPLE"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/runs/run-001/batches/batch-003/e03-surah-hits.jsonl",
+      "sha256": "80bb3128127af56e9cdb98d258f1bba72d9ca273498b779d20d75bcda7162631",
+      "ids": [
+        "NAR-000012",
+        "NAR-000013",
+        "NAR-000014",
+        "NAR-000015",
+        "NAR-000016",
+        "NAR-000017"
+      ],
+      "lanes": []
+    },
+    {
+      "source": "data/qfm-v2/runs/run-001/batches/batch-003/e09-reconciliation.jsonl",
+      "sha256": "9ea132543f9739c0a04d2b8c85e35e60903fa912f15f04130695aeb86a786d1c",
+      "ids": [
+        "NAR-000012",
+        "NAR-000013",
+        "NAR-000014",
+        "NAR-000015",
+        "NAR-000016",
+        "NAR-000017",
+        "REC-000013",
+        "REC-000014",
+        "REC-000015",
+        "REC-000016",
+        "REC-000017",
+        "REC-000018"
+      ],
+      "lanes": [
+        "HOLD",
+        "REVIEW"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/runs/run-001/calibration/boundary-factory-calibration-v0.1.jsonl",
+      "sha256": "3dbc028f1b0879aa8b23c179fe78c0bf53b9f298658bba79392a0742887301f0",
+      "ids": [
+        "NAR-000001",
+        "NAR-000002",
+        "NAR-000003",
+        "NAR-000004",
+        "NAR-000005",
+        "NAR-000006",
+        "NAR-000008",
+        "NAR-000009",
+        "NAR-000010",
+        "NAR-000011"
+      ],
+      "lanes": []
+    },
+    {
+      "source": "data/qfm-v2/runs/run-001/mission-control.json",
+      "sha256": "a571679107ca74b90860c1ff9af219e367b51eda6dfb2c8b4bb2227e5c7f42ce",
+      "ids": [],
+      "lanes": [
+        "SUBJECT"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/runs/run-001/subject-census-matrix.schema.json",
+      "sha256": "afe633e1a34146bdbb16906d4e75ccd8bba9780ac3fde1ac91acd017c240f67f",
+      "ids": [],
+      "lanes": [
+        "GROUP",
+        "NATION",
+        "SUBJECT"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/universe/01-canonical-production-queue-v0.1.json",
+      "sha256": "aba58aeeffd44169152a1ebf7b835f0965ec502326f080d07ed7cfc097c8c8fa",
+      "ids": [
+        "NAR-000038",
+        "NAR-000039"
+      ],
+      "lanes": [
+        "SUBJECT"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/universe/mission-005-pre-canonical-narrative-universe-coverage-v0.1.json",
+      "sha256": "be20d94437e019b194ad09a90c979cb7cc84952915eeaa28c046877933c9ad01",
+      "ids": [
+        "B004-LI-012",
+        "NAR-000001",
+        "NAR-000013",
+        "NAR-000032",
+        "NAR-000038",
+        "NAR-000039"
+      ],
+      "lanes": [
+        "EVENT",
+        "HOLD",
+        "JOURNEY",
+        "SUBJECT",
+        "WITNESS"
+      ]
+    },
+    {
+      "source": "knowledge/qpfs/registries/lexical-source-registry-v0.1.yaml",
+      "sha256": "0686bdc10a4a56417f7205584e5c83072236971bbc0ed49ac00ccf28ffc7f9f1",
+      "ids": [],
+      "lanes": [
+        "REVIEW"
+      ]
+    },
+    {
+      "source": "knowledge/qpfs/structural-harvest/audits/QSIM-000002-independent-reconciliation.yaml",
+      "sha256": "68a21a4f0c02680b541e7c3acef8fe20757b69ee15fd13c136fc2ac12c630d7a",
+      "ids": [],
+      "lanes": [
+        "SUBJECT"
+      ]
+    },
+    {
+      "source": "knowledge/qpfs/structural-harvest/audits/QSIM-000002-row-level-materialization-audit.yaml",
+      "sha256": "96d1461708581891696cc611dd5ae8f87c254f9e1fbb2325d7005796ad2a49d7",
+      "ids": [],
+      "lanes": [
+        "SUBJECT"
+      ]
+    },
+    {
+      "source": "knowledge/qpfs/structural-harvest/contracts/candidate-ontology-contract-v0.1.yaml",
+      "sha256": "7ce9b7d139bdb236de8b9ed690daf43ef47e7d27681be4bfff284fd8a1b8be67",
+      "ids": [],
+      "lanes": [
+        "REVIEW"
+      ]
+    },
+    {
+      "source": "knowledge/qpfs/structural-harvest/contracts/structural-candidate-record-contract-v1.0.yaml",
+      "sha256": "b5a6ac98994b71ea5ed8ce265572854478b690e07e45ab2e2f67e4ac7d7fc917",
+      "ids": [],
+      "lanes": [
+        "JOURNEY"
+      ]
+    },
+    {
+      "source": "knowledge/qpfs/structural-harvest/pipeline/structural-candidate-pipeline-v1.0.yaml",
+      "sha256": "2e5c86750333a689ec09ff26784934e3b595817370a0a3311a2507c8ff05d6d3",
+      "ids": [],
+      "lanes": [
+        "JOURNEY"
+      ]
+    },
+    {
+      "source": "knowledge/qpfs/wave-3/wave-3-execution-contract-v1.md",
+      "sha256": "3dc36a664142b2d0e01413070f919b2d382e9220ecb36eacfe5ea941772e7f96",
+      "ids": [],
+      "lanes": [
+        "HOLD"
+      ]
+    }
+  ]
+}

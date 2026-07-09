@@ -1,0 +1,2025 @@
+{
+  "schema": "qfm-v2/nar-evidence-reconciliation/v0.1",
+  "generated_by": "scripts/qfm-v2/audit-narrative-universe-coverage.mjs",
+  "scope": {
+    "first": "NAR-000001",
+    "last": "NAR-000038",
+    "count": 38
+  },
+  "rules": {
+    "promotion_requires_evidence_chain": true,
+    "reference_is_not_allocation": true,
+    "authority_rule": "Only permanent-narrative-registry*.jsonl files prove permanent NAR allocation.",
+    "classification_precedence": [
+      "ALLOCATION_AUTHORITY",
+      "PRODUCTION_EVIDENCE",
+      "PROMOTION_EVIDENCE",
+      "HOLD_EVIDENCE",
+      "REFERENCE_ONLY"
+    ]
+  },
+  "counts": {
+    "AUTHORITY_PROVEN": 7,
+    "PRODUCTION_PROVEN": 18,
+    "PROMOTION_PROVEN": 13
+  },
+  "unresolved_authority_ids": [
+    "NAR-000001",
+    "NAR-000002",
+    "NAR-000003",
+    "NAR-000004",
+    "NAR-000005",
+    "NAR-000006",
+    "NAR-000007",
+    "NAR-000008",
+    "NAR-000009",
+    "NAR-000010",
+    "NAR-000011",
+    "NAR-000012",
+    "NAR-000013",
+    "NAR-000014",
+    "NAR-000015",
+    "NAR-000016",
+    "NAR-000017",
+    "NAR-000018",
+    "NAR-000019",
+    "NAR-000020",
+    "NAR-000021",
+    "NAR-000022",
+    "NAR-000023",
+    "NAR-000024",
+    "NAR-000025",
+    "NAR-000026",
+    "NAR-000027",
+    "NAR-000028",
+    "NAR-000029",
+    "NAR-000030",
+    "NAR-000031"
+  ],
+  "records": [
+    {
+      "nar_id": "NAR-000001",
+      "status": "PRODUCTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PRODUCTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 8,
+      "sources": [
+        {
+          "source": "data/qfm-v2/batches/batch-004/09-prior-registry-collision-audit-v0.1.json",
+          "sha256": "0326c21981a0ddd49d0b9ba50901b0bb1ef99b9bcb330bfd0b98ac1ab39cd166",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "WITNESS"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-001/e01-narratives.jsonl",
+          "sha256": "566d8c6610a5c374f6f95cf8cd7e1b2117c7343ddafa36e324844237a4b7bcae",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "EVENT",
+            "REVIEW",
+            "SUBJECT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-001/e02-subjects.jsonl",
+          "sha256": "ec507f8000eeb8d3425263f6c0a7322c1e2a47923d628de40d04f89501cb3a9f",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "GROUP",
+            "JOURNEY",
+            "SUBJECT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-001/e03-surah-hits.jsonl",
+          "sha256": "61a87809140e1ab22a8dd117f28f59d81b137e9e8bb16e4f227b8463ad6e2636",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-001/e09-reconciliation.jsonl",
+          "sha256": "d1e3d3a593bfa74b57a0dd45aa856cc89b1529361750cc067f10eb2a4c9fe27a",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "REVIEW",
+            "SUBJECT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/audits/factory-regression-invariant-audit-v0.1.jsonl",
+          "sha256": "809635ff6afea6d3ea97a56e204dd7abddb97a5e7b2df1b8af73c331be3a6b91",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/calibration/boundary-factory-calibration-v0.1.jsonl",
+          "sha256": "3dbc028f1b0879aa8b23c179fe78c0bf53b9f298658bba79392a0742887301f0",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/universe/mission-005-pre-canonical-narrative-universe-coverage-v0.1.json",
+          "sha256": "be20d94437e019b194ad09a90c979cb7cc84952915eeaa28c046877933c9ad01",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": [
+            "EVENT",
+            "HOLD",
+            "JOURNEY",
+            "SUBJECT",
+            "WITNESS"
+          ]
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000002",
+      "status": "PRODUCTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PRODUCTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 7,
+      "sources": [
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-001/e01-narratives.jsonl",
+          "sha256": "566d8c6610a5c374f6f95cf8cd7e1b2117c7343ddafa36e324844237a4b7bcae",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "EVENT",
+            "REVIEW",
+            "SUBJECT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-001/e02-subjects.jsonl",
+          "sha256": "ec507f8000eeb8d3425263f6c0a7322c1e2a47923d628de40d04f89501cb3a9f",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "GROUP",
+            "JOURNEY",
+            "SUBJECT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-001/e03-surah-hits.jsonl",
+          "sha256": "61a87809140e1ab22a8dd117f28f59d81b137e9e8bb16e4f227b8463ad6e2636",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-001/e09-reconciliation.jsonl",
+          "sha256": "d1e3d3a593bfa74b57a0dd45aa856cc89b1529361750cc067f10eb2a4c9fe27a",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "REVIEW",
+            "SUBJECT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e08-boundary-precheck.jsonl",
+          "sha256": "f70d7191018c9c047f0b2c15b24acc02e5e8909dc5a02f5f89a9c9a04a09a3a2",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "EVENT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-nine-case-retrospective-v0.1.jsonl",
+          "sha256": "68d62fd9d76e79906e30ace14d9b23ba57a38f87794c75d0a7497d47727c1d91",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": [
+            "WITNESS"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/calibration/boundary-factory-calibration-v0.1.jsonl",
+          "sha256": "3dbc028f1b0879aa8b23c179fe78c0bf53b9f298658bba79392a0742887301f0",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000003",
+      "status": "PRODUCTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PRODUCTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-001/e01-narratives.jsonl",
+          "sha256": "566d8c6610a5c374f6f95cf8cd7e1b2117c7343ddafa36e324844237a4b7bcae",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "EVENT",
+            "REVIEW",
+            "SUBJECT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-001/e02-subjects.jsonl",
+          "sha256": "ec507f8000eeb8d3425263f6c0a7322c1e2a47923d628de40d04f89501cb3a9f",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "GROUP",
+            "JOURNEY",
+            "SUBJECT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-001/e03-surah-hits.jsonl",
+          "sha256": "61a87809140e1ab22a8dd117f28f59d81b137e9e8bb16e4f227b8463ad6e2636",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-001/e09-reconciliation.jsonl",
+          "sha256": "d1e3d3a593bfa74b57a0dd45aa856cc89b1529361750cc067f10eb2a4c9fe27a",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "REVIEW",
+            "SUBJECT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/calibration/boundary-factory-calibration-v0.1.jsonl",
+          "sha256": "3dbc028f1b0879aa8b23c179fe78c0bf53b9f298658bba79392a0742887301f0",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000004",
+      "status": "PRODUCTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PRODUCTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-001/e01-narratives.jsonl",
+          "sha256": "566d8c6610a5c374f6f95cf8cd7e1b2117c7343ddafa36e324844237a4b7bcae",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "EVENT",
+            "REVIEW",
+            "SUBJECT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-001/e02-subjects.jsonl",
+          "sha256": "ec507f8000eeb8d3425263f6c0a7322c1e2a47923d628de40d04f89501cb3a9f",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "GROUP",
+            "JOURNEY",
+            "SUBJECT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-001/e03-surah-hits.jsonl",
+          "sha256": "61a87809140e1ab22a8dd117f28f59d81b137e9e8bb16e4f227b8463ad6e2636",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-001/e09-reconciliation.jsonl",
+          "sha256": "d1e3d3a593bfa74b57a0dd45aa856cc89b1529361750cc067f10eb2a4c9fe27a",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "REVIEW",
+            "SUBJECT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/calibration/boundary-factory-calibration-v0.1.jsonl",
+          "sha256": "3dbc028f1b0879aa8b23c179fe78c0bf53b9f298658bba79392a0742887301f0",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000005",
+      "status": "PRODUCTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PRODUCTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 7,
+      "sources": [
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-001/e01-narratives.jsonl",
+          "sha256": "566d8c6610a5c374f6f95cf8cd7e1b2117c7343ddafa36e324844237a4b7bcae",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "EVENT",
+            "REVIEW",
+            "SUBJECT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-001/e02-subjects.jsonl",
+          "sha256": "ec507f8000eeb8d3425263f6c0a7322c1e2a47923d628de40d04f89501cb3a9f",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "GROUP",
+            "JOURNEY",
+            "SUBJECT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-001/e03-surah-hits.jsonl",
+          "sha256": "61a87809140e1ab22a8dd117f28f59d81b137e9e8bb16e4f227b8463ad6e2636",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-001/e09-reconciliation.jsonl",
+          "sha256": "d1e3d3a593bfa74b57a0dd45aa856cc89b1529361750cc067f10eb2a4c9fe27a",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "REVIEW",
+            "SUBJECT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e08-boundary-precheck.jsonl",
+          "sha256": "f70d7191018c9c047f0b2c15b24acc02e5e8909dc5a02f5f89a9c9a04a09a3a2",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "EVENT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-nine-case-retrospective-v0.1.jsonl",
+          "sha256": "68d62fd9d76e79906e30ace14d9b23ba57a38f87794c75d0a7497d47727c1d91",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": [
+            "WITNESS"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/calibration/boundary-factory-calibration-v0.1.jsonl",
+          "sha256": "3dbc028f1b0879aa8b23c179fe78c0bf53b9f298658bba79392a0742887301f0",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000006",
+      "status": "PRODUCTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PRODUCTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 6,
+      "sources": [
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e01-narratives.jsonl",
+          "sha256": "72922fd528ba2b29dab614e6270b5144b8f131c785ccf7ed8d9fd0bb46a4a90b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "EVENT",
+            "PEOPLE",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e02-subjects.jsonl",
+          "sha256": "a9e6d9454295eafaa1b20bb5531ec6c5acdd7d86272b3cce0b3086eb9bdefb86",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "GROUP",
+            "PEOPLE"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e03-surah-hits.jsonl",
+          "sha256": "ae0ca0b1f1cbb19a84587a2dbc4d082e2482ed4013f0d5d3acbe1908d6ffa59c",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e09-reconciliation.jsonl",
+          "sha256": "e714507c3c9a8b79b23f4364f6eef7dd9bb9ee87b210ca5eb72b3d9702027467",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "HOLD",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-nine-case-retrospective-v0.1.jsonl",
+          "sha256": "68d62fd9d76e79906e30ace14d9b23ba57a38f87794c75d0a7497d47727c1d91",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": [
+            "WITNESS"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/calibration/boundary-factory-calibration-v0.1.jsonl",
+          "sha256": "3dbc028f1b0879aa8b23c179fe78c0bf53b9f298658bba79392a0742887301f0",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000007",
+      "status": "PRODUCTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PRODUCTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e01-narratives.jsonl",
+          "sha256": "72922fd528ba2b29dab614e6270b5144b8f131c785ccf7ed8d9fd0bb46a4a90b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "EVENT",
+            "PEOPLE",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e02-subjects.jsonl",
+          "sha256": "a9e6d9454295eafaa1b20bb5531ec6c5acdd7d86272b3cce0b3086eb9bdefb86",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "GROUP",
+            "PEOPLE"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e03-surah-hits.jsonl",
+          "sha256": "ae0ca0b1f1cbb19a84587a2dbc4d082e2482ed4013f0d5d3acbe1908d6ffa59c",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e09-reconciliation.jsonl",
+          "sha256": "e714507c3c9a8b79b23f4364f6eef7dd9bb9ee87b210ca5eb72b3d9702027467",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "HOLD",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-nine-case-retrospective-v0.1.jsonl",
+          "sha256": "68d62fd9d76e79906e30ace14d9b23ba57a38f87794c75d0a7497d47727c1d91",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": [
+            "WITNESS"
+          ]
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000008",
+      "status": "PRODUCTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PRODUCTION_EVIDENCE",
+        "PROMOTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 10,
+      "sources": [
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e01-narratives.jsonl",
+          "sha256": "72922fd528ba2b29dab614e6270b5144b8f131c785ccf7ed8d9fd0bb46a4a90b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "EVENT",
+            "PEOPLE",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e02-subjects.jsonl",
+          "sha256": "a9e6d9454295eafaa1b20bb5531ec6c5acdd7d86272b3cce0b3086eb9bdefb86",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "GROUP",
+            "PEOPLE"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e03-surah-hits.jsonl",
+          "sha256": "ae0ca0b1f1cbb19a84587a2dbc4d082e2482ed4013f0d5d3acbe1908d6ffa59c",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e09-reconciliation.jsonl",
+          "sha256": "e714507c3c9a8b79b23f4364f6eef7dd9bb9ee87b210ca5eb72b3d9702027467",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "HOLD",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-post-promotion-e09-v0.1.jsonl",
+          "sha256": "2736497f42a54100f666c17e1c23645b9578eaa62826cb4eee081d1ee3951615",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-promotion-lineage-gate-v0.1.jsonl",
+          "sha256": "455af8620a88cab3215214b58317b63b565aa44d2f6693464dfc95f283857e85",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/registry/promoted-narratives-bf-r06-v0.1.jsonl",
+          "sha256": "44c75793c331c9ed3fa6ca30429017647558fe473d8d8e6615c0abbaaffcebac",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-e01-child-verification-v0.1.jsonl",
+          "sha256": "e93768ead15e13be32ca3bef32ec0e961df06d7ca0ae90a0294705630954e278",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-nine-case-retrospective-v0.1.jsonl",
+          "sha256": "68d62fd9d76e79906e30ace14d9b23ba57a38f87794c75d0a7497d47727c1d91",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": [
+            "WITNESS"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/calibration/boundary-factory-calibration-v0.1.jsonl",
+          "sha256": "3dbc028f1b0879aa8b23c179fe78c0bf53b9f298658bba79392a0742887301f0",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000009",
+      "status": "PRODUCTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PRODUCTION_EVIDENCE",
+        "PROMOTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 11,
+      "sources": [
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e01-narratives.jsonl",
+          "sha256": "72922fd528ba2b29dab614e6270b5144b8f131c785ccf7ed8d9fd0bb46a4a90b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "EVENT",
+            "PEOPLE",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e02-subjects.jsonl",
+          "sha256": "a9e6d9454295eafaa1b20bb5531ec6c5acdd7d86272b3cce0b3086eb9bdefb86",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "GROUP",
+            "PEOPLE"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e03-surah-hits.jsonl",
+          "sha256": "ae0ca0b1f1cbb19a84587a2dbc4d082e2482ed4013f0d5d3acbe1908d6ffa59c",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e09-reconciliation.jsonl",
+          "sha256": "e714507c3c9a8b79b23f4364f6eef7dd9bb9ee87b210ca5eb72b3d9702027467",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "HOLD",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-post-promotion-e09-v0.1.jsonl",
+          "sha256": "2736497f42a54100f666c17e1c23645b9578eaa62826cb4eee081d1ee3951615",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-promotion-lineage-gate-v0.1.jsonl",
+          "sha256": "455af8620a88cab3215214b58317b63b565aa44d2f6693464dfc95f283857e85",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/registry/promoted-narratives-bf-r06-v0.1.jsonl",
+          "sha256": "44c75793c331c9ed3fa6ca30429017647558fe473d8d8e6615c0abbaaffcebac",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-distributed-family-resolution-v0.1.jsonl",
+          "sha256": "676ff9a183bb0c90a027aa86dfcf2772038b39c781ccfef59e0da0e631997b8f",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-e01-child-verification-v0.1.jsonl",
+          "sha256": "e93768ead15e13be32ca3bef32ec0e961df06d7ca0ae90a0294705630954e278",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-nine-case-retrospective-v0.1.jsonl",
+          "sha256": "68d62fd9d76e79906e30ace14d9b23ba57a38f87794c75d0a7497d47727c1d91",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": [
+            "WITNESS"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/calibration/boundary-factory-calibration-v0.1.jsonl",
+          "sha256": "3dbc028f1b0879aa8b23c179fe78c0bf53b9f298658bba79392a0742887301f0",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000010",
+      "status": "PRODUCTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PRODUCTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e01-narratives.jsonl",
+          "sha256": "72922fd528ba2b29dab614e6270b5144b8f131c785ccf7ed8d9fd0bb46a4a90b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "EVENT",
+            "PEOPLE",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e02-subjects.jsonl",
+          "sha256": "a9e6d9454295eafaa1b20bb5531ec6c5acdd7d86272b3cce0b3086eb9bdefb86",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "GROUP",
+            "PEOPLE"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e03-surah-hits.jsonl",
+          "sha256": "ae0ca0b1f1cbb19a84587a2dbc4d082e2482ed4013f0d5d3acbe1908d6ffa59c",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e09-reconciliation.jsonl",
+          "sha256": "e714507c3c9a8b79b23f4364f6eef7dd9bb9ee87b210ca5eb72b3d9702027467",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "HOLD",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/calibration/boundary-factory-calibration-v0.1.jsonl",
+          "sha256": "3dbc028f1b0879aa8b23c179fe78c0bf53b9f298658bba79392a0742887301f0",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000011",
+      "status": "PRODUCTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PRODUCTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e01-narratives.jsonl",
+          "sha256": "72922fd528ba2b29dab614e6270b5144b8f131c785ccf7ed8d9fd0bb46a4a90b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "EVENT",
+            "PEOPLE",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e02-subjects.jsonl",
+          "sha256": "a9e6d9454295eafaa1b20bb5531ec6c5acdd7d86272b3cce0b3086eb9bdefb86",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "GROUP",
+            "PEOPLE"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e03-surah-hits.jsonl",
+          "sha256": "ae0ca0b1f1cbb19a84587a2dbc4d082e2482ed4013f0d5d3acbe1908d6ffa59c",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-002/e09-reconciliation.jsonl",
+          "sha256": "e714507c3c9a8b79b23f4364f6eef7dd9bb9ee87b210ca5eb72b3d9702027467",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "HOLD",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/calibration/boundary-factory-calibration-v0.1.jsonl",
+          "sha256": "3dbc028f1b0879aa8b23c179fe78c0bf53b9f298658bba79392a0742887301f0",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000012",
+      "status": "PRODUCTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PRODUCTION_EVIDENCE"
+      ],
+      "source_count": 6,
+      "sources": [
+        {
+          "source": "data/qfm-v2/batches/batch-005/01-subject-selection-recovery-v0.1.json",
+          "sha256": "583b2f0f948b08c4d8637518484bafec748e4ef2f3772605a31104299cecff0b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "SUBJECT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/boundary-precheck.jsonl",
+          "sha256": "376b6daf54ed60ff939705d9c6a6637a8273154d40fb03206a3e2598288c7b1b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "HOLD",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/e01-narratives.jsonl",
+          "sha256": "0840337677edc49254a90d6bb9088f6ad0fac77c10b489e4c98eafc7b52b069b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "PEOPLE",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/e02-subjects.jsonl",
+          "sha256": "6ae677877297eaa09fa49d39efd2d1a22ceed0f5252717a1507fa686bb9f2d9b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "GROUP",
+            "PEOPLE"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/e03-surah-hits.jsonl",
+          "sha256": "80bb3128127af56e9cdb98d258f1bba72d9ca273498b779d20d75bcda7162631",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/e09-reconciliation.jsonl",
+          "sha256": "9ea132543f9739c0a04d2b8c85e35e60903fa912f15f04130695aeb86a786d1c",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "HOLD",
+            "REVIEW"
+          ]
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000013",
+      "status": "PRODUCTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PRODUCTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 7,
+      "sources": [
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/boundary-precheck.jsonl",
+          "sha256": "376b6daf54ed60ff939705d9c6a6637a8273154d40fb03206a3e2598288c7b1b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "HOLD",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/e01-narratives.jsonl",
+          "sha256": "0840337677edc49254a90d6bb9088f6ad0fac77c10b489e4c98eafc7b52b069b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "PEOPLE",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/e02-subjects.jsonl",
+          "sha256": "6ae677877297eaa09fa49d39efd2d1a22ceed0f5252717a1507fa686bb9f2d9b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "GROUP",
+            "PEOPLE"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/e03-surah-hits.jsonl",
+          "sha256": "80bb3128127af56e9cdb98d258f1bba72d9ca273498b779d20d75bcda7162631",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/e09-reconciliation.jsonl",
+          "sha256": "9ea132543f9739c0a04d2b8c85e35e60903fa912f15f04130695aeb86a786d1c",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "HOLD",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-nine-case-retrospective-v0.1.jsonl",
+          "sha256": "68d62fd9d76e79906e30ace14d9b23ba57a38f87794c75d0a7497d47727c1d91",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": [
+            "WITNESS"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/universe/mission-005-pre-canonical-narrative-universe-coverage-v0.1.json",
+          "sha256": "be20d94437e019b194ad09a90c979cb7cc84952915eeaa28c046877933c9ad01",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": [
+            "EVENT",
+            "HOLD",
+            "JOURNEY",
+            "SUBJECT",
+            "WITNESS"
+          ]
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000014",
+      "status": "PRODUCTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PRODUCTION_EVIDENCE",
+        "PROMOTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 10,
+      "sources": [
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/boundary-precheck.jsonl",
+          "sha256": "376b6daf54ed60ff939705d9c6a6637a8273154d40fb03206a3e2598288c7b1b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "HOLD",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/e01-narratives.jsonl",
+          "sha256": "0840337677edc49254a90d6bb9088f6ad0fac77c10b489e4c98eafc7b52b069b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "PEOPLE",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/e02-subjects.jsonl",
+          "sha256": "6ae677877297eaa09fa49d39efd2d1a22ceed0f5252717a1507fa686bb9f2d9b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "GROUP",
+            "PEOPLE"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/e03-surah-hits.jsonl",
+          "sha256": "80bb3128127af56e9cdb98d258f1bba72d9ca273498b779d20d75bcda7162631",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/e09-reconciliation.jsonl",
+          "sha256": "9ea132543f9739c0a04d2b8c85e35e60903fa912f15f04130695aeb86a786d1c",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "HOLD",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-post-promotion-e09-v0.1.jsonl",
+          "sha256": "2736497f42a54100f666c17e1c23645b9578eaa62826cb4eee081d1ee3951615",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-promotion-lineage-gate-v0.1.jsonl",
+          "sha256": "455af8620a88cab3215214b58317b63b565aa44d2f6693464dfc95f283857e85",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/registry/promoted-narratives-bf-r06-v0.1.jsonl",
+          "sha256": "44c75793c331c9ed3fa6ca30429017647558fe473d8d8e6615c0abbaaffcebac",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-e01-child-verification-v0.1.jsonl",
+          "sha256": "e93768ead15e13be32ca3bef32ec0e961df06d7ca0ae90a0294705630954e278",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-nine-case-retrospective-v0.1.jsonl",
+          "sha256": "68d62fd9d76e79906e30ace14d9b23ba57a38f87794c75d0a7497d47727c1d91",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": [
+            "WITNESS"
+          ]
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000015",
+      "status": "PRODUCTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PRODUCTION_EVIDENCE"
+      ],
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/boundary-precheck.jsonl",
+          "sha256": "376b6daf54ed60ff939705d9c6a6637a8273154d40fb03206a3e2598288c7b1b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "HOLD",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/e01-narratives.jsonl",
+          "sha256": "0840337677edc49254a90d6bb9088f6ad0fac77c10b489e4c98eafc7b52b069b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "PEOPLE",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/e02-subjects.jsonl",
+          "sha256": "6ae677877297eaa09fa49d39efd2d1a22ceed0f5252717a1507fa686bb9f2d9b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "GROUP",
+            "PEOPLE"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/e03-surah-hits.jsonl",
+          "sha256": "80bb3128127af56e9cdb98d258f1bba72d9ca273498b779d20d75bcda7162631",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/e09-reconciliation.jsonl",
+          "sha256": "9ea132543f9739c0a04d2b8c85e35e60903fa912f15f04130695aeb86a786d1c",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "HOLD",
+            "REVIEW"
+          ]
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000016",
+      "status": "PRODUCTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PRODUCTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 8,
+      "sources": [
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/boundary-precheck.jsonl",
+          "sha256": "376b6daf54ed60ff939705d9c6a6637a8273154d40fb03206a3e2598288c7b1b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "HOLD",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/e01-narratives.jsonl",
+          "sha256": "0840337677edc49254a90d6bb9088f6ad0fac77c10b489e4c98eafc7b52b069b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "PEOPLE",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/e02-subjects.jsonl",
+          "sha256": "6ae677877297eaa09fa49d39efd2d1a22ceed0f5252717a1507fa686bb9f2d9b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "GROUP",
+            "PEOPLE"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/e03-surah-hits.jsonl",
+          "sha256": "80bb3128127af56e9cdb98d258f1bba72d9ca273498b779d20d75bcda7162631",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/e09-reconciliation.jsonl",
+          "sha256": "9ea132543f9739c0a04d2b8c85e35e60903fa912f15f04130695aeb86a786d1c",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "HOLD",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-distributed-family-resolution-v0.1.jsonl",
+          "sha256": "676ff9a183bb0c90a027aa86dfcf2772038b39c781ccfef59e0da0e631997b8f",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-e01-child-verification-v0.1.jsonl",
+          "sha256": "e93768ead15e13be32ca3bef32ec0e961df06d7ca0ae90a0294705630954e278",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-nine-case-retrospective-v0.1.jsonl",
+          "sha256": "68d62fd9d76e79906e30ace14d9b23ba57a38f87794c75d0a7497d47727c1d91",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": [
+            "WITNESS"
+          ]
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000017",
+      "status": "PRODUCTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PRODUCTION_EVIDENCE"
+      ],
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/boundary-precheck.jsonl",
+          "sha256": "376b6daf54ed60ff939705d9c6a6637a8273154d40fb03206a3e2598288c7b1b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "HOLD",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/e01-narratives.jsonl",
+          "sha256": "0840337677edc49254a90d6bb9088f6ad0fac77c10b489e4c98eafc7b52b069b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "PEOPLE",
+            "REVIEW"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/e02-subjects.jsonl",
+          "sha256": "6ae677877297eaa09fa49d39efd2d1a22ceed0f5252717a1507fa686bb9f2d9b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "GROUP",
+            "PEOPLE"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/e03-surah-hits.jsonl",
+          "sha256": "80bb3128127af56e9cdb98d258f1bba72d9ca273498b779d20d75bcda7162631",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/runs/run-001/batches/batch-003/e09-reconciliation.jsonl",
+          "sha256": "9ea132543f9739c0a04d2b8c85e35e60903fa912f15f04130695aeb86a786d1c",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "HOLD",
+            "REVIEW"
+          ]
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000018",
+      "status": "PROMOTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PROMOTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 4,
+      "sources": [
+        {
+          "source": "data/qfm-v2/audits/bf-r06-post-promotion-e09-v0.1.jsonl",
+          "sha256": "2736497f42a54100f666c17e1c23645b9578eaa62826cb4eee081d1ee3951615",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-promotion-lineage-gate-v0.1.jsonl",
+          "sha256": "455af8620a88cab3215214b58317b63b565aa44d2f6693464dfc95f283857e85",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/registry/promoted-narratives-bf-r06-v0.1.jsonl",
+          "sha256": "44c75793c331c9ed3fa6ca30429017647558fe473d8d8e6615c0abbaaffcebac",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/factory-regression-invariant-audit-v0.1.jsonl",
+          "sha256": "809635ff6afea6d3ea97a56e204dd7abddb97a5e7b2df1b8af73c331be3a6b91",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000019",
+      "status": "PROMOTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PROMOTION_EVIDENCE"
+      ],
+      "source_count": 3,
+      "sources": [
+        {
+          "source": "data/qfm-v2/audits/bf-r06-post-promotion-e09-v0.1.jsonl",
+          "sha256": "2736497f42a54100f666c17e1c23645b9578eaa62826cb4eee081d1ee3951615",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-promotion-lineage-gate-v0.1.jsonl",
+          "sha256": "455af8620a88cab3215214b58317b63b565aa44d2f6693464dfc95f283857e85",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/registry/promoted-narratives-bf-r06-v0.1.jsonl",
+          "sha256": "44c75793c331c9ed3fa6ca30429017647558fe473d8d8e6615c0abbaaffcebac",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000020",
+      "status": "PROMOTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PROMOTION_EVIDENCE"
+      ],
+      "source_count": 3,
+      "sources": [
+        {
+          "source": "data/qfm-v2/audits/bf-r06-post-promotion-e09-v0.1.jsonl",
+          "sha256": "2736497f42a54100f666c17e1c23645b9578eaa62826cb4eee081d1ee3951615",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-promotion-lineage-gate-v0.1.jsonl",
+          "sha256": "455af8620a88cab3215214b58317b63b565aa44d2f6693464dfc95f283857e85",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/registry/promoted-narratives-bf-r06-v0.1.jsonl",
+          "sha256": "44c75793c331c9ed3fa6ca30429017647558fe473d8d8e6615c0abbaaffcebac",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000021",
+      "status": "PROMOTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PROMOTION_EVIDENCE"
+      ],
+      "source_count": 3,
+      "sources": [
+        {
+          "source": "data/qfm-v2/audits/bf-r06-post-promotion-e09-v0.1.jsonl",
+          "sha256": "2736497f42a54100f666c17e1c23645b9578eaa62826cb4eee081d1ee3951615",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-promotion-lineage-gate-v0.1.jsonl",
+          "sha256": "455af8620a88cab3215214b58317b63b565aa44d2f6693464dfc95f283857e85",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/registry/promoted-narratives-bf-r06-v0.1.jsonl",
+          "sha256": "44c75793c331c9ed3fa6ca30429017647558fe473d8d8e6615c0abbaaffcebac",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000022",
+      "status": "PROMOTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PROMOTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 4,
+      "sources": [
+        {
+          "source": "data/qfm-v2/audits/bf-r06-post-promotion-e09-v0.1.jsonl",
+          "sha256": "2736497f42a54100f666c17e1c23645b9578eaa62826cb4eee081d1ee3951615",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/bf-r06-promotion-lineage-gate-v0.1.jsonl",
+          "sha256": "455af8620a88cab3215214b58317b63b565aa44d2f6693464dfc95f283857e85",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/registry/promoted-narratives-bf-r06-v0.1.jsonl",
+          "sha256": "44c75793c331c9ed3fa6ca30429017647558fe473d8d8e6615c0abbaaffcebac",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/factory-regression-invariant-audit-v0.1.jsonl",
+          "sha256": "809635ff6afea6d3ea97a56e204dd7abddb97a5e7b2df1b8af73c331be3a6b91",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000023",
+      "status": "PROMOTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PROMOTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 4,
+      "sources": [
+        {
+          "source": "data/qfm-v2/audits/bf-r06-post-promotion-e09-v0.1.jsonl",
+          "sha256": "2736497f42a54100f666c17e1c23645b9578eaa62826cb4eee081d1ee3951615",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/pnie/promotion-lineage-v0.1.jsonl",
+          "sha256": "0374691dd1b4c47b54871cfed664df10fc685714a23ae690345b5a82e36442fb",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/registry/promoted-narratives-pnie-v0.1.jsonl",
+          "sha256": "231200a5fe16baa6a1070fe487ab938788dfb3c28d62abfc6bb31c504ca70424",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": [
+            "WITNESS"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/audits/pnie-e09-closure-v0.1.jsonl",
+          "sha256": "b8647dbdb2f11c613a7b240805f8249d758fea6fc5ceb16d3ea03bd871ee24e5",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000024",
+      "status": "PROMOTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PROMOTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 3,
+      "sources": [
+        {
+          "source": "data/qfm-v2/pnie/promotion-lineage-v0.1.jsonl",
+          "sha256": "0374691dd1b4c47b54871cfed664df10fc685714a23ae690345b5a82e36442fb",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/registry/promoted-narratives-pnie-v0.1.jsonl",
+          "sha256": "231200a5fe16baa6a1070fe487ab938788dfb3c28d62abfc6bb31c504ca70424",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": [
+            "WITNESS"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/audits/pnie-e09-closure-v0.1.jsonl",
+          "sha256": "b8647dbdb2f11c613a7b240805f8249d758fea6fc5ceb16d3ea03bd871ee24e5",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000025",
+      "status": "PROMOTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PROMOTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 3,
+      "sources": [
+        {
+          "source": "data/qfm-v2/pnie/promotion-lineage-v0.1.jsonl",
+          "sha256": "0374691dd1b4c47b54871cfed664df10fc685714a23ae690345b5a82e36442fb",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/registry/promoted-narratives-pnie-v0.1.jsonl",
+          "sha256": "231200a5fe16baa6a1070fe487ab938788dfb3c28d62abfc6bb31c504ca70424",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": [
+            "WITNESS"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/audits/pnie-e09-closure-v0.1.jsonl",
+          "sha256": "b8647dbdb2f11c613a7b240805f8249d758fea6fc5ceb16d3ea03bd871ee24e5",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000026",
+      "status": "PROMOTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PROMOTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 3,
+      "sources": [
+        {
+          "source": "data/qfm-v2/pnie/promotion-lineage-v0.1.jsonl",
+          "sha256": "0374691dd1b4c47b54871cfed664df10fc685714a23ae690345b5a82e36442fb",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/registry/promoted-narratives-pnie-v0.1.jsonl",
+          "sha256": "231200a5fe16baa6a1070fe487ab938788dfb3c28d62abfc6bb31c504ca70424",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": [
+            "WITNESS"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/audits/pnie-e09-closure-v0.1.jsonl",
+          "sha256": "b8647dbdb2f11c613a7b240805f8249d758fea6fc5ceb16d3ea03bd871ee24e5",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000027",
+      "status": "PROMOTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PROMOTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 3,
+      "sources": [
+        {
+          "source": "data/qfm-v2/pnie/promotion-lineage-v0.1.jsonl",
+          "sha256": "0374691dd1b4c47b54871cfed664df10fc685714a23ae690345b5a82e36442fb",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/registry/promoted-narratives-pnie-v0.1.jsonl",
+          "sha256": "231200a5fe16baa6a1070fe487ab938788dfb3c28d62abfc6bb31c504ca70424",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": [
+            "WITNESS"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/audits/pnie-e09-closure-v0.1.jsonl",
+          "sha256": "b8647dbdb2f11c613a7b240805f8249d758fea6fc5ceb16d3ea03bd871ee24e5",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000028",
+      "status": "PROMOTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PROMOTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 3,
+      "sources": [
+        {
+          "source": "data/qfm-v2/pnie/promotion-lineage-v0.1.jsonl",
+          "sha256": "0374691dd1b4c47b54871cfed664df10fc685714a23ae690345b5a82e36442fb",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/registry/promoted-narratives-pnie-v0.1.jsonl",
+          "sha256": "231200a5fe16baa6a1070fe487ab938788dfb3c28d62abfc6bb31c504ca70424",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": [
+            "WITNESS"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/audits/pnie-e09-closure-v0.1.jsonl",
+          "sha256": "b8647dbdb2f11c613a7b240805f8249d758fea6fc5ceb16d3ea03bd871ee24e5",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000029",
+      "status": "PROMOTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PROMOTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 3,
+      "sources": [
+        {
+          "source": "data/qfm-v2/pnie/promotion-lineage-v0.1.jsonl",
+          "sha256": "0374691dd1b4c47b54871cfed664df10fc685714a23ae690345b5a82e36442fb",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/registry/promoted-narratives-pnie-v0.1.jsonl",
+          "sha256": "231200a5fe16baa6a1070fe487ab938788dfb3c28d62abfc6bb31c504ca70424",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": [
+            "WITNESS"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/audits/pnie-e09-closure-v0.1.jsonl",
+          "sha256": "b8647dbdb2f11c613a7b240805f8249d758fea6fc5ceb16d3ea03bd871ee24e5",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000030",
+      "status": "PROMOTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PROMOTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 3,
+      "sources": [
+        {
+          "source": "data/qfm-v2/pnie/promotion-lineage-v0.1.jsonl",
+          "sha256": "0374691dd1b4c47b54871cfed664df10fc685714a23ae690345b5a82e36442fb",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/registry/promoted-narratives-pnie-v0.1.jsonl",
+          "sha256": "231200a5fe16baa6a1070fe487ab938788dfb3c28d62abfc6bb31c504ca70424",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": [
+            "WITNESS"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/audits/pnie-e09-closure-v0.1.jsonl",
+          "sha256": "b8647dbdb2f11c613a7b240805f8249d758fea6fc5ceb16d3ea03bd871ee24e5",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000031",
+      "status": "PRODUCTION_PROVEN",
+      "authority_proven": false,
+      "evidence_classes": [
+        "PRODUCTION_EVIDENCE",
+        "PROMOTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "data/qfm-v2/batches/batch-004/09-prior-registry-collision-audit-v0.1.json",
+          "sha256": "0326c21981a0ddd49d0b9ba50901b0bb1ef99b9bcb330bfd0b98ac1ab39cd166",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "WITNESS"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/pnie/promotion-lineage-v0.1.jsonl",
+          "sha256": "0374691dd1b4c47b54871cfed664df10fc685714a23ae690345b5a82e36442fb",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/registry/promoted-narratives-pnie-v0.1.jsonl",
+          "sha256": "231200a5fe16baa6a1070fe487ab938788dfb3c28d62abfc6bb31c504ca70424",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": [
+            "WITNESS"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/audits/factory-regression-invariant-audit-v0.1.jsonl",
+          "sha256": "809635ff6afea6d3ea97a56e204dd7abddb97a5e7b2df1b8af73c331be3a6b91",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/pnie-e09-closure-v0.1.jsonl",
+          "sha256": "b8647dbdb2f11c613a7b240805f8249d758fea6fc5ceb16d3ea03bd871ee24e5",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000032",
+      "status": "AUTHORITY_PROVEN",
+      "authority_proven": true,
+      "evidence_classes": [
+        "ALLOCATION_AUTHORITY",
+        "PRODUCTION_EVIDENCE",
+        "PROMOTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 13,
+      "sources": [
+        {
+          "source": "data/qfm-v2/batches/batch-004/12-permanent-narrative-registry-v0.1.jsonl",
+          "sha256": "b9ed14a8fa019acf24e135c4f22390fcefe9da742a88fc5af70f2fd826efd056",
+          "evidence_class": "ALLOCATION_AUTHORITY",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-004/01-subject-selection-v0.1.json",
+          "sha256": "3a1c214734d68715603bdda980826fe8502925e2bcce44604fd8e07758147991",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-004/04-e02-e03-e09-intake-v0.1.jsonl",
+          "sha256": "9d67ecd3abbd1764bc2ecc2e46c912f38292cbfc7eedf619338e3154838cf0d8",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "PEOPLE",
+            "SUBJECT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-004/10-abraham-lot-interface-resolution-v0.1.json",
+          "sha256": "d6334b38cf84d2b60b4bc1d292be6c2528b9bf1d20f9a9ea8c8570ef02c65443",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "HOLD",
+            "WITNESS"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-004/11-permanent-identity-allocation-gate-v0.1.json",
+          "sha256": "49f1241c2b7e47633967123ca1bfecd63b2a0b8d6ba98b1eabacd22824749b9e",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-004/14-batch-004-invariant-audit-v0.1.json",
+          "sha256": "2bbb495e95be3e3995ca3ea6e2a4b46f5be6daa16f7e197c0fcb6b7a412e1b52",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-004/15-closure-v0.1.json",
+          "sha256": "11991da5b9542b39bd9bac6d105ac37020955f858bff19bb97e71ba28ae03170",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-004/13-post-promotion-e09-rerun-v0.1.json",
+          "sha256": "63b2b28d232234bd13d3dece8291f272c1fbdd37f32bc248baf84ae8c5f32844",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/factory-invariants-lock-v0.1.json",
+          "sha256": "f45f1e3849e691d7547216f70bc4bd680a8500e8497e4cf87014283a49935f9b",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/factory-regression-invariant-audit-v0.1.jsonl",
+          "sha256": "809635ff6afea6d3ea97a56e204dd7abddb97a5e7b2df1b8af73c331be3a6b91",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/mission-005-pre-universe-coverage-audit-v0.1.json",
+          "sha256": "f63a4b7e4b0b7852f77ac83061dae5f6e32e6f6ec66206b259f5e6fe3a54c27d",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": [
+            "HOLD",
+            "REVIEW",
+            "SUBJECT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/audits/pnie-e09-closure-v0.1.jsonl",
+          "sha256": "b8647dbdb2f11c613a7b240805f8249d758fea6fc5ceb16d3ea03bd871ee24e5",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/universe/mission-005-pre-canonical-narrative-universe-coverage-v0.1.json",
+          "sha256": "be20d94437e019b194ad09a90c979cb7cc84952915eeaa28c046877933c9ad01",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": [
+            "EVENT",
+            "HOLD",
+            "JOURNEY",
+            "SUBJECT",
+            "WITNESS"
+          ]
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000033",
+      "status": "AUTHORITY_PROVEN",
+      "authority_proven": true,
+      "evidence_classes": [
+        "ALLOCATION_AUTHORITY",
+        "PRODUCTION_EVIDENCE",
+        "PROMOTION_EVIDENCE"
+      ],
+      "source_count": 3,
+      "sources": [
+        {
+          "source": "data/qfm-v2/batches/batch-004/12-permanent-narrative-registry-v0.1.jsonl",
+          "sha256": "b9ed14a8fa019acf24e135c4f22390fcefe9da742a88fc5af70f2fd826efd056",
+          "evidence_class": "ALLOCATION_AUTHORITY",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-004/11-permanent-identity-allocation-gate-v0.1.json",
+          "sha256": "49f1241c2b7e47633967123ca1bfecd63b2a0b8d6ba98b1eabacd22824749b9e",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-004/13-post-promotion-e09-rerun-v0.1.json",
+          "sha256": "63b2b28d232234bd13d3dece8291f272c1fbdd37f32bc248baf84ae8c5f32844",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000034",
+      "status": "AUTHORITY_PROVEN",
+      "authority_proven": true,
+      "evidence_classes": [
+        "ALLOCATION_AUTHORITY",
+        "PRODUCTION_EVIDENCE",
+        "PROMOTION_EVIDENCE"
+      ],
+      "source_count": 3,
+      "sources": [
+        {
+          "source": "data/qfm-v2/batches/batch-004/12-permanent-narrative-registry-v0.1.jsonl",
+          "sha256": "b9ed14a8fa019acf24e135c4f22390fcefe9da742a88fc5af70f2fd826efd056",
+          "evidence_class": "ALLOCATION_AUTHORITY",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-004/11-permanent-identity-allocation-gate-v0.1.json",
+          "sha256": "49f1241c2b7e47633967123ca1bfecd63b2a0b8d6ba98b1eabacd22824749b9e",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-004/13-post-promotion-e09-rerun-v0.1.json",
+          "sha256": "63b2b28d232234bd13d3dece8291f272c1fbdd37f32bc248baf84ae8c5f32844",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000035",
+      "status": "AUTHORITY_PROVEN",
+      "authority_proven": true,
+      "evidence_classes": [
+        "ALLOCATION_AUTHORITY",
+        "PRODUCTION_EVIDENCE",
+        "PROMOTION_EVIDENCE"
+      ],
+      "source_count": 3,
+      "sources": [
+        {
+          "source": "data/qfm-v2/batches/batch-004/12-permanent-narrative-registry-v0.1.jsonl",
+          "sha256": "b9ed14a8fa019acf24e135c4f22390fcefe9da742a88fc5af70f2fd826efd056",
+          "evidence_class": "ALLOCATION_AUTHORITY",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-004/11-permanent-identity-allocation-gate-v0.1.json",
+          "sha256": "49f1241c2b7e47633967123ca1bfecd63b2a0b8d6ba98b1eabacd22824749b9e",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-004/13-post-promotion-e09-rerun-v0.1.json",
+          "sha256": "63b2b28d232234bd13d3dece8291f272c1fbdd37f32bc248baf84ae8c5f32844",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000036",
+      "status": "AUTHORITY_PROVEN",
+      "authority_proven": true,
+      "evidence_classes": [
+        "ALLOCATION_AUTHORITY",
+        "PRODUCTION_EVIDENCE",
+        "PROMOTION_EVIDENCE"
+      ],
+      "source_count": 3,
+      "sources": [
+        {
+          "source": "data/qfm-v2/batches/batch-004/12-permanent-narrative-registry-v0.1.jsonl",
+          "sha256": "b9ed14a8fa019acf24e135c4f22390fcefe9da742a88fc5af70f2fd826efd056",
+          "evidence_class": "ALLOCATION_AUTHORITY",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-004/11-permanent-identity-allocation-gate-v0.1.json",
+          "sha256": "49f1241c2b7e47633967123ca1bfecd63b2a0b8d6ba98b1eabacd22824749b9e",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-004/13-post-promotion-e09-rerun-v0.1.json",
+          "sha256": "63b2b28d232234bd13d3dece8291f272c1fbdd37f32bc248baf84ae8c5f32844",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000037",
+      "status": "AUTHORITY_PROVEN",
+      "authority_proven": true,
+      "evidence_classes": [
+        "ALLOCATION_AUTHORITY",
+        "PRODUCTION_EVIDENCE",
+        "PROMOTION_EVIDENCE"
+      ],
+      "source_count": 3,
+      "sources": [
+        {
+          "source": "data/qfm-v2/batches/batch-004/12-permanent-narrative-registry-v0.1.jsonl",
+          "sha256": "b9ed14a8fa019acf24e135c4f22390fcefe9da742a88fc5af70f2fd826efd056",
+          "evidence_class": "ALLOCATION_AUTHORITY",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-004/11-permanent-identity-allocation-gate-v0.1.json",
+          "sha256": "49f1241c2b7e47633967123ca1bfecd63b2a0b8d6ba98b1eabacd22824749b9e",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-004/13-post-promotion-e09-rerun-v0.1.json",
+          "sha256": "63b2b28d232234bd13d3dece8291f272c1fbdd37f32bc248baf84ae8c5f32844",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        }
+      ]
+    },
+    {
+      "nar_id": "NAR-000038",
+      "status": "AUTHORITY_PROVEN",
+      "authority_proven": true,
+      "evidence_classes": [
+        "ALLOCATION_AUTHORITY",
+        "PRODUCTION_EVIDENCE",
+        "PROMOTION_EVIDENCE",
+        "REFERENCE_ONLY"
+      ],
+      "source_count": 13,
+      "sources": [
+        {
+          "source": "data/qfm-v2/batches/batch-004/12-permanent-narrative-registry-v0.1.jsonl",
+          "sha256": "b9ed14a8fa019acf24e135c4f22390fcefe9da742a88fc5af70f2fd826efd056",
+          "evidence_class": "ALLOCATION_AUTHORITY",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/16-cross-batch-production-audit-v0.1.json",
+          "sha256": "c41988939c9faef2fa131bbcb9afb3ec367916d24f1c9a87367d068c53baa0fe",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-004/11-permanent-identity-allocation-gate-v0.1.json",
+          "sha256": "49f1241c2b7e47633967123ca1bfecd63b2a0b8d6ba98b1eabacd22824749b9e",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-004/14-batch-004-invariant-audit-v0.1.json",
+          "sha256": "2bbb495e95be3e3995ca3ea6e2a4b46f5be6daa16f7e197c0fcb6b7a412e1b52",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-004/15-closure-v0.1.json",
+          "sha256": "11991da5b9542b39bd9bac6d105ac37020955f858bff19bb97e71ba28ae03170",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-005/01-subject-selection-recovery-v0.1.json",
+          "sha256": "583b2f0f948b08c4d8637518484bafec748e4ef2f3772605a31104299cecff0b",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "SUBJECT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-005/02-selection-integrity-gate-v0.1.json",
+          "sha256": "fb12e6b80d5d0a69ca428fccfe2d6f546b7bddb3659750fc1084fc4f1149ee0e",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-005/03-scope-lock-v0.1.json",
+          "sha256": "94c9abdbb23385c1e1f6a5064a9b1b5d505eb34162295fa98c6a890cffef86f7",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "SUBJECT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/universe/01-canonical-production-queue-v0.1.json",
+          "sha256": "aba58aeeffd44169152a1ebf7b835f0965ec502326f080d07ed7cfc097c8c8fa",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "SUBJECT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-004/13-post-promotion-e09-rerun-v0.1.json",
+          "sha256": "63b2b28d232234bd13d3dece8291f272c1fbdd37f32bc248baf84ae8c5f32844",
+          "evidence_class": "PROMOTION_EVIDENCE",
+          "lanes": []
+        },
+        {
+          "source": "data/qfm-v2/audits/mission-005-pre-full-universe-census-control-v0.1.json",
+          "sha256": "8c53886a72967e83b83e0df2944a55b45449db891e3067c6cb958b0855efa049",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": [
+            "EVENT",
+            "HOLD",
+            "JOURNEY",
+            "REVIEW",
+            "WITNESS"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/audits/mission-005-pre-universe-coverage-audit-v0.1.json",
+          "sha256": "f63a4b7e4b0b7852f77ac83061dae5f6e32e6f6ec66206b259f5e6fe3a54c27d",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": [
+            "HOLD",
+            "REVIEW",
+            "SUBJECT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/universe/mission-005-pre-canonical-narrative-universe-coverage-v0.1.json",
+          "sha256": "be20d94437e019b194ad09a90c979cb7cc84952915eeaa28c046877933c9ad01",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": [
+            "EVENT",
+            "HOLD",
+            "JOURNEY",
+            "SUBJECT",
+            "WITNESS"
+          ]
+        }
+      ]
+    }
+  ]
+}
