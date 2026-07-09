@@ -1,61 +1,23 @@
 schema: qpfs/structural-execution-manifest/v1.0
 id: SEM-000001
-status: OPEN_FOR_EXECUTION
+status: CONTROL_PLANE_CLOSED_DATA_PLANE_OPEN
 wave: WAVE_1_STRUCTURAL_CANDIDATE_GENERATION
 input:
   authority: QSIM-000003
   occurrence_count: 169
-  canonical_range: QLO-000001..QLO-000169
-preflight:
-  lexical_source_fixed: PASS
-  total_count_reconciled: PASS
-  seven_form_families_reconciled: PASS
-  identity_gap_resolved: PASS
-  qpu_creation_locked: PASS
 execution_units:
-  - id: W1-01
-    task: freeze_pipeline
-    status: CLOSED_PASS
-    artifact: SCP-000001
-  - id: W1-02
-    task: freeze_candidate_record_contract
-    status: CLOSED_PASS
-    artifact: SCRC-000001
-  - id: W1-03
-    task: build_unified_169_row_runtime_intake
-    status: READY
-    blocking_condition: "Must materialize from QSIM-000003 precedence rules, not legacy IDs directly."
-  - id: W1-04
-    task: hydrate_context_windows
-    status: LOCKED
-  - id: W1-05
-    task: evaluate_all_structural_signals
-    status: LOCKED
-  - id: W1-06
-    task: apply_exclusions_and_isolate_ambiguity
-    status: LOCKED
-  - id: W1-07
-    task: materialize_qpc_proposals
-    status: LOCKED
-  - id: W1-08
-    task: cluster_and_reconstruct_boundaries
-    status: LOCKED
-  - id: W1-09
-    task: cross_form_and_root_blind_recovery
-    status: LOCKED
-  - id: W1-10
-    task: independent_validation_and_freeze
-    status: LOCKED
+  - {id: W1-01, task: freeze_pipeline, status: CLOSED_PASS}
+  - {id: W1-02, task: freeze_candidate_record_contract, status: CLOSED_PASS}
+  - {id: W1-03, task: build_unified_169_row_runtime_intake, status: CLOSED_PASS}
+  - {id: W1-04, task: hydrate_context_windows, status: CONTROL_CLOSED_DATA_PENDING}
+  - {id: W1-05, task: evaluate_all_structural_signals, status: CONTROL_CLOSED_DATA_PENDING}
+  - {id: W1-06, task: apply_exclusions_and_isolate_ambiguity, status: CONTROL_CLOSED_DATA_PENDING}
+  - {id: W1-07, task: materialize_qpc_proposals, status: CONTROL_CLOSED_DATA_PENDING}
+  - {id: W1-08, task: cluster_and_reconstruct_boundaries, status: CONTROL_CLOSED_DATA_PENDING}
+  - {id: W1-09, task: cross_form_and_root_blind_recovery, status: CONTROL_CLOSED_DATA_PENDING}
+  - {id: W1-10, task: independent_validation_and_freeze, status: CONTROL_CLOSED_DATA_PENDING}
 progress:
-  completed_execution_units: 2
-  total_execution_units: 10
-  percent: 20
-wave_exit_criteria:
-  - all_169_occurrences_accounted_for
-  - every_anchor_has_disposition
-  - every_exclusion_has_reason
-  - every_candidate_reconstructable
-  - duplicate_and_collision_audits_pass
-  - every_candidate_has_independent_validation_status
-  - no_parable_or_qpu_decisions_created
-next_action: W1-03_BUILD_UNIFIED_169_ROW_RUNTIME_INTAKE
+  control_plane_percent: 100
+  data_plane_percent: 0
+  overall_wave_claim: NOT_CLOSED
+next_action: MATERIALIZE_AND_RUN_DATA_PLANE
