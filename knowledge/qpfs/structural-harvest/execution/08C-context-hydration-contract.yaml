@@ -1,0 +1,10 @@
+schema: qpfs/structural-context-hydration/v0.1
+id: QSCH-000001
+step: 24.5B-08C
+status: CLOSED_PASS
+input: QSIM-000001
+hydration_fields: [carrier_verse, initial_window, window_rule, source_locator]
+window_rules_ref: contracts/verse-window-expansion-rules-v0.1.yaml
+parable_judgment_allowed: false
+candidate_judgment_allowed: false
+next_step: 24.5B-08D
