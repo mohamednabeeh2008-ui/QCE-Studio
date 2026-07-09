@@ -1,0 +1,140 @@
+schema: qpfs/lexical-batch-row-validation/v0.1
+validation_id: QLBV-000002
+batch_id: QLB-000002
+contract: LBMC-000001
+status: COMPLETE
+method: independent_row_validation
+source_id: QLS-000001
+source_index: https://corpus.quran.com/qurandictionary.jsp?q=mvl
+source_root: "م ث ل"
+validation_scope: QLO-000012_to_QLO-000021
+
+validation_principle:
+  - validate_each_row_independently
+  - require_reference_token_surface_lemma_root_morphology_and_traceability
+  - do_not_infer_parable_identity_from_lexical_presence
+  - do_not_write_to_ledger_during_validation
+
+rows:
+  - occurrence_id: QLO-000012
+    reference: {surah: 2, ayah: 265, token_position: 1}
+    surface: "وَمَثَلُ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "CONJ wa + N; masculine; nominative"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(2:265:1)"
+    checks: {reference: PASS, token_position: PASS, surface: PASS, lemma: PASS, root: PASS, morphology: PASS, source: PASS, traceability: PASS, logical: PASS}
+    disposition: PASS
+  - occurrence_id: QLO-000013
+    reference: {surah: 2, ayah: 265, token_position: 11}
+    surface: "كَمَثَلِ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "PREF ka + N; masculine; genitive"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(2:265:11)"
+    checks: {reference: PASS, token_position: PASS, surface: PASS, lemma: PASS, root: PASS, morphology: PASS, source: PASS, traceability: PASS, logical: PASS}
+    disposition: PASS
+  - occurrence_id: QLO-000014
+    reference: {surah: 3, ayah: 59, token_position: 2}
+    surface: "مَثَلَ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "N; masculine; accusative"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(3:59:2)"
+    checks: {reference: PASS, token_position: PASS, surface: PASS, lemma: PASS, root: PASS, morphology: PASS, source: PASS, traceability: PASS, logical: PASS}
+    disposition: PASS
+  - occurrence_id: QLO-000015
+    reference: {surah: 3, ayah: 59, token_position: 6}
+    surface: "كَمَثَلِ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "PREF ka + N; masculine; genitive"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(3:59:6)"
+    checks: {reference: PASS, token_position: PASS, surface: PASS, lemma: PASS, root: PASS, morphology: PASS, source: PASS, traceability: PASS, logical: PASS}
+    disposition: PASS
+  - occurrence_id: QLO-000016
+    reference: {surah: 3, ayah: 117, token_position: 1}
+    surface: "مَثَلُ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "N; masculine; nominative"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(3:117:1)"
+    checks: {reference: PASS, token_position: PASS, surface: PASS, lemma: PASS, root: PASS, morphology: PASS, source: PASS, traceability: PASS, logical: PASS}
+    disposition: PASS
+  - occurrence_id: QLO-000017
+    reference: {surah: 3, ayah: 117, token_position: 8}
+    surface: "كَمَثَلِ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "PREF ka + N; masculine; genitive"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(3:117:8)"
+    checks: {reference: PASS, token_position: PASS, surface: PASS, lemma: PASS, root: PASS, morphology: PASS, source: PASS, traceability: PASS, logical: PASS}
+    disposition: PASS
+  - occurrence_id: QLO-000018
+    reference: {surah: 6, ayah: 122, token_position: 13}
+    surface: "مَثَلُهُ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "N; masculine; nominative; attached 3rd-person masculine singular possessive pronoun"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(6:122:13)"
+    checks: {reference: PASS, token_position: PASS, surface: PASS, lemma: PASS, root: PASS, morphology: PASS, source: PASS, traceability: PASS, logical: PASS}
+    disposition: PASS
+  - occurrence_id: QLO-000019
+    reference: {surah: 6, ayah: 160, token_position: 6}
+    surface: "أَمْثَالِهَا"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "N; masculine plural; genitive; attached 3rd-person feminine singular possessive pronoun"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(6:160:6)"
+    checks: {reference: PASS, token_position: PASS, surface: PASS, lemma: PASS, root: PASS, morphology: PASS, source: PASS, traceability: PASS, logical: PASS}
+    disposition: PASS
+  - occurrence_id: QLO-000020
+    reference: {surah: 7, ayah: 176, token_position: 11}
+    surface: "فَمَثَلُهُ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "CONJ fa + N; masculine; nominative; attached 3rd-person masculine singular possessive pronoun"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(7:176:11)"
+    checks: {reference: PASS, token_position: PASS, surface: PASS, lemma: PASS, root: PASS, morphology: PASS, source: PASS, traceability: PASS, logical: PASS}
+    disposition: PASS
+  - occurrence_id: QLO-000021
+    reference: {surah: 7, ayah: 176, token_position: 12}
+    surface: "كَمَثَلِ"
+    lemma: "مَثَل"
+    root: "م ث ل"
+    morphological_form: "PREF ka + N; masculine; genitive"
+    source_locator: "https://corpus.quran.com/wordmorphology.jsp?location=(7:176:12)"
+    checks: {reference: PASS, token_position: PASS, surface: PASS, lemma: PASS, root: PASS, morphology: PASS, source: PASS, traceability: PASS, logical: PASS}
+    disposition: PASS
+
+summary:
+  proposed: 10
+  pass: 10
+  reject: 0
+  duplicate: 0
+  unresolved: 0
+  every_row_has_disposition: true
+  batch_row_validation: PASS
+
+independence_result:
+  validation_record_separate_from_materialization_manifest: true
+  ledger_modified_during_validation: false
+  majority_vote_used: false
+  every_row_individually_decided: true
+  status: PASS
+
+legal_guards:
+  parable_identity_decision: NOT_PERFORMED
+  qpc_assignment: LOCKED
+  qpu_assignment: LOCKED
+  lexical_presence_confirms_parable: false
+
+next_gate:
+  action: close_batch_validation_and_authorize_atomic_ledger_commit
+  authorized: true
+  conditions:
+    - preserve_QLO_000001_to_QLO_000011
+    - write_only_PASS_rows
+    - preserve_source_provenance
+    - do_not_revalidate_by_majority
+    - reconcile_ledger_and_batch_counts_after_commit
