@@ -1,0 +1,7 @@
+schema: qpfs/boundary-sufficiency-audit/v0.1
+id: QBSA-000001
+step: 24.5B-12B
+status: CLOSED_PASS
+checks: [no_essential_cut, no_unnecessary_expansion, source_reconstructable]
+failed_boundary_action: revise_or_unresolved
+next_step: 24.5B-13
