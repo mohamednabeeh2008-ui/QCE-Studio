@@ -1,0 +1,30 @@
+{
+  "batch_005": "COMPLETE",
+  "moses_harvest": "COMPLETE",
+  "subject": "MOSES",
+  "input_local_instances": 105,
+  "accounted_for": 105,
+  "unclassified": 0,
+  "double_counted": 0,
+  "legal_units": 18,
+  "event_journey_witness_preserved": true,
+  "permanent_nar_range": [
+    "NAR-000039",
+    "NAR-000056"
+  ],
+  "next_available_nar_id": "NAR-000057",
+  "factory_integrity": "PASS",
+  "waves": {
+    "W1": "PASS",
+    "W2": "PASS",
+    "W3": "PASS",
+    "W4": "PASS",
+    "W5": "PASS",
+    "W6": "PASS",
+    "W7": "PASS",
+    "W8": "PASS",
+    "W9": "PASS",
+    "W10": "PASS"
+  },
+  "verdict": "BATCH_005_COMPLETE"
+}
