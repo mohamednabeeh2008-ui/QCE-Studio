@@ -38,16 +38,20 @@ jobs:
           node scripts/qfm-v2/whole-quran-wave2-candidate-harvest.mjs
           node scripts/qfm-v2/whole-quran-waves3-5.mjs
           node scripts/qfm-v2/final-five-stage-engine.mjs
-      - name: Refine 186 broad holds into evidence-preserving review packets
+      - name: Refine broad holds into evidence-preserving review packets
         run: node scripts/qfm-v2/scholarly-case-refinery.mjs
       - name: Build Quranic evidence dossiers
         run: node scripts/qfm-v2/scholarly-dossier-engine.mjs
+      - name: Execute conservative evidence adjudication
+        run: node scripts/qfm-v2/evidence-adjudication-engine.mjs
       - name: Compile adjudications and recompute zero-proof closure
         run: node scripts/qfm-v2/adjudication-and-closure-controller.mjs
       - name: Verify refinery invariants
         run: node -e "const x=require('./data/qfm-v2/whole-quran/17-scholarly-case-refinery-v1.0.json');if(x.status!=='PASS'||x.orphan_refs||x.duplicate_refs||x.max_packet_verses>12)process.exit(1)"
       - name: Verify dossier completeness
         run: node -e "const x=require('./data/qfm-v2/whole-quran/18-scholarly-evidence-dossiers-v1.0.json');if(x.status!=='PASS'||x.silent_cases||x.dossiers!==x.items.length)process.exit(1)"
+      - name: Verify adjudication safety
+        run: node -e "const x=require('./data/qfm-v2/whole-quran/19-scholarly-decisions-v1.0.json');if(x.unsupported_identity_inferences!==0||x.auto_safe_decisions+x.scholarly_holds!==x.input_dossiers)process.exit(1)"
       - name: Verify adjudication is fail-closed
         run: node -e "const x=require('./data/qfm-v2/whole-quran/20-adjudication-state-v1.0.json');if(x.silent_unresolved||x.resolved+x.explicit_holds!==x.dossiers)process.exit(1)"
       - name: Verify promotion safety
@@ -58,8 +62,11 @@ jobs:
           git config user.email qce-production-bot@users.noreply.github.com
           git add data/quran/ data/qfm-v2/whole-quran/
           git diff --cached --quiet && exit 0
-          git commit -m 'build(qfm-v2): materialize scholarly refinery and zero-proof evidence [skip ci]'
-          git pull --rebase origin whole-quran-parallel-completion
-          git push origin HEAD:whole-quran-parallel-completion
+          git commit -m 'build(qfm-v2): materialize adjudication and zero-proof evidence [skip ci]'
+          for attempt in 1 2 3; do
+            git pull --rebase origin whole-quran-parallel-completion && git push origin HEAD:whole-quran-parallel-completion && exit 0
+            sleep $((attempt*3))
+          done
+          exit 1
       - name: Enforce final zero-proof certificate
         run: node -e "const x=require('./data/qfm-v2/whole-quran/22-zero-proof-closure-controller-v1.0.json');if(x.status!=='PASS'||x.independent_adversarial_audit!=='PASS'||x.whole_quran_narrative_research!=='COMPLETE'||x.zero_proof_matrix.explicit_scholarly_identity_holds!==0||x.remaining_work!==0){console.error('ZERO-PROOF FAIL_CLOSED: '+JSON.stringify({status:x.status,audit:x.independent_adversarial_audit,research:x.whole_quran_narrative_research,identity_holds:x.zero_proof_matrix.explicit_scholarly_identity_holds,remaining_work:x.remaining_work}));process.exit(1)}"
