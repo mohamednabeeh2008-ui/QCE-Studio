@@ -50,7 +50,6 @@ jobs:
       - name: Verify S5 zero-proof truth state
         run: node -e "const x=require('./data/qfm-v2/whole-quran/16-s5-adversarial-zero-proof-v1.0.json');if(x.zero_proof_matrix.unscanned||x.zero_proof_matrix.unclassified||x.zero_proof_matrix.unaccounted||x.zero_proof_matrix.silent_unresolved)process.exit(1)"
       - name: Persist generated evidence
-        if: github.event_name == 'push'
         run: |
           git config user.name qce-production-bot
           git config user.email qce-production-bot@users.noreply.github.com
