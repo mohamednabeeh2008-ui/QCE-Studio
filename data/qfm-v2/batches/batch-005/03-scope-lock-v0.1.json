@@ -1,1 +1,18 @@
-{"gate":"BATCH_005_SCOPE_LOCK","status":"BLOCKED_NO_SUBJECT","subject":null,"selection_source":"NOT_RECOVERED","factory_state":"REPEATABLE_PRODUCTION","locked":false,"reason":"Cannot lock scope before a canonically ordered subject is recovered and integrity-checked.","restrictions":["NO_BATCH_005_HARVEST","NO_RULE_CHANGES","NO_NAR-ID_ALLOCATION","KEEP_BF_R01_TO_BF_R06_LOCKED","KEEP_PNIE_LOCKED","KEEP_E09_LOCKED"],"preserved_state":{"last_permanent_nar_id":"NAR-000038","next_available_nar_id":"NAR-000039"},"next_required_action":"RECOVER_OR_BUILD_CANONICAL_QUEUED_SELECTION_THEN_RERUN_SELECTION_INTEGRITY_GATE","status":"COMPLETE"}
+{
+  "gate":"BATCH_005_SCOPE_LOCK",
+  "version":"1.0",
+  "status":"LOCKED",
+  "subject":"MOSES",
+  "subject_ar":"موسى",
+  "locked":true,
+  "selection_source":"data/qfm-v2/universe/01-canonical-production-queue-v0.1.json",
+  "selection_policy":{"primary":"FIRST_QURANIC_APPEARANCE_OF_SUBJECT_NARRATIVE","secondary":"MUSHAF_SURAH_ORDER","tertiary":"FIRST_RELEVANT_AYAH_ORDER"},
+  "selection_integrity":{"result":"PASS","method":"Re-read authoritative queue after excluding independently completed subjects ADAM, NOAH, ABRAHAM, LOT; selected subject remains MOSES.","independent_result":"MOSES","policy_sha256":"86e146c96478409666da7c00272109522aba853bd5fff5ac18290cfa60e96400"},
+  "conflict_resolution":{"previous_state":"BLOCKED_NO_SUBJECT","conflict_id":"CR-005-001","resolution":"SYNCHRONIZED_WITH_AUTHORITATIVE_QUEUE_AFTER_INTEGRITY_VALIDATION"},
+  "factory_state":"REPEATABLE_PRODUCTION",
+  "production_started":false,
+  "nar_000039_allocated":false,
+  "preserved_state":{"last_permanent_nar_id":"NAR-000038","next_available_nar_id":"NAR-000039"},
+  "restrictions_until_production_gate":["NO_PREMATURE_NAR_ID_ALLOCATION","KEEP_HOLDS_PRESERVED","KEEP_EVENT_JOURNEY_WITNESS_SEPARATION"],
+  "next_required_action":"RUN_MISSION_005_PRE_FINAL_GATE_THEN_HANDOFF_TO_BATCH_005_PRODUCTION"
+}
