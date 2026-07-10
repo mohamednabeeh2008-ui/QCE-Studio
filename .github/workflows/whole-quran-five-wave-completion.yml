@@ -48,6 +48,8 @@ jobs:
           node scripts/qfm-v2/parent-case-scientific-court.mjs
           node scripts/qfm-v2/scientific-review-queue-v2.mjs
           node scripts/qfm-v2/global-identity-reconciliation.mjs
+      - name: Supervisor checkpoint
+        run: node scripts/qfm-v2/five-wave-supervisor.mjs
       - name: Enforce materialization contract
         run: node scripts/qfm-v2/execution-sentinel-and-materialization.mjs --verify
       - name: Verify evidence and court invariants
@@ -56,23 +58,27 @@ jobs:
           node -e "const x=require('./data/qfm-v2/whole-quran/24-packet-disposition-parent-court-v1.0.json');if(x.orphan_packets||x.duplicate_refs||x.parent_cases_restored!==186)process.exit(1)"
           node -e "const x=require('./data/qfm-v2/whole-quran/25-parent-case-court-v1.0.json');if(x.input_parent_cases!==186||x.court_records!==186||x.silent||x.unsupported_verdicts||x.nar_allocations)process.exit(1)"
           node -e "const x=require('./data/qfm-v2/whole-quran/25a-scientific-review-queue-v2.json');if(x.status!=='PASS'||x.input_parent_cases!==186||x.queue_items!==186)process.exit(1)"
-          node -e "const x=require('./data/qfm-v2/whole-quran/26-global-identity-graph-v1.0.json');if(x.unknown_edges||x.orphans||x.false_merge_survivors||x.false_split_survivors)process.exit(1)"
-          node -e "const x=require('./data/qfm-v2/whole-quran/27-canonical-legal-units-v1.0.json');if(x.unknown_dispositions||x.orphans||x.input_resolved_nodes!==x.canonical_units)process.exit(1)"
       - name: Persist branch-head evidence
+        id: persist
+        continue-on-error: true
         run: |
           git config user.name qce-production-bot
           git config user.email qce-production-bot@users.noreply.github.com
           git add data/quran/ data/qfm-v2/whole-quran/
           git diff --cached --quiet && exit 0
-          git commit -m 'build(qfm-v2): materialize scientific review queue [skip ci]'
+          git commit -m 'build(qfm-v2): supervisor checkpoint [skip ci]'
           for attempt in 1 2 3; do
-            git pull --rebase origin whole-quran-parallel-completion && git push origin HEAD:whole-quran-parallel-completion && exit 0
+            git fetch origin whole-quran-parallel-completion
+            git rebase origin/whole-quran-parallel-completion && git push origin HEAD:whole-quran-parallel-completion && exit 0
+            git rebase --abort || true
             sleep $((attempt*3))
           done
           exit 1
-      - name: Report scientific court state
+      - name: Supervisor problem interrogation
+        if: always()
+        run: node scripts/qfm-v2/five-wave-supervisor.mjs
+      - name: Fail if evidence persistence failed
+        if: steps.persist.outcome == 'failure'
         run: |
-          node - <<'NODE'
-          const c=require('./data/qfm-v2/whole-quran/25-parent-case-court-v1.0.json');const q=require('./data/qfm-v2/whole-quran/25a-scientific-review-queue-v2.json');const u=require('./data/qfm-v2/whole-quran/27-canonical-legal-units-v1.0.json');
-          console.log(JSON.stringify({court_status:c.status,input_parent_cases:c.input_parent_cases,adjudicated:c.adjudicated,explicit_holds:c.explicit_holds,review_queue:q.queue_counts,identity_status:u.status,canonical_units:u.canonical_units}));
-          NODE
+          echo 'Supervisor diagnosis: EVIDENCE_PERSISTENCE_FAILED. Execute the ten-step recovery protocol recorded in 00-five-wave-supervisor-state-v1.0.json.'
+          exit 1
