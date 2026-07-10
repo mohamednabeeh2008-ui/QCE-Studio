@@ -65,7 +65,7 @@
         "PRODUCTION_EVIDENCE",
         "REFERENCE_ONLY"
       ],
-      "source_count": 10,
+      "source_count": 11,
       "sources": [
         {
           "source": "data/qfm-v2/batches/batch-004/09-prior-registry-collision-audit-v0.1.json",
@@ -131,6 +131,18 @@
         {
           "source": "data/qfm-v2/universe/mission-005-pre-canonical-narrative-universe-coverage-v0.1.json",
           "sha256": "be20d94437e019b194ad09a90c979cb7cc84952915eeaa28c046877933c9ad01",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": [
+            "EVENT",
+            "HOLD",
+            "JOURNEY",
+            "SUBJECT",
+            "WITNESS"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/universe/mission-005-pre-final-closure-v1.0.json",
+          "sha256": "de6ffa10962dd6898484de7a10f48bac6a0c14a1a2eabf57aeaa0f4ec4feb47b",
           "evidence_class": "REFERENCE_ONLY",
           "lanes": [
             "EVENT",
@@ -1943,7 +1955,7 @@
         "PROMOTION_EVIDENCE",
         "REFERENCE_ONLY"
       ],
-      "source_count": 15,
+      "source_count": 16,
       "sources": [
         {
           "source": "data/qfm-v2/batches/batch-004/12-permanent-narrative-registry-v0.1.jsonl",
@@ -2042,6 +2054,18 @@
         {
           "source": "data/qfm-v2/universe/mission-005-pre-canonical-narrative-universe-coverage-v0.1.json",
           "sha256": "be20d94437e019b194ad09a90c979cb7cc84952915eeaa28c046877933c9ad01",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": [
+            "EVENT",
+            "HOLD",
+            "JOURNEY",
+            "SUBJECT",
+            "WITNESS"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/universe/mission-005-pre-final-closure-v1.0.json",
+          "sha256": "de6ffa10962dd6898484de7a10f48bac6a0c14a1a2eabf57aeaa0f4ec4feb47b",
           "evidence_class": "REFERENCE_ONLY",
           "lanes": [
             "EVENT",
