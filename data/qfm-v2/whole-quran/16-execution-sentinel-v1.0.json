@@ -1,7 +1,7 @@
 {
   "schema": "qfm-v2/execution-sentinel-v1",
   "status": "STARTED",
-  "head_sha": "ffda1fdd80e1a2f1e44a01cf10fca77483a164a3",
+  "head_sha": "bda0315a530d819d88981b25cfc9c88d6aef6c2d",
   "workflow_version": "WHOLE_QURAN_COMPLETION_V3",
   "engine_chain": [
     "REFINERY",
@@ -11,7 +11,7 @@
     "PROMOTION",
     "ZERO_PROOF"
   ],
-  "execution_mode": "BRANCH_HEAD_PRODUCTION",
-  "ref": "refs/heads/whole-quran-parallel-completion",
-  "started_at": "2026-07-10T16:19:59.837Z"
+  "execution_mode": "READ_ONLY_VALIDATION",
+  "ref": "refs/pull/16/merge",
+  "started_at": "2026-07-10T16:20:04.123Z"
 }
