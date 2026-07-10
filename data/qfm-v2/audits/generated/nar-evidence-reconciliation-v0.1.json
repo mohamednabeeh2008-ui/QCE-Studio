@@ -1955,7 +1955,7 @@
         "PROMOTION_EVIDENCE",
         "REFERENCE_ONLY"
       ],
-      "source_count": 16,
+      "source_count": 17,
       "sources": [
         {
           "source": "data/qfm-v2/batches/batch-004/12-permanent-narrative-registry-v0.1.jsonl",
@@ -2007,6 +2007,17 @@
           "evidence_class": "PRODUCTION_EVIDENCE",
           "lanes": [
             "SUBJECT"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/batches/batch-005/04-production-mission-v1.0.json",
+          "sha256": "b290c7ef78a89e0b47f5056b99359245f3725cdd64445a7092a52e745e5ce0a6",
+          "evidence_class": "PRODUCTION_EVIDENCE",
+          "lanes": [
+            "EVENT",
+            "JOURNEY",
+            "SUBJECT",
+            "WITNESS"
           ]
         },
         {
