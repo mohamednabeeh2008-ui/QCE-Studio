@@ -1,0 +1,32 @@
+name: Mission 005-PRE Final Gate
+on:
+  push:
+    paths:
+      - 'data/qfm-v2/universe/**'
+      - 'data/qfm-v2/recovery/**'
+      - 'data/qfm-v2/batches/batch-005/**'
+      - 'data/qfm-v2/audits/generated/recovered-nar-authority-ledger-v0.1.json'
+      - 'scripts/qfm-v2/validate-mission-005-pre.mjs'
+      - '.github/workflows/mission-005-pre-final-gate.yml'
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run Mission 005-PRE final gate
+        run: node scripts/qfm-v2/validate-mission-005-pre.mjs
+      - name: Verify certification artifact
+        run: |
+          test -s data/qfm-v2/audits/generated/mission-005-pre-final-gate-v1.0.json
+          node -e "const x=require('./data/qfm-v2/audits/generated/mission-005-pre-final-gate-v1.0.json'); if(x.mission_005_pre!=='COMPLETE') process.exit(1); if(x.selected_subject!=='MOSES') process.exit(1); console.log(x)"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mission-005-pre-final-certification
+          path: data/qfm-v2/audits/generated/mission-005-pre-final-gate-v1.0.json
