@@ -1,0 +1,17 @@
+{
+  "schema": "qfm-v2/execution-sentinel-v1",
+  "status": "STARTED",
+  "head_sha": "ba998f8009c2300d2d5c520ca358905e73c2a7ef",
+  "workflow_version": "WHOLE_QURAN_COMPLETION_V3",
+  "engine_chain": [
+    "REFINERY",
+    "DOSSIER",
+    "ADJUDICATION",
+    "COMPILER",
+    "PROMOTION",
+    "ZERO_PROOF"
+  ],
+  "execution_mode": "BRANCH_HEAD_PRODUCTION",
+  "ref": "refs/heads/whole-quran-parallel-completion",
+  "started_at": "2026-07-10T13:27:18.792Z"
+}

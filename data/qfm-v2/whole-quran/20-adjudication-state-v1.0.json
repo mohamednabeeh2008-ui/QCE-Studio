@@ -1,0 +1,2235 @@
+{
+  "engine": "ADJUDICATION_COMPILER_V1",
+  "status": "OPEN",
+  "dossiers": 533,
+  "decisions_received": 10,
+  "resolved": 10,
+  "explicit_holds": 523,
+  "silent_unresolved": 0,
+  "resolved_items": [
+    {
+      "packet_id": "PACKET-00027",
+      "verdict": "DISTINCT",
+      "legal_type": "WITNESS",
+      "boundary_reason": "Single-verse review packet; boundary is exactly the cited Quranic reference.",
+      "identity_reason": "The engine certifies only witness coverage for a singleton packet and does not infer sameness with any event or journey.",
+      "rejected_alternative": "Automatic EVENT or JOURNEY promotion rejected because a singleton citation alone does not prove legal narrative identity.",
+      "evidence_refs": [
+        "3:13"
+      ],
+      "promotable": false,
+      "decision_class": "AUTO_SAFE_WITNESS_ONLY"
+    },
+    {
+      "packet_id": "PACKET-00029",
+      "verdict": "DISTINCT",
+      "legal_type": "WITNESS",
+      "boundary_reason": "Single-verse review packet; boundary is exactly the cited Quranic reference.",
+      "identity_reason": "The engine certifies only witness coverage for a singleton packet and does not infer sameness with any event or journey.",
+      "rejected_alternative": "Automatic EVENT or JOURNEY promotion rejected because a singleton citation alone does not prove legal narrative identity.",
+      "evidence_refs": [
+        "3:29"
+      ],
+      "promotable": false,
+      "decision_class": "AUTO_SAFE_WITNESS_ONLY"
+    },
+    {
+      "packet_id": "PACKET-00037",
+      "verdict": "DISTINCT",
+      "legal_type": "WITNESS",
+      "boundary_reason": "Single-verse review packet; boundary is exactly the cited Quranic reference.",
+      "identity_reason": "The engine certifies only witness coverage for a singleton packet and does not infer sameness with any event or journey.",
+      "rejected_alternative": "Automatic EVENT or JOURNEY promotion rejected because a singleton citation alone does not prove legal narrative identity.",
+      "evidence_refs": [
+        "3:113"
+      ],
+      "promotable": false,
+      "decision_class": "AUTO_SAFE_WITNESS_ONLY"
+    },
+    {
+      "packet_id": "PACKET-00049",
+      "verdict": "DISTINCT",
+      "legal_type": "WITNESS",
+      "boundary_reason": "Single-verse review packet; boundary is exactly the cited Quranic reference.",
+      "identity_reason": "The engine certifies only witness coverage for a singleton packet and does not infer sameness with any event or journey.",
+      "rejected_alternative": "Automatic EVENT or JOURNEY promotion rejected because a singleton citation alone does not prove legal narrative identity.",
+      "evidence_refs": [
+        "4:49"
+      ],
+      "promotable": false,
+      "decision_class": "AUTO_SAFE_WITNESS_ONLY"
+    },
+    {
+      "packet_id": "PACKET-00297",
+      "verdict": "DISTINCT",
+      "legal_type": "WITNESS",
+      "boundary_reason": "Single-verse review packet; boundary is exactly the cited Quranic reference.",
+      "identity_reason": "The engine certifies only witness coverage for a singleton packet and does not infer sameness with any event or journey.",
+      "rejected_alternative": "Automatic EVENT or JOURNEY promotion rejected because a singleton citation alone does not prove legal narrative identity.",
+      "evidence_refs": [
+        "29:19"
+      ],
+      "promotable": false,
+      "decision_class": "AUTO_SAFE_WITNESS_ONLY"
+    },
+    {
+      "packet_id": "PACKET-00322",
+      "verdict": "DISTINCT",
+      "legal_type": "WITNESS",
+      "boundary_reason": "Single-verse review packet; boundary is exactly the cited Quranic reference.",
+      "identity_reason": "The engine certifies only witness coverage for a singleton packet and does not infer sameness with any event or journey.",
+      "rejected_alternative": "Automatic EVENT or JOURNEY promotion rejected because a singleton citation alone does not prove legal narrative identity.",
+      "evidence_refs": [
+        "34:37"
+      ],
+      "promotable": false,
+      "decision_class": "AUTO_SAFE_WITNESS_ONLY"
+    },
+    {
+      "packet_id": "PACKET-00333",
+      "verdict": "DISTINCT",
+      "legal_type": "WITNESS",
+      "boundary_reason": "Single-verse review packet; boundary is exactly the cited Quranic reference.",
+      "identity_reason": "The engine certifies only witness coverage for a singleton packet and does not infer sameness with any event or journey.",
+      "rejected_alternative": "Automatic EVENT or JOURNEY promotion rejected because a singleton citation alone does not prove legal narrative identity.",
+      "evidence_refs": [
+        "36:55"
+      ],
+      "promotable": false,
+      "decision_class": "AUTO_SAFE_WITNESS_ONLY"
+    },
+    {
+      "packet_id": "PACKET-00428",
+      "verdict": "DISTINCT",
+      "legal_type": "WITNESS",
+      "boundary_reason": "Single-verse review packet; boundary is exactly the cited Quranic reference.",
+      "identity_reason": "The engine certifies only witness coverage for a singleton packet and does not infer sameness with any event or journey.",
+      "rejected_alternative": "Automatic EVENT or JOURNEY promotion rejected because a singleton citation alone does not prove legal narrative identity.",
+      "evidence_refs": [
+        "54:14"
+      ],
+      "promotable": false,
+      "decision_class": "AUTO_SAFE_WITNESS_ONLY"
+    },
+    {
+      "packet_id": "PACKET-00448",
+      "verdict": "DISTINCT",
+      "legal_type": "WITNESS",
+      "boundary_reason": "Single-verse review packet; boundary is exactly the cited Quranic reference.",
+      "identity_reason": "The engine certifies only witness coverage for a singleton packet and does not infer sameness with any event or journey.",
+      "rejected_alternative": "Automatic EVENT or JOURNEY promotion rejected because a singleton citation alone does not prove legal narrative identity.",
+      "evidence_refs": [
+        "60:13"
+      ],
+      "promotable": false,
+      "decision_class": "AUTO_SAFE_WITNESS_ONLY"
+    },
+    {
+      "packet_id": "PACKET-00453",
+      "verdict": "DISTINCT",
+      "legal_type": "WITNESS",
+      "boundary_reason": "Single-verse review packet; boundary is exactly the cited Quranic reference.",
+      "identity_reason": "The engine certifies only witness coverage for a singleton packet and does not infer sameness with any event or journey.",
+      "rejected_alternative": "Automatic EVENT or JOURNEY promotion rejected because a singleton citation alone does not prove legal narrative identity.",
+      "evidence_refs": [
+        "64:13"
+      ],
+      "promotable": false,
+      "decision_class": "AUTO_SAFE_WITNESS_ONLY"
+    }
+  ],
+  "holds": [
+    {
+      "packet_id": "PACKET-00001",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00002",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00003",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00004",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00005",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00006",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00007",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00008",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00009",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00010",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00011",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00012",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00013",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00014",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00015",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00016",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00017",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00018",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00019",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00020",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00021",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00022",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00023",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00024",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00025",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00026",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00028",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00030",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00031",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00032",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00033",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00034",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00035",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00036",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00038",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00039",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00040",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00041",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00042",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00043",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00044",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00045",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00046",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00047",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00048",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00050",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00051",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00052",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00053",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00054",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00055",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00056",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00057",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00058",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00059",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00060",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00061",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00062",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00063",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00064",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00065",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00066",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00067",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00068",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00069",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00070",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00071",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00072",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00073",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00074",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00075",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00076",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00077",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00078",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00079",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00080",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00081",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00082",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00083",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00084",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00085",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00086",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00087",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00088",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00089",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00090",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00091",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00092",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00093",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00094",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00095",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00096",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00097",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00098",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00099",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00100",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00101",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00102",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00103",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00104",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00105",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00106",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00107",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00108",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00109",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00110",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00111",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00112",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00113",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00114",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00115",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00116",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00117",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00118",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00119",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00120",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00121",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00122",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00123",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00124",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00125",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00126",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00127",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00128",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00129",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00130",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00131",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00132",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00133",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00134",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00135",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00136",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00137",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00138",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00139",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00140",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00141",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00142",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00143",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00144",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00145",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00146",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00147",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00148",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00149",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00150",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00151",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00152",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00153",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00154",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00155",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00156",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00157",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00158",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00159",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00160",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00161",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00162",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00163",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00164",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00165",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00166",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00167",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00168",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00169",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00170",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00171",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00172",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00173",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00174",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00175",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00176",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00177",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00178",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00179",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00180",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00181",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00182",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00183",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00184",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00185",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00186",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00187",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00188",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00189",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00190",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00191",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00192",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00193",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00194",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00195",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00196",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00197",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00198",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00199",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00200",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00201",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00202",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00203",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00204",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00205",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00206",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00207",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00208",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00209",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00210",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00211",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00212",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00213",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00214",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00215",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00216",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00217",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00218",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00219",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00220",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00221",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00222",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00223",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00224",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00225",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00226",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00227",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00228",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00229",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00230",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00231",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00232",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00233",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00234",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00235",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00236",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00237",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00238",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00239",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00240",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00241",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00242",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00243",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00244",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00245",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00246",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00247",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00248",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00249",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00250",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00251",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00252",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00253",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00254",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00255",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00256",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00257",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00258",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00259",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00260",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00261",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00262",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00263",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00264",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00265",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00266",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00267",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00268",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00269",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00270",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00271",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00272",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00273",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00274",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00275",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00276",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00277",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00278",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00279",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00280",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00281",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00282",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00283",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00284",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00285",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00286",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00287",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00288",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00289",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00290",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00291",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00292",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00293",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00294",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00295",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00296",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00298",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00299",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00300",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00301",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00302",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00303",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00304",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00305",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00306",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00307",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00308",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00309",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00310",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00311",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00312",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00313",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00314",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00315",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00316",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00317",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00318",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00319",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00320",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00321",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00323",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00324",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00325",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00326",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00327",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00328",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00329",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00330",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00331",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00332",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00334",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00335",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00336",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00337",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00338",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00339",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00340",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00341",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00342",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00343",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00344",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00345",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00346",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00347",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00348",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00349",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00350",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00351",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00352",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00353",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00354",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00355",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00356",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00357",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00358",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00359",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00360",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00361",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00362",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00363",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00364",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00365",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00366",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00367",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00368",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00369",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00370",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00371",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00372",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00373",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00374",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00375",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00376",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00377",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00378",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00379",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00380",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00381",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00382",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00383",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00384",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00385",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00386",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00387",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00388",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00389",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00390",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00391",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00392",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00393",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00394",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00395",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00396",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00397",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00398",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00399",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00400",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00401",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00402",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00403",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00404",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00405",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00406",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00407",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00408",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00409",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00410",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00411",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00412",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00413",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00414",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00415",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00416",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00417",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00418",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00419",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00420",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00421",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00422",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00423",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00424",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00425",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00426",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00427",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00429",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00430",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00431",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00432",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00433",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00434",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00435",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00436",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00437",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00438",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00439",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00440",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00441",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00442",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00443",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00444",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00445",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00446",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00447",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00449",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00450",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00451",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00452",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00454",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00455",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00456",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00457",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00458",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00459",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00460",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00461",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00462",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00463",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00464",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00465",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00466",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00467",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00468",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00469",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00470",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00471",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00472",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00473",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00474",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00475",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00476",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00477",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00478",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00479",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00480",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00481",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00482",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00483",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00484",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00485",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00486",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00487",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00488",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00489",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00490",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00491",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00492",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00493",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00494",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00495",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00496",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00497",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00498",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00499",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00500",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00501",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00502",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00503",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00504",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00505",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00506",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00507",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00508",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00509",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00510",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00511",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00512",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00513",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00514",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00515",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00516",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00517",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00518",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00519",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00520",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00521",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00522",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00523",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00524",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00525",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00526",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00527",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00528",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00529",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00530",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00531",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00532",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    },
+    {
+      "packet_id": "PACKET-00533",
+      "reason": "AWAITING_SCHOLARLY_DECISION"
+    }
+  ]
+}

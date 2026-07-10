@@ -1,0 +1,9 @@
+{
+  "engine": "SERIAL_TRUTH_PROMOTION_CONTROLLER_V1",
+  "status": "BLOCKED_BY_IDENTITY_HOLDS",
+  "last_existing": "NAR-000056",
+  "next_available": "NAR-000057",
+  "candidate_count": 0,
+  "new_allocations": 0,
+  "rule": "NO_NAR_ALLOCATION_UNTIL_ALL_IDENTITY_HOLDS_ZERO_AND_GLOBAL_COLLISION_GATE_PASS"
+}
