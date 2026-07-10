@@ -1,0 +1,51 @@
+name: Batch 005 Moses Final Closure
+on:
+  push:
+    paths:
+      - 'data/qfm-v2/batches/batch-005/05-pnie-local-instances-v0.1.jsonl'
+      - 'scripts/qfm-v2/close-batch-005-moses.mjs'
+      - '.github/workflows/batch-005-moses-close.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  close:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Execute ten closure waves
+        run: node scripts/qfm-v2/close-batch-005-moses.mjs
+      - name: Verify final closure
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const p='data/qfm-v2/batches/batch-005/14-final-closure-v1.0.json';
+          if(!fs.existsSync(p)) process.exit(1);
+          const x=require('./'+p);
+          if(x.batch_005!=='COMPLETE'||x.factory_integrity!=='PASS'||!x.all_local_instances_accounted_for) process.exit(1);
+          if(Object.values(x.waves).some(v=>v!=='PASS')) process.exit(1);
+          if(x.permanent_nar_range[0]!=='NAR-000039') process.exit(1);
+          console.log(x);
+          NODE
+      - name: Persist certified Batch 005 closure
+        run: |
+          git config user.name "qce-production-bot"
+          git config user.email "qce-production-bot@users.noreply.github.com"
+          git add data/qfm-v2/batches/batch-005/06-five-dimension-identity-matrix-v0.1.jsonl
+          git add data/qfm-v2/batches/batch-005/07-legal-units-v0.1.jsonl
+          git add data/qfm-v2/batches/batch-005/08-duplicate-hold-dispositions-v0.1.jsonl
+          git add data/qfm-v2/batches/batch-005/09-prior-registry-collision-audit-v0.1.jsonl
+          git add data/qfm-v2/batches/batch-005/10-coverage-completeness-gate-v0.1.json
+          git add data/qfm-v2/batches/batch-005/11-promotion-eligibility-v0.1.jsonl
+          git add data/qfm-v2/batches/batch-005/12-permanent-narrative-registry-v0.1.jsonl
+          git add data/qfm-v2/batches/batch-005/13-batch-ledger-v0.1.json
+          git add data/qfm-v2/batches/batch-005/14-final-closure-v1.0.json
+          git commit -m "close(qfm-v2): complete Batch 005 Moses production [skip ci]"
+          git push
+      - uses: actions/upload-artifact@v4
+        with:
+          name: batch-005-moses-final-closure
+          path: data/qfm-v2/batches/batch-005/
