@@ -1,5 +1,5 @@
 {
-  "schema": "qfm-v2/narrative-universe-source-census/v0.3",
+  "schema": "qfm-v2/narrative-universe-source-census/v0.4",
   "generated_by": "scripts/qfm-v2/audit-narrative-universe-coverage.mjs",
   "source_roots": [
     "data/qfm-v2",
@@ -10,6 +10,7 @@
   "recovered_counts": {
     "nar_references": 39,
     "allocated_nar_ids": 7,
+    "recovered_nar_authority_ids": 38,
     "cid_ids": 0,
     "local_instance_ids": 24
   },
@@ -64,8 +65,8 @@
       "missing_ids": []
     },
     "authoritative_nar_allocations": {
-      "status": "RECONCILIATION_REQUIRED",
-      "authority_rule": "Only permanent-narrative-registry*.jsonl files prove permanent NAR allocation.",
+      "status": "RECOVERY_LAYER_REQUIRED",
+      "authority_rule": "Original authority remains distinct from recovered authority.",
       "allocated_ids": [
         "NAR-000032",
         "NAR-000033",
@@ -125,13 +126,13 @@
       "PRODUCTION_PROVEN": 18,
       "PROMOTION_PROVEN": 13
     },
-    "unresolved_authority_count": 31
+    "unresolved_original_authority_count": 31,
+    "recovered_authority_coverage": "38_OF_38"
   },
   "mission_gate": {
     "mission": "MISSION 005-PRE",
     "complete": false,
     "blockers": [
-      "NAR_ALLOCATION_RECONCILIATION_REQUIRED",
       "CID_CORPUS_NOT_MATERIALIZED"
     ]
   },
@@ -159,7 +160,6 @@
     ],
     "nar_000039_allocated": false,
     "nar_000039_allocation_rows": [],
-    "allocation_authority_rule": "Only permanent-narrative-registry*.jsonl files prove permanent NAR allocation.",
     "pass": true
   },
   "evidence": [
