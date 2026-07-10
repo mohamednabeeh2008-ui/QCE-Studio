@@ -1,0 +1,14 @@
+{
+  "wave": "W4",
+  "status": "LOCKED_UNTIL_W1_W3_COMPLETE",
+  "ordered_gates": [
+    "VERIFY_PROVENANCE",
+    "VERIFY_BOUNDARY",
+    "CROSS_LANE_DUPLICATE_CHECK",
+    "CROSS_BATCH_COLLISION_CHECK",
+    "HOLD_CHECK",
+    "GLOBAL_ORDER",
+    "SERIAL_PERMANENT_NAR_ALLOCATION"
+  ],
+  "allocation_start": "NAR-000057"
+}

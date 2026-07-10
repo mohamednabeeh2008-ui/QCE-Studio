@@ -1,0 +1,18 @@
+{
+  "wave": "W3",
+  "status": "READY",
+  "required_dispositions": [
+    "LEGAL_UNIT",
+    "WITNESS",
+    "DUPLICATE",
+    "HOLD",
+    "OUT_OF_SCOPE"
+  ],
+  "identity_rule": "LOCAL_INSTANCE_IS_EVIDENCE_NOT_AUTOMATIC_PERMANENT_UNIT",
+  "cid_provenance": [
+    "RECOVERED",
+    "RECONSTRUCTED",
+    "ATTESTED_ONLY",
+    "UNRESOLVED"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "wave": "W1",
+  "status": "PASS",
+  "canonical_source": "data/quran/canonical-quran.jsonl",
+  "surahs_scanned": 114,
+  "canonical_verse_rows": 6236,
+  "unique_refs": 6236,
+  "unscanned": 0,
+  "unclassified": "PENDING_CLASSIFIER",
+  "allocation_frozen": true
+}
