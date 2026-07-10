@@ -1,0 +1,11 @@
+{
+  "wave": "W3",
+  "status": "COMPLETE_FAIL_CLOSED",
+  "families": 0,
+  "candidate_verses": 0,
+  "all_items_classified": true,
+  "legal_units_promoted": 0,
+  "holds": 0,
+  "rule": "LOCAL_INSTANCE_IS_EVIDENCE_NOT_AUTOMATIC_PERMANENT_UNIT",
+  "note": "No machine candidate is promoted without scholarly PNIE review."
+}

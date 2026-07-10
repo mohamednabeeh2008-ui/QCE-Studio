@@ -1,0 +1,15 @@
+{
+  "wave": "W4",
+  "status": "COMPLETE_NO_PROMOTION",
+  "verify_provenance": "PASS",
+  "verify_boundary": "PASS_FAIL_CLOSED_HOLDS",
+  "cross_lane_duplicate_check": "PASS",
+  "cross_batch_collision_check": "PASS_NO_NEW_PERMANENT_IDS",
+  "hold_check": "PASS_ALL_UNCERTAINTY_EXPLICIT",
+  "global_order": "DEFERRED_UNTIL_PROMOTABLE_UNITS_EXIST",
+  "serial_permanent_nar_allocation": "NO_OP",
+  "allocation_start_reserved": "NAR-000057",
+  "new_nar_allocated": 0,
+  "nar_gap_created": 0,
+  "nar_duplicate_created": 0
+}

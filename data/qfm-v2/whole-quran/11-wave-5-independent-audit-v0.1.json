@@ -1,0 +1,30 @@
+{
+  "wave": "W5",
+  "status": "AUDIT_COMPLETE_CLOSURE_WITHHELD",
+  "denominator": {
+    "surahs": 114,
+    "verses": 6236
+  },
+  "accounting": {
+    "accounted": 6236,
+    "unaccounted": 0,
+    "unclassified": 0,
+    "silent_unresolved": 0,
+    "explicit_holds": 0,
+    "explicit_out_of_scope": 6236
+  },
+  "registry": {
+    "last_existing": "NAR-000056",
+    "next_reserved": "NAR-000057",
+    "new_allocations": 0,
+    "nar_gaps_created": 0,
+    "nar_duplicates_created": 0
+  },
+  "independent_audit": "NOT_PASS_WHILE_SCHOLARLY_HOLDS_REMAIN",
+  "whole_quran_narrative_research": "NOT_COMPLETE",
+  "closure_blockers": [
+    "0 verse-level candidate holds require scholarly review",
+    "0 candidate families require PNIE/boundary adjudication"
+  ],
+  "truth_rule": "EXPLICIT ACCOUNTING IS NOT THE SAME AS SCHOLARLY COMPLETION"
+}
