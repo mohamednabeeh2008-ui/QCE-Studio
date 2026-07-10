@@ -657,7 +657,7 @@
     },
     {
       "source": "data/qfm-v2/batches/batch-005/03-scope-lock-v0.1.json",
-      "sha256": "94c9abdbb23385c1e1f6a5064a9b1b5d505eb34162295fa98c6a890cffef86f7",
+      "sha256": "8ff3b89f8764737067011b2130e46ca619e55809a57a3c4a58e13456b8626328",
       "ids": [
         "NAR-000038",
         "NAR-000039"
