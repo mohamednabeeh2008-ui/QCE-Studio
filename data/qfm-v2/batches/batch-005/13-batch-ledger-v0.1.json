@@ -1,0 +1,12 @@
+{
+  "batch": "BATCH-005",
+  "subject": "MOSES",
+  "status": "COMPLETE",
+  "legal_units": 18,
+  "permanent_records": 18,
+  "permanent_range": [
+    "NAR-000039",
+    "NAR-000056"
+  ],
+  "next_available_nar_id": "NAR-000057"
+}

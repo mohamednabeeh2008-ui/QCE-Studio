@@ -1,0 +1,15 @@
+{
+  "status":"ACTIVE",
+  "target":"CLOSE_BATCH_005",
+  "stages":[
+    "FREEZE_UNSAFE_ALLOCATOR",
+    "REBUILD_IDENTITY_AT_FAMILY_LEVEL",
+    "ACCOUNT_FOR_105_INSTANCES",
+    "RUN_COLLISION_HOLD_PROMOTION_GATES",
+    "ALLOCATE_AND_WRITE_EVIDENCE_BUNDLE",
+    "CERTIFY_AND_MERGE_FINAL_CLOSURE"
+  ],
+  "identity_rule":"LOCAL_INSTANCE_IS_WITNESS_NOT_PERMANENT_UNIT",
+  "family_model":{"families":20,"event_journey_candidates":18,"witness_only_families":2},
+  "nar_allocation":"FROZEN_UNTIL_ALL_GATES_PASS"
+}

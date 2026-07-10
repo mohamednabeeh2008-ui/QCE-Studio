@@ -1,0 +1,34 @@
+name: Batch 005 Family Finalize
+on:
+  push:
+    branches: [batch-005-final-repair]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: batch-005-final-repair
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/qfm-v2/close-batch-005-family-level.mjs
+      - name: Verify six-stage closure
+        run: |
+          node - <<'NODE'
+          const x=require('./data/qfm-v2/batches/batch-005/14-final-closure-v1.0.json');
+          if(x.batch_005!=='COMPLETE'||x.accounted_for!==105||x.legal_units!==18||x.factory_integrity!=='PASS')process.exit(1);
+          NODE
+      - name: Persist closure bundle
+        if: github.event_name == 'push'
+        run: |
+          git config user.name qce-production-bot
+          git config user.email qce-production-bot@users.noreply.github.com
+          git add data/qfm-v2/batches/batch-005/0*.jsonl data/qfm-v2/batches/batch-005/1*.json*
+          git commit -m 'close(qfm-v2): certify Batch 005 Moses family-level production [skip ci]'
+          git push origin HEAD:batch-005-final-repair
