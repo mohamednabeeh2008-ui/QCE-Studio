@@ -1,0 +1,56 @@
+{
+  "schema": "qfm-v2/cid-corpus-recovery-manifest/v0.1",
+  "track": "TRACK B — CID CORPUS RECOVERY",
+  "status": "ORIGINAL_CORPUS_NOT_RECOVERED",
+  "decision": "DO_NOT_FABRICATE",
+  "attested_facts": [
+    {
+      "fact": "A governed Candidate Unit inventory layer existed.",
+      "evidence_type": "git_commit",
+      "commit": "0d1e347328b6aa4cac5186e299413cfdb27c1d38",
+      "evidence_scope": "CID formation reconciliation governance only; not original row content."
+    },
+    {
+      "fact": "A historical aggregate candidate-unit population of 632 was recorded in recovery evidence.",
+      "evidence_type": "git_commit",
+      "commit": "ae2b81d86da3f52446aa0b764aec973b251ad0b9",
+      "evidence_scope": "Aggregate context only; explicitly not a recoverable row and not proof of individual CID identities."
+    }
+  ],
+  "search_exhaustion_v0_1": {
+    "commit_search_CID": {
+      "result": "ONE_GOVERNANCE_COMMIT_ONLY",
+      "matching_commit": "0d1e347328b6aa4cac5186e299413cfdb27c1d38"
+    },
+    "commit_search_Candidate_Unit": {
+      "result": "ONE_RECOVERY_STATUS_COMMIT_ONLY",
+      "matching_commit": "ae2b81d86da3f52446aa0b764aec973b251ad0b9"
+    },
+    "current_scanned_source_roots": {
+      "roots": ["data/qfm-v2", "knowledge"],
+      "result": "NO_ORIGINAL_CID_ROWS_OBSERVED"
+    }
+  },
+  "provenance_classes": {
+    "RECOVERED": "Original row content is present with traceable source provenance.",
+    "RECONSTRUCTED": "A new row is rebuilt from primary Quranic evidence and is never represented as the lost original row.",
+    "ATTESTED_ONLY": "Existence or aggregate context is evidenced, but original row content is absent.",
+    "UNRESOLVED": "Evidence is insufficient for a stronger claim."
+  },
+  "current_provenance_class": "ATTESTED_ONLY",
+  "forbidden_claims": [
+    "Do not infer individual CID rows from an aggregate count.",
+    "Do not infer a terminal CID identifier from memory or conversation history.",
+    "Do not label reconstructed rows as recovered rows.",
+    "Do not unlock MISSION 005-PRE from aggregate evidence alone."
+  ],
+  "factory_gates": {
+    "no_cid_claim_without_source_provenance": true,
+    "no_aggregate_to_row_inference": true,
+    "reconstructed_is_not_recovered": true,
+    "mission_005_pre_complete": false,
+    "batch_005_subject_lock_allowed": false,
+    "nar_000039_allocation_allowed": false
+  },
+  "next_action": "Build a separate Quranic-evidence-derived reconstruction inventory and coverage queue while preserving this manifest as the loss boundary for the original corpus."
+}
