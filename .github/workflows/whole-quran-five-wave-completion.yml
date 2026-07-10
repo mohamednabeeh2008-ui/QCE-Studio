@@ -1,7 +1,7 @@
 name: Whole Quran Five Wave Completion
 on:
   push:
-    branches: [whole-quran-parallel-completion]
+    branches: [whole-quran-parallel-completion, qfm-scholarly-case-resolution]
   pull_request:
     branches: [main]
   workflow_dispatch:
@@ -44,6 +44,7 @@ jobs:
           node scripts/qfm-v2/scholarly-dossier-engine.mjs
           node scripts/qfm-v2/evidence-adjudication-engine.mjs
           node scripts/qfm-v2/adjudication-and-closure-controller.mjs
+          node scripts/qfm-v2/packet-disposition-parent-court.mjs
       - name: Enforce materialization contract
         run: node scripts/qfm-v2/execution-sentinel-and-materialization.mjs --verify
       - name: Verify safety invariants
@@ -52,6 +53,7 @@ jobs:
           node -e "const x=require('./data/qfm-v2/whole-quran/19-scholarly-decisions-v1.0.json');if(x.unsupported_identity_inferences!==0||x.auto_safe_decisions+x.scholarly_holds!==x.input_dossiers)process.exit(1)"
           node -e "const x=require('./data/qfm-v2/whole-quran/20-adjudication-state-v1.0.json');if(x.silent_unresolved||x.resolved+x.explicit_holds!==x.dossiers)process.exit(1)"
           node -e "const x=require('./data/qfm-v2/whole-quran/21-promotion-controller-v1.0.json');if(x.new_allocations!==0||x.next_available!=='NAR-000057')process.exit(1)"
+          node -e "const x=require('./data/qfm-v2/whole-quran/24-packet-disposition-parent-court-v1.0.json');if(x.status!=='PASS'||x.source_packets!==x.packet_dispositions||x.source_parent_cases!==x.parent_cases_restored||x.orphan_packets||x.duplicate_refs||x.packet_legal_identity_claims||x.nar_allocations)process.exit(1)"
       - name: Persist branch-head evidence
         if: github.event_name == 'push'
         run: |
@@ -59,9 +61,10 @@ jobs:
           git config user.email qce-production-bot@users.noreply.github.com
           git add data/quran/ data/qfm-v2/whole-quran/
           git diff --cached --quiet && exit 0
-          git commit -m 'build(qfm-v2): materialize evidence chain 16-23 [skip ci]'
+          git commit -m 'build(qfm-v2): materialize evidence chain 16-24 [skip ci]'
+          BRANCH="${GITHUB_REF_NAME}"
           for attempt in 1 2 3; do
-            git pull --rebase origin whole-quran-parallel-completion && git push origin HEAD:whole-quran-parallel-completion && exit 0
+            git pull --rebase origin "$BRANCH" && git push origin "HEAD:$BRANCH" && exit 0
             sleep $((attempt*3))
           done
           exit 1
@@ -69,7 +72,8 @@ jobs:
         run: |
           node - <<'NODE'
           const x=require('./data/qfm-v2/whole-quran/22-zero-proof-closure-controller-v1.0.json');
-          console.log(JSON.stringify({status:x.status,audit:x.independent_adversarial_audit,research:x.whole_quran_narrative_research,identity_holds:x.zero_proof_matrix.explicit_scholarly_identity_holds,remaining_work:x.remaining_work}));
+          const p=require('./data/qfm-v2/whole-quran/24-packet-disposition-parent-court-v1.0.json');
+          console.log(JSON.stringify({status:x.status,audit:x.independent_adversarial_audit,research:x.whole_quran_narrative_research,identity_holds:x.zero_proof_matrix.explicit_scholarly_identity_holds,remaining_work:x.remaining_work,packet_disposition:p.status,parent_cases:p.parent_cases_restored}));
           NODE
       - name: Enforce final certificate only when zero is reached
         if: github.event_name == 'workflow_dispatch'
