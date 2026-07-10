@@ -1,7 +1,7 @@
 {
   "schema": "qfm-v2/materialization-contract-v1",
   "status": "PASS",
-  "source_head_sha": "ba998f8009c2300d2d5c520ca358905e73c2a7ef",
+  "source_head_sha": "92854eea3647ab863b70afd486f0985f2096a9b0",
   "files": [
     {
       "name": "17-scholarly-case-refinery-v1.0.json",
@@ -40,5 +40,5 @@
     "decisions_partition": true,
     "compiler_partition": true
   },
-  "verified_at": "2026-07-10T13:27:18.832Z"
+  "verified_at": "2026-07-10T15:37:17.899Z"
 }
