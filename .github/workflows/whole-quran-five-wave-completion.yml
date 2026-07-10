@@ -34,7 +34,7 @@ jobs:
           if(new Set(rows.map(x=>x.surah)).size!==114||new Set(rows.map(x=>`${x.surah}:${x.ayah}`)).size!==6236||rows.some(x=>!x.text))throw Error('canonical corpus integrity failure');
           const body=rows.map(JSON.stringify).join('\n')+'\n';fs.writeFileSync('data/quran/canonical-quran.jsonl',body);fs.writeFileSync('data/quran/canonical-quran-provenance.json',JSON.stringify({source:'Quran.com API v4',endpoint:'https://api.quran.com/api/v4/quran/verses/uthmani',script:'Uthmani',verse_rows:6236,surahs:114,sha256:crypto.createHash('sha256').update(body).digest('hex'),retrieved_at:new Date().toISOString()},null,2)+'\n');
           NODE
-      - name: Execute foundation and adjudication pipeline
+      - name: Execute waves 1 and 2
         run: |
           node scripts/qfm-v2/whole-quran-five-wave-engine.mjs
           node scripts/qfm-v2/whole-quran-wave2-candidate-harvest.mjs
@@ -46,23 +46,25 @@ jobs:
           node scripts/qfm-v2/adjudication-and-closure-controller.mjs
           node scripts/qfm-v2/packet-disposition-parent-court.mjs
           node scripts/qfm-v2/parent-case-scientific-court.mjs
+          node scripts/qfm-v2/global-identity-reconciliation.mjs
       - name: Enforce materialization contract
         run: node scripts/qfm-v2/execution-sentinel-and-materialization.mjs --verify
-      - name: Verify safety invariants and court integrity
+      - name: Verify safety and reconciliation invariants
         run: |
           node -e "const x=require('./data/qfm-v2/whole-quran/17-scholarly-case-refinery-v1.0.json');if(x.status!=='PASS'||x.orphan_refs||x.duplicate_refs||x.max_packet_verses>12)process.exit(1)"
           node -e "const x=require('./data/qfm-v2/whole-quran/19-scholarly-decisions-v1.0.json');if(x.unsupported_identity_inferences!==0||x.auto_safe_decisions+x.scholarly_holds!==x.input_dossiers)process.exit(1)"
-          node -e "const x=require('./data/qfm-v2/whole-quran/20-adjudication-state-v1.0.json');if(x.silent_unresolved||x.resolved+x.explicit_holds!==x.dossiers)process.exit(1)"
           node -e "const x=require('./data/qfm-v2/whole-quran/21-promotion-controller-v1.0.json');if(x.new_allocations!==0||x.next_available!=='NAR-000057')process.exit(1)"
           node -e "const x=require('./data/qfm-v2/whole-quran/24-packet-disposition-parent-court-v1.0.json');if(x.orphan_packets||x.duplicate_refs||x.parent_cases_restored!==186)process.exit(1)"
           node -e "const x=require('./data/qfm-v2/whole-quran/25-parent-case-court-v1.0.json');if(x.input_parent_cases!==186||x.court_records!==186||x.silent||x.unsupported_verdicts||x.nar_allocations)process.exit(1)"
+          node -e "const x=require('./data/qfm-v2/whole-quran/26-global-identity-graph-v1.0.json');if(x.unknown_edges||x.orphans||x.false_merge_survivors||x.false_split_survivors)process.exit(1)"
+          node -e "const x=require('./data/qfm-v2/whole-quran/27-canonical-legal-units-v1.0.json');if(x.unknown_dispositions||x.orphans||x.input_resolved_nodes!==x.canonical_units)process.exit(1)"
       - name: Persist branch-head evidence
         run: |
           git config user.name qce-production-bot
           git config user.email qce-production-bot@users.noreply.github.com
           git add data/quran/ data/qfm-v2/whole-quran/
           git diff --cached --quiet && exit 0
-          git commit -m 'build(qfm-v2): materialize evidence chain 16-25 [skip ci]'
+          git commit -m 'build(qfm-v2): materialize evidence chain 16-27 [skip ci]'
           for attempt in 1 2 3; do
             git pull --rebase origin whole-quran-parallel-completion && git push origin HEAD:whole-quran-parallel-completion && exit 0
             sleep $((attempt*3))
@@ -71,6 +73,6 @@ jobs:
       - name: Report fail-closed research state
         run: |
           node - <<'NODE'
-          const x=require('./data/qfm-v2/whole-quran/25-parent-case-court-v1.0.json');
-          console.log(JSON.stringify({status:x.status,input_parent_cases:x.input_parent_cases,adjudicated:x.adjudicated,explicit_holds:x.explicit_holds,silent:x.silent,unsupported_verdicts:x.unsupported_verdicts}));
+          const c=require('./data/qfm-v2/whole-quran/25-parent-case-court-v1.0.json');const u=require('./data/qfm-v2/whole-quran/27-canonical-legal-units-v1.0.json');
+          console.log(JSON.stringify({court_status:c.status,input_parent_cases:c.input_parent_cases,adjudicated:c.adjudicated,explicit_holds:c.explicit_holds,identity_status:u.status,canonical_units:u.canonical_units,unknown_dispositions:u.unknown_dispositions}));
           NODE
