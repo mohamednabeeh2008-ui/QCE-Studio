@@ -1,0 +1,50 @@
+name: Batch 005 Moses Harvest
+on:
+  push:
+    paths:
+      - 'data/qfm-v2/batches/batch-005/04-e01-candidate-families-v0.1.jsonl'
+      - 'scripts/qfm-v2/decompose-batch-005-moses-pnie.mjs'
+      - '.github/workflows/batch-005-moses-harvest.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Decompose candidate families into surah-local PNIE instances
+        run: node scripts/qfm-v2/decompose-batch-005-moses-pnie.mjs
+      - name: Verify harvest invariants
+        run: |
+          test -s data/qfm-v2/batches/batch-005/05-pnie-local-instances-v0.1.jsonl
+          node - <<'NODE'
+          const fs=require('fs');
+          const xs=fs.readFileSync('data/qfm-v2/batches/batch-005/05-pnie-local-instances-v0.1.jsonl','utf8').trim().split(/\n/).map(JSON.parse);
+          const rows=xs.filter(x=>x.local_instance_id);
+          if(rows.length!==105) process.exit(1);
+          if(new Set(rows.map(x=>x.local_instance_id)).size!==105) process.exit(1);
+          if(rows.some(x=>x.nar_id!==null)) process.exit(1);
+          if(rows.some(x=>!['EVENT','JOURNEY','WITNESS'].includes(x.lane))) process.exit(1);
+          console.log({local_instances:rows.length,event:rows.filter(x=>x.lane==='EVENT').length,journey:rows.filter(x=>x.lane==='JOURNEY').length,witness:rows.filter(x=>x.lane==='WITNESS').length});
+          NODE
+      - name: Persist verified decomposition
+        run: |
+          git config user.name "qce-production-bot"
+          git config user.email "qce-production-bot@users.noreply.github.com"
+          git add data/qfm-v2/batches/batch-005/05-pnie-local-instances-v0.1.jsonl
+          if git diff --cached --quiet; then
+            echo "No decomposition changes"
+          else
+            git commit -m "extract(qfm-v2): persist verified Moses PNIE decomposition [skip ci]"
+            git push
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: batch-005-moses-harvest-v0.1
+          path: |
+            data/qfm-v2/batches/batch-005/04-e01-candidate-families-v0.1.jsonl
+            data/qfm-v2/batches/batch-005/05-pnie-local-instances-v0.1.jsonl
