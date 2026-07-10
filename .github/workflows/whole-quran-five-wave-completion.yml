@@ -2,6 +2,8 @@ name: Whole Quran Five Wave Completion
 on:
   push:
     branches: [whole-quran-parallel-completion]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: write
@@ -19,26 +21,38 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Ingest canonical Uthmani Quran corpus
+        run: |
+          mkdir -p data/quran
+          curl --fail --silent --show-error --retry 3 'https://api.quran.com/api/v4/quran/verses/uthmani' -o /tmp/quran.json
+          node - <<'NODE'
+          const fs=require('fs'),crypto=require('crypto');
+          const raw=fs.readFileSync('/tmp/quran.json');
+          const j=JSON.parse(raw), verses=j.verses;
+          if(!Array.isArray(verses)||verses.length!==6236) throw new Error(`Expected 6236 verses, got ${verses?.length}`);
+          const rows=verses.map(v=>{const [surah,ayah]=v.verse_key.split(':').map(Number);return {surah,ayah,text:v.text_uthmani};});
+          if(new Set(rows.map(x=>x.surah)).size!==114) throw new Error('Expected 114 surahs');
+          if(new Set(rows.map(x=>`${x.surah}:${x.ayah}`)).size!==6236) throw new Error('Duplicate verse refs');
+          if(rows.some(x=>!x.text)) throw new Error('Empty verse text');
+          const body=rows.map(JSON.stringify).join('\n')+'\n';
+          fs.writeFileSync('data/quran/canonical-quran.jsonl',body);
+          fs.writeFileSync('data/quran/canonical-quran-provenance.json',JSON.stringify({source:'Quran.com API v4',endpoint:'https://api.quran.com/api/v4/quran/verses/uthmani',script:'Uthmani',verse_rows:6236,surahs:114,sha256:crypto.createHash('sha256').update(body).digest('hex'),retrieved_at:new Date().toISOString()},null,2)+'\n');
+          NODE
       - name: Execute five-wave fail-closed engine
         run: node scripts/qfm-v2/whole-quran-five-wave-engine.mjs
-      - name: Verify no premature completion
-        if: always()
+      - name: Verify W1 denominator
         run: |
           node - <<'NODE'
-          const fs=require('fs');
-          const p='data/qfm-v2/whole-quran/01-wave-1-census-gate-v1.0.json';
-          if(!fs.existsSync(p)) process.exit(1);
-          const x=require('./'+p);
-          if(x.status!=='PASS' && x.allocation_frozen!==true) process.exit(1);
-          console.log(x);
+          const x=require('./data/qfm-v2/whole-quran/01-wave-1-census-gate-v1.0.json');
+          if(x.status!=='PASS'||x.surahs_scanned!==114||x.unique_refs!==6236||x.unscanned!==0)process.exit(1);
           NODE
-      - name: Persist generated evidence when successful
-        if: success()
+      - name: Persist generated evidence
+        if: github.event_name == 'push'
         run: |
           git config user.name qce-production-bot
           git config user.email qce-production-bot@users.noreply.github.com
-          git add data/qfm-v2/whole-quran/
+          git add data/quran/ data/qfm-v2/whole-quran/
           git diff --cached --quiet && exit 0
-          git commit -m 'build(qfm-v2): materialize whole-Quran five-wave evidence [skip ci]'
+          git commit -m 'build(qfm-v2): certify W1 whole-Quran denominator [skip ci]'
           git pull --rebase origin whole-quran-parallel-completion
           git push origin HEAD:whole-quran-parallel-completion
