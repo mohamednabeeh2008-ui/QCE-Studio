@@ -47,8 +47,8 @@ jobs:
         run: node -e "const x=require('./data/qfm-v2/whole-quran/14-s3-global-identity-solver-v1.0.json');if(!x.event_journey_witness_preserved||x.cross_lane_unknown_collisions)process.exit(1)"
       - name: Verify S4 registry integrity
         run: node -e "const x=require('./data/qfm-v2/whole-quran/15-s4-serial-truth-promotion-v1.0.json');if(x.nar_gaps||x.nar_duplicates||x.premature_allocations)process.exit(1)"
-      - name: Verify S5 zero-proof truth state
-        run: node -e "const x=require('./data/qfm-v2/whole-quran/16-s5-adversarial-zero-proof-v1.0.json');if(x.zero_proof_matrix.unscanned||x.zero_proof_matrix.unclassified||x.zero_proof_matrix.unaccounted||x.zero_proof_matrix.silent_unresolved)process.exit(1)"
+      - name: Verify S5 accounting integrity
+        run: node -e "const x=require('./data/qfm-v2/whole-quran/16-s5-adversarial-zero-proof-v1.0.json');const m=x.zero_proof_matrix;if(m.unscanned||m.unclassified||m.unaccounted||m.orphan_holds||m.silent_unresolved||m.unknown_collisions||m.unsupported_promotions||m.nar_gaps||m.nar_duplicates||m.unprovenanced_cid_claims)process.exit(1)"
       - name: Persist generated evidence
         run: |
           git config user.name qce-production-bot
@@ -58,3 +58,5 @@ jobs:
           git commit -m 'build(qfm-v2): materialize final S1-S5 evidence [skip ci]'
           git pull --rebase origin whole-quran-parallel-completion
           git push origin HEAD:whole-quran-parallel-completion
+      - name: Enforce final S5 research completion certificate
+        run: node -e "const x=require('./data/qfm-v2/whole-quran/16-s5-adversarial-zero-proof-v1.0.json');if(x.status!=='PASS'||x.independent_adversarial_audit!=='PASS'||x.whole_quran_narrative_research!=='COMPLETE'||x.zero_proof_matrix.explicit_scholarly_identity_holds!==0||x.remaining_work!==0){console.error('S5 FAIL_CLOSED: '+JSON.stringify({status:x.status,audit:x.independent_adversarial_audit,research:x.whole_quran_narrative_research,identity_holds:x.zero_proof_matrix.explicit_scholarly_identity_holds,remaining_work:x.remaining_work}));process.exit(1)}"
