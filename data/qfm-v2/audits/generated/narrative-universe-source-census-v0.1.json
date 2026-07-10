@@ -5,8 +5,8 @@
     "data/qfm-v2",
     "knowledge"
   ],
-  "source_file_count": 134,
-  "evidence_file_count": 67,
+  "source_file_count": 135,
+  "evidence_file_count": 68,
   "recovered_counts": {
     "nar_references": 39,
     "allocated_nar_ids": 7,
@@ -156,7 +156,8 @@
       "data/qfm-v2/batches/batch-005/03-scope-lock-v0.1.json",
       "data/qfm-v2/governance/01-canonical-subject-coverage-queue-v0.1.json",
       "data/qfm-v2/universe/01-canonical-production-queue-v0.1.json",
-      "data/qfm-v2/universe/mission-005-pre-canonical-narrative-universe-coverage-v0.1.json"
+      "data/qfm-v2/universe/mission-005-pre-canonical-narrative-universe-coverage-v0.1.json",
+      "data/qfm-v2/universe/mission-005-pre-truth-freeze-v1.0.json"
     ],
     "nar_000039_allocated": false,
     "nar_000039_allocation_rows": [],
@@ -1064,6 +1065,18 @@
         "JOURNEY",
         "SUBJECT",
         "WITNESS"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/universe/mission-005-pre-truth-freeze-v1.0.json",
+      "sha256": "88193cab1b6c416027b267b588928f631a432a3baa58f0775ea3f2d6047d92a9",
+      "ids": [
+        "NAR-000001",
+        "NAR-000038",
+        "NAR-000039"
+      ],
+      "lanes": [
+        "SUBJECT"
       ]
     },
     {

@@ -65,7 +65,7 @@
         "PRODUCTION_EVIDENCE",
         "REFERENCE_ONLY"
       ],
-      "source_count": 9,
+      "source_count": 10,
       "sources": [
         {
           "source": "data/qfm-v2/batches/batch-004/09-prior-registry-collision-audit-v0.1.json",
@@ -138,6 +138,14 @@
             "JOURNEY",
             "SUBJECT",
             "WITNESS"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/universe/mission-005-pre-truth-freeze-v1.0.json",
+          "sha256": "88193cab1b6c416027b267b588928f631a432a3baa58f0775ea3f2d6047d92a9",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": [
+            "SUBJECT"
           ]
         }
       ]
@@ -1935,7 +1943,7 @@
         "PROMOTION_EVIDENCE",
         "REFERENCE_ONLY"
       ],
-      "source_count": 14,
+      "source_count": 15,
       "sources": [
         {
           "source": "data/qfm-v2/batches/batch-004/12-permanent-narrative-registry-v0.1.jsonl",
@@ -2041,6 +2049,14 @@
             "JOURNEY",
             "SUBJECT",
             "WITNESS"
+          ]
+        },
+        {
+          "source": "data/qfm-v2/universe/mission-005-pre-truth-freeze-v1.0.json",
+          "sha256": "88193cab1b6c416027b267b588928f631a432a3baa58f0775ea3f2d6047d92a9",
+          "evidence_class": "REFERENCE_ONLY",
+          "lanes": [
+            "SUBJECT"
           ]
         }
       ]
