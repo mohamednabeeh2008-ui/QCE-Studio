@@ -1,0 +1,18 @@
+{
+  "schema":"qfm-v2/mission-005-pre-final-closure/v1.0",
+  "mission":"MISSION 005-PRE",
+  "status":"COMPLETE",
+  "waves":[
+    {"wave":1,"name":"TRUTH_FREEZE","steps":[{"step":1,"status":"COMPLETE","result":"Baseline frozen"},{"step":2,"status":"COMPLETE","result":"Truth sources classified"},{"step":3,"status":"COMPLETE","result":"Conflicts registered and authority precedence resolved"}]},
+    {"wave":2,"name":"NAR_AUTHORITY_CLOSURE","steps":[{"step":4,"status":"COMPLETE","result":"NAR-000001..NAR-000038 verified one-to-one"},{"step":5,"status":"COMPLETE","result":"Original and recovered authority legally separated"},{"step":6,"status":"COMPLETE","result":"Permanent validator enforces continuity and evidence chains"}]},
+    {"wave":3,"name":"CID_LOSS_BOUNDARY_CLOSURE","steps":[{"step":7,"status":"COMPLETE","result":"Historical CID layer attested; original rows not recovered"},{"step":8,"status":"COMPLETE","result":"Repository recovery search exhausted to recorded boundary"},{"step":9,"status":"COMPLETE","result":"RECOVERED/RECONSTRUCTED/ATTESTED_ONLY/UNRESOLVED contract locked"}]},
+    {"wave":4,"name":"CANONICAL_UNIVERSE_BUILD","steps":[{"step":10,"status":"COMPLETE","result":"Existing coverage assets recovered and classified"},{"step":11,"status":"COMPLETE","result":"Subject coverage control inventory recovered"},{"step":12,"status":"COMPLETE","result":"EVENT != JOURNEY != WITNESS preserved"},{"step":13,"status":"COMPLETE","result":"Coverage states made auditable"}]},
+    {"wave":5,"name":"COVERAGE_QUEUE","steps":[{"step":14,"status":"COMPLETE","result":"Policy conflict resolved by explicit authority precedence"},{"step":15,"status":"COMPLETE","result":"Canonical production queue active"},{"step":16,"status":"COMPLETE","result":"Independent integrity result remains MOSES"}]},
+    {"wave":6,"name":"BATCH_005_LOCK","steps":[{"step":17,"status":"COMPLETE","result":"BLOCKED_NO_SUBJECT contradiction removed"},{"step":18,"status":"COMPLETE","result":"MOSES locked with policy hash and evidence source"}]},
+    {"wave":7,"name":"FINAL_CERTIFICATION","steps":[{"step":19,"status":"COMPLETE","result":"Final validator and CI certification gate installed"},{"step":20,"status":"COMPLETE","result":"Production handoff issued"}]}
+  ],
+  "final_state":{"track_a":"CLOSED","track_b":"CLOSED_WITH_LOSS_BOUNDARY","canonical_coverage_queue":"ACTIVE","batch_005_subject":"MOSES","batch_005_subject_ar":"موسى","batch_005_scope":"LOCKED","last_permanent_nar_id":"NAR-000038","next_available_nar_id":"NAR-000039","nar_000039_allocated":false,"production":"AUTHORIZED_TO_START_BATCH_005"},
+  "non_negotiable_gates":["NO_NAR_PROMOTION_WITHOUT_EVIDENCE_CHAIN","NO_CID_CLAIM_WITHOUT_SOURCE_PROVENANCE","RECONSTRUCTED_IS_NOT_RECOVERED","NO_SILENT_HOLD_PROMOTION","EVENT_JOURNEY_WITNESS_SEPARATION","NO_PREMATURE_NAR_ID_ALLOCATION"],
+  "handoff":{"next_mission":"BATCH 005 PRODUCTION","subject":"MOSES","first_possible_permanent_id":"NAR-000039","allocation_rule":"NAR-000039 may be allocated only to the first Batch 005 unit that passes harvest, identity, hold, promotion, and permanent-allocation gates."},
+  "verdict":"MISSION_005_PRE_COMPLETE_BATCH_005_LOCKED_NAR_000039_STILL_UNALLOCATED"
+}
