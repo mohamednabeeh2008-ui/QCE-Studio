@@ -2,9 +2,8 @@ name: Batch 005 Family Finalize
 on:
   push:
     branches: [batch-005-final-repair]
-    paths:
-      - 'scripts/qfm-v2/close-batch-005-family-level.mjs'
-      - '.github/workflows/batch-005-family-finalize.yml'
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: write
@@ -26,6 +25,7 @@ jobs:
           if(x.batch_005!=='COMPLETE'||x.accounted_for!==105||x.legal_units!==18||x.factory_integrity!=='PASS')process.exit(1);
           NODE
       - name: Persist closure bundle
+        if: github.event_name == 'push'
         run: |
           git config user.name qce-production-bot
           git config user.email qce-production-bot@users.noreply.github.com
