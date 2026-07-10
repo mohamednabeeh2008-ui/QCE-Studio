@@ -5,8 +5,8 @@
     "data/qfm-v2",
     "knowledge"
   ],
-  "source_file_count": 136,
-  "evidence_file_count": 69,
+  "source_file_count": 137,
+  "evidence_file_count": 70,
   "recovered_counts": {
     "nar_references": 39,
     "allocated_nar_ids": 7,
@@ -665,6 +665,39 @@
       ],
       "lanes": [
         "SUBJECT"
+      ]
+    },
+    {
+      "source": "data/qfm-v2/batches/batch-005/04-e01-candidate-families-v0.1.jsonl",
+      "sha256": "f1aa45bc285c3c6767615602f4b94ff319d539d7fc20c9a0f671ae74e3912ee7",
+      "ids": [
+        "B005-CAND-001",
+        "B005-CAND-002",
+        "B005-CAND-003",
+        "B005-CAND-004",
+        "B005-CAND-005",
+        "B005-CAND-006",
+        "B005-CAND-007",
+        "B005-CAND-008",
+        "B005-CAND-009",
+        "B005-CAND-010",
+        "B005-CAND-011",
+        "B005-CAND-012",
+        "B005-CAND-013",
+        "B005-CAND-014",
+        "B005-CAND-015",
+        "B005-CAND-016",
+        "B005-CAND-017",
+        "B005-CAND-018",
+        "B005-CAND-019",
+        "B005-CAND-020"
+      ],
+      "lanes": [
+        "EVENT",
+        "JOURNEY",
+        "PEOPLE",
+        "SUBJECT",
+        "WITNESS"
       ]
     },
     {
