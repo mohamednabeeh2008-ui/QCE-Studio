@@ -1,0 +1,30 @@
+name: Egypt Atlas Stage 3 Controlled Ingest
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'ops/egypt-atlas/**'
+      - '.github/workflows/egypt-atlas-stage3-ingest.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install --disable-pip-version-check requests pillow
+      - name: Controlled official-source ingest
+        run: python ops/egypt-atlas/stage3_ingest.py
+      - name: Upload audit package
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: egypt-atlas-stage3-output
+          path: stage3-output/
+          if-no-files-found: error
+          retention-days: 30
