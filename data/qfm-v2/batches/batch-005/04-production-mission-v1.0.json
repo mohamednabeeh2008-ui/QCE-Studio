@@ -1,0 +1,14 @@
+{
+  "schema":"qfm-v2/batch-production-mission/v1.0",
+  "batch":"BATCH 005",
+  "subject":{"canonical":"MOSES","ar":"موسى"},
+  "status":"PRODUCTION_OPEN",
+  "precondition":{"mission_005_pre":"COMPLETE","scope_lock":"LOCKED","last_permanent_nar_id":"NAR-000038","next_available_nar_id":"NAR-000039","nar_000039_allocated":false},
+  "production_lanes":["EVENT","JOURNEY","WITNESS"],
+  "separation_rule":"EVENT != JOURNEY != WITNESS",
+  "pipeline":["SOURCE_HARVEST","PASSAGE_CLUSTERING","UNIT_FORMATION","IDENTITY_RECONCILIATION","DUPLICATE_REVIEW","HOLD_REVIEW","PROMOTION_GATE","PERMANENT_ALLOCATION"],
+  "allocation_rule":"NAR-000039 remains unallocated until exactly one production unit passes all gates.",
+  "hard_gates":["QURAN_SOURCE_PROVENANCE_REQUIRED","NO_EARLY_LANE_MERGE","NO_DUPLICATE_PROMOTION","NO_SILENT_HOLD_PROMOTION","NO_NAR_ALLOCATION_BEFORE_PROMOTION_PASS"],
+  "current_stage":"SURAH_LOCAL_PNIE_DECOMPOSITION",
+  "factory":"REPEATABLE_PRODUCTION"
+}
