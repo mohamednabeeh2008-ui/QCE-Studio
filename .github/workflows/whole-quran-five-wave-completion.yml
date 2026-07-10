@@ -37,26 +37,29 @@ jobs:
           node scripts/qfm-v2/whole-quran-five-wave-engine.mjs
           node scripts/qfm-v2/whole-quran-wave2-candidate-harvest.mjs
           node scripts/qfm-v2/whole-quran-waves3-5.mjs
-      - name: Execute final S1-S5 research closure stages
-        run: node scripts/qfm-v2/final-five-stage-engine.mjs
-      - name: Verify S1 hold compression
-        run: node -e "const x=require('./data/qfm-v2/whole-quran/12-s1-hold-compression-v1.0.json');if(x.status!=='PASS'||x.orphan_holds||x.duplicated_review_work)process.exit(1)"
-      - name: Verify S2 court integrity
-        run: node -e "const x=require('./data/qfm-v2/whole-quran/13-s2-parallel-scholarly-court-v1.0.json');if(x.silent_decisions||x.unsupported_merges||x.unsupported_splits)process.exit(1)"
-      - name: Verify S3 identity safety
-        run: node -e "const x=require('./data/qfm-v2/whole-quran/14-s3-global-identity-solver-v1.0.json');if(!x.event_journey_witness_preserved||x.cross_lane_unknown_collisions)process.exit(1)"
-      - name: Verify S4 registry integrity
-        run: node -e "const x=require('./data/qfm-v2/whole-quran/15-s4-serial-truth-promotion-v1.0.json');if(x.nar_gaps||x.nar_duplicates||x.premature_allocations)process.exit(1)"
-      - name: Verify S5 accounting integrity
-        run: node -e "const x=require('./data/qfm-v2/whole-quran/16-s5-adversarial-zero-proof-v1.0.json');const m=x.zero_proof_matrix;if(m.unscanned||m.unclassified||m.unaccounted||m.orphan_holds||m.silent_unresolved||m.unknown_collisions||m.unsupported_promotions||m.nar_gaps||m.nar_duplicates||m.unprovenanced_cid_claims)process.exit(1)"
-      - name: Persist generated evidence
+          node scripts/qfm-v2/final-five-stage-engine.mjs
+      - name: Refine 186 broad holds into evidence-preserving review packets
+        run: node scripts/qfm-v2/scholarly-case-refinery.mjs
+      - name: Build Quranic evidence dossiers
+        run: node scripts/qfm-v2/scholarly-dossier-engine.mjs
+      - name: Compile adjudications and recompute zero-proof closure
+        run: node scripts/qfm-v2/adjudication-and-closure-controller.mjs
+      - name: Verify refinery invariants
+        run: node -e "const x=require('./data/qfm-v2/whole-quran/17-scholarly-case-refinery-v1.0.json');if(x.status!=='PASS'||x.orphan_refs||x.duplicate_refs||x.max_packet_verses>12)process.exit(1)"
+      - name: Verify dossier completeness
+        run: node -e "const x=require('./data/qfm-v2/whole-quran/18-scholarly-evidence-dossiers-v1.0.json');if(x.status!=='PASS'||x.silent_cases||x.dossiers!==x.items.length)process.exit(1)"
+      - name: Verify adjudication is fail-closed
+        run: node -e "const x=require('./data/qfm-v2/whole-quran/20-adjudication-state-v1.0.json');if(x.silent_unresolved||x.resolved+x.explicit_holds!==x.dossiers)process.exit(1)"
+      - name: Verify promotion safety
+        run: node -e "const x=require('./data/qfm-v2/whole-quran/21-promotion-controller-v1.0.json');if(x.new_allocations!==0||x.next_available!=='NAR-000057')process.exit(1)"
+      - name: Persist all generated evidence before closure verdict
         run: |
           git config user.name qce-production-bot
           git config user.email qce-production-bot@users.noreply.github.com
           git add data/quran/ data/qfm-v2/whole-quran/
           git diff --cached --quiet && exit 0
-          git commit -m 'build(qfm-v2): materialize final S1-S5 evidence [skip ci]'
+          git commit -m 'build(qfm-v2): materialize scholarly refinery and zero-proof evidence [skip ci]'
           git pull --rebase origin whole-quran-parallel-completion
           git push origin HEAD:whole-quran-parallel-completion
-      - name: Enforce final S5 research completion certificate
-        run: node -e "const x=require('./data/qfm-v2/whole-quran/16-s5-adversarial-zero-proof-v1.0.json');if(x.status!=='PASS'||x.independent_adversarial_audit!=='PASS'||x.whole_quran_narrative_research!=='COMPLETE'||x.zero_proof_matrix.explicit_scholarly_identity_holds!==0||x.remaining_work!==0){console.error('S5 FAIL_CLOSED: '+JSON.stringify({status:x.status,audit:x.independent_adversarial_audit,research:x.whole_quran_narrative_research,identity_holds:x.zero_proof_matrix.explicit_scholarly_identity_holds,remaining_work:x.remaining_work}));process.exit(1)}"
+      - name: Enforce final zero-proof certificate
+        run: node -e "const x=require('./data/qfm-v2/whole-quran/22-zero-proof-closure-controller-v1.0.json');if(x.status!=='PASS'||x.independent_adversarial_audit!=='PASS'||x.whole_quran_narrative_research!=='COMPLETE'||x.zero_proof_matrix.explicit_scholarly_identity_holds!==0||x.remaining_work!==0){console.error('ZERO-PROOF FAIL_CLOSED: '+JSON.stringify({status:x.status,audit:x.independent_adversarial_audit,research:x.whole_quran_narrative_research,identity_holds:x.zero_proof_matrix.explicit_scholarly_identity_holds,remaining_work:x.remaining_work}));process.exit(1)}"
