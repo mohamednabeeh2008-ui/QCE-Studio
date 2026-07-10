@@ -1,0 +1,19 @@
+{
+  "schema":"qfm-v2/mission-005-pre-truth-freeze/v1.0",
+  "baseline_commit":"6d978f670b6e5e1c935f8bb2824a2a542d8ecb6f",
+  "identity":{"last_permanent_nar_id":"NAR-000038","next_available_nar_id":"NAR-000039","nar_000039_allocated":false},
+  "batch_state":{"batch_004":"COMPLETE_WITH_HOLDS","batch_005":"PREPRODUCTION_SUBJECT_SELECTION"},
+  "truth_source_map":[
+    {"path":"data/qfm-v2/audits/generated/recovered-nar-authority-ledger-v0.1.json","class":"AUTHORITY","scope":"NAR-000001..NAR-000038 continuity"},
+    {"path":"data/qfm-v2/recovery/cid-corpus-recovery-manifest-v0.1.json","class":"AUTHORITY","scope":"CID loss boundary and provenance"},
+    {"path":"data/qfm-v2/universe/01-canonical-production-queue-v0.1.json","class":"AUTHORITY","scope":"Batch subject ordering and selection"},
+    {"path":"data/qfm-v2/universe/mission-005-pre-canonical-narrative-universe-coverage-v0.1.json","class":"RECOVERY_EVIDENCE","scope":"Recovered coverage and prior selection decision"},
+    {"path":"data/qfm-v2/governance/01-canonical-subject-coverage-queue-v0.1.json","class":"OBSOLETE_CONFLICTING","scope":"Lineage-only queue; superseded for Batch 005 selection"},
+    {"path":"data/qfm-v2/batches/batch-005/03-scope-lock-v0.1.json","class":"DERIVED_CONTROL","scope":"Must reflect authoritative queue after integrity validation"}
+  ],
+  "conflict_register":[
+    {"id":"CR-005-001","conflict":"Canonical production queue selects MOSES while scope lock remains BLOCKED_NO_SUBJECT","resolution":"Re-run deterministic integrity gate and synchronize scope lock if result remains MOSES","status":"REGISTERED"},
+    {"id":"CR-005-002","conflict":"FIRST_QURANIC_APPEARANCE versus LINEAGE_SEQUENCE","resolution":"Use explicit reproducible production policy; lineage-only queue is non-authoritative for Batch 005","status":"RESOLVED_BY_AUTHORITY_PRECEDENCE"}
+  ],
+  "wave_1_exit":"PASS"
+}
