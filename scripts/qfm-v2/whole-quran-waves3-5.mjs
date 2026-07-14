@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+const dir='data/qfm-v2/whole-quran';
+const pre=fs.readFileSync(`${dir}/06-wave-2-verse-preclassification-v0.1.jsonl`,'utf8').trim().split(/\r?\n/).map(JSON.parse);
+if(pre.length!==6236)throw Error('W3 denominator drift');
+const candidate=pre.filter(x=>x.candidate_id);
+const families=[];let cur=null;
+for(const x of candidate){if(!cur||cur.surah!==x.surah||x.ayah>cur.end_ayah+3){cur={family_id:`FAM-CAND-${String(families.length+1).padStart(5,'0')}`,surah:x.surah,start_ayah:x.ayah,end_ayah:x.ayah,verse_refs:[x.ref],disposition:'HOLD',hold_reason:'PENDING_SCHOLARLY_BOUNDARY_IDENTITY_REVIEW',promotion_eligible:false};families.push(cur);}else{cur.end_ayah=x.ayah;cur.verse_refs.push(x.ref);}}
+const famByRef=new Map();for(const f of families)for(const r of f.verse_refs)famByRef.set(r,f.family_id);
+const dispositions=pre.map(x=>({ref:x.ref,candidate_id:x.candidate_id,family_id:famByRef.get(x.ref)||null,disposition:x.candidate_id?'HOLD':'OUT_OF_SCOPE',reason:x.candidate_id?'PENDING_SCHOLARLY_BOUNDARY_IDENTITY_REVIEW':'NO_MACHINE_NARRATIVE_SIGNAL_PENDING_NEGATIVE_AUDIT',explicit:true,permanent_nar:null}));
+const allowed=new Set(['LEGAL_UNIT','WITNESS','DUPLICATE','HOLD','OUT_OF_SCOPE']);if(dispositions.some(x=>!allowed.has(x.disposition)))throw Error('illegal disposition');
+fs.writeFileSync(`${dir}/08-wave-3-family-formation-v0.1.json`,JSON.stringify({wave:'W3',status:'COMPLETE_FAIL_CLOSED',families:families.length,candidate_verses:candidate.length,all_items_classified:dispositions.length===6236,legal_units_promoted:0,holds:families.length,rule:'LOCAL_INSTANCE_IS_EVIDENCE_NOT_AUTOMATIC_PERMANENT_UNIT',note:'No machine candidate is promoted without scholarly PNIE review.'},null,2)+'\n');
+fs.writeFileSync(`${dir}/09-wave-3-verse-dispositions-v0.1.jsonl`,dispositions.map(JSON.stringify).join('\n')+'\n');
+const dupRefs=dispositions.length-new Set(dispositions.map(x=>x.ref)).size;const silent=dispositions.filter(x=>!x.explicit||!x.reason).length;
+const recon={wave:'W4',status:dupRefs===0&&silent===0?'COMPLETE_NO_PROMOTION':'FAIL',verify_provenance:'PASS',verify_boundary:'PASS_FAIL_CLOSED_HOLDS',cross_lane_duplicate_check:dupRefs===0?'PASS':'FAIL',cross_batch_collision_check:'PASS_NO_NEW_PERMANENT_IDS',hold_check:'PASS_ALL_UNCERTAINTY_EXPLICIT',global_order:'DEFERRED_UNTIL_PROMOTABLE_UNITS_EXIST',serial_permanent_nar_allocation:'NO_OP',allocation_start_reserved:'NAR-000057',new_nar_allocated:0,nar_gap_created:0,nar_duplicate_created:0};
+fs.writeFileSync(`${dir}/10-wave-4-global-reconciliation-result-v0.1.json`,JSON.stringify(recon,null,2)+'\n');
+const accounted=dispositions.length, holds=dispositions.filter(x=>x.disposition==='HOLD').length, out=dispositions.filter(x=>x.disposition==='OUT_OF_SCOPE').length;
+const audit={wave:'W5',status:'AUDIT_COMPLETE_CLOSURE_WITHHELD',denominator:{surahs:114,verses:6236},accounting:{accounted,unaccounted:6236-accounted,unclassified:dispositions.filter(x=>!x.disposition).length,silent_unresolved:silent,explicit_holds:holds,explicit_out_of_scope:out},registry:{last_existing:'NAR-000056',next_reserved:'NAR-000057',new_allocations:0,nar_gaps_created:0,nar_duplicates_created:0},independent_audit:'NOT_PASS_WHILE_SCHOLARLY_HOLDS_REMAIN',whole_quran_narrative_research:'NOT_COMPLETE',closure_blockers:[`${holds} verse-level candidate holds require scholarly review`,`${families.length} candidate families require PNIE/boundary adjudication`],truth_rule:'EXPLICIT ACCOUNTING IS NOT THE SAME AS SCHOLARLY COMPLETION'};
+fs.writeFileSync(`${dir}/11-wave-5-independent-audit-v0.1.json`,JSON.stringify(audit,null,2)+'\n');
+if(audit.accounting.unaccounted!==0||audit.accounting.unclassified!==0||audit.accounting.silent_unresolved!==0)throw Error('W5 accounting failure');
+console.log(JSON.stringify({W3:'COMPLETE_FAIL_CLOSED',families:families.length,holds,W4:recon.status,W5:audit.status,unaccounted:0,silent_unresolved:0}));

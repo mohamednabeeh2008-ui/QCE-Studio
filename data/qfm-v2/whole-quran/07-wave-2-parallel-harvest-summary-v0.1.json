@@ -1,0 +1,39 @@
+{
+  "wave": "W2",
+  "status": "CANDIDATE_HARVEST_COMPLETE_NOT_SCHOLARLY_CERTIFIED",
+  "input": 6236,
+  "narrative_signal": 0,
+  "narrative_context": 0,
+  "non_narrative_candidate": 6236,
+  "unscanned": 0,
+  "unclassified": 0,
+  "semantic_review_required": 0,
+  "negative_audit_required": 6236,
+  "lanes": {
+    "PROPHETS": {
+      "items": 0
+    },
+    "NON_PROPHETIC_CHARACTERS": {
+      "items": 0
+    },
+    "COLLECTIVE_ENTITIES": {
+      "items": 0
+    },
+    "EVENTS_JOURNEYS_DIALOGUES": {
+      "items": 0
+    },
+    "WITNESSES": {
+      "items": 0
+    },
+    "VERSE_COVERAGE": {
+      "items": 6236
+    },
+    "CID_RECONSTRUCTION": {
+      "items": 0
+    },
+    "INDEPENDENT_AUDIT": {
+      "items": 0
+    }
+  },
+  "nar_allocation_frozen": true
+}

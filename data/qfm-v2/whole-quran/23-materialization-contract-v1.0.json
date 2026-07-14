@@ -1,0 +1,44 @@
+{
+  "schema": "qfm-v2/materialization-contract-v1",
+  "status": "PASS",
+  "source_head_sha": "00c88591f2137a09d4738468782c167bf8857fed",
+  "files": [
+    {
+      "name": "17-scholarly-case-refinery-v1.0.json",
+      "bytes": 194046,
+      "sha256": "631ee0fe71c9c0dff4b8d6e6c7a7181c2c177356a81f2538b03d85115b9d6b2b"
+    },
+    {
+      "name": "18-scholarly-evidence-dossiers-v1.0.json",
+      "bytes": 2086135,
+      "sha256": "6f1a94801f6e149e24af2a24e686cd3528a4981a2e4581da5b32aceee487f61b"
+    },
+    {
+      "name": "19-scholarly-decisions-v1.0.json",
+      "bytes": 198634,
+      "sha256": "dc1345a68d49c07c217653d89d8c22df3725c49ac43c3610b0b0b877bc82ca97"
+    },
+    {
+      "name": "20-adjudication-state-v1.0.json",
+      "bytes": 55811,
+      "sha256": "895c60ab8212e240e08544653e7f294faf03f58e4c6ea87a6304791575dd0897"
+    },
+    {
+      "name": "21-promotion-controller-v1.0.json",
+      "bytes": 303,
+      "sha256": "0db0e64a24040238295d21af82a51124f586579b5b0cabbaad65fd364f4d08cc"
+    },
+    {
+      "name": "22-zero-proof-closure-controller-v1.0.json",
+      "bytes": 617,
+      "sha256": "9b30a1e06a4e9c13a48e5c3da31aa93ad79c85ad3460bcc1c68510d3d37411f0"
+    }
+  ],
+  "checks": {
+    "refinery_to_dossiers": true,
+    "dossiers_to_decisions": true,
+    "decisions_partition": true,
+    "compiler_partition": true
+  },
+  "verified_at": "2026-07-10T16:35:25.836Z"
+}

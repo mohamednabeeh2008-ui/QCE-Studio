@@ -1,0 +1,10 @@
+{
+  "schema": "qfm/branch-head-materialization-trigger/v1.0",
+  "purpose": "force a true push event on the production branch so the already-successful whole-Quran pipeline persists generated evidence",
+  "target_branch": "whole-quran-parallel-completion",
+  "required_chain": ["17", "18", "19", "20", "21", "22", "24"],
+  "legal_effect": "NONE",
+  "nar_allocation": false,
+  "main_mutation": false,
+  "scientific_verdict": false
+}

@@ -1,0 +1,756 @@
+{
+  "engine": "CANONICAL_LEGAL_UNITS_V1",
+  "status": "PARTIAL_FAIL_CLOSED",
+  "input_resolved_nodes": 0,
+  "canonical_units": 0,
+  "explicit_holds": 186,
+  "unknown_dispositions": 0,
+  "orphans": 0,
+  "units": [],
+  "holds": [
+    {
+      "case_id": "CASE-00001",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00002",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00003",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00004",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00005",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00006",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00007",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00008",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00009",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00010",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00011",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00012",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00013",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00014",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00015",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00016",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00017",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00018",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00019",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00020",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00021",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00022",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00023",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00024",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00025",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00026",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00027",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00028",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00029",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00030",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00031",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00032",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00033",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00034",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00035",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00036",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00037",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00038",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00039",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00040",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00041",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00042",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00043",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00044",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00045",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00046",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00047",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00048",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00049",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00050",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00051",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00052",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00053",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00054",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00055",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00056",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00057",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00058",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00059",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00060",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00061",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00062",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00063",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00064",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00065",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00066",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00067",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00068",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00069",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00070",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00071",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00072",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00073",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00074",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00075",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00076",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00077",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00078",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00079",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00080",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00081",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00082",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00083",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00084",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00085",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00086",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00087",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00088",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00089",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00090",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00091",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00092",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00093",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00094",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00095",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00096",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00097",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00098",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00099",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00100",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00101",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00102",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00103",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00104",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00105",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00106",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00107",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00108",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00109",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00110",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00111",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00112",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00113",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00114",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00115",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00116",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00117",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00118",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00119",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00120",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00121",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00122",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00123",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00124",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00125",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00126",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00127",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00128",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00129",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00130",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00131",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00132",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00133",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00134",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00135",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00136",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00137",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00138",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00139",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00140",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00141",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00142",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00143",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00144",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00145",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00146",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00147",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00148",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00149",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00150",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00151",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00152",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00153",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00154",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00155",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00156",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00157",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00158",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00159",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00160",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00161",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00162",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00163",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00164",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00165",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00166",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00167",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00168",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00169",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00170",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00171",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00172",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00173",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00174",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00175",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00176",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00177",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00178",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00179",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00180",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00181",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00182",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00183",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00184",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00185",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    },
+    {
+      "case_id": "CASE-00186",
+      "reason": "The available deterministic evidence does not prove SAME, DISTINCT, RELATED, INTERFACE, or DUPLICATE at parent-case level."
+    }
+  ]
+}

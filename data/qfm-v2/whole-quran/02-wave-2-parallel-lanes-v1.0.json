@@ -1,0 +1,55 @@
+{
+  "wave": "W2",
+  "status": "READY",
+  "lanes": [
+    {
+      "lane_id": "T1",
+      "name": "PROPHETS",
+      "candidate_id_namespace": "T1-*",
+      "permanent_nar_allocation": false
+    },
+    {
+      "lane_id": "T2",
+      "name": "NON_PROPHETIC_CHARACTERS",
+      "candidate_id_namespace": "T2-*",
+      "permanent_nar_allocation": false
+    },
+    {
+      "lane_id": "T3",
+      "name": "COLLECTIVE_ENTITIES",
+      "candidate_id_namespace": "T3-*",
+      "permanent_nar_allocation": false
+    },
+    {
+      "lane_id": "T4",
+      "name": "EVENTS_JOURNEYS_DIALOGUES",
+      "candidate_id_namespace": "T4-*",
+      "permanent_nar_allocation": false
+    },
+    {
+      "lane_id": "T5",
+      "name": "WITNESSES",
+      "candidate_id_namespace": "T5-*",
+      "permanent_nar_allocation": false
+    },
+    {
+      "lane_id": "T6",
+      "name": "VERSE_COVERAGE",
+      "candidate_id_namespace": "T6-*",
+      "permanent_nar_allocation": false
+    },
+    {
+      "lane_id": "T7",
+      "name": "CID_RECONSTRUCTION",
+      "candidate_id_namespace": "T7-*",
+      "permanent_nar_allocation": false
+    },
+    {
+      "lane_id": "T8",
+      "name": "INDEPENDENT_AUDIT",
+      "candidate_id_namespace": "T8-*",
+      "permanent_nar_allocation": false
+    }
+  ],
+  "streaming": true
+}

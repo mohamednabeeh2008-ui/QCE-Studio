@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+import path from 'node:path';
+const root='data/qfm-v2/whole-quran';
+const candidates=['data/quran/quran.jsonl','data/quran/canonical-quran.jsonl','data/qfm-v2/sources/canonical-quran.jsonl'];
+const source=candidates.find(fs.existsSync);
+const write=(n,v)=>fs.writeFileSync(path.join(root,n),JSON.stringify(v,null,2)+'\n');
+const baseline={completed_batches:5,last_permanent_nar_id:'NAR-000056',next_available_nar_id:'NAR-000057'};
+if(!source){write('01-wave-1-census-gate-v1.0.json',{wave:'W1',status:'BLOCKED_MISSING_CANONICAL_QURAN_CORPUS',searched_paths:candidates,baseline,allocation_frozen:true,reason:'Whole-Quran completion cannot be certified from a subject list or partial repository evidence.'});console.error('BLOCKED: canonical Quran corpus absent; NAR allocation remains frozen');process.exit(2);}
+const rows=fs.readFileSync(source,'utf8').trim().split(/\r?\n/).map(JSON.parse);
+const refs=new Set(rows.map(r=>`${r.surah}:${r.ayah}`));
+const surahs=new Set(rows.map(r=>Number(r.surah)));
+if(surahs.size!==114)throw Error(`W1 surah denominator failure: ${surahs.size}/114`);
+if(rows.some(r=>!r.surah||!r.ayah||!r.text))throw Error('W1 malformed canonical verse');
+write('01-wave-1-census-gate-v1.0.json',{wave:'W1',status:'PASS',canonical_source:source,surahs_scanned:114,canonical_verse_rows:rows.length,unique_refs:refs.size,unscanned:0,unclassified:'PENDING_CLASSIFIER',allocation_frozen:true});
+const laneNames=['PROPHETS','NON_PROPHETIC_CHARACTERS','COLLECTIVE_ENTITIES','EVENTS_JOURNEYS_DIALOGUES','WITNESSES','VERSE_COVERAGE','CID_RECONSTRUCTION','INDEPENDENT_AUDIT'];
+write('02-wave-2-parallel-lanes-v1.0.json',{wave:'W2',status:'READY',lanes:laneNames.map((name,i)=>({lane_id:`T${i+1}`,name,candidate_id_namespace:`T${i+1}-*`,permanent_nar_allocation:false})),streaming:true});
+write('03-wave-3-classification-contract-v1.0.json',{wave:'W3',status:'READY',required_dispositions:['LEGAL_UNIT','WITNESS','DUPLICATE','HOLD','OUT_OF_SCOPE'],identity_rule:'LOCAL_INSTANCE_IS_EVIDENCE_NOT_AUTOMATIC_PERMANENT_UNIT',cid_provenance:['RECOVERED','RECONSTRUCTED','ATTESTED_ONLY','UNRESOLVED']});
+write('04-wave-4-global-reconciliation-v1.0.json',{wave:'W4',status:'LOCKED_UNTIL_W1_W3_COMPLETE',ordered_gates:['VERIFY_PROVENANCE','VERIFY_BOUNDARY','CROSS_LANE_DUPLICATE_CHECK','CROSS_BATCH_COLLISION_CHECK','HOLD_CHECK','GLOBAL_ORDER','SERIAL_PERMANENT_NAR_ALLOCATION'],allocation_start:'NAR-000057'});
+write('05-wave-5-certification-v1.0.json',{wave:'W5',status:'LOCKED_UNTIL_W4_COMPLETE',required:{surahs_scanned:114,unscanned:0,unclassified:0,unaccounted:0,silent_unresolved:0,nar_gaps:0,nar_duplicates:0,independent_audit:'PASS'},completion_verdict:'WITHHELD_UNTIL_ALL_REQUIRED_FIELDS_PROVEN'});
+console.log('W1 denominator proven; W2-W5 control plane materialized; permanent allocation frozen pending full evidence.');

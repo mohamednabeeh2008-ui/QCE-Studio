@@ -1,0 +1,90 @@
+name: Whole Quran Five Wave Completion
+on:
+  push:
+    branches: [whole-quran-parallel-completion]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: whole-quran-global-reconciliation-${{ github.event_name }}
+  cancel-in-progress: false
+jobs:
+  execute:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'push' && github.ref || 'whole-quran-parallel-completion' }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Write execution sentinel
+        run: node scripts/qfm-v2/execution-sentinel-and-materialization.mjs
+      - name: Ingest canonical Uthmani Quran corpus
+        run: |
+          mkdir -p data/quran
+          curl --fail --silent --show-error --retry 3 'https://api.quran.com/api/v4/quran/verses/uthmani' -o /tmp/quran.json
+          node - <<'NODE'
+          const fs=require('fs'),crypto=require('crypto');const j=JSON.parse(fs.readFileSync('/tmp/quran.json'));const verses=j.verses;
+          if(!Array.isArray(verses)||verses.length!==6236)throw Error('denominator failure');
+          const rows=verses.map(v=>{const [surah,ayah]=v.verse_key.split(':').map(Number);return {surah,ayah,text:v.text_uthmani}});
+          if(new Set(rows.map(x=>x.surah)).size!==114||new Set(rows.map(x=>`${x.surah}:${x.ayah}`)).size!==6236||rows.some(x=>!x.text))throw Error('canonical corpus integrity failure');
+          const body=rows.map(JSON.stringify).join('\n')+'\n';fs.writeFileSync('data/quran/canonical-quran.jsonl',body);fs.writeFileSync('data/quran/canonical-quran-provenance.json',JSON.stringify({source:'Quran.com API v4',endpoint:'https://api.quran.com/api/v4/quran/verses/uthmani',script:'Uthmani',verse_rows:6236,surahs:114,sha256:crypto.createHash('sha256').update(body).digest('hex'),retrieved_at:new Date().toISOString()},null,2)+'\n');
+          NODE
+      - name: Execute evidence chain and scientific review queue
+        run: |
+          node scripts/qfm-v2/whole-quran-five-wave-engine.mjs
+          node scripts/qfm-v2/whole-quran-wave2-candidate-harvest.mjs
+          node scripts/qfm-v2/whole-quran-waves3-5.mjs
+          node scripts/qfm-v2/final-five-stage-engine.mjs
+          node scripts/qfm-v2/scholarly-case-refinery.mjs
+          node scripts/qfm-v2/scholarly-dossier-engine.mjs
+          node scripts/qfm-v2/evidence-adjudication-engine.mjs
+          node scripts/qfm-v2/adjudication-and-closure-controller.mjs
+          node scripts/qfm-v2/packet-disposition-parent-court.mjs
+          node scripts/qfm-v2/parent-case-scientific-court.mjs
+          node scripts/qfm-v2/scientific-review-queue-v2.mjs
+          node scripts/qfm-v2/global-identity-reconciliation.mjs
+      - name: Supervisor checkpoint
+        run: node scripts/qfm-v2/five-wave-supervisor.mjs
+      - name: Enforce materialization contract
+        run: node scripts/qfm-v2/execution-sentinel-and-materialization.mjs --verify
+      - name: Verify evidence and court invariants
+        run: |
+          node -e "const x=require('./data/qfm-v2/whole-quran/17-scholarly-case-refinery-v1.0.json');if(x.status!=='PASS'||x.orphan_refs||x.duplicate_refs||x.max_packet_verses>12)process.exit(1)"
+          node -e "const x=require('./data/qfm-v2/whole-quran/24-packet-disposition-parent-court-v1.0.json');if(x.orphan_packets||x.duplicate_refs||x.parent_cases_restored!==186)process.exit(1)"
+          node -e "const x=require('./data/qfm-v2/whole-quran/25-parent-case-court-v1.0.json');if(x.input_parent_cases!==186||x.court_records!==186||x.silent||x.unsupported_verdicts||x.nar_allocations)process.exit(1)"
+          node -e "const x=require('./data/qfm-v2/whole-quran/25a-scientific-review-queue-v2.json');if(x.status!=='PASS'||x.input_parent_cases!==186||x.queue_items!==186)process.exit(1)"
+      - name: Enforce strict W1 scientific closure
+        run: |
+          node -e "const x=require('./data/qfm-v2/whole-quran/25-parent-case-court-v1.0.json');if(x.status!=='PASS'||x.adjudicated!==x.input_parent_cases||x.explicit_holds!==0||x.silent!==0||x.unsupported_verdicts!==0){console.error('W1_FAIL_CLOSED',JSON.stringify({status:x.status,input:x.input_parent_cases,adjudicated:x.adjudicated,holds:x.explicit_holds,silent:x.silent,unsupported:x.unsupported_verdicts}));process.exit(1)}"
+      - name: Enforce strict W2 identity closure and false-zero kill switch
+        run: |
+          node -e "const g=require('./data/qfm-v2/whole-quran/26-global-identity-graph-v1.0.json');const u=require('./data/qfm-v2/whole-quran/27-canonical-legal-units-v1.0.json');if(g.status!=='PASS'||u.status!=='PASS'||g.resolved_nodes<=0||u.canonical_units<=0||g.explicit_holds!==0||u.explicit_holds!==0||g.unknown_edges!==0||g.orphans!==0||u.unknown_dispositions!==0||u.orphans!==0){console.error('W2_FAIL_CLOSED_FALSE_ZERO_BLOCKED',JSON.stringify({graph_status:g.status,unit_status:u.status,resolved_nodes:g.resolved_nodes,canonical_units:u.canonical_units,graph_holds:g.explicit_holds,unit_holds:u.explicit_holds,unknown_edges:g.unknown_edges,orphans:g.orphans+u.orphans}));process.exit(1)}"
+      - name: Persist branch-head evidence
+        id: persist
+        continue-on-error: true
+        run: |
+          git config user.name qce-production-bot
+          git config user.email qce-production-bot@users.noreply.github.com
+          git add data/quran/ data/qfm-v2/whole-quran/
+          git diff --cached --quiet && exit 0
+          git commit -m 'build(qfm-v2): supervisor checkpoint [skip ci]'
+          for attempt in 1 2 3; do
+            git fetch origin whole-quran-parallel-completion
+            git rebase origin/whole-quran-parallel-completion && git push origin HEAD:whole-quran-parallel-completion && exit 0
+            git rebase --abort || true
+            sleep $((attempt*3))
+          done
+          exit 1
+      - name: Supervisor problem interrogation
+        if: always()
+        run: node scripts/qfm-v2/five-wave-supervisor.mjs
+      - name: Fail if evidence persistence failed
+        if: steps.persist.outcome == 'failure'
+        run: |
+          echo 'Supervisor diagnosis: EVIDENCE_PERSISTENCE_FAILED. Execute the ten-step recovery protocol recorded in 00-five-wave-supervisor-state-v1.0.json.'
+          exit 1

@@ -1,0 +1,14 @@
+{
+  "engine": "GLOBAL_IDENTITY_GRAPH_V1",
+  "status": "PARTIAL_FAIL_CLOSED",
+  "input_cases": 186,
+  "resolved_nodes": 0,
+  "explicit_holds": 186,
+  "nodes": [],
+  "edges": [],
+  "unknown_edges": 0,
+  "orphans": 0,
+  "false_merge_survivors": 0,
+  "false_split_survivors": 0,
+  "rule": "ONLY_PROVEN_PARENT_VERDICTS_ENTER_IDENTITY_GRAPH; HOLDS_REMAIN_VISIBLE"
+}

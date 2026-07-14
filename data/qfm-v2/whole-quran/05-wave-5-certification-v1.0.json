@@ -1,0 +1,15 @@
+{
+  "wave": "W5",
+  "status": "LOCKED_UNTIL_W4_COMPLETE",
+  "required": {
+    "surahs_scanned": 114,
+    "unscanned": 0,
+    "unclassified": 0,
+    "unaccounted": 0,
+    "silent_unresolved": 0,
+    "nar_gaps": 0,
+    "nar_duplicates": 0,
+    "independent_audit": "PASS"
+  },
+  "completion_verdict": "WITHHELD_UNTIL_ALL_REQUIRED_FIELDS_PROVEN"
+}

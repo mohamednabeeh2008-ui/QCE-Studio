@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+const D='data/qfm-v2/whole-quran';
+const rows=fs.readFileSync('data/quran/canonical-quran.jsonl','utf8').trim().split(/\r?\n/).map(JSON.parse);
+const ref=new Map(rows.map((r,i)=>[`${r.surah}:${r.ayah}`,{...r,i}]));
+const R=JSON.parse(fs.readFileSync(`${D}/17-scholarly-case-refinery-v1.0.json`));
+const norm=s=>s.normalize('NFKD').replace(/[\u064B-\u065F\u0670\u06D6-\u06ED]/g,'').replace(/[ٱأإآ]/g,'ا').replace(/ى/g,'ي');
+const subjects=['ادم','نوح','ابراهيم','اسماعيل','اسحاق','يعقوب','يوسف','موسي','هارون','داود','سليمان','ايوب','يونس','زكريا','يحيي','عيسي','مريم','هود','صالح','شعيب','ادريس','الياس','اليسع','لوط','فرعون','قارون','هامان','لقمان','طالوت','جالوت','السامري'];
+const dossiers=R.packets.map(p=>{const verses=p.refs.map(x=>ref.get(x));const txt=verses.map(v=>norm(v.text)).join(' ');const named=subjects.filter(s=>txt.includes(s));const before=verses[0].i>0&&rows[verses[0].i-1].surah===p.surah?`${p.surah}:${rows[verses[0].i-1].ayah}`:null;const after=verses.at(-1).i<rows.length-1&&rows[verses.at(-1).i+1].surah===p.surah?`${p.surah}:${rows[verses.at(-1).i+1].ayah}`:null;return {packet_id:p.packet_id,parent_case:p.parent_case,refs:p.refs,arabic_text:verses.map(v=>({ref:`${v.surah}:${v.ayah}`,text:v.text})),named_subject_signals:named,context_boundary:{before,after},court_questions:{textual:'What does the cited text explicitly establish?',identity:'SAME / DISTINCT / RELATED / EMBEDDED_WITNESS / INTERFACE_ENTITY / DUPLICATE / HOLD?',merge_attack:'What evidence disproves merging this packet with adjacent or cross-lane material?',split_attack:'What evidence disproves splitting this packet into multiple legal identities?'},required_decision_fields:['verdict','legal_type','boundary_reason','identity_reason','rejected_alternative','evidence_refs'],status:'AWAITING_SCHOLARLY_DECISION'};});
+fs.writeFileSync(`${D}/18-scholarly-evidence-dossiers-v1.0.json`,JSON.stringify({engine:'SCHOLARLY_DOSSIER_ENGINE_V1',status:'PASS',dossiers:dossiers.length,silent_cases:0,items:dossiers},null,2)+'\n');
+console.log(JSON.stringify({dossiers:dossiers.length}));

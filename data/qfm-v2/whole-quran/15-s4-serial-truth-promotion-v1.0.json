@@ -1,0 +1,13 @@
+{
+  "stage": "S4",
+  "status": "PASS_NO_OP",
+  "promotable_units": 0,
+  "promotable_without_nar": 0,
+  "nar_without_evidence": 0,
+  "nar_gaps": 0,
+  "nar_duplicates": 0,
+  "premature_allocations": 0,
+  "last_existing": "NAR-000056",
+  "next_available": "NAR-000057",
+  "new_allocations": 0
+}

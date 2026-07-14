@@ -1,0 +1,15 @@
+{
+  "mission":"WHOLE_QURAN_NARRATIVE_RESEARCH_COMPLETION",
+  "status":"ACTIVE",
+  "principle":{"parallel":["DISCOVERY","HARVEST","CLASSIFICATION","IDENTITY_ANALYSIS"],"serial":["GLOBAL_RECONCILIATION","PERMANENT_NAR_ALLOCATION"]},
+  "waves":[
+    {"id":"W1","name":"GLOBAL_CENSUS_AND_DENOMINATOR","exit":"114 surahs scanned; every canonical verse dispositioned; unscanned=0; unclassified=0"},
+    {"id":"W2","name":"EIGHT_LANE_PARALLEL_HARVEST","exit":"every discovered subject and narrative witness assigned to a candidate lane or explicit hold"},
+    {"id":"W3","name":"FAMILY_PNIE_CID_CLASSIFICATION","exit":"every local instance belongs to one family and one disposition; CID provenance explicit"},
+    {"id":"W4","name":"GLOBAL_RECONCILIATION_AND_PROMOTION","exit":"cross-lane duplicates and prior-NAR collisions resolved; serial deterministic allocation only"},
+    {"id":"W5","name":"INDEPENDENT_FULL_QURAN_CERTIFICATION","exit":"114/114; unaccounted=0; NAR gaps=0; NAR duplicates=0; silent unresolved=0; independent audit PASS"}
+  ],
+  "lanes":["PROPHETS","NON_PROPHETIC_CHARACTERS","COLLECTIVE_ENTITIES","EVENTS_JOURNEYS_DIALOGUES","WITNESSES","VERSE_COVERAGE","CID_RECONSTRUCTION","INDEPENDENT_AUDIT"],
+  "non_negotiable":["EVENT_NE_JOURNEY_NE_WITNESS","LOCAL_INSTANCE_NE_PERMANENT_UNIT","NO_NAR_BEFORE_GLOBAL_RECONCILIATION","RECONSTRUCTED_NE_RECOVERED","NO_COMPLETION_WITHOUT_CANONICAL_QURAN_CORPUS"],
+  "baseline":{"completed_batches":5,"last_permanent_nar_id":"NAR-000056","next_available_nar_id":"NAR-000057"}
+}

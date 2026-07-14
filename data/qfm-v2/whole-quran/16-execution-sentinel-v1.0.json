@@ -1,0 +1,17 @@
+{
+  "schema": "qfm-v2/execution-sentinel-v1",
+  "status": "STARTED",
+  "head_sha": "00c88591f2137a09d4738468782c167bf8857fed",
+  "workflow_version": "WHOLE_QURAN_COMPLETION_V3",
+  "engine_chain": [
+    "REFINERY",
+    "DOSSIER",
+    "ADJUDICATION",
+    "COMPILER",
+    "PROMOTION",
+    "ZERO_PROOF"
+  ],
+  "execution_mode": "READ_ONLY_VALIDATION",
+  "ref": "refs/pull/16/merge",
+  "started_at": "2026-07-10T16:35:25.797Z"
+}

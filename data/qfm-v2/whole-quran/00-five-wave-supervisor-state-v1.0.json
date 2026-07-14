@@ -1,0 +1,61 @@
+{
+  "engine": "FIVE_WAVE_SUPERVISOR_V1",
+  "role": "USER_PROXY_EXECUTION_GOVERNOR",
+  "mode": "PROBLEM_SOLVING",
+  "active_wave": "W3",
+  "active_wave_name": "GLOBAL_NAR_COLLISION",
+  "problem": "NAR_COLLISION_AUDIT_MISSING",
+  "protocol": [
+    "1. Freeze the exact failing state for W3.",
+    "2. Name one root problem only: NAR_COLLISION_AUDIT_MISSING.",
+    "3. Preserve all Quranic provenance and current legal records.",
+    "4. Reproduce the failure from the branch head.",
+    "5. Isolate the smallest owning engine or gate.",
+    "6. Apply the smallest non-destructive correction.",
+    "7. Re-run the owning wave only.",
+    "8. Verify counts, hashes, orphans, duplicates, holds, and unsupported claims.",
+    "9. Persist material evidence before claiming success.",
+    "10. If PASS, advance immediately beyond W3; otherwise repeat with the new exact problem."
+  ],
+  "rules": [
+    "NO_SILENT_STOP",
+    "NO_FALSE_PASS",
+    "NO_PREMATURE_NAR",
+    "NO_MAIN_WRITE_BEFORE_CERTIFICATION",
+    "PROBLEM_REQUIRES_TEN_STEP_RECOVERY",
+    "PASS_REQUIRES_IMMEDIATE_ADVANCE"
+  ],
+  "wave_state": [
+    {
+      "wave": "W1",
+      "name": "SCIENTIFIC_ADJUDICATION",
+      "proof": "25a-scientific-review-queue-v2.json",
+      "materialized": true
+    },
+    {
+      "wave": "W2",
+      "name": "GLOBAL_IDENTITY",
+      "proof": "27-canonical-legal-units-v1.0.json",
+      "materialized": true
+    },
+    {
+      "wave": "W3",
+      "name": "GLOBAL_NAR_COLLISION",
+      "proof": "28-global-collision-audit-v1.0.json",
+      "materialized": false
+    },
+    {
+      "wave": "W4",
+      "name": "SERIAL_PROMOTION",
+      "proof": "30-global-registry-ledger-v1.0.json",
+      "materialized": false
+    },
+    {
+      "wave": "W5",
+      "name": "ZERO_PROOF_AND_CERTIFICATION",
+      "proof": "33-whole-quran-final-certificate-v1.0.json",
+      "materialized": false
+    }
+  ],
+  "generated_at": "2026-07-10T16:35:25.752Z"
+}

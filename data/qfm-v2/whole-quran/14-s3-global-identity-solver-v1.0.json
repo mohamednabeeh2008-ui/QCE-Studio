@@ -1,0 +1,11 @@
+{
+  "stage": "S3",
+  "status": "PASS_WITH_EXPLICIT_HOLDS",
+  "families_total": 186,
+  "families_resolved": 0,
+  "explicit_identity_holds": 186,
+  "cross_lane_unknown_collisions": 0,
+  "false_merge_survivors": 0,
+  "false_split_survivors": 0,
+  "event_journey_witness_preserved": true
+}

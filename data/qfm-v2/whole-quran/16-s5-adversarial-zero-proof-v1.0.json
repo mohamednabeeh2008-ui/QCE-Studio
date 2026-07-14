@@ -1,0 +1,22 @@
+{
+  "stage": "S5",
+  "status": "FAIL_CLOSED",
+  "surahs": 114,
+  "verse_refs": 6236,
+  "zero_proof_matrix": {
+    "unscanned": 0,
+    "unclassified": 0,
+    "unaccounted": 0,
+    "orphan_holds": 0,
+    "silent_unresolved": 0,
+    "unknown_collisions": 0,
+    "unsupported_promotions": 0,
+    "nar_gaps": 0,
+    "nar_duplicates": 0,
+    "unprovenanced_cid_claims": 0,
+    "explicit_scholarly_identity_holds": 186
+  },
+  "independent_adversarial_audit": "NOT_PASS",
+  "whole_quran_narrative_research": "NOT_COMPLETE",
+  "remaining_work": "186 explicit scholarly identity cases"
+}
